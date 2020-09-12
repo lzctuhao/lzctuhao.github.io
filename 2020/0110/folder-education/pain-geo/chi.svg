@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" width="1454" height="1054" viewBox="0 0 727 527" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+<clipPath id="c_1"><path d="M0,0H727V527H0Z"/></clipPath>
+<style type="text/css"><![CDATA[
+text { white-space: pre; }
+path, image { pointer-events: none; }
+
+.s1{
+font-size: 4.59px;
+font-family: RtfrlvSourceHanSansTW-Regula_uo;
+fill: #FFFFFF;
+}
+.s2{
+font-size: 4.59px;
+font-family: RlhvhvSourceHanSansTW-Bold_1_0;
+fill: #FFFFFF;
+}
+.s3{
+font-size: 4.59px;
+font-family: RtfrlvSourceHanSansTW-Regula_uo;
+fill: #86C5E9;
+}
+.s4{
+font-size: 4.59px;
+font-family: RtfrlvSourceHanSansTW-Regula_uo;
+fill: #FFED00;
+}
+.s5{
+font-size: 4.40px;
+font-family: RtfrlvSourceHanSansTW-Regula_uo;
+fill: #FFFFFF;
+}
+.s6{
+font-size: 6.61px;
+font-family: KlygkvDFLiSongStd-W5_up;
+fill: #FFFFFF;
+}
+.s7{
+font-size: 5.29px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFD300;
+}
+.s8{
+font-size: 5.51px;
+font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+fill: #FFFFFF;
+}
+.s9{
+font-size: 5.29px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFFFFF;
+}
+.sa{
+font-size: 6.06px;
+font-family: NfnrjgGeograph-Regular_ub;
+fill: #FFFFFF;
+}
+.sb{
+font-size: 4.77px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFD300;
+}
+.sc{
+font-size: 4.77px;
+font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+fill: #FFFFFF;
+}
+.sd{
+font-size: 4.84px;
+font-family: JjxfyrGeograph-Bold_uc;
+fill: #78B63E;
+}
+.se{
+font-size: 4.40px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #78B63E;
+}
+.sf{
+font-size: 4.40px;
+font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+fill: #FFFFFF;
+}
+.sg{
+font-size: 4.84px;
+font-family: JjxfyrGeograph-Bold_uc;
+fill: #E2001A;
+}
+.sh{
+font-size: 4.40px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #E2001A;
+}
+.si{
+font-size: 4.84px;
+font-family: JjxfyrGeograph-Bold_uc;
+fill: #EE7F01;
+}
+.sj{
+font-size: 4.40px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #EE7F01;
+}
+.sk{
+font-size: 4.77px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFFFFF;
+}
+.sl{
+font-size: 4.41px;
+font-family: RlhvhvSourceHanSansTW-Bold_1_0;
+fill: #FFFFFF;
+}
+.sm{
+font-size: 3.31px;
+font-family: BlfhxxAGBookPro-Regular_uz;
+fill: #FFFFFF;
+}
+.sn{
+font-size: 5.30px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFFFFF;
+}
+.so{
+font-size: 5.52px;
+font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+fill: #FFFFFF;
+}
+.sp{
+font-size: 5.30px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #42C0EB;
+}
+.sq{
+font-size: 5.30px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #E2007A;
+}
+.sr{
+font-size: 4.78px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #FFD300;
+}
+.ss{
+font-size: 4.78px;
+font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+fill: #FFFFFF;
+}
+.st{
+font-size: 4.78px;
+font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+fill: #42C0EB;
+}
+
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,527
+L727,527
+L727,0 Z " 
+fill="#FFFFFF" stroke="none"/>
+<g clip-path="url(#c_1)">
+<image preserveAspectRatio="none" x="-1" y="-1" width="365" height="531" xlink:href="chi1.png"/>
+<text transform="matrix(1.01,0,0,1,161,330)" class="s1">末梢感觉神经元</text>
+<text transform="matrix(1.01,0,0,1,55,254)" class="s1">痛觉受器</text>
+<text transform="matrix(1.01,0,0,1,229,190)" class="s2">神经束</text>
+<text transform="matrix(1.01,0,0,1,200,210)" class="s2">轴突</text>
+<text transform="matrix(0.99,0.19,-0.19,0.98,208,493)" class="s1">轴</text>
+<text transform="matrix(0.99,0.19,-0.19,0.98,213,493)" class="s1">突</text>
+<text transform="matrix(0.99,0.19,-0.19,0.98,217,494)" class="s1">膜</text>
+<text transform="matrix(0.99,0.19,-0.19,0.98,210,488)" class="s1">轴</text>
+<text transform="matrix(0.99,0.19,-0.19,0.98,215,489)" class="s1">突</text>
+<text transform="matrix(1.01,0,0,1,124,411)" class="s1">小孔</text>
+<text transform="matrix(1.01,0,0,1,298,411)" class="s3">小分子</text>
+<text transform="matrix(1.01,0,0,1,155,411)" class="s4">钠离子</text>
+<text transform="matrix(1.01,0,0,1,285,401)" dx="0,.2" class="s5">开启</text>
+<text transform="matrix(1.01,0,0,1,248,401)" dx="0,.2" class="s5">静止</text>
+<text transform="matrix(1.01,0,0,1,211,401)" dx="0,.2" class="s5">关闭</text>
+<text transform="matrix(1.01,0,0,1,173,401)" dx="0,.2" class="s5">开启</text>
+<text transform="matrix(1.01,0,0,1,136,401)" dx="0,.2" class="s5">静止</text>
+<text transform="matrix(1.01,0,0,1,33,72)" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,. 3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3, .3,.3,.3,.3,.3,.3" class="s6">疼痛是有理由的：为了自我保护。疼痛提醒大脑，身体处于危险之中，必</text>
+<text transform="matrix(1.01,0,0,1,33,81)" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,. 3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3, .3,.3,.3,.3,.3,.3" class="s6">须有所反应。药物能够抑制这些讯息并减缓疼痛，但新的研究寄望于强化</text>
+<text transform="matrix(1.01,0,0,1,33,90)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,. 4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4,.4,.4,.4" class="s6">身体本有的系统──由上行与下行的路径组成──借此以自然方式降低</text>
+<text transform="matrix(1.01,0,0,1,33,98)" dx="0,.4,.2,.2,.2,.2,.2,.2,.2,. 2,.2,.2,.2" class="s6">疼痛，副作用也能降到最低。 </text>
+<text transform="matrix(1.12,0,0,1,33,145)" dx="0,.1,.1,.1,.1,.1,.1" class="s7">传到大脑的讯息</text>
+<text transform="matrix(1.01,0,0,1,33,151)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4,.4,.4" class="s8">急性疼痛让人注意到实际或可能</text>
+<text transform="matrix(1.01,0,0,1,33,158)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4,.4,.4" class="s8">发生的组织损伤。讯号会经由上</text>
+<text transform="matrix(1.01,0,0,1,33,164)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4,.4,.4" class="s8">行路径传递到大脑，刺激身体迅</text>
+<text transform="matrix(1.01,0,0,1,33,171)" dx="0,.1,.1,.1" class="s8">速反应。 </text>
+<text transform="matrix(1.12,0,0,1,33,400)" dx="0,.1,.1,.1,.1,.1,.1" class="s9">疼痛闸门的潜力</text>
+<text transform="matrix(1.01,0,0,1,33,409)" dx="0,.9,.9,.9,.9,.9,.9" class="s8">包括钠离子通道</text>
+<text transform="matrix(1.01,0,0,1,78,409)" dx="0,.8,.8" class="sa">Nav</text>
+<text transform="matrix(1.01,0,0,1,96,409)" class="sa">1</text>
+<text transform="matrix(1.01,0,0,1,102,409)" dx="0,.8" class="sa">.7</text>
+<text transform="matrix(1.01,0,0,1,33,415)" dx="0,0,.2,.2,.2,.2,.2,.2,.2,.2,. 2,.2" class="s8">在内，共有好几种「疼痛闸</text>
+<text transform="matrix(1.01,0,0,1,33,421)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2, .2,.2,.2" class="s8">门」负责调节进入轴突的钠离</text>
+<text transform="matrix(1.01,0,0,1,33,428)" dx="0,.2,.2,.7,.7,.7,.7,.7,.7,.7, .7,.7" class="s8">子通道，流入的钠离子会引</text>
+<text transform="matrix(1.01,0,0,1,33,435)" dx="0,.7,.7,.2,.2,.2,.2,.2,.2,.2, .2,.2" class="s8">起疼痛。利用药物或是基因</text>
+<text transform="matrix(1.01,0,0,1,33,441)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2, .2,.2,.2" class="s8">疗法以分子堵住闸门，或许能</text>
+<text transform="matrix(1.01,0,0,1,33,448)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2, .2,.2,.2" class="s8">够协助医生针对不同病患量身</text>
+<text transform="matrix(1.01,0,0,1,33,454)" dx="0,.2,.2,.2,.1,.1,.1" class="s8">打造疼痛治疗。 </text>
+<text transform="matrix(1.01,0,0,1,42,190)" dx="0,.2,.2,.2" class="sb">感到疼痛</text>
+<text transform="matrix(1.01,0,0,1,42,198)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2, .2,.2,.2" class="sc">名为痛觉受器的神经元会对像</text>
+<text transform="matrix(1.01,0,0,1,42,205)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2, .2,.2,.2" class="sc">尖锐物体、火或化学反应等外</text>
+<text transform="matrix(1.01,0,0,1,42,212)" dx="0,.2,.2,.2,.2,.2,.2,.2" class="sc">在刺激产生反应。 </text>
+<text transform="matrix(1.01,0,0,1,123,190)" dx="0,.2,.2,.2" class="sb">传递疼痛</text>
+<text transform="matrix(1.01,0,0,1,123,198)" dx="0,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7 ,.7" class="sc">电子讯号从痛觉受器传到轴</text>
+<text transform="matrix(1.01,0,0,1,123,205)" dx="0,.2,.2,.2,.2,.2,.2,.2,.2,.2,.2 ,.2,.2" class="sc">突，这些神经纤维会将信号继</text>
+<text transform="matrix(1.01,0,0,1,123,212)" dx="0,.2,.2,.2,.2,.2,.2" class="sc">续传递到脊髓。 </text>
+<text transform="matrix(1.01,0,0,1,259,187)" class="sd">A</text>
+<text transform="matrix(1.01,0,0,1,262,187)" class="se">类β神经纤维</text>
+<text transform="matrix(1.01,0,0,1,259,193)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4 ,.4,.4" class="sf">这类纤维具有厚髓鞘，传递触</text>
+<text transform="matrix(1.01,0,0,1,259,199)" class="sf">觉、压力和震动。 </text>
+<text transform="matrix(1.01,0,0,1,259,207)" class="sg">A</text>
+<text transform="matrix(1.01,0,0,1,262,207)" class="sh">类δ神经纤维</text>
+<text transform="matrix(1.01,0,0,1,259,213)" dx="0,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,. 1" class="sf">这类纤维具有薄髓鞘，会最先感</text>
+<text transform="matrix(1.01,0,0,1,259,219)" class="sf">觉到迅速、急性的疼痛讯号。 </text>
+<text transform="matrix(1.01,0,0,1,259,226)" class="si">C</text>
+<text transform="matrix(1.01,0,0,1,262,226)" class="sj">类神经纤维</text>
+<text transform="matrix(1.01,0,0,1,259,232)" dx="0,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1 ,.1,.1,.1" class="sf">这类纤维不具髓鞘，负责感觉缓</text>
+<text transform="matrix(1.01,0,0,1,259,238)" dx="0,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1 ,.1,.1,.1" class="sf">慢的疼痛：例如灼热、烧伤以及</text>
+<text transform="matrix(1.01,0,0,1,259,244)" class="sf">闷痛。 </text>
+<text transform="matrix(1.01,0,0,1,219,143)" dx="0,.1,.1,.1,.1" class="sk">神经的构造</text>
+<text transform="matrix(1.01,0,0,1,219,151)" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3 ,.3,.3,.3,.3,.3,.3,.3,.3,.3" class="sc">神经包括了一束束的轴突，这些纤维从名为神</text>
+<text transform="matrix(1.01,0,0,1,219,158)" dx="0,.6,.6,.6,.6,.6,.6,.6,.6,.6,.6 ,.6,.6,.6,.6,.6,.6,.6,.6" class="sc">经元的神经细胞中延伸出来，能传递电子活</text>
+<text transform="matrix(1.01,0,0,1,219,165)" dx="0,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1 ,.1,.1,.1,.1,.1,.1,.1,.1,.1" class="sc">动。不同的感觉分别由不同的轴突纤维传递。 </text>
+<text transform="matrix(1.01,0,0,1,165,381)" class="sc">神经元活跃的时候，其表面上对电流敏感的小孔</text>
+<text transform="matrix(1.01,0,0,1,170,389)" class="sc">会在三种状态中循环：静止、开启、关闭。 </text>
+<text transform="matrix(1.01,0,0,1,115,449)" dx="0,.5,.5,.5,.5,.5,.5,.5,.5" class="sc" >在静止状态时，相连</text>
+<text transform="matrix(1.01,0,0,1,115,457)" class="sc">的粒子会堵住小孔。 </text>
+<text transform="matrix(1.01,0,0,1,164,463)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4" class="sc" >在开启状态时，钠离</text>
+<text transform="matrix(1.01,0,0,1,164,470)" dx="0,.4,.4,.4,.4,.4,.4,.4,.4" class="sc" >子可进入没有堵住的</text>
+<text transform="matrix(1.01,0,0,1,164,477)" class="sc">小孔。 </text>
+<text transform="matrix(1.01,0,0,1,266,472)" class="sc">有</text>
+<text transform="matrix(1.01,0,0,1,274,472)" dx="0,1.3,1.3" class="sc">些（天</text>
+<text transform="matrix(1.01,0,0,1,295,472)" dx="0,1.3" class="sc">然或</text>
+<text transform="matrix(1.01,0,0,1,309,472)" class="sc">合</text>
+<text transform="matrix(1.01,0,0,1,266,479)" dx="0,0,.1,.5,.5,.5,.5,.5,.5,.5" class=" sc">成的）分子能堵住小</text>
+<text transform="matrix(1.01,0,0,1,266,487)" dx="0,.5,0,0" class="sc">孔顶部。 </text>
+<image preserveAspectRatio="none" x="364" y="-1" width="366" height="531" xlink:href="chi2.png"/>
+<text x="584" y="55" class="sl">体感觉皮质</text>
+<text x="582" y="217" class="sl">背角</text>
+<text x="555" y="144" class="sl">视丘</text>
+<text x="507" y="97" class="sl">前扣带回皮质</text>
+<text x="477" y="123" class="sl">前额叶皮质</text>
+<text x="510" y="142" class="sl">依核／</text>
+<text x="510" y="148" class="sl">腹侧纹状体</text>
+<text x="568" y="276" class="sl">头腹中侧延脑</text>
+<text x="547" y="107" class="sl">前岛皮质</text>
+<text x="570" y="173" class="sl">导水管周边灰质</text>
+<text x="406" y="499" dx="0,0,0,0,0,0,-.1,0,0,0,-.2,-.2,0,-.1 ,0,0,0,-.1,-.1,-.2,0,0,0,0,-.1,0,0,0,-.1,0,0,0,0,0 ,0,0,-.4,-.2,0,-.1,0,0,0,0,-.1,0,0,0,0,0,0" class="sm">JASON TREAT, NGM STAFF; MEG ROOSEVELT. ART: SINELAB</text>
+<text x="406" y="502" dx="0,0,0,0,0,0,0,0,-.1,-.1,-.1,0,0,0,- .1,0,0,0,-.1,0,0,0,0,-.1,0,0,0,0,0,0,0,0,0,0,-.1,0 ,0,-.1,0,0,-.1,0,0,0,0" class="sm">SOURCE: LUANA COLLOCA, UNIVERSITY OF MARYLAND</text>
+<text transform="matrix(1.11,0,0,1,406,433)" dx="0,.1,.1,.1,.1,.1,.1,.1" class="sn">类鸦片药物的难题</text>
+<text x="406" y="442" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4" class="so">类鸦片药物减少疼痛的方式是无</text>
+<text x="406" y="449" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4" class="so">差别地压抑一切，既压抑上行的</text>
+<text x="406" y="455" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4" class="so">痛觉讯号，也压抑对身体有益的</text>
+<text x="406" y="462" dx="0,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4,.4, .4,.4" class="so">下行反应。这类药物确实能减缓</text>
+<text x="406" y="468" dx="0,.5,.5,-.3,.5,.5,.5,.5,.5,.5,.5,.5 ,.5,.5" class="so">疼痛──但也会引发可能导致成</text>
+<text x="406" y="475" dx="0,.3,.3,.3,.3,.3" class="so">瘾的愉悦感。 </text>
+<text transform="matrix(1.11,0,0,1,406,36)" dx="0,.3,.3,.3,.3" class="sp">脑部的反应</text>
+<text x="406" y="44" dx="0,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7" class="so">脑部接收到讯息之后，会启</text>
+<text x="406" y="51" dx="0,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7" class="so">动下行路径，召唤整个中枢</text>
+<text x="406" y="58" dx="0,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7,.7" class="so">神经系统开始调节疼痛刺激</text>
+<text x="406" y="64" dx="0,.3,.3,.3,.3,.3" class="so">并做出反应。 </text>
+<text transform="matrix(1.11,0,0,1,608,433)" dx="0,.3,.3,.3,.3,.3,.3,.3,.3" class="sq" >急性疼痛与慢性疼痛</text>
+<text x="608" y="442" dx="0,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5, .5" class="so">急性疼痛讯息会沿上行路径传</text>
+<text x="608" y="449" dx="0,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5, .5" class="so">递到脑部。而持续性背痛之类</text>
+<text x="608" y="455" dx="0,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5, .5" class="so">的慢性疼痛，则是因为神经元</text>
+<text x="608" y="462" dx="0,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5,.5, .5" class="so">或轴突受损所导致，传递路径</text>
+<text x="608" y="468" dx="0,.3,.3,.3,.3,.3,.3" class="so">目前还不清楚。 </text>
+<text x="636" y="114" dx="0,.2,.2,.2" class="sr">感知疼痛</text>
+<text x="636" y="122" dx="0,.6,.6,.6,.6,.6,.6,.6,.6,.6,.6" class=" ss">讯号传到体感觉皮质与其</text>
+<text x="636" y="129" dx="0,.6,.6,.6,.6,.6,.6,.6,.6,.6,.6" class=" ss">他可辨识疼痛位置与强度</text>
+<text x="636" y="137" dx="0,.2,.2,.2" class="ss">的脑区。 </text>
+<text x="412" y="115" dx="0,.2,.2,.2,.2,.2" class="st">对疼痛的反应</text>
+<text x="412" y="123" dx="0,.4,.4,.4,.4,.4,.4,.4,.4" class="ss">这些区域向下释放出</text>
+<text x="412" y="130" dx="0,.4,.4,.4,.4,.4,.4,.4,.4" class="ss">神经化学讯号，开始</text>
+<text x="412" y="137" dx="0,.2,.2,.2,.2" class="ss">减缓疼痛。 </text>
+<text x="412" y="191" dx="0,.2,.2,.2" class="st">疼痛减轻</text>
+<text x="412" y="199" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,.3" class="ss">这些神经化合物会在背</text>
+<text x="412" y="206" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,.3" class="ss">角与导水管周边灰质拦</text>
+<text x="412" y="213" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,.3" class="ss">截上行讯号，扮演煞车</text>
+<text x="412" y="221" dx="0,.2,.2,.2" class="ss">的角色。 </text>
+<text x="636" y="39" dx="0,.2,.2,.2" class="sr">情绪反应</text>
+<text x="636" y="46" dx="0,.3,.3,.3,.3,.3,.3,.3,.3,.3,.3,-.9 " class="ss">疼痛讯号也会进入前皮质，</text>
+<text x="636" y="53" dx="0,.3,.3,.3,.3,.3,.3,.3,-.9,-.9,.3,. 3" class="ss">就可能会引发焦虑、恐惧或</text>
+<text x="636" y="61" dx="0,.2,-1" class="ss">忧郁。 </text>
+<text x="636" y="190" dx="0,.2,.2,.2,.2,.2" class="sr">疼痛讯号上行</text>
+<text x="636" y="197" dx="0,.6,.6,.6,.6,.6,.6,.6,.6,.6,.6" class=" ss">脊髓接到讯号之后继续将</text>
+<text x="636" y="205" dx="0,.2,.2,.2,.2,.2,.2,.2" class="ss">讯号上传到脑部。 </text>
+
+</g>
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: BlfhxxAGBookPro-Regular_uz;
+	src: url("fonts/BlfhxxAGBookPro-Regular_uz.woff") format("woff");
+}
+
+@font-face {
+	font-family: JjxfyrGeograph-Bold_uc;
+	src: url("fonts/JjxfyrGeograph-Bold_uc.woff") format("woff");
+}
+
+@font-face {
+	font-family: KlygkvDFLiSongStd-W5_up;
+	src: url("fonts/KlygkvDFLiSongStd-W5_up.woff") format("woff");
+}
+
+@font-face {
+	font-family: NfnrjgGeograph-Regular_ub;
+	src: url("fonts/NfnrjgGeograph-Regular_ub.woff") format("woff");
+}
+
+@font-face {
+	font-family: RhmvqnSourceHanSansTW-Heavy_1-x;
+	src: url("fonts/RhmvqnSourceHanSansTW-Heavy_1-x.woff") format("woff");
+}
+
+@font-face {
+	font-family: RlhvhvSourceHanSansTW-Bold_1_0;
+	src: url("fonts/RlhvhvSourceHanSansTW-Bold_1_0.woff") format("woff");
+}
+
+@font-face {
+	font-family: RtfrlvSourceHanSansTW-Regula_uo;
+	src: url("fonts/RtfrlvSourceHanSansTW-Regula_uo.woff") format("woff");
+}
+
+@font-face {
+	font-family: TmpfcbSourceHanSansTW-Regul_1-u;
+	src: url("fonts/TmpfcbSourceHanSansTW-Regul_1-u.woff") format("woff");
+}
+
+]]></style>
+
+</svg>
