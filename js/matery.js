@@ -141,7 +141,32 @@ $(function () {
 
         $("#jindu").hide();
     };
-    articleInit();
+    //articleInit();
+
+    $('#articleContent img').each(function() {
+        var $image = $(this);
+        var alt = $image.attr('alt');
+        var src = $image.attr('src');
+        $imageWrapLink = $image.wrap('<a data-fancybox=images data-caption="'+ alt +'" href="' + src + '"></a>');
+    });
+
+    $('#articleContent img[data-fancybox="images"]').fancybox({
+        thumbs: true,
+        hash: true,
+        loop: true,
+        fullScreen: true,
+        slideShow: true,
+        protect: true,
+        buttons : [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'share',
+            'download',
+            'zoom',
+            'close'
+        ],
+    });
     
 
     $('#toggleSearch').click(function () {
