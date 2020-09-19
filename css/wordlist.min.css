@@ -47,13 +47,7 @@ option:disabled{color: var(--bgcolor);}
 #prevbtn{display: none;right: 260px;}
 #nextbtn2{display: none;right: 140px;z-index: 990;}
 #prevbtn2{display: none;right: 200px;z-index: 990;}
-.btndiv{
-    position: fixed;bottom: 30px;margin-bottom: 0;z-index: 998;
-}
 
-.btndiv i{line-height: 48px;font-size: 1.8rem;text-align: center;}
-.btn-floating{background: #ff6d00;width: 48px;height: 48px;}
-.btndiv a{padding: 0px!important;}
 input[type="checkbox"]{position: absolute;left: -9999px;opacity: 0;}
 td{transition-property: background-color;transition-duration: 300ms;transition-timing-function: ease-out;}
 label,.collapsible-header{-webkit-tap-highlight-color:transparent;}
@@ -69,10 +63,8 @@ label,.collapsible-header{-webkit-tap-highlight-color:transparent;}
     .collapsible{border:none}
 }
 @media only screen and (max-width: 600px) {
-    .btn-floating,.icon-svg{width: 40px;height: 40px;}
-    .btn-floating:hover{background-color: #ff6d00;}
-    
-    .btndiv i{line-height: 40px;font-size: 1.6rem;}
+    .icon-svg{width: 40px;height: 40px;}
+
     #bigwordbtn{right: 20px!important;}
     #ctrlwholediv,#nextbtn2{right: 65px;}
     #nextbtn,#prevbtn2{right: 110px;}
