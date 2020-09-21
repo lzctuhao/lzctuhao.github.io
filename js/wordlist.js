@@ -237,6 +237,11 @@ function digui(i){/*朗读整个单词表 */
         digui(ReadWhole_row);
     } else if(i>=document.getElementById('words').rows.length){/*读完最后一页，或者不自动翻页 */
         //$("#hint")[0].pause();
+        if($("input[list='dataTables_filter_input']").val()){
+            Toast.fire('已读完“'+$("input[list='dataTables_filter_input']").val()+'”的所有单词！','','success');
+        } else {
+            Toast.fire('已读完所有单词！','','success');
+        }
         $("<audio src='/../medias/over.mp3' autoplay id='stop'/>").appendTo("body");
         $("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere");
         diguistop();
@@ -461,7 +466,10 @@ function diguistop(){/*终止朗读全文 */
     //$("#bigword-arrow").addClass("fa-arrow-up");
     //$("body").addClass("NowCanShow");
     //bigword_status=false;
-    $("#where").val(getTrueTR(ReadWhole_row));
+    let row=$('#words').DataTable().page.info().recordsDisplay;
+    $("#where").val(
+        (getTrueTR(ReadWhole_row)>row)?(1):(getTrueTR(ReadWhole_row))
+    );
 }
 
 var originhtml,trSeq,settings;/*鼠标行第一格显示行号 */
@@ -537,7 +545,7 @@ function bigwordDOWN(){
 function changeURLPar(par, par_value) {
     var destiny = location.href;
     var pattern = par+'=([^&]*)'; 
-    var replaceText = par+'='+par_value; 
+    var replaceText = (par_value)?(par+'='+par_value):(""); 
     if (destiny.match(pattern)) { 
         var tmp = '/'+par+'=[^&]*/';
         
@@ -823,6 +831,7 @@ function clearapi(){
     $.cookie('Wordlist_mb1key', null,{ expires: -1, path: '/' });$.cookie('Wordlist_mb2key', null,{ expires: -1, path: '/' });
     $.cookie('Wordlist_bdid', null,{ expires: -1, path: '/' });$.cookie('Wordlist_bdkey', null,{ expires: -1, path: '/' });
     $("#mb1key,#mb2key,#bdid,#bdkey").val("");
+    changeURLPar("mb1key", "");changeURLPar("mb2key", "");changeURLPar("bdid", "");changeURLPar("bdkey", "");
 }
 function explainapi(){
     Swal.fire({
