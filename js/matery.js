@@ -90,9 +90,9 @@ $(function () {
     });
 
     /*文章内容详情的一些初始化特性*/
+    /*
     let articleInit = function () {
-        /*$('#articleContent a').attr('target', '_blank');*/
-
+        //$('#articleContent a').attr('target', '_blank');
         $('#articleContent img:not(.no-gallery)').each(function () {
             let imgPath = $(this).attr('src');
             $(this).wrap('<div class="img-item" data-src="' + imgPath + '" data-sub-html=".caption"></div>');
@@ -141,7 +141,7 @@ $(function () {
 
         $("#jindu").hide();
     };
-    //articleInit();
+    articleInit();*/
 
     $('#articleContent img').each(function() {
         var $image = $(this);

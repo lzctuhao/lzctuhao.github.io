@@ -57,6 +57,7 @@ label,.collapsible-header{-webkit-tap-highlight-color:transparent;}
 .icon-play path{d: path('M 12,26 18.5,22 18.5,14 12,10 z M 18.5,22 25,18 25,18 18.5,14 z');transition:d .2s linear .1s}
 .icon-play.play path{d: path('M 12,26 16,26 16,10 12,10 z M 21,26 25,26 25,10 21,10 z')}
 
+.btn-floating{background: #ff6d00;}
 
 @media (prefers-color-scheme: dark) {
     .soundhere{background-color:#000755;}
@@ -64,7 +65,7 @@ label,.collapsible-header{-webkit-tap-highlight-color:transparent;}
 }
 @media only screen and (max-width: 600px) {
     .icon-svg{width: 40px;height: 40px;}
-
+    .btn-floating:hover{background-color: #ff6d00}
     #bigwordbtn{right: 20px!important;}
     #ctrlwholediv,#nextbtn2{right: 65px;}
     #nextbtn,#prevbtn2{right: 110px;}

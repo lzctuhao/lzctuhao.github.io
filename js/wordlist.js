@@ -558,10 +558,11 @@ function changeURLPar(par, par_value) {
         }else{ 
             changeURL(destiny+'?'+replaceText);
         } 
-    } 
+    }
 }
 
 function changeURL(string){
+    string = string.replace(/&+$/g, '');//去除url结尾的&
     history.pushState({url: string, title: document.title}, document.title, string);
 }
 
