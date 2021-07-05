@@ -517,10 +517,13 @@ function showSound(text,code) {
 }
 
 function showSoundCN(text,speed,i){
-    text=text.replace(/[；|;]/g,",")
+    text=text.replace(/[；|;]/g,",");
+    text=text.replace(/…/g,"什么");
+    text=text.replace(/vt.|vi.|adj.|adv.|n.|v.|conj./g, ',');//在不同词性间分隔
+    text.replace(/^,+/,"").replace(/,+$/,""); //去除首尾逗号
     text=text.match(/[\u4e00-\u9fa5|\uff0c|,]/g).join("");//去除非中文
-    soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=zh&ctp=1&pdt=311&tex="+text;
-    //soundurl="https://tts.baidu.com/text2audio?lan=zh&per=1&ie=UTF-8&spd="+speed+"&text="+text;
+    //soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=zh&ctp=1&pdt=311&tex="+text;
+    soundurl="https://tts.baidu.com/text2audio?tex="+text+"&cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per=0";
     return soundurl;
 }
 
