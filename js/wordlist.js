@@ -119,6 +119,9 @@ $(function () {
             　　　　'targets' : [(chineserow-1)],    //除第六，第七两列外，都默认不排序
             　　　　'orderable' : false
             　　}],
+        initComplete: function( settings, json ) {
+            try {tabledone();}catch(err) {console.log("表格加载完后无要执行的函数tabledone()")}
+        },
         language: {
            "sProcessing": "处理中...",
            "sLengthMenu": "每页显示 _MENU_ 项结果",
@@ -143,7 +146,7 @@ $(function () {
                "sSortAscending": ": 以升序排列此列",
                "sSortDescending": ": 以降序排列此列"
            }
-       },
+        },
     });
     $('.dataTables_filter input').attr({'list':'dataTables_filter_input'});
 
