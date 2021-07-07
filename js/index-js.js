@@ -63,7 +63,7 @@ $(function () {
         var expiresDate= new Date();
         expiresDate.setTime(expiresDate.getTime() + (2*60*60*1000));
         $.cookie('guoqing', '2', { expires: expiresDate });
-    }*/
+    }
     if(($.cookie('tinggeng')!=1)){
         Swal.fire({
             title: '停更公告',
@@ -73,5 +73,5 @@ $(function () {
         var expiresDate= new Date();
         expiresDate.setTime(expiresDate.getTime() + (5*60*60*1000));
         $.cookie('tinggeng', '1', { expires: expiresDate });
-    }
+    }*/
 });
