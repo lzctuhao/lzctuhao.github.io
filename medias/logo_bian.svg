@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="图层_1" xmlns:xml="http://www.w3.org/XML/1998/namespace"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 205 205"
+	 style="enable-background:new 0 0 205 205;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#EFEFEF;}
+	.st1{fill:url(#SVGID_1_);}
+	.st2{fill:url(#SVGID_2_);}
+	.st3{fill:url(#SVGID_3_);}
+</style>
+<circle class="st0" cx="102.5" cy="102.5" r="100"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-201.3757" y1="500.3265" x2="-201.3757" y2="499.3264" gradientTransform="matrix(-53.0579 198.0148 198.0148 53.0579 -109555.0938 13458.1289)">
+	<stop  offset="0" style="stop-color:#6C0C3F"/>
+	<stop  offset="1" style="stop-color:#D81B60"/>
+</linearGradient>
+<path class="st1" d="M102.5,205C46,205,0,159,0,102.5S46,0,102.5,0S205,46,205,102.5S159,205,102.5,205z M102.5,5
+	C48.7,5,5,48.7,5,102.5S48.7,200,102.5,200s97.5-43.7,97.5-97.5S156.3,5,102.5,5z"/>
+<g>
+	
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-194.9832" y1="505.4124" x2="-194.9832" y2="504.4199" gradientTransform="matrix(-15.8912 35.1974 59.3069 9.4311 -32918.5313 2257.9863)">
+		<stop  offset="0" style="stop-color:#D81B60"/>
+		<stop  offset="0.5783" style="stop-color:#6C0C3F"/>
+	</linearGradient>
+	<path class="st2" d="M137.3,139H94.5l0,18c0,9.9,8.1,18,18.1,18h42.9v-17.8C155.5,147.2,147.3,139,137.3,139z"/>
+	
+		<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-207.0608" y1="501.5956" x2="-207.0608" y2="500.5974" gradientTransform="matrix(-54.5129 9.9853 3.8119 142.7963 -13114.7734 -69383.3672)">
+		<stop  offset="0" style="stop-color:#D81B60"/>
+		<stop  offset="0.9988" style="stop-color:#6C0C3F"/>
+	</linearGradient>
+	<path class="st3" d="M93.5,156.8l1-29.7V50.1C94.1,40.1,75.9,32,75.9,32H57.5v124.8c0,10.1,8.2,18.2,18.2,18.2h35.8
+		C101.6,175,93.5,166.9,93.5,156.8z"/>
+</g>
+</svg>

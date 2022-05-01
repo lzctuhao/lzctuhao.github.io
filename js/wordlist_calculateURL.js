@@ -1,0 +1,1 @@
+function calculateURL(i){var a="lzctuhao"+Math.ceil(1e6*Math.random()),t=md5($.cookie("Wordlist_bdid")+i+a+$.cookie("Wordlist_bdkey"));return"https://api.fanyi.baidu.com/api/trans/vip/translate?q="+i+"&from=en&to=zh&appid="+$.cookie("Wordlist_bdid")+"&salt="+a+"&sign="+t}

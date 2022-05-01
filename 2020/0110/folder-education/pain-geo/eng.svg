@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+
+<!-- Page 1 -->
+<svg x="0" y="0" viewBox="0 0 867 631" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+style="display: block;margin-left: auto;margin-right: auto;">
+<defs>
+<clipPath id="c_1"><path d="M0,0H867V631H0Z"/></clipPath>
+<style type="text/css"><![CDATA[
+text { white-space: pre; }
+path, image { pointer-events: none; }
+
+.s1{
+font-size: 5.50px;
+font-family: Geograph-Regular_qx;
+fill: #FFFFFF;
+}
+.s2{
+font-size: 5.50px;
+font-family: Geograph-MediumItalic_qg;
+fill: #FFFFFF;
+}
+.s3{
+font-size: 5.50px;
+font-family: Geograph-MediumItalic_qg;
+fill: #74C1EC;
+}
+.s4{
+font-size: 5.50px;
+font-family: Geograph-MediumItalic_qg;
+fill: #FFF200;
+}
+.s5{
+font-size: 5.28px;
+font-family: Geograph-Medium_r1;
+fill: #FFFFFF;
+}
+.s6{
+font-size: 48.38px;
+font-family: MardenRounded-Bold_r0;
+fill: #FFFFFF;
+}
+.s7{
+font-size: 7.92px;
+font-family: GrosvenorBook-Regular_q2;
+fill: #FFFFFF;
+}
+.s8{
+font-size: 6.16px;
+font-family: Turnpike_pq;
+fill: #FFD201;
+}
+.s9{
+font-size: 6.16px;
+font-family: Geograph-Regular_qx;
+fill: #FFFFFF;
+}
+.sa{
+font-size: 6.16px;
+font-family: Turnpike_pq;
+fill: #FFFFFF;
+}
+.sb{
+font-size: 6.16px;
+font-family: Geograph-Bold_qv;
+fill: #FFD201;
+}
+.sc{
+font-size: 5.28px;
+font-family: Geograph-Bold_qv;
+fill: #6FBF54;
+}
+.sd{
+font-size: 5.28px;
+font-family: Geograph-Regular_qx;
+fill: #FFFFFF;
+}
+.se{
+font-size: 5.28px;
+font-family: Geograph-Bold_qv;
+fill: #ED1C24;
+}
+.sf{
+font-size: 5.28px;
+font-family: Geograph-Bold_qv;
+fill: #F5821F;
+}
+.sg{
+font-size: 5.28px;
+font-family: Geograph-Regular_qx;
+fill: #F5821F;
+}
+.sh{
+font-size: 6.16px;
+font-family: Geograph-Bold_qv;
+fill: #FFFFFF;
+}
+.si{
+font-size: 48.82px;
+font-family: Marden-Medium_pr;
+fill: #FFD201;
+}
+.sj{
+font-size: 5.26px;
+font-family: Geograph-MediumItalic_dt;
+fill: #FFFFFF;
+}
+.sk{
+font-size: 6.14px;
+font-family: Turnpike_pq;
+fill: #FFFFFF;
+}
+.sl{
+font-size: 6.14px;
+font-family: Geograph-Regular_qx;
+fill: #FFFFFF;
+}
+.sm{
+font-size: 3.95px;
+font-family: GeographEdit-Medium_qz;
+fill: #FFFFFF;
+}
+.sn{
+font-size: 6.14px;
+font-family: Turnpike_pq;
+fill: #20C4F4;
+}
+.so{
+font-size: 6.14px;
+font-family: Turnpike_pq;
+fill: #EC008C;
+}
+.sp{
+font-size: 6.14px;
+font-family: Geograph-Bold_qv;
+fill: #FFD201;
+}
+.sq{
+font-size: 5.48px;
+font-family: Geograph-Regular_qx;
+fill: #FFFFFF;
+}
+.sr{
+font-size: 6.14px;
+font-family: Geograph-Bold_qv;
+fill: #20C4F4;
+}
+.ss{
+font-size: 48.67px;
+font-family: Marden-Medium_du;
+fill: #FFD201;
+}
+.st{
+font-size: 48.67px;
+font-family: Marden-Medium_du;
+fill: #20C4F4;
+}
+
+
+]]></style>
+
+</defs>
+<path d="M0,0
+L0,631
+L867,631
+L867,0 Z " 
+fill="#FFFFFF" stroke="none"/>
+<g clip-path="url(#c_1)">
+<image preserveAspectRatio="none" x="1" y="0" width="433" height="633" xlink:href="1.png"/>
+<text x="193" y="396" dx="0,-.1,0,0,0,0,0,0,-.1,0" class="s1">Peripheral</text>
+<text x="193" y="403" dx="0,0,0,0,0,0,0,0,0,0,0,0,-.1,0,0" class="s1">sensory neurons</text>
+<text x="68" y="306" dx="0,0,0,0,0,0,0,0,-.1,0,0" class="s1">Nociceptors</text>
+<text x="274" y="221" dx="0,0,0,0,-.1" class="s1">Nerve</text>
+<text x="274" y="228" class="s1">bundle</text>
+<text x="235" y="253" dx="0,0,-.1,0,0" class="s1">Axons</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,234,588)" class="s2">A</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,238,589)" class="s2">x</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,241,589)" class="s2">o</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,244,590)" class="s2">n</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,248,591)" class="s2">a</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,251,591)" class="s2">l </text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,253,592)" class="s2">m</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,258,593)" class="s2">e</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,261,593)" class="s2">m</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,266,594)" class="s2">b</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,270,595)" class="s2">r</text>
+<text transform="matrix(0.98,0.18,-0.18,0.98,272,595)" class="s2">a</text>
+<text transform="matrix(0.98,0.18,-0.18,0.98,275,596)" class="s2">n</text>
+<text transform="matrix(0.98,0.18,-0.18,0.98,278,596)" class="s2">e</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,251,585)" class="s2">A</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,255,586)" class="s2">x</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,258,587)" class="s2">o</text>
+<text transform="matrix(0.98,0.19,-0.19,0.98,261,587)" class="s2">n</text>
+<text x="150" y="494" dx="0,-.1,0,-.1" class="s2">Pore</text>
+<text x="344" y="494" class="s3">Small molecules</text>
+<text x="179" y="494" class="s4">Sodium ions</text>
+<text x="338" y="481" dx="0,.3,.3,.3" class="s5">OPEN</text>
+<text x="289" y="481" dx="0,.3,.3,0,.3,.3,.3,.3" class="s5">INACTIVE</text>
+<text x="247" y="481" dx="0,.3,.1,.3,.3,.3" class="s5">CLOSED</text>
+<text x="205" y="481" dx="0,.3,.3,.3" class="s5">OPEN</text>
+<text x="156" y="481" dx="0,.3,.3,0,.3,.3,.3,.3" class="s5">INACTIVE</text>
+<text x="43" y="87" dx="0,-.2,-.2,-.2,-.4,-.2,-.2,-.2,-.4,-.2,-.2,-.2,-.2,-.2,-.4,-.2,-.2,-.2,-.2,-.2,-.2,-.4,-1.3,-.2,-.2" class="s6">HOW THE BRAIN FIGHTS PAIN</text>
+<text x="43" y="100" dx="0,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,0,0,0,-.1,-.1,-.2,0,-.1,-.1,-.2,-.1,-.1,-.1,0,0,-.1,0,-.3,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,0,0,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0" class="s7">Pain has a purpose: self-preservation. It signals to the brain that the body is in danger and </text>
+<text x="43" y="111" dx="0,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,0,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,0,-.1,-.1,-.2,-.1,-.1,0,0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,0,0,-.1,-.1,-.1,-.1,0" class="s7">needs to react. Pharmaceuticals can suppress those signals and ease pain, but new research </text>
+<text x="43" y="121" dx="0,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,0,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,0,0,-.1,.1,-.4,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.2,-.1,0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.2,-.3,-.1,-.2,-.1,-.1,-.1,-.2,0" class="s7">oﬀers the hope that the body’s own systems—made up of an ascending pathway and a </text>
+<text x="43" y="132" dx="0,-.1,0,0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0,.1,-.1,-.1,-.1,-.2,0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0,-.1,-.1" class="s7">descending one—can be ampliﬁed to reduce pain organically and with minimal side eﬀects.</text>
+<text x="43" y="174" dx="0,-.3,-.3,-.3,-.3,-.3,-.4,-.5,-.3,-.3,-.3,-.5,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3" class="s8">A MESSAGE TO THE BRAIN</text>
+<text x="43" y="182" dx="0,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1" class="s9">Acute pain calls attention to actual or poten-</text>
+<text x="43" y="190" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.1,0" class="s9">tial tissue damage. Signals to the brain travel </text>
+<text x="43" y="198" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s9">an ascending pathway to motivate the body </text>
+<text x="43" y="206" dx="0,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.7,0" class="s9">to respond quickly. </text>
+<text x="43" y="480" dx="0,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,0" class="sa">THE PROMISE </text>
+<text x="43" y="488" dx="0,-.3,-.3,-.3,-.9,-.3,-.3,-.3,-.3,-.5,-1,-.3,-.3" class="sa">OF PAIN GATES</text>
+<text x="43" y="496" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.3,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.5,0" class="s9">Multiple “pain gates,” </text>
+<text x="43" y="504" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s9">including the sodium </text>
+<text x="43" y="512" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.3,-.8,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,0" class="s9">channel Nav1.7, regulate the </text>
+<text x="43" y="520" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,0" class="s9">passage of sodium ions into </text>
+<text x="43" y="528" dx="0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s9">axons, which can cause pain. </text>
+<text x="43" y="536" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s9">Obstructing the gates with </text>
+<text x="43" y="544" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s9">molecules via drugs or gene </text>
+<text x="43" y="552" dx="0,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0" class="s9">therapy may help doctors </text>
+<text x="43" y="560" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,0" class="s9">tailor pain treatment to </text>
+<text x="43" y="567" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="s9">individual patients.</text>
+<text x="53" y="230" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sb">Sensing pain</text>
+<text x="53" y="238" dx="0,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0" class="s1">Neurons called nociceptors </text>
+<text x="53" y="245" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">respond to external stimuli, </text>
+<text x="53" y="252" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,0" class="s1">such as sharp objects, fire, </text>
+<text x="53" y="259" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="s1">or chemical reactions.</text>
+<text x="149" y="230" dx="0,-.6,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sb">Transmitting pain</text>
+<text x="149" y="238" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.2,-.1,0" class="s1">Electrical signals are routed </text>
+<text x="149" y="245" dx="0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0" class="s1">from the nociceptors to axons, </text>
+<text x="149" y="252" dx="0,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,0" class="s1">nerve fibers that relay the </text>
+<text x="149" y="259" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1" class="s1">signal to the spinal cord.</text>
+<text x="307" y="228" dx="0,-.6,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sc">“A beta” fibers</text>
+<text x="309" y="235" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sd">With thick sheaths, these transmit </text>
+<text x="309" y="242" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sd">touch, pressure, and vibrations.</text>
+<text x="307" y="251" dx="0,-.6,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="se">“A delta” fibers</text>
+<text x="309" y="258" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sd">With thin sheaths, these are first </text>
+<text x="309" y="265" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sd">to sense quick, acute pain signals.</text>
+<text x="307" y="274" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sf">“C” fiber</text>
+<text x="328" y="274" class="sg">s</text>
+<text x="309" y="281" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,0" class="sd">Without sheaths, these sense slow </text>
+<text x="309" y="288" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sd">pain: heat, burns, and dull aches.</text>
+<text x="263" y="174" dx="0,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.3" class="sh">Anatomy of a nerve</text>
+<text x="263" y="182" dx="0,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">Nerves include bundles of axons. These fibers, </text>
+<text x="263" y="189" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0" class="s1">reaching from nerve cells called neurons, </text>
+<text x="263" y="196" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.6,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">conduct electrical activity. Different sensations </text>
+<text x="263" y="203" dx="0,-.1,-.2,-.2,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="s1">travel on separate axonal fibers.</text>
+<text x="184" y="459" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.3,0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">As a neuron fires, electricity-sensitive pores along its surface </text>
+<text x="191" y="466" dx="0,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="s1">cycle through three states: inactive, open, and closed.</text>
+<text x="142" y="538" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">An attached particle </text>
+<text x="142" y="545" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0" class="s1">blocks the pore in </text>
+<text x="142" y="552" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1,0" class="s1">the inactive state. </text>
+<text x="201" y="554" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,0" class="s1">In the open state </text>
+<text x="201" y="561" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,0" class="s1">sodium ions can enter </text>
+<text x="201" y="568" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.2,-.1" class="s1">the unblocked pore.</text>
+<text x="318" y="567" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">Some molecules </text>
+<text x="318" y="574" dx="0,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">(naturally occurring or </text>
+<text x="318" y="582" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="s1">synthetic) can block </text>
+<text x="318" y="589" dx="0,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1" class="s1">the top of the pore.</text>
+<text x="42" y="259" class="si">1</text>
+<text x="132" y="259" class="si">2</text>
+<image preserveAspectRatio="none" x="434" y="0" width="434" height="631" xlink:href="2.png"/>
+<text x="695" y="66" dx="0,0,0,0,-.1,-.1,0,0,0,0,0,0,0" class="sj">Somatosensory</text>
+<text x="695" y="73" dx="0,0,0,0,-.1,-.1" class="sj">cortex</text>
+<text x="692" y="259" class="sj">Dorsal horn</text>
+<text x="660" y="172" class="sj">Thalamus</text>
+<text x="604" y="116" dx="0,-.1,0,-.1,0,0,0,0" class="sj">Anterior</text>
+<text x="604" y="124" dx="0,0,0,0,0,0,0,-.1,-.1" class="sj">cingulate</text>
+<text x="604" y="131" dx="0,0,0,0,-.1,-.1" class="sj">cortex</text>
+<text x="567" y="147" dx="0,0,-.1,0,0,-.1,0,0,0,0,0" class="sj">Prefrontal </text>
+<text x="578" y="154" dx="0,0,0,0,-.1,-.1" class="sj">cortex</text>
+<text x="607" y="170" class="sj">Nucleus</text>
+<text x="607" y="177" class="sj">accumbens/</text>
+<text x="607" y="184" dx="0,-.1,0,0,0,-.1,0,0,0,0,0,0,0,-.1,-.1,0" class="sj">ventral striatum</text>
+<text x="680" y="322" dx="0,-.1,0,0,0,-.1,0,0" class="sj">Rostral/</text>
+<text x="674" y="329" dx="0,-.1,0,0,0,-.1,0,0,0,0,0,0" class="sj">ventromedial</text>
+<text x="680" y="336" class="sj">medulla</text>
+<text x="650" y="128" dx="0,-.1,0,-.1,0,0,0,0" class="sj">Anterior</text>
+<text x="650" y="135" dx="0,0,0,0,0,0,0,0,0,0,0,0,-.1,-.1" class="sj">insular cortex</text>
+<text x="678" y="205" class="sj">Periaqueductal</text>
+<text x="678" y="212" dx="0,0,-.1,-.1" class="sj">gray</text>
+<text x="484" y="505" dx="0,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3" class="sk">THE OPIOID PROBLEM</text>
+<text x="484" y="512" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sl">Opioids reduce pain by numbing indiscrimi-</text>
+<text x="484" y="520" dx="0,-.1,-.1,-.2,-.1,-.1,-.7,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sl">nately, dampening signals from the ascending </text>
+<text x="484" y="528" dx="0,-.1,-.1,-.1,-.2,-.2,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0,-.6,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sl">pathway of pain as well as the body’s beneficial </text>
+<text x="484" y="536" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.1,-.1,-.1,0" class="sl">descending response. The drugs do provide </text>
+<text x="484" y="544" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sl">relief from pain—but can also elicit a sense of </text>
+<text x="484" y="552" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sl">euphoria that can lead to addiction.</text>
+<text x="484" y="597" dx="0,0,.1,.1,.1,.1,.1,.1,.1,.1,-.2,-.3,.1,.1,.1,.1,.1,.1,.1,-.2,.1,.1,.1,.1,.1,.1,.1,.1,.1,0,.1,.1,.1,.1,.1,.1,-.2,-.3,.1,.1,.1,-.1,-.2,.1,.1,.1,.1,.1,.1,.1,.1" class="sm">JASON TREAT, NGM STAFF; MEG ROOSEVELT. ART: SINELAB</text>
+<text x="484" y="602" dx="0,.1,.1,.1,0,.1,.1,.1,.1,0,0,.1,.1,.1,.1,.1,.1,.1,0,.1,.1,.2,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,.1,-.1,.1,.1,.1,.1" class="sm">SOURCE: LUANA COLLOCA, UNIVERSITY OF MARYLAND</text>
+<text x="484" y="44" dx="0,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3" class="sn">THE BRAIN RESPONDS</text>
+<text x="484" y="52" dx="0,-.2,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0" class="sl">After the signals are received by the brain, </text>
+<text x="484" y="60" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sl">the descending pathway is engaged. </text>
+<text x="484" y="68" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0" class="sl">It cues the entire central nervous </text>
+<text x="484" y="76" dx="0,-.1,-.2,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,0" class="sl">system to modulate and respond </text>
+<text x="484" y="84" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sl">to the painful stimulus.</text>
+<text x="724" y="505" dx="0,-.5,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3,-.3" class="so">ACUTE VS. CHRONIC</text>
+<text x="724" y="512" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.2,0" class="sl">While acute pain signals follow </text>
+<text x="724" y="520" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,0" class="sl">ascending pathways to the brain, </text>
+<text x="724" y="528" dx="0,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,0" class="sl">chronic pain, such as persistent </text>
+<text x="724" y="536" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sl">back pain, is due to damaged </text>
+<text x="724" y="544" dx="0,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.2,0" class="sl">neurons or axons. Its pathways </text>
+<text x="724" y="552" dx="0,-.1,-.2,-.1,-.2,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1" class="sl">aren’t well understood.</text>
+<text x="756" y="139" dx="0,-.2,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sp">Perceiving pain</text>
+<text x="756" y="147" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,0" class="sq">The signals travel to the </text>
+<text x="756" y="154" dx="0,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,0" class="sq">somatosensory cortex and </text>
+<text x="756" y="161" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">other areas that identify the </text>
+<text x="756" y="168" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sq">location and intensity of pain.</text>
+<text x="484" y="139" dx="0,-.3,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sr">Reacting to pain</text>
+<text x="484" y="147" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">These areas send </text>
+<text x="484" y="154" dx="0,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0,-.2,-.1,-.1,-.1,-.1,-.1,-.1" class="sq">neurochemical signals</text>
+<text x="484" y="161" dx="0,-.1,-.2,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2" class="sq">down to start blunt-</text>
+<text x="484" y="168" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">ing the pain. </text>
+<text x="484" y="228" dx="0,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sr">Pain reduction</text>
+<text x="484" y="236" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.1,-.1,-.1,0" class="sq">The neurochemicals intercept </text>
+<text x="484" y="243" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.3,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">and act as a brake on the </text>
+<text x="484" y="250" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">ascending signal in the dorsal </text>
+<text x="484" y="257" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.2,-.6,0" class="sq">horn and periaqueductal gray. </text>
+<text x="756" y="47" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1" class="sp">Emotional reaction</text>
+<text x="756" y="55" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.2,-.1,0" class="sq">The pain signals are registered </text>
+<text x="756" y="62" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,0,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">in the anterior cortex, which </text>
+<text x="756" y="69" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.6,-.1,-.1,-.2,-.1,-.1,-.4,0" class="sq">can trigger anxiety, fear, </text>
+<text x="756" y="76" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1" class="sq">and depression.</text>
+<text x="756" y="228" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1" class="sp">Ascending pain</text>
+<text x="756" y="236" dx="0,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,0" class="sq">The spinal cord </text>
+<text x="756" y="243" dx="0,-.2,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">receives the signals </text>
+<text x="756" y="250" dx="0,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.2,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.1,0" class="sq">and relays them up </text>
+<text x="756" y="257" dx="0,-.2,-.1,-.1,-.1,-.1,-.1,-.1,-.1,-.2,-.1,-.1,-.1" class="sq">to the brain.</text>
+<text x="740" y="257" class="ss">3</text>
+<text x="740" y="168" class="ss">4</text>
+<text x="740" y="76" class="ss">5</text>
+<text x="466" y="168" class="st">6</text>
+<text x="468" y="257" class="st">7</text>
+
+</g>
+
+<!-- Any embedded fonts defined here -->
+<style type="text/css" ><![CDATA[
+
+@font-face {
+	font-family: Geograph-Bold_qv;
+	src: url("fonts/Geograph-Bold_qv.woff") format("woff");
+}
+
+@font-face {
+	font-family: Geograph-MediumItalic_dt;
+	src: url("fonts/Geograph-MediumItalic_dt.woff") format("woff");
+}
+
+@font-face {
+	font-family: Geograph-MediumItalic_qg;
+	src: url("fonts/Geograph-MediumItalic_qg.woff") format("woff");
+}
+
+@font-face {
+	font-family: Geograph-Medium_r1;
+	src: url("fonts/Geograph-Medium_r1.woff") format("woff");
+}
+
+@font-face {
+	font-family: Geograph-Regular_qx;
+	src: url("fonts/Geograph-Regular_qx.woff") format("woff");
+}
+
+@font-face {
+	font-family: GeographEdit-Medium_qz;
+	src: url("fonts/GeographEdit-Medium_qz.woff") format("woff");
+}
+
+@font-face {
+	font-family: GrosvenorBook-Regular_q2;
+	src: url("fonts/GrosvenorBook-Regular_q2.woff") format("woff");
+}
+
+@font-face {
+	font-family: Marden-Medium_du;
+	src: url("fonts/Marden-Medium_du.woff") format("woff");
+}
+
+@font-face {
+	font-family: Marden-Medium_pr;
+	src: url("fonts/Marden-Medium_pr.woff") format("woff");
+}
+
+@font-face {
+	font-family: MardenRounded-Bold_r0;
+	src: url("fonts/MardenRounded-Bold_r0.woff") format("woff");
+}
+
+@font-face {
+	font-family: Turnpike_pq;
+	src: url("fonts/Turnpike_pq.woff") format("woff");
+}
+
+]]></style>
+
+</svg>

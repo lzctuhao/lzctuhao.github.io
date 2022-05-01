@@ -1,0 +1,1 @@
+$(function(){var o,n=window.location.href;n.indexOf("localhost")<0&&(o="https:",window.location.protocol!=o&&n.substring(window.location.protocol.length))});
