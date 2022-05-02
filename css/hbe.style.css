@@ -314,7 +314,7 @@ input.hbe-input-field-wave:focus:not([readonly]) {/**为了提高优先级*/
 
 .hbe-input-label-wave {
 	position: absolute;
-	top: 0.95em;
+	top: 0.95rem;
 	font-size: 0.85em;
 	left: 0;
 	display: block;
