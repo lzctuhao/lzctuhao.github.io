@@ -341,7 +341,7 @@ input.hbe-input-field-wave:focus:not([readonly]) {/**为了提高优先级*/
 
 .hbe-input-field-wave:focus + .hbe-input-label-wave,
 .input--filled .hbe-input-label-wave {
-	color: #333;
+	color: var(--textcolor);
 	-webkit-transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
 	transform: translate3d(0, -1.25em, 0) scale3d(0.75, 0.75, 1);
 }
