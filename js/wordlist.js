@@ -1,1 +1,861 @@
-var exitReadWhole,ReadWhole_row;const Toast=Swal.mixin({toast:!0,position:"top",showConfirmButton:!1,timer:3e3});$(function(){document.documentElement.requestFullscreen();var r="rgba(255, 255, 255, 0)";function n(e){o=$("table#words tr td:nth-child("+e+")"),t=1==t?($(o).css("color",r),$(o).addClass("noselect"),0):($(o).css("color",""),$(o).removeClass("noselect"),1)}t=1,$(".wordtoggles").click(function(){n("2")}),$(".meanings").click(function(){n(chineserow)}),$("table#words tr td:nth-child(2)").on("click",function(e){o=e.target,1==$("#mode").val()?$(o).css("color")==r?($(o).css("color",""),$(o).removeClass("noselect")):($(o).css("color",r),$(o).addClass("noselect")):3==$("#mode").val()?weishi($(o).text()):4==$("#mode").val()&&(window.rowindex,rowindex=$(this).parent()[0].rowIndex,ExampleSentence())}),$("table#words tr td:nth-child("+chineserow+")").on("click",function(e){2==$("#mode").val()&&(o=e.target,$(o).css("color")==r?($(o).css("color",""),$(o).removeClass("noselect")):($(o).css("color",r),$(o).addClass("noselect")))}),$("table#words tr td:nth-child("+chineserow+") i").on("click",function(e){e.stopPropagation()}),$("#mode").change(function(){var e=$("#mode").val();changeURLPar("mode",e),t=0,n("2"),t=0,n(chineserow),$(".wordtoggles,.meanings,#prevbtn2,#nextbtn2,#bigwordbtn").css("display","none"),1==e&&$(".wordtoggles").css("display","block"),2==e&&$(".meanings").css("display","block")}),$("table#words tr td:nth-child(2)").on("click",function(e){var t;$("#sound").is(":checked")&&(e=$(e.target).text(),t=$("#soundorg").val(),$("#hint2").remove(),$("<audio src='"+showSound(e,t)+"' autoplay id='hint2'/>").appendTo("body"))});for(var e=(e=parseInt(getUrlParam("length")))||10,a=$("#words").DataTable({paging:!0,pageLength:e,searching:!0,search:{regex:!0},lengthMenu:[[10,25,50,100,-1],[10,25,50,100,"全部"]],pagingType:"input",columnDefs:[{targets:[chineserow-1],orderable:!1}],initComplete:function(e,t){try{tabledone()}catch(e){console.log("表格加载完后无要执行的函数tabledone()")}},language:{sProcessing:"处理中...",sLengthMenu:"每页显示 _MENU_ 项结果",sZeroRecords:"没有匹配结果",sInfo:"显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",sInfoEmpty:"显示第 0 至 0 项结果，共 0 项",sInfoFiltered:"(由 _MAX_ 项结果过滤)",sInfoPostFix:"",searchPlaceholder:"你可以这样搜索...",sSearch:"",sUrl:"",sEmptyTable:"表中数据为空",sLoadingRecords:"载入中...",sInfoThousands:",",oPaginate:{sFirst:"首页",sPrevious:"<i class='fas fa-arrow-circle-left'></i>",sNext:"<i class='fas fa-arrow-circle-right'></i>",sLast:"末页"},oAria:{sSortAscending:": 以升序排列此列",sSortDescending:": 以降序排列此列"}}}),e=($(".dataTables_filter input").attr({list:"dataTables_filter_input"}),getUrlParam("search")),e=(e&&($("title").html("["+e+"]"+title1+"|lzc的小站"),(a=$("#words").DataTable()).search(e).draw()),$('input[aria-controls="words"]').blur(function(){var e=$('input[aria-controls="words"]').val();$("title").html((e?"["+e+"]":"")+title1+"|lzc的小站"),changeURLPar("search",e=(e=escape(e)).replace(/%/g,"%25"))}),$("select[name='words_length']").change(function(){changeURLPar("length",a.page.len())}),document.getElementById("mode").value=parseInt(getUrlParam("mode"))?parseInt(getUrlParam("mode")):"0",navigator.userAgent.toLowerCase()),i=((0<=e.indexOf("android")||0<=e.indexOf("iphone")||0<=e.indexOf("symbianos")||0<=e.indexOf("windows phone")||0<=e.indexOf("ipad")||0<=e.indexOf("ipod"))&&$(".btndiv a").tooltip("remove"),"micromessenger"==e.match(/MicroMessenger/i)&&($("#screenon").removeAttr("checked"),document.getElementById("screenon").setAttribute("disabled","disabled"),$("#screenntc").attr("data-tooltip","垃圾微信不支持！请在浏览器中打开本网页")),["mb1key","mb2key","bdid","bdkey"]),s=0;s<4;s++)getUrlParam(i[s])&&$.cookie("Wordlist_"+i[s],getUrlParam(i[s]),{expires:365,path:"/"}),$.cookie("Wordlist_"+i[s])&&$("#"+i[s]).val($.cookie("Wordlist_"+i[s]))}),$("body").on("click",".transbtn",function(){var t=$(this),e=(t.css("pointer-events","none"),t.prev().text());url=calculateURL(e),$.ajax({type:"GET",url:url,dataType:"jsonp",success:function(e){e.error_code?"54003"==e.error_code?Toast.fire("请求过于频繁，请5秒后重试","","error"):"52003"==e.error_code?Swal.fire("例句翻译KEY填写错误","你填写的例句翻译APP ID或密钥错误！请检查是否与<a href='https://api.fanyi.baidu.com/api/trans/product/desktop?req=developer'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><b>例句翻译APP ID: </b><code><del>"+$.cookie("Wordlist_bdid")+"</del></code>（无效）<br/><b>例句翻译密钥: </b><code><del>"+$.cookie("Wordlist_bdkey")+"</del></code>（无效）","error"):Toast.fire("未知错误","","error"):(t.after(" <div class='trans-text'>"+e.trans_result[0].dst+"</div>"),t.remove())},error:function(e){Toast.fire("Error: "+e.status,"","error"),t.css("pointer-events","auto")}})});var files=new Array,k=0,music_player=document.querySelector("#hint"),jsonData,times,timeslot,noSleep,originhtml,trSeq,settings;function digui(e){if(exitReadWhole)diguistop();else if(e>=document.getElementById("words").rows.length&&$("#words").DataTable().page.info().page+1<$("#words").DataTable().page.info().pages&&$("#autoTurnPage").is(":checked"))$("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere"),document.getElementById("words_next").click(),digui(ReadWhole_row=1);else if(e>=document.getElementById("words").rows.length)$("input[list='dataTables_filter_input']").val()?Toast.fire("已读完“"+$("input[list='dataTables_filter_input']").val()+"”的所有单词！","","success"):Toast.fire("已读完所有单词！","","success"),$("<audio src='/../medias/over.mp3' autoplay id='stop'/>").appendTo("body"),$("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere"),diguistop();else{for($("#bigword_example,#bigwordSLB").empty(),files.length=0,target=$("table#words tr:eq("+e+") td:eq(1)"),j=1;j<=times;j++)files.push(showSound(target.text(),j%3));$("#readcn").is(":checked")&&files.push(showSoundCN($("table#words tr:eq("+e+") td:eq("+(chineserow-1)+")").text(),5,e)),$("#readSampleSentences").is(":checked")&&$.ajax({async:!1,type:"GET",url:"https://dictionaryapi.com/api/v3/references/collegiate/json/"+target.text()+"?key="+$.cookie("Wordlist_mb1key"),datatype:"json",crossDomain:!0,success:function(e){"Invalid API key. Not subscribed for this reference."==e&&(Swal.fire("朗读单词Key填写错误","你填写的朗读单词Key (Dictionary)错误！请检查是否与<a href='https://dictionaryapi.com/account/my-keys'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><code>"+$.cookie("Wordlist_mb1key")+"</code>","error"),exitReadWhole=1,diguistop()),SLBinReadWhole(e);try{parseJson(e,1)}catch(e){console.error(target.text()+"错误："+e)}},complete:function(e,t){"timeout"==t&&(ajaxTimeOut.abort(),Toast.fire("网络不佳，跳转下一个词","","error"))},error:function(){Toast.fire("未知错误，跳转下一个词","","error")}}),Each_digui_do(e),music_player.src=files[0]}}function parseJson(e,t){for(var o in e){var r=e[o];if(0<r.length&&"object"==typeof r||"object"==typeof r)if(r[0]&&"t"==r[0])for(var n=1;n<r.length;n++)handleLiJu(r[n],t);else parseJson(r,t);else"t"==o&&handleLiJu(r,t)}}function handleLiJu(e,t){e=handle(e),$("#bigword_example").append("<li><span>"+e+'</span> <span class="transbtn"> <i class="fa fa-language" aria-hidden="true"></i></span></li> '),e=(e=(e=e.replace(/<[^>]+>/g,"")).replace(/\{.*?\}/g,"")).replace(/\[|]/g,""),"1"==t&&files.push(showSound(e,files.length%3))}function nextWord(){ReadWhole_row++,k=0,setTimeout("digui("+ReadWhole_row+");",timeslot)}function prevWord(){$("table#words tr:eq("+ReadWhole_row+") td").removeClass("soundhere"),2<=ReadWhole_row?(k=0,digui(--ReadWhole_row)):2<=$("#words").DataTable().page.info().page+1?(document.getElementById("words_previous").click(),ReadWhole_row=document.getElementById("words").rows.length-1,k=0,digui(ReadWhole_row)):(k=0,digui(ReadWhole_row=1))}function ExampleSentence(){var e=$("table#words tr:nth-child("+rowindex+") td:nth-child(2)").html(),t=$("table#words tr:nth-child("+rowindex+") td:nth-child("+chineserow+")").html(),o=($("#bigword_example").empty(),$("#bigword-content").css("text-align","left"),{async:!1,crossDomain:!0,url:"https://dictionaryapi.com/api/v3/references/collegiate/json/"+e+"?key="+$.cookie("Wordlist_mb1key"),method:"GET"});$.ajax(o).done(function(e){SLBinReadWhole(e),parseJson(e,2)}),$("#bigword2").html(t),$("#bigword1").html(e),$("#bigword0").html(originhtml),bigwordUP(),$("#bigwordbtn,#prevbtn2,#nextbtn2").fadeIn()}function Each_digui_do(e){$("table#words tr:eq("+(e-1)+") td").removeClass("soundhere"),$("table#words tr:eq("+e+") td").addClass("soundhere"),$("table#words tr:eq("+e+") td")[0].scrollIntoView({behavior:"smooth",block:"center",inline:"nearest"}),document.getElementById("bigword0").innerHTML=$("table#words tr:eq("+e+") td:eq(0)").html(),document.getElementById("bigword1").innerHTML=$("table#words tr:eq("+e+") td:eq(1)").html(),document.getElementById("bigword2").innerHTML=$("table#words tr:eq("+e+") td:eq("+(chineserow-1)+")").html()}function diguibegin(){$("<audio autoplay id='hint'/>").appendTo("body"),$("#screenon").is(":checked")&&(noSleep=new NoSleep).enable(),$("#readSampleSentences").is(":checked")?$("#bigword-content").css("text-align","left"):$("#bigword-content").css("text-align","center"),$("table#words,#shiyanqu,#words_length,#words_filter,#words_paginate").addClass("no-pointer-events"),ReadWhole_row=parseInt($("#where").val()),$(".paginate_input").val(getPageNowtr(ReadWhole_row).page),$("#words").dataTable().fnPageChange(getPageNowtr(ReadWhole_row).page-1),ReadWhole_row=getPageNowtr(ReadWhole_row).Nowtr,times=parseInt($("#times").val()),timeslot=1e3*parseInt($("#timeslot").val()),k=exitReadWhole=0,$("#nextbtn2,#prevbtn2").fadeOut(),$("#ctrlwholediv, #ctrlwholesvg").addClass("play"),$("#ctrlwholediv,#bigwordbtn, #nextbtn,#prevbtn").fadeIn(),digui(ReadWhole_row)}function diguistop(){$("#screenon").is(":checked")&&noSleep.disable(),$("#hint")[0].src="",exitReadWhole=1,$("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere"),$("table#words tr:eq("+ReadWhole_row+") td").removeClass("soundhere"),$("table#words,#shiyanqu,#words_length,#words_filter,#words_paginate").removeClass("no-pointer-events"),$("#ctrlwholediv, #ctrlwholesvg").removeClass("play"),$("#nextbtn,#prevbtn").fadeOut();var e=$("#words").DataTable().page.info().recordsDisplay;$("#where").val(getTrueTR(ReadWhole_row)>e?1:getTrueTR(ReadWhole_row))}function showSound(e,t){var o;return e=(e=(e=(e=(e=(e=(e=e.replace(/\//g," or ")).replace(/sb\./g,"somebody")).replace(/sth\./g,"something")).replace(/…/g," ")).replace(/\s+/g," ")).replace(/—/g," - ")).replace(/^\s+|\s+$|\(|\)/g,""),2==t||1==t?o="https://dict.youdao.com/dictvoice?audio="+e+"&type="+t:4==t?o="https://media.shanbay.com/audio/uk/"+e.replace(/\s/g,"_")+".mp3":5==t?o="https://media.shanbay.com/audio/us/"+e.replace(/\s/g,"_")+".mp3":0==t&&(o="https://tts.baidu.com/text2audio?cuid=baiduid&lan=en&ctp=1&pdt=311&tex="+e),o=encodeURI(o)}function showSoundCN(e,t,o){return(e=(e=(e=e.replace(/[；|;]/g,",")).replace(/…/g,"什么")).replace(/vt.|vi.|adj.|adv.|n.|v.|conj./g,",")).replace(/^,+/,"").replace(/,+$/,""),e=e.match(/[\u4e00-\u9fa5|\uff0c|,]/g).join(""),soundurl="https://tts.baidu.com/text2audio?tex="+e+"&cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per=0"}music_player.addEventListener("ended",function(){++k>=files.length?nextWord():music_player.src=files[k]}),$("#nextbtn2").click(function(){rowindex<document.getElementById("words").rows.length-1&&$("#words").DataTable().page.info().page+1<$("#words").DataTable().page.info().pages?(rowindex++,ExampleSentence()):$("#words").DataTable().page.info().page+1<$("#words").DataTable().page.info().pages&&(document.getElementById("words_next").click(),ExampleSentence(rowindex=1))}),$("#prevbtn2").click(function(){1==rowindex&&1<$("#words").DataTable().page.info().page+1&&(document.getElementById("words_previous").click(),rowindex=document.getElementById("words").rows.length-1,ExampleSentence()),2<=rowindex&&(rowindex--,ExampleSentence())}),$("#beginreadWholeBTN").click(diguibegin),$(".ctrlwholediv").click(function(){($(this).hasClass("play")?diguistop:diguibegin)()}),$("table#words td").mouseover(function(){trSeq=$(this).parent().parent().find("tr").index($(this).parent()[0])+1,originhtml=$("table#words tr:eq("+trSeq+") td:eq(0)").html(),$("table#words tr:eq("+trSeq+") td:eq(0)").html(getTrueTR(trSeq))}).mouseout(function(){$("table#words tr:eq("+trSeq+") td:eq(0)").html(originhtml)}),$("#nextbtn").click(function(){nextWord()}),$("#prevbtn").click(function(){prevWord()});var bigword_status=!1;function bigwordUP(){$("#bigword").css("top","0px"),$("#bigwordbtn").addClass("down"),$("body").removeClass("NowCanShow"),bigword_status=!0}function bigwordDOWN(){$("#bigword").css("top","100%"),$("#bigwordbtn").removeClass("down"),$("body").addClass("NowCanShow"),bigword_status=!1}function changeURLPar(par,par_value){var destiny=location.href,pattern=par+"=([^&]*)",replaceText=par_value?par+"="+par_value:"",tmp,tmp;destiny.match(pattern)?(tmp="/"+par+"=[^&]*/",tmp=destiny.replace(eval(tmp),replaceText),changeURL(tmp)):destiny.match("[?]")?changeURL(destiny+"&"+replaceText):changeURL(destiny+"?"+replaceText)}function changeURL(e){e=e.replace(/&+$/g,""),history.pushState({url:e,title:document.title},document.title,e)}function weishi(e){Swal.fire({title:"相关词汇短语",html:'<img src="/../medias/loading.svg" id="wswait" style="max-width:350px;"/ ><div id="weishimain"></div>',showCancelButton:!1,showCloseButton:!0,showConfirmButton:!1,customClass:{container:"wscontainer-class",popup:"wspopup-class",closeButton:"wsclose"}}),window.addEventListener("popstate",function(){$(".wsclose").trigger("click")},!1),window.history.pushState(null,null,"#"),url1="https://dictionaryapi.com/api/v3/references/learners/json/"+e+"?key="+$.cookie("Wordlist_mb2key"),$.getJSON(url1,function(e){var r=0;e[0].meta?e.forEach(function(t){var o;try{$("#weishimain").append("<h1>"+t.meta.id+(t.hwi.prs&&t.hwi.prs[0].ipa?"<span class='phs'>/"+t.hwi.prs[0].ipa+"/</span>":"")+(t.fl?"<code>"+t.fl+"</code>":"")+"</h1>"),$("#weishimain").append("<p id='wsp"+r+"'></p>"),j=0,t.meta.stems.forEach(function(e){$("#wsp"+r).append("<i>"+e+"</i>"),j<t.meta.stems.length-1&&$("#wsp"+r).append(", "),j++}),$("#weishimain").append("<ul id='wsul"+r+"'class='outerul'>"),t.def&&t.def[0].sseq?(o=0,t.def[0].sseq.forEach(function(e){var t=null;e[0][1].dt&&e[0][1].dt[0][1]?t=e[0][1].dt:e[1][1].dt&&e[1][1].dt[0][1]&&(t=e[1][1].dt),t&&(t[0].indexOf("text")<0&&t[0][1]&&t[0][1][0]&&(t=t[0][1][0]),$("#wsul"+r).append("<li>"+handle(t[0][1])+"<ul id='li"+r+"li"+o+"juul' class='lijuul'></ul></li>"),e=null,t[1]&&0<=t[1].indexOf("vis")?e=t[1][1]:t[2]&&0<=t[2].indexOf("vis")&&(e=t[2][1]),e&&e.forEach(function(e){$("#li"+r+"li"+o+"juul").append("<li>"+handle(e.t)+"</li>")})),o++})):t.dros[0].drp,$("#weishimain").append("</ul>"),r++}catch(e){console.error(e),console.error(t.meta.id+"的第"+r+"个释义\n"),Toast.fire(t.meta.id+"的部分信息无法显示！","","error")}}):($("#weishimain").append("<p style='text-align: center;'>韦氏词典没有该词组！</p>"),Toast.fire("韦氏词典没有该词组！","","error")),$("#wswait").css("display","none")}).fail(function(e){"Invalid API key. Not subscribed for this reference."==e.responseText?Swal.fire("英英词典Key填写错误","你填写的英英词典Key (Learner's)错误！请检查是否与<a href='https://dictionaryapi.com/account/my-keys'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><code><del>"+$.cookie("Wordlist_mb2key")+"</del></code>（无效）","error"):Toast.fire("连接不上韦氏词典服务器！","","error")})}function handle(e){return e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=(e=e.replace(/{wi}/g,"")).replace(/{\/wi}/g,"")).replace(/{qword}/g,"<b>")).replace(/{\/qword}/g,"</b>")).replace(/{bc}/g,"")).replace(/{gloss}/g,'<span class="hint">(')).replace(/{\/gloss}/g,")</span>")).replace(/{ldquo}/g,"“")).replace(/{rdquo}/g,"”")).replace(/{phrase}/g,'<span class="phrase">')).replace(/{\/phrase}/g,"</span>")).replace(/{it}/g,"<i>")).replace(/{\/it}/g,"</i>")).replace(/\{sx\|(.+?)\|\|\}/g,'see <span style="text-decoration:underline;">$1</span>')).replace(/{dx}(.+?){\/dx}/g,"($1)")).replace(/\{dxt\|(.+?)\|\|\}/g,'<span style="text-decoration:underline;">$1</span>')).replace(/\{et_link\|(.+?)\|(.+?)\}/g,'<span style="text-decoration:underline;">$1</span>')}function stopwholeFreeMove(){var t,o,r,n=0,e=document.getElementById("stopwhole");e.addEventListener("touchstart",function(e){n=0,e.preventDefault(),t=e.touches[0].clientX-this.offsetLeft,disY=e.touches[0].clientY-this.offsetTop,e.touches[0].clientX,e.touches[0].clientY}),e.addEventListener("touchmove",function(e){n=1,o=e.touches[0].clientX-t,r=e.touches[0].clientY-disY,e.touches[0].clientX,e.touches[0].clientY,o<0?o=0:o>document.documentElement.clientWidth-this.offsetWidth&&(o=document.documentElement.clientWidth-this.offsetWidth),r<0?r=0:r>document.documentElement.clientHeight-this.offsetHeight&&(r=document.documentElement.clientHeight-this.offsetHeight),o=o+"px",moveY=r+"px",this.style.left=o,this.style.top=moveY}),e.addEventListener("touchend",function(){0===n&&diguistop()})}function getTrueTR(e){return $("#words").DataTable().page.info().start+e}function getPageNowtr(e){var t=$("#words").DataTable().page.info(),t=-1==t.length?t.recordsDisplay:t.length,o=e%t;return 0==o&&(o+=t),{page:Math.ceil(e/t),Nowtr:o}}function SLBinReadWhole(t){try{$("#bigwordSLB").html("\\"+t[0].hwi.prs[0].mw+"\\")}catch(e){try{$("#bigwordSLB").html("\\"+t[0].ins[1].prs[0].mw+"\\")}catch(e){$("#bigwordSLB").empty()}}}function handleYINBIAO(e){return e=e.replace(/-/g,"")}function clearapi(){$.cookie("Wordlist_mb1key",null,{expires:-1,path:"/"}),$.cookie("Wordlist_mb2key",null,{expires:-1,path:"/"}),$.cookie("Wordlist_bdid",null,{expires:-1,path:"/"}),$.cookie("Wordlist_bdkey",null,{expires:-1,path:"/"}),$("#mb1key,#mb2key,#bdid,#bdkey").val(""),changeURLPar("mb1key",""),changeURLPar("mb2key",""),changeURLPar("bdid",""),changeURLPar("bdkey","")}function explainapi(){Swal.fire({icon:"info",title:"关于 KEY 的说明",html:"该页面的许多功能都依赖于第三方提供的免费服务，但是这些服务都有次数限制（每月只能访问1000次）。因此，你需要申请自己使用的KEY。<br/><br/><table><thead><tr><th>功能名称</th><th>使用的服务</th><th>每个KEY的免费限额</th></tr></thead><tbody><tr><td>朗读单词例句</td><td>韦氏词典</td><td>1000次/月</td></tr><tr><td>英英词典</td><td>韦氏词典</td><td>1000次/月</td></tr><tr><td>例句翻译</td><td>百度翻译</td><td>无限/月，每秒请求量=1</td></tr></tbody></table>",showCancelButton:1,reverseButtons:1,cancelButtonText:"取消",confirmButtonText:"去申请KEY",footer:"<a href='/testapis.html'>获取测试用的KEY</a>"}).then(e=>{e.value&&window.open("/wordlist_keyapply.html","_blank")})}document.getElementById("bigwordbtn").addEventListener("click",function(){(bigword_status?bigwordDOWN:bigwordUP)()}),document.getElementById("saveapisettings").addEventListener("click",function(){var e=[],t=[],o=($("#mb1key").val()?($.cookie("Wordlist_mb1key",$("#mb1key").val(),{expires:365,path:"/"}),e.push("“朗读单词Key (Dictionary)”")):t.push("“朗读单词Key (Dictionary)”"),$("#mb2key").val()?($.cookie("Wordlist_mb2key",$("#mb2key").val(),{expires:365,path:"/"}),e.push("“英英词典Key (Learner's)”")):t.push("“英英词典Key (Learner's)”"),$("#bdid").val()&&$("#bdkey").val()?($.cookie("Wordlist_bdid",$("#bdid").val(),{expires:365,path:"/"}),$.cookie("Wordlist_bdkey",$("#bdkey").val(),{expires:365,path:"/"}),e.push("“例句翻译”")):t.push("“例句翻译”"),"");for(j=0,len=e.length;j<len;j++)o+=e[j]+"，";0<e.length&&(o=o.substr(0,o.length-1));var r="";for(j=0,len=t.length;j<len;j++)r+=t[j]+"，";0<t.length&&(r=r.substr(0,r.length-1)),Toast.fire({icon:3==e.length?"success":"warning",html:0<o.length?"成功保存"+o:"",title:0<r.length?r+"为空！":""})});
+var exitReadWhole;
+var ReadWhole_row;
+const Toast = Swal.mixin({
+    toast: true,
+    position: 'top',
+    showConfirmButton: false,
+    timer:3000,
+  })
+$(function () {
+    document.documentElement.requestFullscreen();//全屏
+
+    /*显示/隐藏所有释义*/
+    var no="rgba(255, 255, 255, 0)";/*不显示*/
+    var yes="";/*显示*/
+    t=1;
+
+    function toggleAll(row){
+        o=$("table#words tr td:nth-child("+row+")");
+        if (t==1){
+            $(o).css("color",no);
+            $(o).addClass("noselect");
+            t=0;
+        } else {
+            $(o).css("color",yes);
+            $(o).removeClass("noselect");
+            t=1;
+        }
+    }
+    
+    $(".wordtoggles").click(function (){
+        toggleAll("2");
+    });
+    $(".meanings").click(function (){
+        toggleAll(chineserow);
+    });
+    
+    /*显隐单个释义例句 */
+    $("table#words tr td:nth-child(2)").on("click",function(e){
+        o=e.target;
+        if($("#mode").val()==1){
+            if ($(o).css("color")==no){
+                $(o).css("color",yes);
+                $(o).removeClass("noselect");
+            } else {
+                $(o).css("color",no);
+                $(o).addClass("noselect");
+            }
+        } else if($("#mode").val()==3){
+            weishi($(o).text());
+        } else if($("#mode").val()==4){
+            window.rowindex;
+            rowindex = $(this).parent()[0].rowIndex;//第几行
+            ExampleSentence();
+        }
+    });
+    /*显隐单个释义 */
+    $("table#words tr td:nth-child("+chineserow+")").on("click",function(e){
+        if($("#mode").val()==2){
+            o=e.target;
+            if ($(o).css("color")==no){
+                $(o).css("color",yes);
+                $(o).removeClass("noselect");
+            } else {
+                $(o).css("color",no);
+                $(o).addClass("noselect");
+            }
+        }
+    });
+
+    $("table#words tr td:nth-child("+chineserow+") i").on("click",function(e){
+        e.stopPropagation();// 阻止事件冒泡
+    });
+
+    //重新关闭开关，显示全部释义 
+    $("#mode").change(function() {
+        var val=$("#mode").val();
+        changeURLPar("mode",val);
+        t=0;toggleAll("2");t=0;toggleAll(chineserow);
+        $(".wordtoggles,.meanings,#prevbtn2,#nextbtn2,#bigwordbtn").css("display","none");
+        if (val==1){$(".wordtoggles").css("display","block");}
+        if (val==2){$(".meanings").css("display","block");}
+    });
+    /*所有释义按钮悬浮 
+    var ie6 = document.all;
+    var dv = $('#meaning'), st;
+    dv.attr('otop', dv.offset().top); //存储原来的距离顶部的距离
+    $(window).scroll(function () {
+        st = Math.max(document.body.scrollTop || document.documentElement.scrollTop);
+        if (st > parseInt(dv.attr('otop'))) {
+            if (ie6) {//IE6不支持fixed属性，所以只能靠设置position为absolute和top实现此效果
+                dv.css({ position: 'absolute', top: st });
+            } else if (dv.css('position') != 'fixed') 
+            dv.css({ 'position': 'fixed', top: 0 });
+        } else if (dv.css('position') != 'static') dv.css({ 'position': 'static' });
+    });*/
+
+    /*开关开启后，点击单词发音*/
+    $("table#words tr td:nth-child(2)").on("click",function(e){
+        if ($("#sound").is(':checked')){
+            var text=$(e.target).text();
+            var code = $("#soundorg").val();
+            $("#hint2").remove();
+            $("<audio src='" + showSound(text,code) + "' autoplay id='hint2'/>").appendTo("body");
+        }
+    });
+
+    var len = parseInt(getUrlParam('length'));
+    if(!len){len=10;}
+
+    /*表格datatables*/
+    var table=$('#words').DataTable({
+        paging: true,
+        pageLength: len,
+        searching: true,
+        search: {regex: true},
+        lengthMenu: [ [10,25,50,100,-1], [10, 25, 50,100, "全部"] ],
+        pagingType: 'input',
+        columnDefs:[{
+            　　　　'targets' : [(chineserow-1)],    //除第六，第七两列外，都默认不排序
+            　　　　'orderable' : false
+            　　}],
+        initComplete: function( settings, json ) {
+            try {tabledone();}catch(err) {console.log("表格加载完后无要执行的函数tabledone()")}
+        },
+        language: {
+           "sProcessing": "处理中...",
+           "sLengthMenu": "每页显示 _MENU_ 项结果",
+           "sZeroRecords": "没有匹配结果",
+           "sInfo": "显示第 _START_ 至 _END_ 项结果，共 _TOTAL_ 项",
+           "sInfoEmpty": "显示第 0 至 0 项结果，共 0 项",
+           "sInfoFiltered": "(由 _MAX_ 项结果过滤)",
+           "sInfoPostFix": "",
+           "searchPlaceholder": "你可以这样搜索...",
+           "sSearch": "",
+           "sUrl": "",
+           "sEmptyTable": "表中数据为空",
+           "sLoadingRecords": "载入中...",
+           "sInfoThousands": ",",
+           "oPaginate": {
+               "sFirst": "首页",
+               "sPrevious": "<i class='fas fa-arrow-circle-left'></i>",
+               "sNext": "<i class='fas fa-arrow-circle-right'></i>",
+               "sLast": "末页"
+           },
+           "oAria": {
+               "sSortAscending": ": 以升序排列此列",
+               "sSortDescending": ": 以降序排列此列"
+           }
+        },
+    });
+    $('.dataTables_filter input').attr({'list':'dataTables_filter_input'});
+
+    /*URL参数快速提取 */
+    var search = getUrlParam('search');
+    if (search){
+        $("title").html("["+search+"]"+title1+"|lzc的小站");
+        var table = $('#words').DataTable();
+        table.search(search).draw();
+    }
+    
+    /*查询时，地址栏跟着改变 */
+    $('input[aria-controls="words"]').blur(function(){
+        var str=$('input[aria-controls="words"]').val();
+        $("title").html((str?("["+str+"]"):(""))+title1+"|lzc的小站");
+        str=escape(str);
+        str=str.replace(/%/g,'%25');
+        changeURLPar("search",str);
+    });
+    $("select[name='words_length']").change(function(){
+        changeURLPar("length",table.page.len());
+    });
+
+
+    document.getElementById("mode").value=(parseInt(getUrlParam('mode')))?(parseInt(getUrlParam('mode'))):("0");
+
+    //stopwholeFreeMove();
+
+    var ua = navigator.userAgent.toLowerCase();
+    if((ua.indexOf("android")>=0)||(ua.indexOf("iphone")>=0)||(ua.indexOf("symbianos")>=0)||(ua.indexOf("windows phone")>=0)||(ua.indexOf("ipad")>=0)||(ua.indexOf("ipod")>=0)){
+        $('.btndiv a').tooltip('remove');
+    }
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {//微信浏览器去除checked
+        $("#screenon").removeAttr('checked');
+        document.getElementById("screenon").setAttribute("disabled", "disabled");
+        $("#screenntc").attr("data-tooltip", "垃圾微信不支持！请在浏览器中打开本网页");
+    }
+
+    //读取，填写api（cookies名含'Wordlist_'，但是url参数名、不含Wordlist_）。
+    let APIName=['mb1key','mb2key','bdid','bdkey'];
+    for(var i=0;i<4;i++){
+        if(getUrlParam(APIName[i])){
+            $.cookie('Wordlist_'+APIName[i], getUrlParam(APIName[i]),{ expires: 365, path: '/' });
+        }
+        if($.cookie('Wordlist_'+APIName[i])){$("#"+APIName[i]).val($.cookie('Wordlist_'+APIName[i]));}
+    }
+});
+
+$('body').on('click','.transbtn',function(){
+    var dom=$(this);
+    dom.css("pointer-events","none");
+    var text=dom.prev().text();
+    url=calculateURL(text);/*wordlist_calculateURL.js */
+    $.ajax({
+        type:"GET",
+        url: url,
+        dataType:"jsonp",
+        success:function(data){
+            if(data.error_code){
+                if(data.error_code=="54003"){Toast.fire("请求过于频繁，请5秒后重试",'','error')}
+                else if(data.error_code=="52003"){
+                    Swal.fire("例句翻译KEY填写错误","你填写的例句翻译APP ID或密钥错误！请检查是否与<a href='https://api.fanyi.baidu.com/api/trans/product/desktop?req=developer'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><b>例句翻译APP ID: </b><code><del>"+$.cookie('Wordlist_bdid')+"</del></code>（无效）<br/><b>例句翻译密钥: </b><code><del>"+$.cookie('Wordlist_bdkey')+"</del></code>（无效）","error");
+                }
+                else{Toast.fire("未知错误",'','error');}
+            }else{
+                dom.after(" <div class='trans-text'>"+data.trans_result[0].dst+"</div>");
+                dom.remove();
+            }
+        },
+        error:function(jqXHR){
+            Toast.fire("Error: "+jqXHR.status,'','error');
+            dom.css("pointer-events","auto");
+        }
+    });
+})
+
+
+
+var files = new Array;
+var k=0;
+var music_player = document.querySelector("#hint");
+var jsonData;
+function digui(i){/*朗读整个单词表 */
+    /*new*/
+    if(exitReadWhole){/*如果手动退出 */
+        diguistop();
+    } else if((i>=document.getElementById('words').rows.length)&&($('#words').DataTable().page.info().page+1 < $('#words').DataTable().page.info().pages)&&($('#autoTurnPage').is(':checked'))){/*如果读完本页但后面还有,要自动翻页 */
+        $("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere");
+        document.getElementById("words_next").click();
+        ReadWhole_row=1;
+        digui(ReadWhole_row);
+    } else if(i>=document.getElementById('words').rows.length){/*读完最后一页，或者不自动翻页 */
+        //$("#hint")[0].pause();
+        if($("input[list='dataTables_filter_input']").val()){
+            Toast.fire('已读完“'+$("input[list='dataTables_filter_input']").val()+'”的所有单词！','','success');
+        } else {
+            Toast.fire('已读完所有单词！','','success');
+        }
+        $("<audio src='/../medias/over.mp3' autoplay id='stop'/>").appendTo("body");
+        $("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere");
+        diguistop();
+    } else {/*本页还没有读完 */
+        $("#bigword_example,#bigwordSLB").empty();
+        files.length=0;
+        target=$("table#words tr:eq("+i+") td:eq(1)");
+        for (j=1;j<=times;j++){
+           files.push(showSound(target.text(),j%3));
+        }
+        if($("#readcn").is(":checked")){
+            files.push(showSoundCN($("table#words tr:eq("+i+") td:eq("+(chineserow-1)+")").text() , 5 , i));
+        }
+
+        if ($("#readSampleSentences").is(":checked")){
+
+            $.ajax({
+                async: false,
+                type: "GET",
+                url: "https://dictionaryapi.com/api/v3/references/collegiate/json/"+target.text()+"?key="+$.cookie('Wordlist_mb1key'),
+                //timeout:2000,async=false时无效
+                datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
+                crossDomain: true,
+                success: function (response) {//成功返回之后调用的函数
+                    if(response=="Invalid API key. Not subscribed for this reference."){//错误，弹出警告
+                        Swal.fire("朗读单词Key填写错误","你填写的朗读单词Key (Dictionary)错误！请检查是否与<a href='https://dictionaryapi.com/account/my-keys'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><code>"+$.cookie('Wordlist_mb1key')+"</code>","error");
+                        exitReadWhole=1;diguistop();
+                    }
+                    SLBinReadWhole(response);
+                    try{parseJson(response,1);}catch(err){console.error(target.text()+"错误："+err);}
+                },
+                complete: function (XMLHttpRequest, textStatus) {//调用执行后调用的函数
+                    if(textStatus == 'timeout'){
+                        ajaxTimeOut.abort(); //取消请求
+                        Toast.fire('网络不佳，跳转下一个词','','error');
+                    }
+                },
+                error: function () {//调用出错执行的函数
+                    Toast.fire('未知错误，跳转下一个词','','error');
+                }
+            });
+        }
+    
+        Each_digui_do(i);
+        music_player.src = files[0];
+    }
+}
+function parseJson(jsonObj,code) {// 循环所有键,code=1是朗读，code=2是单击时显示
+    //加例句
+    for(var key in jsonObj) {
+        //如果对象类型为object类型且数组长度大于0 或者 是对象 ，继续递归解析
+        var element = jsonObj[key];
+        if(element.length > 0 && typeof(element) == "object" || typeof(element) == "object") {
+            if(element[0]&&element[0]=="t"){
+                for(var k=1;k<element.length;k++){
+                    handleLiJu(element[k],code);
+                }
+            } else {
+                parseJson(element,code);
+            }
+        } else { //不是对象或数组、直接输出
+            if(key=="t"){
+                //console.log("----eles -->  " + key + ":" + element + " ");
+                handleLiJu(element,code);
+            }
+        }
+    }
+}
+music_player.addEventListener('ended', function () {//一个单词所有内容读完
+    k++;
+    if(k>=files.length){
+        nextWord();
+    } else { music_player.src = files[k]; }
+});
+
+function handleLiJu(str,code){
+    //console.log(str);
+    str=handle(str);
+    $('#bigword_example').append('<li><span>'+str+'</span> <span class="transbtn"> <i class="fa fa-language" aria-hidden="true"></i></span></li> ');
+    str =str.replace(/<[^>]+>/g,"");//去除字符串中的 html 标签
+    str=str.replace(/\{.*?\}/g,'');//移除字符串中的所有{}括号（包括其内容）
+    str=str.replace(/\[|]/g,'');//移除字符串中的所有[]括号（不包括其内容）
+    if(code=="1"){files.push(showSound(str,files.length%3));}
+}
+
+function nextWord(){
+    ReadWhole_row++;
+    k=0;
+    setTimeout("digui("+ReadWhole_row+");",timeslot);
+}
+
+function prevWord(){
+    $("table#words tr:eq("+ReadWhole_row+") td").removeClass("soundhere");
+    if (ReadWhole_row>=2){
+        ReadWhole_row--;
+        k=0;
+        digui(ReadWhole_row);
+    } else if($('#words').DataTable().page.info().page+1>=2){/*不是第一页，翻到前一页 */
+        document.getElementById("words_previous").click();
+        ReadWhole_row=document.getElementById('words').rows.length-1;
+        k=0;
+        digui(ReadWhole_row);
+    } else {
+        ReadWhole_row=1;
+        k=0;
+        digui(ReadWhole_row);
+    }
+}
+
+function ExampleSentence(){//单击查看例句（功能4）
+    var word=$("table#words tr:nth-child("+rowindex+") td:nth-child(2)").html();
+    var CN=$("table#words tr:nth-child("+rowindex+") td:nth-child("+chineserow+")").html();
+    $("#bigword_example").empty();
+    $("#bigword-content").css("text-align","left");
+    
+    var settings = {
+        "async": false,
+        "crossDomain": true,
+        "url": "https://dictionaryapi.com/api/v3/references/collegiate/json/"+word+"?key="+$.cookie('Wordlist_mb1key'),
+        "method": "GET",
+    }
+    $.ajax(settings).done(function (response) {
+        SLBinReadWhole(response);//加音标
+        parseJson(response,2);//加例句
+    })
+    $("#bigword2").html(CN);
+    $("#bigword1").html(word);
+    $("#bigword0").html(originhtml);
+    bigwordUP();
+    $("#bigwordbtn,#prevbtn2,#nextbtn2").fadeIn();
+}
+
+$("#nextbtn2").click(function(){/*监听下一个单词*/
+    if((rowindex<document.getElementById('words').rows.length-1)&&($('#words').DataTable().page.info().page+1 < $('#words').DataTable().page.info().pages)){
+        rowindex++;
+        ExampleSentence();
+    } else if($('#words').DataTable().page.info().page+1 < $('#words').DataTable().page.info().pages){
+        document.getElementById("words_next").click();
+        rowindex=1;
+        ExampleSentence(1);
+    }
+});
+$("#prevbtn2").click(function(){/*监听下一个单词*/
+    if((rowindex==1)&&($('#words').DataTable().page.info().page+1>1)){
+        document.getElementById("words_previous").click();
+        rowindex=document.getElementById('words').rows.length-1;
+        ExampleSentence();
+    } 
+    if(rowindex>=2){
+        rowindex--;
+        ExampleSentence();
+    }
+});
+
+function Each_digui_do(i){
+    $("table#words tr:eq("+(i-1)+") td").removeClass("soundhere");
+    $("table#words tr:eq("+i+") td").addClass("soundhere");
+    $("table#words tr:eq("+(i)+") td")[0].scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+    document.getElementById("bigword0").innerHTML=$("table#words tr:eq("+i+") td:eq(0)").html();
+    document.getElementById("bigword1").innerHTML=$("table#words tr:eq("+i+") td:eq(1)").html();
+    document.getElementById("bigword2").innerHTML=$("table#words tr:eq("+i+") td:eq("+(chineserow-1)+")").html();
+
+    //document.getElementById("prev").innerHTML=$("table#words tr:eq("+(i-1)+") td:eq(1)").html();
+    //document.getElementById("next").innerHTML=$("table#words tr:eq("+(i+1)+") td:eq(1)").html();
+}
+
+
+/*开始朗读 */
+var times,timeslot;
+var noSleep;
+$("#beginreadWholeBTN").click(diguibegin);
+
+$(".ctrlwholediv").click(function(){/*按下停止按钮，终止朗读全文 */
+    ($(this).hasClass('play'))?(diguistop()):(diguibegin());
+});
+
+function diguibegin(){
+    //document.getElementById("mode").value="0";
+    $("<audio autoplay id='hint'/>").appendTo("body");
+    if($("#screenon").is(':checked')){
+        noSleep= new NoSleep();
+        noSleep.enable();//不能用
+    }
+    if($("#readSampleSentences").is(':checked')){
+        $("#bigword-content").css("text-align","left");
+    } else{
+        $("#bigword-content").css("text-align","center");
+    }
+    $("table#words,#shiyanqu,#words_length,#words_filter,#words_paginate").addClass("no-pointer-events");
+    ReadWhole_row = parseInt($('#where').val());//大分页
+    $(".paginate_input").val(getPageNowtr(ReadWhole_row).page);
+    $("#words").dataTable().fnPageChange( getPageNowtr(ReadWhole_row).page - 1 );
+    ReadWhole_row = getPageNowtr(ReadWhole_row).Nowtr;
+    times=parseInt($('#times').val());
+    timeslot=parseInt($('#timeslot').val())*1000;
+    exitReadWhole=0;k=0;
+    $('#nextbtn2,#prevbtn2').fadeOut();
+    $("#ctrlwholediv, #ctrlwholesvg").addClass("play");
+    $('#ctrlwholediv,#bigwordbtn, #nextbtn,#prevbtn').fadeIn();
+    digui(ReadWhole_row);
+}
+
+function diguistop(){/*终止朗读全文 */
+    if($("#screenon").is(':checked')){noSleep.disable();}
+    //$("#hint")[0].pause();
+    $("#hint")[0].src="";
+    exitReadWhole=1;
+    $("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere");
+    $("table#words tr:eq("+(ReadWhole_row)+") td").removeClass("soundhere");
+    $("table#words,#shiyanqu,#words_length,#words_filter,#words_paginate").removeClass("no-pointer-events");
+    
+    
+    //$('#bigwordbtn').css('display','none');
+    
+    //$('#stopwhole').css('display','none');
+    //$('#beginwhole').css('display','block');
+    $("#ctrlwholediv, #ctrlwholesvg").removeClass("play");
+
+    $('#nextbtn,#prevbtn').fadeOut();
+    //$("#bigword").css("top","100%");
+    //$("#bigword-arrow").removeClass("fa-arrow-down");
+    //$("#bigword-arrow").addClass("fa-arrow-up");
+    //$("body").addClass("NowCanShow");
+    //bigword_status=false;
+    let row=$('#words').DataTable().page.info().recordsDisplay;
+    $("#where").val(
+        (getTrueTR(ReadWhole_row)>row)?(1):(getTrueTR(ReadWhole_row))
+    );
+}
+
+var originhtml,trSeq,settings;/*鼠标行第一格显示行号 */
+$("table#words td").mouseover(function(){
+    trSeq = $(this).parent().parent().find("tr").index($(this).parent()[0])+1;
+    originhtml=$("table#words tr:eq("+trSeq+") td"+":eq(0)").html();
+    $("table#words tr:eq("+trSeq+") td"+":eq(0)").html(getTrueTR(trSeq));
+}).mouseout(function(){
+    $("table#words tr:eq("+trSeq+") td"+":eq(0)").html(originhtml);
+});
+
+$("#nextbtn").click(function (){/*手动下一单词 */
+    nextWord();
+});
+
+$("#prevbtn").click(function (){/*手动上一单词 */
+    prevWord();
+});
+
+function showSound(text,code) {
+    text=text.replace(/\//g,' or ');
+    text=text.replace(/sb\./g,'somebody');
+    text=text.replace(/sth\./g,'something');
+    //text=text.replace(/'/g,'%27');
+    text=text.replace(/…/g,' ');
+    //text=text.replace(/\./g,' ');
+    text=text.replace(/\s+/g, ' ');
+    text=text.replace(/—/g, ' - ');
+    text=text.replace(/^\s+|\s+$|\(|\)/g,'');
+    if (code==2||code==1){
+        var soundurl="https://dict.youdao.com/dictvoice?audio="+text+"&type="+code;
+    } else if(code==4){
+        var soundurl="https://media.shanbay.com/audio/uk/"+text.replace(/\s/g,'_')+".mp3";
+    }else if(code==5){
+        var soundurl="https://media.shanbay.com/audio/us/"+text.replace(/\s/g,'_')+".mp3";
+    }else if(code==0){
+        var soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=en&ctp=1&pdt=311&tex="+text;
+    }
+    /*因为音效元素是追加的，所以每次生成之前，将原来的删除掉 
+    $("#hint").remove();*/
+    /*创建audio标签的Jquery对象，然后追加到body进行播放即可 
+    $("<audio src='" + soundurl + "' autoplay id='hint'/>").appendTo("body");*/
+    soundurl=encodeURI(soundurl);
+    return soundurl;
+}
+
+function showSoundCN(text,speed,i){
+    text=text.replace(/[；|;]/g,",");
+    text=text.replace(/…/g,"什么");
+    text=text.replace(/vt.|vi.|adj.|adv.|n.|v.|conj./g, ',');//在不同词性间分隔
+    text.replace(/^,+/,"").replace(/,+$/,""); //去除首尾逗号
+    text=text.match(/[\u4e00-\u9fa5|\uff0c|,]/g).join("");//去除非中文
+    //soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=zh&ctp=1&pdt=311&tex="+text;
+    soundurl="https://tts.baidu.com/text2audio?tex="+text+"&cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per=0";
+    return soundurl;
+}
+
+var bigword_status=false;//点击显隐bigword
+document.getElementById("bigwordbtn").addEventListener("click", function(){
+    (!bigword_status)?(bigwordUP()):(bigwordDOWN());
+})
+function bigwordUP(){
+    $("#bigword").css("top","0px");
+    $("#bigwordbtn").addClass("down");
+    $("body").removeClass("NowCanShow");
+    bigword_status=true;
+}
+function bigwordDOWN(){
+    $("#bigword").css("top","100%");
+    $("#bigwordbtn").removeClass("down");
+    $("body").addClass("NowCanShow");
+    bigword_status=false;
+}
+
+
+function changeURLPar(par, par_value) {
+    var destiny = location.href;
+    var pattern = par+'=([^&]*)'; 
+    var replaceText = (par_value)?(par+'='+par_value):(""); 
+    if (destiny.match(pattern)) { 
+        var tmp = '/'+par+'=[^&]*/';
+        
+        tmp = destiny.replace(eval(tmp), replaceText); 
+        
+        changeURL(tmp);
+    } else { 
+        if (destiny.match('[\?]')) { 
+            changeURL(destiny+'&'+ replaceText);
+        }else{ 
+            changeURL(destiny+'?'+replaceText);
+        } 
+    }
+}
+
+function changeURL(string){
+    string = string.replace(/&+$/g, '');//去除url结尾的&
+    history.pushState({url: string, title: document.title}, document.title, string);
+}
+
+function weishi(string){
+    Swal.fire({
+        title: '相关词汇短语',
+        html:'<img src="/../medias/loading.svg" id="wswait" style="max-width:350px;"/ ><div id="weishimain"></div>',
+        showCancelButton: false,
+        showCloseButton: true,
+        showConfirmButton: false,
+        customClass: {
+            container: 'wscontainer-class',
+            popup: 'wspopup-class',
+            closeButton: 'wsclose',
+        },
+    })
+    /**点击返回键关闭弹窗 */
+    window.addEventListener("popstate", function(){
+        $(".wsclose").trigger("click");
+    }, false);
+    window.history.pushState(null, null, "#");
+    
+    url1 = "https://dictionaryapi.com/api/v3/references/learners/json/"+string+"?key="+$.cookie('Wordlist_mb2key');
+    $.getJSON(url1,function(results){
+        var i=0;
+        if(results[0].meta){
+            results.forEach(function (result) {
+            var err=false;
+            try{
+                $("#weishimain").append("<h1>"+result.meta.id+((result.hwi.prs&&result.hwi.prs[0].ipa)?("<span class='phs'>/"+result.hwi.prs[0].ipa+"/</span>"):(""))+((result.fl)?("<code>"+result.fl+"</code>"):(""))+"</h1>");
+                $("#weishimain").append("<p id='wsp"+i+"'></p>");
+                j=0;
+                result.meta.stems.forEach(function (stem) {
+                    $("#wsp"+i).append("<i>"+stem+"</i>");
+                    if(j<result.meta.stems.length-1){$("#wsp"+i).append(", ");}
+                    j++;
+                });
+
+                $("#weishimain").append("<ul id='wsul"+i+"'class='outerul'>");
+                if (result.def&&result.def[0].sseq){
+                    var k=0;
+                    result.def[0].sseq.forEach(function (sseq_single) {
+                        var shuzudt=null;
+                        if(sseq_single[0][1].dt&&sseq_single[0][1].dt[0][1]){
+                            shuzudt=sseq_single[0][1].dt;
+                        } else if (sseq_single[1][1].dt&&sseq_single[1][1].dt[0][1]){
+                            shuzudt=sseq_single[1][1].dt;
+                        }
+                        if (shuzudt){
+                            if(shuzudt[0].indexOf("text")<0&&shuzudt[0][1]&&shuzudt[0][1][0]){//藏得很深，比如arrest的under:1
+                                shuzudt=shuzudt[0][1][0];
+                            }
+                            $("#wsul"+i).append("<li>"+handle(shuzudt[0][1])+"<ul id='li"+i+"li"+k+"juul' class='lijuul'></ul></li>");
+                            var arrayliju=null;
+                            if(shuzudt[1]&&shuzudt[1].indexOf("vis")>=0){arrayliju=shuzudt[1][1]} 
+                                else if(shuzudt[2]&&shuzudt[2].indexOf("vis")>=0){arrayliju=shuzudt[2][1]}
+                            if(arrayliju){
+                                arrayliju.forEach(function (liju) {
+                                    $("#li"+i+"li"+k+"juul").append("<li>"+handle(liju.t)+"</li>");
+                                })
+                            }
+                        }
+                        
+                    k++;
+                    });
+                } else if (result.dros[0].drp){}
+                $("#weishimain").append("</ul>");
+                i++;
+            
+            }catch (e) {
+                console.error(e);
+                console.error(result.meta.id+"的第"+i+"个释义\n");
+                if (!err){Toast.fire(result.meta.id+"的部分信息无法显示！",'','error');}
+                err=true;
+            }
+            });
+        }else{
+            $("#weishimain").append("<p style='text-align: center;'>韦氏词典没有该词组！</p>");
+            Toast.fire('韦氏词典没有该词组！','','error');
+        }
+        $("#wswait").css("display","none");
+    }).fail(function(jqXHR) {
+        if(jqXHR.responseText=="Invalid API key. Not subscribed for this reference."){
+            Swal.fire("英英词典Key填写错误","你填写的英英词典Key (Learner's)错误！请检查是否与<a href='https://dictionaryapi.com/account/my-keys'  target='_blank'>官网所给的KEY</a>一致。你填写的是：<br/><code><del>"+$.cookie('Wordlist_mb2key')+"</del></code>（无效）","error");
+        } else {
+            Toast.fire('连接不上韦氏词典服务器！','','error');
+        }
+    });
+}
+function handle(str){
+    //str=str.replace(/{wi}/g,'<b>');
+    //str=str.replace(/{\/wi}/g,'</b>');
+    str=str.replace(/{wi}/g,'');
+    str=str.replace(/{\/wi}/g,'');
+    str=str.replace(/{qword}/g,'<b>');
+    str=str.replace(/{\/qword}/g,'</b>');
+    str=str.replace(/{bc}/g,'');
+    str=str.replace(/{gloss}/g,'<span class="hint">(');
+    str=str.replace(/{\/gloss}/g,')</span>');
+    str=str.replace(/{ldquo}/g,'“');
+    str=str.replace(/{rdquo}/g,'”');
+    str=str.replace(/{phrase}/g,'<span class="phrase">');
+    str=str.replace(/{\/phrase}/g,'</span>');
+    str=str.replace(/{it}/g,'<i>');
+    str=str.replace(/{\/it}/g,'</i>');
+    str=str.replace(/\{sx\|(.+?)\|\|\}/g,'see <span style="text-decoration:underline;">$1</span>');
+    str=str.replace(/{dx}(.+?){\/dx}/g,'($1)');
+    str=str.replace(/\{dxt\|(.+?)\|\|\}/g,'<span style="text-decoration:underline;">$1</span>');
+    str=str.replace(/\{et_link\|(.+?)\|(.+?)\}/g,'<span style="text-decoration:underline;">$1</span>');
+    return str;
+}
+
+function stopwholeFreeMove(){/*让#stopwhole在手机上自由移动 */
+    var flag = 0; //标记是拖曳还是点击
+    var oDiv = document.getElementById('stopwhole');
+    var disX,moveX,L,T,starX,starY,starXEnd,starYEnd;
+    oDiv.addEventListener('touchstart',function(e){
+        flag = 0;
+        e.preventDefault();//阻止触摸时页面的滚动，缩放
+        disX = e.touches[0].clientX - this.offsetLeft;
+        disY = e.touches[0].clientY - this.offsetTop;
+//手指按下时的坐标
+        starX = e.touches[0].clientX;
+        starY = e.touches[0].clientY;
+//console.log(disX);
+    });
+    oDiv.addEventListener('touchmove',function(e){
+        flag = 1;
+        L = e.touches[0].clientX - disX ;
+        T = e.touches[0].clientY - disY ;
+//移动时 当前位置与起始位置之间的差值
+        starXEnd = e.touches[0].clientX - starX;
+        starYEnd = e.touches[0].clientY - starY;
+//console.log(L);
+        if(L<0){//限制拖拽的X范围，不能拖出屏幕
+            L = 0;
+        }else if(L > document.documentElement.clientWidth - this.offsetWidth){
+            L=document.documentElement.clientWidth - this.offsetWidth;
+        }
+        if(T<0){//限制拖拽的Y范围，不能拖出屏幕
+            T=0;
+        }else if(T>document.documentElement.clientHeight - this.offsetHeight){
+            T = document.documentElement.clientHeight - this.offsetHeight;
+        }
+        moveX = L + 'px';
+        moveY = T + 'px';
+//console.log(moveX);
+        this.style.left = moveX;
+        this.style.top = moveY;
+    });
+    oDiv.addEventListener('touchend',function(){
+        if(flag === 0) {diguistop();}//点击
+    });
+}
+
+function getTrueTR(nowtr){
+    return($('#words').DataTable().page.info().start + nowtr);
+}
+
+function getPageNowtr(TrueTR){
+    var settings=$('#words').DataTable().page.info();
+    var Length=(settings.length==-1)?(settings.recordsDisplay):(settings.length);
+    var page=Math.ceil(TrueTR/Length);
+    var Nowtr=TrueTR%Length;
+    (Nowtr==0)?(Nowtr=Nowtr+Length):(Nowtr);
+    return{page:page,Nowtr:Nowtr};
+}
+
+function SLBinReadWhole(response){
+    try{$('#bigwordSLB').html("\\"+response[0].hwi.prs[0].mw+"\\");}catch(err){
+        try{$('#bigwordSLB').html("\\"+response[0].ins[1].prs[0].mw+"\\");}catch(err){$('#bigwordSLB').empty();}
+    }
+}
+
+function handleYINBIAO(str){
+    /*
+    str=str.replace(/ər/g,'ɚ');
+str=str.replace(/är/g,'ɒɚ');
+str=str.replace(/au̇/g,'aʊ');
+str=str.replace(/ch/g,'tʃ');
+str=str.replace(/er/g,'ɛɚ');
+str=str.replace(/hw/g,'ʍ');
+str=str.replace(/ir/g,'ɪɚ');
+str=str.replace(/ȯi/g,'ɔɪ');
+str=str.replace(/ȯr/g,'ɔɚ');
+str=str.replace(/sh/g,'ʃ');
+str=str.replace(/th/g,'θ');
+str=str.replace(/t͟h/g,'ð');
+str=str.replace(/u̇r/g,'ʊɚ');
+str=str.replace(/zh/g,'ʒ');
+str=str.replace(/ə/g,'ə');
+str=str.replace(/ə/g,'ʌ');
+str=str.replace(/a/g,'æ');
+str=str.replace(/ā/g,'eɪ');
+str=str.replace(/ä/g,'ɔ');
+str=str.replace(/e/g,'ɛ');
+str=str.replace(/ē/g,'i');
+str=str.replace(/ē/g,'ɪ:');
+str=str.replace(/i/g,'ɪ');
+str=str.replace(/ī/g,'ɑɪ');
+str=str.replace(/j/g,'dʒ');
+str=str.replace(/ḵ/g,'x');
+str=str.replace(/ō/g,'oʊ');
+str=str.replace(/ȯ/g,'ɔ:');
+str=str.replace(/p/g,'p');
+str=str.replace(/s/g,'s');
+str=str.replace(/t/g,'t');
+str=str.replace(/ü/g,'u');
+str=str.replace(/u̇/g,'ʊ');
+str=str.replace(/y/g,'j');
+str=str.replace(/z/g,'z');*/
+str=str.replace(/-/g,'');
+return str;
+}
+
+
+
+document.getElementById("saveapisettings").addEventListener("click", function(){
+    var success=[];var fail=[];
+    if($("#mb1key").val()){
+        $.cookie('Wordlist_mb1key',$("#mb1key").val() , { expires: 365, path: '/' });
+        success.push("“朗读单词Key (Dictionary)”");
+    } else {
+        fail.push("“朗读单词Key (Dictionary)”");
+    }
+    
+    if( $("#mb2key").val() ){
+        $.cookie('Wordlist_mb2key',$("#mb2key").val() , { expires: 365, path: '/' });
+        success.push("“英英词典Key (Learner's)”");
+    } else {
+        fail.push("“英英词典Key (Learner's)”");
+    }
+
+    if(($("#bdid").val())&&($("#bdkey").val())){
+        $.cookie('Wordlist_bdid',$("#bdid").val() , { expires: 365, path: '/' });
+        $.cookie('Wordlist_bdkey',$("#bdkey").val() , { expires: 365, path: '/' });
+        success.push("“例句翻译”");
+    } else {
+        fail.push("“例句翻译”");
+    }
+
+    var successSTR="";
+    for(j = 0,len=success.length; j < len; j++) {
+        successSTR += (success[j]+"，");
+    }
+    if (success.length > 0) {
+        successSTR = successSTR.substr(0, successSTR.length - 1);
+    };
+
+    var failSTR="";
+    for(j = 0,len=fail.length; j < len; j++) {
+        failSTR += fail[j]+"，";
+    }
+    if (fail.length > 0) {
+        failSTR = failSTR.substr(0, failSTR.length - 1);
+    };
+      
+    Toast.fire({
+        icon: (success.length==3)?('success'):('warning'),
+        html: (successSTR.length>0)?('成功保存'+successSTR):(""),
+        title: (failSTR.length>0)?(failSTR+"为空！"):(""),
+    });
+    
+});
+
+function clearapi(){
+    $.cookie('Wordlist_mb1key', null,{ expires: -1, path: '/' });$.cookie('Wordlist_mb2key', null,{ expires: -1, path: '/' });
+    $.cookie('Wordlist_bdid', null,{ expires: -1, path: '/' });$.cookie('Wordlist_bdkey', null,{ expires: -1, path: '/' });
+    $("#mb1key,#mb2key,#bdid,#bdkey").val("");
+    changeURLPar("mb1key", "");changeURLPar("mb2key", "");changeURLPar("bdid", "");changeURLPar("bdkey", "");
+}
+function explainapi(){
+    Swal.fire({
+        icon: "info",
+        title: "关于 KEY 的说明",
+        html: "该页面的许多功能都依赖于第三方提供的免费服务，但是这些服务都有次数限制（每月只能访问1000次）。因此，你需要申请自己使用的KEY。<br/><br/><table><thead><tr><th>功能名称</th><th>使用的服务</th><th>每个KEY的免费限额</th></tr></thead><tbody><tr><td>朗读单词例句</td><td>韦氏词典</td><td>1000次/月</td></tr><tr><td>英英词典</td><td>韦氏词典</td><td>1000次/月</td></tr><tr><td>例句翻译</td><td>百度翻译</td><td>无限/月，每秒请求量=1</td></tr></tbody></table>",
+        showCancelButton:1,
+        reverseButtons:1,
+        cancelButtonText: '取消',
+        confirmButtonText: '去申请KEY',
+        footer:"<a href='/testapis.html'>获取测试用的KEY</a>"
+    }).then((result) => {
+        if (result.value) {
+            window.open("/wordlist_keyapply.html","_blank");
+        }
+    })
+}
+//https://dict.youdao.com/jsonapi?jsonversion=2&client=mobile&q=account&dicts={"count":99,"dicts":[["pic_dict","auth_sents_part","phrs"]]}
+//&keyfrom=mdict.7.2.0.android&model=honor&mid=5.6.1&imei=659135764921685&vendor=wandoujia&screen=1080x1800&ssid=superman&network=wifi&abtest=2&xmlVersion=5.1
+//https://dict.youdao.com/jsonapi?jsonversion=2&client=mobile&q=account&dicts=%7B%22count%22:99,%22dicts%22:%5B%5B%22pic_dict%22,%22auth_sents_part%22,%22phrs%22%5D%5D%7D

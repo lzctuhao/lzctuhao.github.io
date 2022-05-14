@@ -1,1 +1,24 @@
-var toc=1;function toggletoc(){(1==toc?hidetoc:showtoc)()}function hidetoc(){$("#pagetoc").css("position","fixed"),$("#pagetoc").css("opacity","0"),$(".row .l9").addClass("addl9latter"),$(".row .l9").removeClass("l9"),$("main").attr("class","container content"),toc=0}function showtoc(){$("main").attr("class","post-container content"),$(".addl9latter").addClass("l9"),$("#pagetoc").css("position",""),setTimeout('$("#pagetoc").css("opacity","1");',275),toc=1}
+/*TOC settings */
+var toc=1;
+function toggletoc(){
+    if(toc==1){hidetoc();}
+    else{showtoc();}
+}
+
+function hidetoc(){
+    $("#pagetoc").css("position","fixed");
+    $("#pagetoc").css("opacity","0");    
+    $(".row .l9").addClass("addl9latter");
+    $(".row .l9").removeClass("l9");
+    //setTimeout('',0);
+    $("main").attr("class", "container content");
+    toc=0;
+}
+
+function showtoc(){
+    $("main").attr("class", "post-container content");
+    $(".addl9latter").addClass("l9");
+    $("#pagetoc").css("position","");
+    setTimeout('$("#pagetoc").css("opacity","1");',275);
+    toc=1;
+}

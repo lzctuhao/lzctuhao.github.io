@@ -1,1 +1,342 @@
-var myDate=new Date,month=myDate.getMonth()+1,date=myDate.getDate(),year=myDate.getFullYear();function IsMobile(){var e={Android:function(){return!!navigator.userAgent.match(/Android/i)},BlackBerry:function(){return!!navigator.userAgent.match(/BlackBerry/i)},iOS:function(){return!!navigator.userAgent.match(/iPhone|iPad|iPod/i)},Windows:function(){return!!navigator.userAgent.match(/IEMobile/i)},any:function(){return e.Android()||e.BlackBerry()||e.iOS()||e.Windows()}};return e.any()}function china(){Swal.fire({type:"info",html:"位于中国的服务器，访问<strong>速度更快！</strong>",showCancelButton:!1,showConfirmButton:!1,showCloseButton:!0,footer:"<a href='https://lzc2002.tk'>前往原站点（资源站）</a>"})}function ad2345(){Swal.fire({type:"info",title:"关于广告",html:"这个广告无毒安全，但不要轻信广告的任何内容。<br/>你每看到1次广告，对方会获得1分钱，即<code>￥0.01</code>。",showCancelButton:!1,showConfirmButton:!0,showCloseButton:!0})}function do_wxbrowser(){"micromessenger"==navigator.userAgent.toLowerCase().match(/MicroMessenger/i)&&($(".aplayer, meting-js").remove(),$("#headNav").css("position","absolute"))}function outloadinfo(e){console.info(e),$("#load-info").text(e)}function getUrlParam(e){e=new RegExp("(^|&)"+e+"=([^&]*)(&|$)"),e=window.location.search.substr(1).match(e);return null!=e?decodeURI(decodeURI(e[2])):null}function wechat_account(){"micromessenger"==navigator.userAgent.toLowerCase().match(/MicroMessenger/i)?window.location.href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0ODE4MzExNg==&scene=124#wechat_redirect":Swal.fire({title:'<span style="background:#c2185b;border-radius:16px;padding:2px 10px;color:white;">ID</span>&nbsp;lzc的碎碎念',html:'下载图片，然后在微信中扫一扫<br><a href="/../medias/wxqr.jpg" download="微信扫一扫.jpg">下载图片</a><br><img src="/../medias/wxqr.jpg" style="width: 260px;" alt="lzc的碎碎念" />',showCloseButton:!0,showCancelButton:!1,showConfirmButton:!1,allowOutsideClick:!1})}$(function(){"4"!=month||"2020"!=year||"4"!=date&&"3"!=date||((i=document.createElement("style")).type="text/css",i.innerHTML=":root{--bgcolor: black;}.logo-img,.bg-cover,.card-image,#reward,#backTop,#article-share{filter:grayscale(100)}.bg-cover:after{animation:none;background-color:rgb(0,0,0,0.7)}",i.id="addStyle",document.getElementsByTagName("HEAD").item(0).appendChild(i)),$("#loading-cover").fadeOut(),$("body").addClass("NowCanShow"),$(".sidenav").sidenav();function e(e,t){let n=$("#"+e);if(0!==n.length){let e=n.width();450<=e?e+=21:350<=e&&e<450?e+=18:300<=e&&e<350?e+=16:e+=14,$("#"+t).width(e)}}function t(){e("navContainer","articles"),e("artDetail","prenext-posts"),$(".content").css("min-height",window.innerHeight-165)}t(),$(window).resize(function(){t()}),$("#articles").masonry({itemSelector:".article"}),AOS.init({easing:"ease-in-out-sine",duration:700,delay:100}),IsMobile()&&$("#articleContent sup a").attr("href","javascript:void(0)");$("#articleContent img:not(.no-gallery)").each(function(){var e=$(this).attr("src"),e=($(this).wrap('<div class="img-item" data-src="'+e+'" data-sub-html=".caption"></div>'),$(this).addClass("img-shadow img-margin"),$(this).attr("alt")),t=$(this).attr("title");let n="";if(void 0===e||""===e?void 0!==t&&""!==t&&(n=""):n=e,""!==n){let e=document.createElement("div"),t=(e.className="caption",document.createElement("span"));t.className="center-caption",t.innerText=n,e.appendChild(t),this.insertAdjacentElement("afterend",e)}}),do_wxbrowser(),$("#articleContent img").each(function(){var e=$(this),t=e.attr("alt")?e.attr("alt"):"",n=e.attr("src");$imageWrapLink=e.wrap('<a data-fancybox=images data-caption="'+t+'" href="'+n+'"></a>')}),$('#articleContent img[data-fancybox="images"]').fancybox({thumbs:!0,hash:!0,loop:!0,fullScreen:!0,slideShow:!0,protect:!0,buttons:["slideShow","fullScreen","thumbs","share","download","zoom","close"]}),$(".modal").modal(),$(".tabs").tabs(),document.body.clientWidth<=600&&$("#backTop").remove(),$("#backTop").click(function(){return $("body,html").animate({scrollTop:0},400),!1});let n=$("#headNav"),a=$(".top-scroll");function o(e){e<100?(n.addClass("nav-transparent"),a.slideUp(300)):(n.removeClass("nav-transparent"),a.slideDown(300))}o($(window).scrollTop()),$(window).scroll(function(){o($(window).scrollTop())}),$(function(){var e=window.location.href;(0<=e.indexOf("lzcblog.gq")||0<=e.indexOf("coding.me")||0<=e.indexOf("cn"))&&($("#Container1").append("&nbsp;<span onclick='china();' class='waves-effect waves-light'>🇨🇳</span>"),$(".logo-name").append("&nbsp;<span onclick='china();' class='waves-effect waves-light'>🇨🇳</span>")),0<=e.indexOf("localhost")&&($("#Container1 .logo-span").append(" (本地)"),$(".logo-name").append(" (本地)"))});var i=$("body").innerWidth();993<=i&&($(".container").css("width",.85*i+"px"),console.log("width:"+i),$(".post-container").css("width",.9*i+"px")),$(".nav-menu>li").hover(function(){$(this).children("ul").stop(!0,!0).show(),$(this).addClass("nav-show").siblings("li").removeClass("nav-show")},function(){$(this).children("ul").stop(!0,!0).hide(),$(".nav-item.nav-show").removeClass("nav-show")}),$(".m-nav-item>a").on("click",function(){"none"==$(this).next("ul").css("display")?($(".m-nav-item").children("ul").slideUp(300),$(this).next("ul").slideDown(100),$(this).parent("li").addClass("m-nav-show").siblings("li").removeClass("m-nav-show")):($(this).next("ul").slideUp(100),$(".m-nav-item.m-nav-show").removeClass("m-nav-show"))}),$(".tooltipped").tooltip()});
+var myDate = new Date();
+var month=myDate.getMonth()+1;//获取当前月，0代表1月
+var date=myDate.getDate(); //获取当前日
+var year=myDate.getFullYear(); //获取当前年
+
+$(function () {
+
+    //document.documentElement.requestFullscreen();
+   // document.body.webkitRequestFullScreen();/**强制全屏 */
+    
+    if ((month=='4'&&year=='2020')&&(date=='4'||date=='3')){
+        var style = document.createElement("style");
+        style.type = "text/css";
+        style.innerHTML=":root{--bgcolor: black;}.logo-img,.bg-cover,.card-image,#reward,#backTop,#article-share{filter:grayscale(100)}.bg-cover:after{animation:none;background-color:rgb(0,0,0,0.7)}"
+        style.id="addStyle"
+        document.getElementsByTagName("HEAD").item(0).appendChild(style);
+    }
+
+    $("#loading-cover").fadeOut();
+    $("body").addClass('NowCanShow');
+
+    
+    /**
+     * 添加文章卡片hover效果.
+     
+    let articleCardHover = function () {
+        let animateClass = 'animated pulse';
+        $('article .article').hover(function () {
+            $(this).addClass(animateClass);
+        }, function () {
+            $(this).removeClass(animateClass);
+        });
+    };
+    articleCardHover();*/
+
+    /*菜单切换*/
+    $('.sidenav').sidenav();
+
+    /* 修复文章卡片 div 的宽度. */
+    let fixPostCardWidth = function (srcId, targetId) {
+        let srcDiv = $('#' + srcId);
+        if (srcDiv.length === 0) {
+            return;
+        }
+
+        let w = srcDiv.width();
+        if (w >= 450) {
+            w = w + 21;
+        } else if (w >= 350 && w < 450) {
+            w = w + 18;
+        } else if (w >= 300 && w < 350) {
+            w = w + 16;
+        } else {
+            w = w + 14;
+        }
+        $('#' + targetId).width(w);
+    };
+
+    /**
+     * 修复footer部分的位置，使得在内容比较少时，footer也会在底部.
+     */
+    let fixFooterPosition = function () {
+        $('.content').css('min-height', window.innerHeight - 165);
+    };
+
+    /**
+     * 修复样式.
+     */
+    let fixStyles = function () {
+        fixPostCardWidth('navContainer', 'articles');
+        fixPostCardWidth('artDetail', 'prenext-posts');
+        fixFooterPosition();
+    };
+    fixStyles();
+
+    /*调整屏幕宽度时重新设置文章列的宽度，修复小间距问题*/
+    $(window).resize(function () {
+        fixStyles();
+    });
+
+    /*初始化瀑布流布局*/
+    $('#articles').masonry({
+        itemSelector: '.article'
+    });
+
+    AOS.init({
+        easing: 'ease-in-out-sine',
+        duration: 700,
+        delay: 100
+    });
+
+    /*sup移动端点击 */
+    if (IsMobile()){
+        $("#articleContent sup a").attr('href','javascript:void(0)');
+    }
+
+    /*文章内容详情的一些初始化特性*/
+    
+    let articleInit = function () {
+        //$('#articleContent a').attr('target', '_blank');
+        $('#articleContent img:not(.no-gallery)').each(function () {
+            let imgPath = $(this).attr('src');
+            $(this).wrap('<div class="img-item" data-src="' + imgPath + '" data-sub-html=".caption"></div>');
+            // 图片添加阴影
+            $(this).addClass("img-shadow img-margin");
+            // 图片添加字幕
+            let alt = $(this).attr('alt');
+            let title = $(this).attr('title');
+            let captionText = "";
+            // 如果alt为空，title来替
+            if (alt === undefined || alt === "") {
+                if (title !== undefined && title !== "") {
+                    //captionText = title;
+                    captionText = "";
+                }
+            } else {
+                captionText = alt;
+            }
+            // 字幕不空，添加之
+            if (captionText !== "") {
+                let captionDiv = document.createElement('div');
+                captionDiv.className = 'caption';
+                let captionEle = document.createElement('span');
+                captionEle.className = 'center-caption';
+                captionEle.innerText = captionText;
+                captionDiv.appendChild(captionEle);
+                this.insertAdjacentElement('afterend', captionDiv)
+            }
+        });
+        /*
+        $('#articleContent, #myGallery').lightGallery({
+            selector: '.img-item',
+            // 启用字幕
+            subHtmlSelectorRelative: true
+        });
+        $(".img-item .caption .center-caption:contains('img')").css("display", "none");*/
+
+        /*
+        // progress bar init
+        const progressElement = window.document.querySelector('.progress-bar');
+        if (progressElement) {
+            new ScrollProgress((x, y) => {
+                progressElement.style.width = y * 100 + '%';
+            });
+        }*/
+
+
+    };
+    articleInit();
+
+    do_wxbrowser();
+    
+    
+    $('#articleContent img').each(function() {
+        var $image = $(this);
+        var alt = ($image.attr('alt'))?($image.attr('alt')):("");
+        var src = $image.attr('src');
+        $imageWrapLink = $image.wrap('<a data-fancybox=images data-caption="'+ alt +'" href="' + src + '"></a>');
+    });
+
+    $('#articleContent img[data-fancybox="images"]').fancybox({
+        thumbs: true,
+        hash: true,
+        loop: true,
+        fullScreen: true,
+        slideShow: true,
+        protect: true,
+        buttons : [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'share',
+            'download',
+            'zoom',
+            'close'
+        ],
+    });
+    
+    /*
+    $('#toggleSearch').click(function () {
+        $('#searchModal').openModal();
+        $('#searchInput').focus();
+    });*/
+
+    $('.modal').modal();
+    $('.tabs').tabs();
+
+    /*回到顶部*/
+    if(document.body.clientWidth<=600){$('#backTop').remove();}
+    $('#backTop').click(function () {
+        $('body,html').animate({scrollTop: 0}, 400);
+        return false;
+    });
+
+    /*监听滚动条位置*/
+    let $nav = $('#headNav');
+    let $backTop = $('.top-scroll');
+    // 当页面处于文章中部的时候刷新页面，因为此时无滚动，所以需要判断位置,给导航加上绿色。
+    showOrHideNavBg($(window).scrollTop());
+    $(window).scroll(function () {
+        /* 回到顶部按钮根据滚动条的位置的显示和隐藏.*/
+        let scroll = $(window).scrollTop();
+        showOrHideNavBg(scroll);
+    });
+    function showOrHideNavBg(position) {
+        let showPosition = 100;
+        if (position < showPosition) {
+            $nav.addClass('nav-transparent');
+            $backTop.slideUp(300);
+        } else {
+            $nav.removeClass('nav-transparent');
+            $backTop.slideDown(300);
+        }
+    }
+
+    
+    /*给div创建双击事件*/
+    $(function () {
+        var url=window.location.href;
+        if((url.indexOf("lzcblog.gq") >= 0 )||(url.indexOf("coding.me") >= 0 )||(url.indexOf("cn") >= 0 )) {
+            $("#Container1").append("&nbsp;<span onclick='china();' class='waves-effect waves-light'>🇨🇳</span>");
+            $(".logo-name").append("&nbsp;<span onclick='china();' class='waves-effect waves-light'>🇨🇳</span>");
+        }
+        
+        if(url.indexOf("localhost") >= 0 ) {
+            $("#Container1 .logo-span").append(" (本地)");
+            $(".logo-name").append(" (本地)");
+        }
+        
+    });
+    
+    //let width=window.screen.width;
+    let width=$("body").innerWidth();
+    //console.log(document.body.clientWidth,document.body.offsetWidth,document.body.scrollWidth,window.screen.width,window.screen.availWidth);
+    if(width>=993){
+        $(".container").css("width",0.85*width+"px");
+        console.log("width:"+width);
+        $(".post-container").css("width",0.9*width+"px");
+    }
+
+
+    $(".nav-menu>li").hover(function(){
+		$(this).children('ul').stop(true,true).show();
+		 $(this).addClass('nav-show').siblings('li').removeClass('nav-show');
+		
+	},function(){
+		$(this).children('ul').stop(true,true).hide();
+		$('.nav-item.nav-show').removeClass('nav-show');
+	})
+	
+    $('.m-nav-item>a').on('click',function(){
+            if ($(this).next('ul').css('display') == "none") {
+                $('.m-nav-item').children('ul').slideUp(300);
+                $(this).next('ul').slideDown(100);
+                $(this).parent('li').addClass('m-nav-show').siblings('li').removeClass('m-nav-show');
+            }else{
+                $(this).next('ul').slideUp(100);
+                $('.m-nav-item.m-nav-show').removeClass('m-nav-show');
+            }
+    });
+
+    $('.tooltipped').tooltip();
+});
+
+
+
+function IsMobile() {
+    var isMobile = {
+        Android: function (){return navigator.userAgent.match(/Android/i) ?true:false;},
+        BlackBerry: function () {return navigator.userAgent.match(/BlackBerry/i) ?true:false;},
+        iOS: function () {return navigator.userAgent.match(/iPhone|iPad|iPod/i) ? true:false;},
+        Windows: function () {return navigator.userAgent.match(/IEMobile/i) ? true:false;},
+        any: function () {
+             return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Windows());
+        }
+     };
+     return isMobile.any(); //是移动设备
+}
+
+function china(){
+    Swal.fire({
+        type: 'info',
+        html: '位于中国的服务器，访问<strong>速度更快！</strong>',
+        showCancelButton: false,
+        showConfirmButton: false,
+        showCloseButton: true,
+        footer:"<a href='https://lzc2002.tk'>前往原站点（资源站）</a>"
+    })
+}
+
+function ad2345(){
+    Swal.fire({
+        type: 'info',
+        title: "关于广告",
+        html: '这个广告无毒安全，但不要轻信广告的任何内容。<br/>你每看到1次广告，对方会获得1分钱，即<code>￥0.01</code>。',
+        showCancelButton: false,
+        showConfirmButton: true,
+        showCloseButton: true
+    })
+}
+
+function do_wxbrowser(){
+    var ua = navigator.userAgent.toLowerCase();
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {//微信浏览器
+        $(".aplayer, meting-js").remove();
+        $("#headNav").css("position","absolute");
+    }
+}
+
+function outloadinfo(str){
+    console.info(str);
+    $("#load-info").text(str);
+}
+
+/*$.getUrlParam = function(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null) return unescape(unescape(r[2])); return null;
+}*/
+
+function getUrlParam(name){
+    var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
+    var r = window.location.search.substr(1).match(reg);
+    if (r!=null) return decodeURI(decodeURI(r[2])); return null;
+}
+
+/*关注微信公众号 */
+function wechat_account(){
+    var ua = navigator.userAgent.toLowerCase();
+    if(ua.match(/MicroMessenger/i) == "micromessenger") {
+        window.location.href="https://mp.weixin.qq.com/mp/profile_ext?action=home&__biz=Mzk0ODE4MzExNg==&scene=124#wechat_redirect"
+    } else {
+        Swal.fire({
+            title: '<span style="background:#c2185b;border-radius:16px;padding:2px 10px;color:white;">ID</span>&nbsp;lzc的碎碎念',
+            html: '下载图片，然后在微信中扫一扫<br><a href="/../medias/wxqr.jpg" download="微信扫一扫.jpg">下载图片</a><br><img src="/../medias/wxqr.jpg" style="width: 260px;" alt="lzc的碎碎念" />',
+            showCloseButton: true,
+            showCancelButton: false,
+            showConfirmButton: false,
+            allowOutsideClick:false
+        })
+    }
+}

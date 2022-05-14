@@ -1,1 +1,93 @@
-$(function(){!function(t,n,a){"use strict";$.ajax({url:t,dataType:"xml",success:function(t){document.getElementById("searchLoading").remove();var e=$("entry",t).map(function(){return{title:$("title",this).text(),author:$("author",this).text(),content:$("content",this).text(),url:$("url",this).text()}}).get(),t=document.getElementById(n),r=document.getElementById(a);t.addEventListener("input",function(){var f='<ul class="search-result-list">',m=this.value.trim().toLowerCase().split(/[\s\-]+/);r.innerHTML="",this.value.trim().length<=0||(e.forEach(function(t){var r,e,n,a=!0,s=t.title.trim().toLowerCase(),i=t.author?t.author.trim().toLowerCase():"",c=t.content.trim().replace(/<[^>]+>/g,"").toLowerCase(),l=0===(l=t.url).indexOf("/")?t.url:"/"+l,u=-1,o=-1,h=-1;""!==s&&""!==c&&m.forEach(function(t,e){r=s.indexOf(t),u=i.indexOf(t),o=c.indexOf(t),r<0&&u<0&&o<0?a=!1:(o<0&&(o=0),0===e&&(h=o))}),a&&(f+="<li><a href='"+l+"' class='search-result-title'>"+s+"</a>",-1<u&&(f+="<span class='search-result-author'><i class='fa fa-user fa-fw'></i>"+i+"</span>"),l=t.content.trim().replace(/<[^>]+>/g,""),0<=h&&(t=h+80,(t=0===(e=(e=h-20)<0?0:e)?100:t)>l.length&&(t=l.length),n=l.substr(e,t),m.forEach(function(t){var e=new RegExp(t,"gi");n=n.replace(e,'<em class="search-keyword">'+t+"</em>")}),f+='<p class="search-result">'+n+"...</p>"),f+="</li>")}),f+="</ul>",r.innerHTML=f)})}})}("/search.xml","searchInput","searchResult")});
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                document.getElementById("searchLoading").remove();
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        author: $("author", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_author = (data.author)?(data.author.trim().toLowerCase()):('');
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_author = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_author = data_author.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_author < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            if(index_author>-1) {str += "<span class='search-result-author'><i class='fa fa-user fa-fw'></i>"+data_author+"</span>"}
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
