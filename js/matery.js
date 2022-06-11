@@ -127,13 +127,13 @@ $(function () {
                 this.insertAdjacentElement('afterend', captionDiv)
             }
         });
-        /*
+        
         $('#articleContent, #myGallery').lightGallery({
             selector: '.img-item',
             // 启用字幕
             subHtmlSelectorRelative: true
         });
-        $(".img-item .caption .center-caption:contains('img')").css("display", "none");*/
+        $(".img-item .caption .center-caption:contains('img')").css("display", "none");
 
         /*
         // progress bar init
@@ -151,6 +151,7 @@ $(function () {
     do_wxbrowser();
     
     
+    /*弃用fancybox
     $('#articleContent img').each(function() {
         var $image = $(this);
         var alt = ($image.attr('alt'))?($image.attr('alt')):("");
@@ -174,7 +175,7 @@ $(function () {
             'zoom',
             'close'
         ],
-    });
+    });*/
     
     /*
     $('#toggleSearch').click(function () {
