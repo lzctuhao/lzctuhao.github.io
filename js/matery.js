@@ -128,11 +128,14 @@ $(function () {
             }
         });
         
-        $('#articleContent, #myGallery').lightGallery({
+        /*$('#articleContent, #myGallery').lightGallery({
             selector: '.img-item',
             // 启用字幕
             subHtmlSelectorRelative: true
         });
+        lightGallery(document.getElementById('articleContent'), {
+            
+        });*/
         $(".img-item .caption .center-caption:contains('img')").css("display", "none");
 
         /*
@@ -151,7 +154,7 @@ $(function () {
     do_wxbrowser();
     
     
-    /*弃用fancybox
+    /*fancybox*/
     $('#articleContent img').each(function() {
         var $image = $(this);
         var alt = ($image.attr('alt'))?($image.attr('alt')):("");
@@ -159,6 +162,26 @@ $(function () {
         $imageWrapLink = $image.wrap('<a data-fancybox=images data-caption="'+ alt +'" href="' + src + '"></a>');
     });
 
+    Fancybox.bind('#articleContent img[data-fancybox="images"]', {
+        hash: true,
+        loop: true,
+        fullScreen: true,
+        slideShow: true,
+        protect: true,
+        buttons : [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            'share',
+            'download',
+            'zoom',
+            'close'
+        ],
+        thumbs : {
+            autoStart : true //缩略图
+        }
+    });
+    /*
     $('#articleContent img[data-fancybox="images"]').fancybox({
         thumbs: true,
         hash: true,
