@@ -32,6 +32,8 @@ const Toast = Swal.mixin({
 
 
 $("#begin").click(function(){
+    get_form();
+    
     /*删去过大的素数*/
     var ceil_num=Math.ceil(max_num/2);
     for (let j=0;j<primes.length;j++){
@@ -40,8 +42,6 @@ $("#begin").click(function(){
             break;
         }
     }
-
-    get_form();
 
     $("#welcome-inside").remove();
     $("#t").show();
