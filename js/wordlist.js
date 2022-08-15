@@ -114,11 +114,12 @@ $(function () {
         searching: true,
         search: {regex: true},
         lengthMenu: [ [10,25,50,100,-1], [10, 25, 50,100, "全部"] ],
+        order: [],
         pagingType: 'input',
         columnDefs:[{
-            　　　　'targets' : [(chineserow-1)],    //除第六，第七两列外，都默认不排序
-            　　　　'orderable' : false
-            　　}],
+            'targets' : [(chineserow-1)],    //除第六，第七两列外，都默认不排序
+            'orderable' : false
+        }],
         initComplete: function( settings, json ) {
             try {tabledone();}catch(err) {console.log("表格加载完后无要执行的函数tabledone()")}
         },
@@ -253,7 +254,7 @@ function digui(i){/*朗读整个单词表 */
         files.length=0;
         target=$("table#words tr:eq("+i+") td:eq(1)");
         for (j=1;j<=times;j++){
-           files.push(showSound(target.text(),j%3));
+           files.push(showSound(target.text(),j%4));
         }
         if($("#readcn").is(":checked")){
             files.push(showSoundCN($("table#words tr:eq("+i+") td:eq("+(chineserow-1)+")").text() , 5 , i));
@@ -264,7 +265,7 @@ function digui(i){/*朗读整个单词表 */
             $.ajax({
                 async: false,
                 type: "GET",
-                url: "https://dictionaryapi.com/api/v3/references/collegiate/json/"+target.text()+"?key="+$.cookie('Wordlist_mb1key'),
+                url: get_api_url( "collegiate" , target.text() ),
                 //timeout:2000,async=false时无效
                 datatype: "json", //"xml", "html", "script", "json", "jsonp", "text".
                 crossDomain: true,
@@ -320,6 +321,15 @@ music_player.addEventListener('ended', function () {//一个单词所有内容�
     } else { music_player.src = files[k]; }
 });
 
+function get_api_url(dict,word){
+    var url_whole="";
+    if (dict=="collegiate")
+        url_whole="https://dictionaryapi.com/api/v3/references/collegiate/json/"+word+"?key="+$.cookie('Wordlist_mb1key');
+    else if (dict=="learners")
+        url_whole="https://dictionaryapi.com/api/v3/references/learners/json/"+word+"?key="+$.cookie('Wordlist_mb2key');
+    return url_whole;
+}
+
 function handleLiJu(str,code){
     //console.log(str);
     str=handle(str);
@@ -363,7 +373,7 @@ function ExampleSentence(){//单击查看例句（功能4）
     var settings = {
         "async": false,
         "crossDomain": true,
-        "url": "https://dictionaryapi.com/api/v3/references/collegiate/json/"+word+"?key="+$.cookie('Wordlist_mb1key'),
+        "url": get_api_url("collegiate",word),
         "method": "GET",
     }
     $.ajax(settings).done(function (response) {
@@ -493,6 +503,7 @@ $("#prevbtn").click(function (){/*手动上一单词 */
 });
 
 function showSound(text,code) {
+    var soundurl="";
     text=text.replace(/\//g,' or ');
     text=text.replace(/sb\./g,'somebody');
     text=text.replace(/sth\./g,'something');
@@ -503,18 +514,46 @@ function showSound(text,code) {
     text=text.replace(/—/g, ' - ');
     text=text.replace(/^\s+|\s+$|\(|\)/g,'');
     if (code==2||code==1){
-        var soundurl="https://dict.youdao.com/dictvoice?audio="+text+"&type="+code;
-    } else if(code==4){
-        var soundurl="https://media.shanbay.com/audio/uk/"+text.replace(/\s/g,'_')+".mp3";
-    }else if(code==5){
-        var soundurl="https://media.shanbay.com/audio/us/"+text.replace(/\s/g,'_')+".mp3";
-    }else if(code==0){
-        var soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=en&ctp=1&pdt=311&tex="+text;
+        soundurl="https://dict.youdao.com/dictvoice?audio="+text+"&type="+code;
+    } else if(code==0){
+        let apiurl="https://api.dictionaryapi.dev/api/v2/entries/en/"+text;
+        $.ajaxSettings.async = false;//同步
+        $.getJSON(apiurl,function(result){
+            $.each(result[0].phonetics, function(i, field){
+                if (field.audio) {
+                    soundurl=field.audio;
+                    soundurl=encodeURI(soundurl);
+                    return false;/*找到一个即返回 */
+                }
+            });
+            if (soundurl=="") { /*dictionaryapi(即code=0)没有提供音频，用有道词典代替，下同 */
+                soundurl=decodeURI(showSound(text,2));
+            }
+        }).error(function() { 
+            soundurl=decodeURI(showSound(text,2));
+         })
+
+    } else if (code==3){
+        let apiurl=get_api_url("collegiate",text);
+        $.ajaxSettings.async = false;//同步
+        $.getJSON(apiurl,function(result){
+            $.each(result[0].hwi.prs, function(i, field){
+                if (field.sound.audio) {
+                    let base_filename=field.sound.audio;
+                    let subdirectory=base_filename.slice(0,1);
+                    soundurl="https://media.merriam-webster.com/audio/prons/en/us/mp3/"+subdirectory+"/"+base_filename+".mp3";
+                    soundurl=encodeURI(soundurl);
+                    return false;/*找到一个即返回 */
+                }
+            });
+            if (soundurl=="") { /*dictionaryapi(即code=0)没有提供音频，用有道词典代替，下同 */
+                soundurl=decodeURI(showSound(text,1));
+            }
+        }).error(function() { 
+            soundurl=decodeURI(showSound(text,1));
+        });
     }
-    /*因为音效元素是追加的，所以每次生成之前，将原来的删除掉 
-    $("#hint").remove();*/
-    /*创建audio标签的Jquery对象，然后追加到body进行播放即可 
-    $("<audio src='" + soundurl + "' autoplay id='hint'/>").appendTo("body");*/
+
     soundurl=encodeURI(soundurl);
     return soundurl;
 }
@@ -524,7 +563,7 @@ function showSoundCN(text,speed,i){
     text=text.replace(/…/g,"什么");
     text=text.replace(/vt.|vi.|adj.|adv.|n.|v.|conj./g, ',');//在不同词性间分隔
     text.replace(/^,+/,"").replace(/,+$/,""); //去除首尾逗号
-    text=text.match(/[\u4e00-\u9fa5|\uff0c|,]/g).join("");//去除非中文
+    //text=text.match(/[\u4e00-\u9fa5|\uff0c|,]/g).join("");//去除非中文
     //soundurl="https://tts.baidu.com/text2audio?cuid=baiduid&lan=zh&ctp=1&pdt=311&tex="+text;
     soundurl="https://tts.baidu.com/text2audio?tex="+text+"&cuid=baike&lan=ZH&ctp=1&pdt=301&vol=9&rate=32&per=0";
     return soundurl;
@@ -591,7 +630,7 @@ function weishi(string){
     }, false);
     window.history.pushState(null, null, "#");
     
-    url1 = "https://dictionaryapi.com/api/v3/references/learners/json/"+string+"?key="+$.cookie('Wordlist_mb2key');
+    url1 = get_api_url("learners",string);
     $.getJSON(url1,function(results){
         var i=0;
         if(results[0].meta){
@@ -856,6 +895,3 @@ function explainapi(){
         }
     })
 }
-//https://dict.youdao.com/jsonapi?jsonversion=2&client=mobile&q=account&dicts={"count":99,"dicts":[["pic_dict","auth_sents_part","phrs"]]}
-//&keyfrom=mdict.7.2.0.android&model=honor&mid=5.6.1&imei=659135764921685&vendor=wandoujia&screen=1080x1800&ssid=superman&network=wifi&abtest=2&xmlVersion=5.1
-//https://dict.youdao.com/jsonapi?jsonversion=2&client=mobile&q=account&dicts=%7B%22count%22:99,%22dicts%22:%5B%5B%22pic_dict%22,%22auth_sents_part%22,%22phrs%22%5D%5D%7D
