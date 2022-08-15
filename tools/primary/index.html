@@ -81,7 +81,7 @@ function produce_prime(){
         } else { /*第二种方式生成*/
             num1=randint(2,max_num);
             num2=randint(2,max_num);
-            if (num2==num1) num2=randint(1,max_times)*prime;/*若相同，则再生成一遍*/
+            if (num2==num1) num2=randint(2,max_num)*prime;/*若相同，则再生成一遍*/
         }
         $("#timu").html("("+num1+" , "+num2+")=");
         record.push([num1,num2,,]);
