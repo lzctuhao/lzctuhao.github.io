@@ -1,8 +1,7 @@
-<!DOCTYPE HTML><html lang="zh-CN,en,default"><head><meta charset="utf-8"><meta name="keywords" content="blog"><meta name="description" content="小学计算基础练习 | lzc的小站"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta http-equiv="Access-Control-Allow-Origin" content="*"><meta name="color-scheme" content="light dark"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#c2185b"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#470024"><meta name="”apple-mobile-web-app-status-bar-style”" content="#c2185b"><meta name="”msapplication-navbutton-color”" content="#c2185b"><meta name="msapplication-TileColor" content="#c2185b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="x5-orientation" content="portrait"><meta name="x5-fullscreen" content="true"><meta name="x5-page-mode" content="app"><meta name="full-screen" content="yes"><meta name="browsermode" content="application"><meta name="mobile-web-app-capable" content="yes"><meta itemprop="name" content="小学计算基础练习 | lzc的小站"><meta itemprop="image" content="/webicon.png"><meta name="description" itemprop="description" content="小学计算基础练习 | lzc的小站"><meta name="application-name" content="lzc的小站"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>小学计算基础练习 | lzc的小站</title><link rel="icon" type="image/png" href="/webicon.png"><link rel="apple-touch-icon" href="/webicon.png"><link rel="manifest" href="/pwa.json"><link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" type="text/css" href="/libs/aos/aos.css"><link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="/css/matery.css"><link rel="stylesheet" type="text/css" href="/css/load-dot.css"><script src="/libs/sweetalert/sweetalert2.9.js"></script><link rel="stylesheet" type="text/css" href="/libs/sweetalert/sweetalert2.9.css"><link rel="stylesheet" type="text/css" href="/libs/valine/valine-origin.css"><link rel="stylesheet" type="text/css" href="/css/my.css"><script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.min.js"></script><script src="/libs/aos/aos.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><script src="/js/matery.js"></script><script src="/js/ssl.js"></script><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><meta name="theme-color" content="#db5945"><link rel="stylesheet" type="text/css" href="/css/matery-dark.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/rss.xml" title="lzc的小站" type="application/rss+xml"></head><script>navigator.serviceWorker&&navigator.serviceWorker.register("/sw.js",{scope:"/"})</script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?7c5ac35898a8b94cc11e0f2c73d5c644";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><body><style>body{background-image:linear-gradient(to top,#fbc2eb 0,#a6c1ee 100%);min-height:100vh}#welcome{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);text-align:center;width:60vw;height:80vh;background-color:rgba(255,255,255,.4);display:flex;align-items:center;justify-content:center;-webkit-display:flex;-webkit-align-items:center;-webkit-justify-content:center;overflow:hidden;min-width:350px}#welcome-title{font-size:2.5em}.range-field{display:flex;align-content:stretch;flex-direction:row;justify-content:space-between;align-items:center;font-size:16px}.range-field input[type=range]{width:60%}.info{white-space:nowrap;font-weight:700}#result,#t{display:none}#tihao{margin:0}#timu{font-size:30px}#ans{font-size:30px;text-align:center;box-shadow:none;max-width:100px;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace}#result{padding:50px;overflow:scroll;max-height:100%}#result_p{font-size:20px;line-height:unset}#right{color:#2e7d32}#wrong{color:#b71c1c}td,th{text-align:center}table tr:nth-child(2n),thead tr{background-color:#ffffff45}#again{margin-bottom:20px}.progress{width:100%;height:2px;background:linear-gradient(to right,#3494e6,#ec6ead);position:absolute;top:0;left:0;animation:progress-key 5s infinite;animation-timing-function:linear}@keyframes progress-key{0%{width:100%}100%{width:0%}}@media (prefers-color-scheme:dark){body{background-image:linear-gradient(-20deg,#012a46 0,#170e3b 100%)}#welcome{background-color:rgba(0,0,0,.2)}}</style><div id="welcome" class="card" data-aos="zoom-in"><div id="welcome-inside"><p id="welcome-title">最大公约数练习</p><form action="#"><p class="range-field"><span class="info">最大上限：</span> <span id="max_num_result">50</span> <input type="range" id="max_num" min="20" max="100" step="10" value="50"></p><p class="range-field"><span class="info">时间间隔：</span> <span id="gap_result">5</span> <span class="info">s</span> <input type="range" id="gap" min="3" max="20" step="0.1" value="5"></p><p class="range-field"><span class="info">题量：</span> <span id="quantity_result">20</span> <input type="range" id="quantity" min="5" max="50" value="20"></p></form><button id="begin" class="btn waves-effect waves-light">开始练习</button></div><div id="t"><div class="progress"></div><p id="tihao"></p><p id="timu"></p><input id="ans" oninput='value=value.replace(/[^\d]/g,"")'></div><div id="result"><p id="result_p">在刚才的<span id="total">0</span>道题中，你答对了<span id="right">0</span>道，答错了<span id="wrong"></span>道，正确率<span id="rate"></span>。（最大上限<span id="result_max_num">0</span>，时间间隔<span id="result_time">0</span>秒）</p><button id="again" class="btn waves-effect waves-light" onclick="location.reload()">再来一次</button></div></div><script>time_limit=3000;
+<!DOCTYPE HTML><html lang="zh-CN,en,default"><head><meta charset="utf-8"><meta name="keywords" content="blog"><meta name="description" content="小学计算基础练习 | lzc的小站"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="renderer" content="webkit|ie-stand|ie-comp"><meta name="mobile-web-app-capable" content="yes"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"><meta http-equiv="Access-Control-Allow-Origin" content="*"><meta name="color-scheme" content="light dark"><meta name="theme-color" media="(prefers-color-scheme: light)" content="#c2185b"><meta name="theme-color" media="(prefers-color-scheme: dark)" content="#470024"><meta name="”apple-mobile-web-app-status-bar-style”" content="#c2185b"><meta name="”msapplication-navbutton-color”" content="#c2185b"><meta name="msapplication-TileColor" content="#c2185b"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="x5-orientation" content="portrait"><meta name="x5-fullscreen" content="true"><meta name="x5-page-mode" content="app"><meta name="full-screen" content="yes"><meta name="browsermode" content="application"><meta name="mobile-web-app-capable" content="yes"><meta itemprop="name" content="小学计算基础练习 | lzc的小站"><meta itemprop="image" content="/webicon.png"><meta name="description" itemprop="description" content="小学计算基础练习 | lzc的小站"><meta name="application-name" content="lzc的小站"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><title>小学计算基础练习 | lzc的小站</title><link rel="icon" type="image/png" href="/webicon.png"><link rel="apple-touch-icon" href="/webicon.png"><link rel="manifest" href="/pwa.json"><link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"><link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css"><link rel="stylesheet" type="text/css" href="/libs/aos/aos.css"><link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css"><link rel="stylesheet" type="text/css" href="/css/matery.css"><link rel="stylesheet" type="text/css" href="/css/load-dot.css"><script src="/libs/sweetalert/sweetalert2.9.js"></script><link rel="stylesheet" type="text/css" href="/libs/sweetalert/sweetalert2.9.css"><link rel="stylesheet" type="text/css" href="/libs/valine/valine-origin.css"><link rel="stylesheet" type="text/css" href="/css/my.css"><script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.0/jquery.min.js"></script><script src="/libs/aos/aos.js"></script><script src="https://cdn.bootcdn.net/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script><script src="/js/matery.js"></script><script src="/js/ssl.js"></script><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><meta name="theme-color" content="#db5945"><link rel="stylesheet" type="text/css" href="/css/matery-dark.css"><meta name="generator" content="Hexo 6.1.0"><link rel="alternate" href="/rss.xml" title="lzc的小站" type="application/rss+xml"></head><script>navigator.serviceWorker&&navigator.serviceWorker.register("/sw.js",{scope:"/"})</script><script>var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?7c5ac35898a8b94cc11e0f2c73d5c644";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><body><link href="/css/alonepage/primary.css" rel="stylesheet" type="text/css"><style>body{background-image:linear-gradient(to top,#fbc2eb 0,#a6c1ee 100%);min-height:100vh}@media (prefers-color-scheme:dark){body{background-image:linear-gradient(-20deg,#012a46 0,#170e3b 100%)}#welcome{background-color:rgba(0,0,0,.2)}}</style><div id="welcome" class="card" data-aos="zoom-in"><div id="welcome-inside"><p id="welcome-title">最大公约数练习</p><form action="#"><p class="range-field"><span class="info">最大上限：</span> <span id="max_num_result">50</span> <input type="range" id="max_num" min="20" max="100" step="10" value="50"></p><p class="range-field"><span class="info">时间间隔：</span> <span id="gap_result">5</span> <span class="info">s</span> <input type="range" id="gap" min="1" max="20" step="0.1" value="5"></p><p class="range-field"><span class="info">题量：</span> <span id="quantity_result">20</span> <input type="range" id="quantity" min="5" max="50" value="20"></p></form><button id="begin" class="btn waves-effect waves-light">开始练习</button></div><div id="t"><div class="progress"></div><p id="tihao"></p><p id="timu"></p><input id="ans" oninput='value=value.replace(/[^\d]/g,"")'></div><div id="result"><p id="result_p">在刚才的<span id="total">0</span>道题中，你答对了<span id="right">0</span>道，答错了<span id="wrong"></span>道，正确率<span id="rate"></span>。（最大上限<span id="result_max_num">0</span>，时间间隔<span id="result_time">0</span>秒）</p><button id="again" class="btn waves-effect waves-light" onclick="location.reload()">再来一次</button><div id="result_carousel" class="carousel carousel-slider center"></div></div></div><script src="/js/alonepage/primary.js" type="text/javascript"></script><script>time_limit=3000;
 quantity=2;/*题量*/
 max_num=50;/*能够出现的最大的数*/
 
-i=0;num1=num2=0;right=wrong=0;record=[];
 primes = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97];
 
 $(function(){  
@@ -18,18 +17,6 @@ $(function(){
 
 })
 
-const Toast = Swal.mixin({
-  toast: true,
-  position: 'top-end',
-  showConfirmButton: false,
-  timer: 1200,
-  timerProgressBar: false,
-  didOpen: (toast) => {
-    toast.addEventListener('mouseenter', Swal.stopTimer)
-    toast.addEventListener('mouseleave', Swal.resumeTimer)
-  }
-})
-
 
 $("#begin").click(function(){
     get_form();
@@ -42,14 +29,11 @@ $("#begin").click(function(){
             break;
         }
     }
-
-    $("#welcome-inside").remove();
-    $("#t").show();
-    document.getElementById("ans").focus();
     
-    produce_prime();
+    work(); /*显示第一道题*/
+
     setInter = setInterval(function () {
-        produce_prime(); //每秒循环调用的方法函数（循环）
+        work(); //每秒循环调用的方法函数（循环）
     }, time_limit); //1000毫秒为1秒
     
 });
@@ -61,32 +45,19 @@ function get_form(){
     $(".progress").css("animation-duration",time_limit/1000+"s")/*设置进度条动画周期时常*/
 }
 
-function randint(n,m){/*范围包括n和m*/
-    return parseInt(Math.random()*(m-n+1)+n)
-}
-function produce_prime(){
-    $(".progress").css("width","0%");
-    i!=0 && check();
-    if (i==quantity) {
-        end();/*终止答题*/
-    } else{
-        document.getElementById("ans").value="";
-        if (i%3!=0) { /*第一种方式生成*/
-            var prime = primes[Math.floor(Math.random()*primes.length)];
-            var max_times = Math.floor(max_num/prime);
-            num1=randint(1,max_times)*prime;
-            num2=randint(1,max_times)*prime;
-            if (num2==num1) num2=randint(1,max_times)*prime;/*若相同，则再生成一遍*/
-            if (num2==num1) num2=randint(1,max_times)*prime;/*若相同，则再生成一遍*/
-        } else { /*第二种方式生成*/
-            num1=randint(2,max_num);
-            num2=randint(2,max_num);
-            if (num2==num1) num2=randint(2,max_num)*prime;/*若相同，则再生成一遍*/
-        }
-        $("#timu").html("("+num1+" , "+num2+")=");
-        record.push([num1,num2,,]);
-        i++;
-        $("#tihao").html(i);
+function produce_n1n2(){ /*生成num1, num2*/
+    document.getElementById("ans").value="";
+    if (qid%3!=0) { /*第一种方式生成*/
+        var prime = primes[Math.floor(Math.random()*primes.length)];
+        var max_times = Math.floor(max_num/prime);
+        num1=randint(1,max_times)*prime;
+        num2=randint(1,max_times)*prime;
+        if (num2==num1) num2=randint(1,max_times)*prime;/*若相同，则再生成一遍*/
+        if (num2==num1) num2=randint(1,max_times)*prime;/*若相同，则再生成一遍*/
+    } else { /*第二种方式生成*/
+        num1=randint(2,max_num);
+        num2=randint(2,max_num);
+        if (num2==num1) num2=randint(2,max_num);/*若相同，则再生成一遍*/
     }
 }
 
@@ -103,37 +74,15 @@ function end(){
     result_table();
 }
 
-function result_table(){
-    var html="<table><tr><th>题号</th><th>第一个数</th><th>第二个数</th><th>正确答案</th><th>你的答案</th><th>判定</th></tr>"
-    for(let j=0;j<quantity;j++){
-        var item=record[j];
-        html+="<tr><td>"+(j+1)+"</td><td>"+item[0]+"</td><td>"+item[1]+"</td><td>"+item[2]+"</td><td>"+item[3]+"</td><td>"+(item[2]==item[3] ? "✔️" :"❌")+"</td></tr>";
-    }
-    html+="</table>";
-    $("#result").append(html);
+
+function get_t_str(num1,num2){ /*返回题目完整表述 , 必须传参*/
+    let str="("+num1+" , "+num2+")=";
+    return str;
+}
+function get_std(){ /*返回正确答案*/
+    return gcd(num1,num2);
 }
 
 function gcd(x,y){
     return x%y==0 ? y : gcd(y , x%y); 
-}
-
-function check(){
-    $(".progress").css("width","100%");
-    var std=gcd(num1,num2);
-    var ans=document.getElementById("ans").value;
-    if (std==ans) {
-        right++;
-        Toast.fire({
-            icon: 'success',
-            title: '答案正确！'
-        })
-    } else {
-        wrong++;
-        Toast.fire({
-            icon: 'error',
-            title: '答案错误！'
-        })
-    }
-    record[i-1][2]=std;
-    record[i-1][3]=ans;
 }</script><div id="searchModal" class="modal"><div class="modal-content"><div class="search-header"><span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span> <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字" class="search-input"></div><div id="searchLoading"><img src="/medias/loading.svg" attribute="loading" alt="搜索索引正在加载中"><div>搜索索引正在加载中</div></div><div id="searchResult"></div></div></div><script src="/js/search.js"></script><div id="backTop" class="top-scroll"><a class="btn-floating btn-large waves-effect waves-light" href="#!"><i class="fas fa-angle-double-up"></i></a></div><script src="/libs/masonry/masonry.pkgd.min.js"></script><script src="/libs/scrollprogress/scrollProgress.min.js"></script><script async src="/libs/others/busuanzi.pure.mini.js"></script></body></html>
