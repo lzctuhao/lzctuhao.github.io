@@ -230,7 +230,21 @@ var files = new Array;
 var k=0;
 var music_player = document.querySelector("#hint");
 var jsonData;
+
+function toggleSound() {
+    var music = document.getElementById("hint");//获取ID
+    if (music.paused) { //判读是否播放  
+        music.paused=false;
+        music.play(); //没有就播放 
+    }    
+}
+
 function digui(i){/*朗读整个单词表 */
+    
+    /*应对手机端autoplay失效的问题 */
+    setInterval("toggleSound",100);
+
+   
     /*new*/
     if(exitReadWhole){/*如果手动退出 */
         diguistop();
@@ -419,6 +433,8 @@ function Each_digui_do(i){
 
     //document.getElementById("prev").innerHTML=$("table#words tr:eq("+(i-1)+") td:eq(1)").html();
     //document.getElementById("next").innerHTML=$("table#words tr:eq("+(i+1)+") td:eq(1)").html();
+
+    document.getElementById('hint').play();
 }
 
 
@@ -433,7 +449,7 @@ $(".ctrlwholediv").click(function(){/*按下停止按钮，终止朗读全文 */
 
 function diguibegin(){
     //document.getElementById("mode").value="0";
-    $("<audio autoplay id='hint'/>").appendTo("body");
+    //$('<audio autoplay="autopaly" id="hint" controls="controls" />').appendTo("body");
     if($("#screenon").is(':checked')){
         noSleep= new NoSleep();
         noSleep.enable();//不能用
