@@ -261,3 +261,21 @@ function wechat_account(){
         })
     }
 }
+
+
+
+function primary_series(current){ /*小学练习系列页面-弹窗 */
+    Swal.fire({
+        title: '小学练习系列页面',
+        showConfirmButton: false,
+        showCloseButton: true,
+        html: ' <div id="primary_series" class="collection">\
+        <a href="/tools/primary/" class="collection-item">最大公约数练习</a>\
+        <a href="/tools/primary2/" class="collection-item">两位数除以一位数</a>\
+        <a href="/2022/0814/folder-ganhuo/xiao-liu-ying-yu/" class="collection-item">六上单词</a>\
+      </div>',
+    })
+    if(current>0){ /*标记当前页*/
+        $("#primary_series").find('a').eq(current-1).append('<span class="badge">当前</span>');
+    }
+}

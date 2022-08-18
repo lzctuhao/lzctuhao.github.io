@@ -101,6 +101,7 @@ $(function () {
             var code = $("#soundorg").val();
             $("#hint2").remove();
             $("<audio src='" + showSound(text,code) + "' autoplay id='hint2'/>").appendTo("body");
+            document.getElementById('hint2').play();
         }
     });
 
