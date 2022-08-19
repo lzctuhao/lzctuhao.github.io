@@ -178,9 +178,9 @@ $(function () {
     //stopwholeFreeMove();
 
     var ua = navigator.userAgent.toLowerCase();
-    if((ua.indexOf("android")>=0)||(ua.indexOf("iphone")>=0)||(ua.indexOf("symbianos")>=0)||(ua.indexOf("windows phone")>=0)||(ua.indexOf("ipad")>=0)||(ua.indexOf("ipod")>=0)){
+    /*if((ua.indexOf("android")>=0)||(ua.indexOf("iphone")>=0)||(ua.indexOf("symbianos")>=0)||(ua.indexOf("windows phone")>=0)||(ua.indexOf("ipad")>=0)||(ua.indexOf("ipod")>=0)){
         $('.btndiv a').tooltip('remove');
-    }
+    }*/
     if (ua.match(/MicroMessenger/i) == 'micromessenger') {//微信浏览器去除checked
         $("#screenon").removeAttr('checked');
         document.getElementById("screenon").setAttribute("disabled", "disabled");
@@ -188,13 +188,19 @@ $(function () {
     }
 
     //读取，填写api（cookies名含'Wordlist_'，但是url参数名、不含Wordlist_）。
-    let APIName=['mb1key','mb2key','bdid','bdkey'];
-    for(var i=0;i<4;i++){
-        if(getUrlParam(APIName[i])){
-            $.cookie('Wordlist_'+APIName[i], getUrlParam(APIName[i]),{ expires: 365, path: '/' });
+    if (getUrlParam("showkey")){ //url中有showkey时，展示处理api。
+        $(".key_region").show();
+        $("##bigword1").css({'font-size':'2.5rem','line-height':'2.5rem'});
+        $('#bigword2').css({'font-size':'1.5rem','line-height':'1.5rem'});
+        let APIName=['mb1key','mb2key','bdid','bdkey'];
+        for(var i=0;i<4;i++){
+            if(getUrlParam(APIName[i])){
+                $.cookie('Wordlist_'+APIName[i], getUrlParam(APIName[i]),{ expires: 365, path: '/' });
+            }
+            if($.cookie('Wordlist_'+APIName[i])){$("#"+APIName[i]).val($.cookie('Wordlist_'+APIName[i]));}
         }
-        if($.cookie('Wordlist_'+APIName[i])){$("#"+APIName[i]).val($.cookie('Wordlist_'+APIName[i]));}
     }
+    
 });
 
 $('body').on('click','.transbtn',function(){
@@ -329,11 +335,24 @@ function parseJson(jsonObj,code) {// 循环所有键,code=1是朗读，code=2是
         }
     }
 }
-music_player.addEventListener('ended', function () {//一个单词所有内容读完
-    k++;
-    if(k>=files.length){
-        nextWord();
-    } else { music_player.src = files[k]; }
+music_player.addEventListener('ended', function () {
+    nextsound();
+});
+music_player.addEventListener('error', function () {
+    let domain=document.getElementById("hint").src;
+    domain=domain.split('/')[2];
+    if (domain) { //判断触发error的是因为音源错误，不是终止浪读。
+        Swal.fire({
+            toast: true,
+            position: 'top',
+            icon: 'warning',
+            title: '发音引擎错误。将继续下一单词。',
+            text: '  (无法连接至'+domain+')',
+            showConfirmButton: false,
+            timer: 2500,
+        })
+        nextsound();
+    }
 });
 
 function get_api_url(dict,word){
@@ -353,6 +372,13 @@ function handleLiJu(str,code){
     str=str.replace(/\{.*?\}/g,'');//移除字符串中的所有{}括号（包括其内容）
     str=str.replace(/\[|]/g,'');//移除字符串中的所有[]括号（不包括其内容）
     if(code=="1"){files.push(showSound(str,files.length%3));}
+}
+
+function nextsound(){//同一单词，下一音源（下一任务）
+    k++;
+    if(k>=files.length){
+        nextWord();//一个单词所有内容读完
+    } else { music_player.src = files[k]; }
 }
 
 function nextWord(){
@@ -477,7 +503,7 @@ function diguibegin(){
 function diguistop(){/*终止朗读全文 */
     if($("#screenon").is(':checked')){noSleep.disable();}
     //$("#hint")[0].pause();
-    $("#hint")[0].src="";
+    $("#hint")[0].src="//";//清空src
     exitReadWhole=1;
     $("table#words tr:eq("+(ReadWhole_row-1)+") td").removeClass("soundhere");
     $("table#words tr:eq("+(ReadWhole_row)+") td").removeClass("soundhere");

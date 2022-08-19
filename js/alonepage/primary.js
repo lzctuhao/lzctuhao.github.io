@@ -38,6 +38,7 @@ function result_table(){
     }
     table_html+="</table>";
     $('.carousel').carousel();
+
     $("#result").append(table_html);
 
     $(".std").on("click",function(){
@@ -45,6 +46,18 @@ function result_table(){
         let opacity=dom.css('opacity');
         dom.css('opacity',opacity=="0"?1:0);
     });
+
+    try{
+        let now_time=new Date();
+        $("#now_time").html(now_time.toLocaleString());
+    } catch{
+        console.log(now_time);
+    }
+}
+
+function toggle_wrong(){
+    $(".carousel.carousel-slider .carousel-item.y").toggle();
+    $('.carousel').carousel("destroy");
 }
 
 function check(std){
