@@ -1,8 +1,1 @@
-$(function () {
-    var href = window.location.href;
-    if (href.indexOf("localhost") < 0){
-        var targetProtocol = "https:";
-            if (window.location.protocol != targetProtocol)
-                href = targetProtocol + href.substring(window.location.protocol.length);
-    }
-});
+$((function(){var o=window.location.href;if(o.indexOf("localhost")<0){var i="https:";if(window.location.protocol!=i)o=i+o.substring(window.location.protocol.length)}}));
