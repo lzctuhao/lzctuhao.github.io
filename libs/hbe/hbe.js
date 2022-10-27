@@ -264,7 +264,7 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
       AppendOrigLkBylzc();
     }
 
-    mainElement.addEventListener('keydown', async (event) => {
+    document.getElementById('hbePass').addEventListener('keydown', async (event) => {
       if (event.isComposing || event.key === "Enter") {
         const password = document.getElementById('hbePass').value;
         const keyMaterial = await getKeyMaterial(password);
