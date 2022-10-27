@@ -265,7 +265,7 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
     }
 
     mainElement.addEventListener('keydown', async (event) => {
-      if (event.isComposing || event.keyCode === 13) {
+      if (event.isComposing || event.key === "Enter") {
         const password = document.getElementById('hbePass').value;
         const keyMaterial = await getKeyMaterial(password);
         const hmacKey = await getHmacKey(keyMaterial);
