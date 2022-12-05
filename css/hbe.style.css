@@ -305,11 +305,13 @@ input.hbe-input-field-wave {
 	padding: 0.5em 0em 0.25em;
 	width: 100%;
 	background: transparent;
-	color: var(--textcolor);
+	color: transparent;
 	font-size: 1.25em;
+	transition: color .2s ease-out;
 }
 input.hbe-input-field-wave:focus:not([readonly]) {/**为了提高优先级*/
 	border-bottom: none;
+	color: var(--textcolor);
 }
 
 .hbe-input-label-wave {
