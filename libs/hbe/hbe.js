@@ -186,7 +186,7 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
       hideButton.classList.add("hbe-button");
       hideButton.addEventListener('click', () => {
         window.localStorage.removeItem(storageName);
-        window.location.reload();
+        window.location.search="";
       });
 
       document.getElementById('hexo-blog-encrypt').style.display = 'inline';
