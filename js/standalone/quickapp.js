@@ -1,0 +1,1 @@
+window.addEventListener("load",(function(){let e=45;let n=`<style>#Container1, #headNav, body.tools-body header,nav .sidenav-trigger i,#Container1, #headNav, #navContainer, body.tools-body header, nav, nav .sidenav-trigger{height:${e}px;line-height:${e}px}<style>`;$("body").append(n)}));
