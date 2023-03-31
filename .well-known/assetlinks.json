@@ -1,6 +1,6 @@
 [{
         "relation": ["delegate_permission/common.handle_all_urls"],
-        "target" : { "namespace": "android_app", "package_name": "tk.lzc2002.twa",
-                     "sha256_cert_fingerprints": ["65:94:5A:8B:41:FD:C9:BD:58:25:EE:A7:53:8C:15:90:BF:EE:E2:D5:ED:65:06:69:8E:14:4D:10:4D:EB:4B:88"] }
+        "target" : { "namespace": "android_app", "package_name": "gq.lzc2002.twa",
+                     "sha256_cert_fingerprints": ["90:5C:4A:F4:07:E6:96:C9:29:09:D5:B4:97:8D:8A:4D:BB:5D:61:DB:00:BB:5C:45:E0:03:92:3B:3A:62:4A:04"] }
       }
 ]
