@@ -4,16 +4,16 @@
   
     
     <entry>
-      <title>PC2 液体输送机械</title>
-      <link href="/2023/0620/folder-curriculum/physical-chemistry/pc2-liu-ti-shu-song-ji-jie/"/>
-      <url>/2023/0620/folder-curriculum/physical-chemistry/pc2-liu-ti-shu-song-ji-jie/</url>
+      <title>PC3 非均相物系的分离和固体流态化</title>
+      <link href="/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/"/>
+      <url>/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</url>
       
       <author></author>
       
       
       
         
-          <content type="html"><![CDATA[离心泵流量泵的流量：指单位时间内泵所输送的液体面积，单位有$m^3/s、m^3/min或m^3/h$扬程 $H$泵的扬程(又称压头)是指单位重量($1N$)液体流经泵所获得的能量,单位为$J/N=m$$$H=h_0+\frac{p_M-p_v}{\rho g}+\frac{u^2_2-u^1_1}{2g}+\sum H_f\\ h_0:两截面间垂直距离，m\\ p_M:压力表读数（表压），Pa\\ p_v:真空表读数，Pa\\ u_1,u_2:吸入管、排除管中液体流速，m/s\\ \sum H_f:两截面间管路中的压头损失，m$$由于两截面之间管路很短,其压头损失$\sum H_f$可忽略不计。又因两截面的动压头差$\frac{u^2_2-u^1_1}{2g}$很小,通常也可不计轴功率$P$与有效功率$P_e$    泵的功率有输入的轴功率$P$与输出的有效功率$$P_e=q_V\rho g H$$        轴功率是指泵轴所需的功率,离心泵一般用电动机驱动,其轴功率就是电动机传给泵轴的功率                有效功率是指单位时间内液体从泵中叶轮获得的有效能量            $$P_e:有效功率，W\\ q_V:泵的流量，m^3/s\\ \rho:液体密度,kg/m^3\\ H:泵的扬程，m\\ g:重力加速度，m/s^3$$效率$$\eta=\frac{P_e}{P}$$离心泵的特性曲线    离心泵的$H、P、n$与$q$之间的关系曲线称为特性曲线    其数值通常是指额定转速和标定状况(大气压$101.325kPa,20^{\circ}C$清水)下的数值,可用实验测得比例定律表达式$$\frac{q_{V2}}{q_{V1}}=\frac{n_2}{n_1},~~\frac{H_2}{H_1}=(\frac{n_2}{n_1})^2,~~\frac{P_2}{P_1}=(\frac{n_2}{n_1})^2$$管路特性方程$$H=H_0+kq^2_V\\ k=\frac{8}{\pi^2g}\bigg(\lambda\frac{l+l_e}{d^5}\bigg)\\ H_0=\Delta z+\frac{\Delta p}{\rho g}$$            $k$为管路特性系数,他与管路长度、管径、摩擦系数及局部阻力系数有关                $k$值较大的管路可称为高阻力管路;$k$值较小的管路则称为低阻力管路    工作点    一台离心安装在一定的管路系统中工作, 包括阀门开度也一定时,就有一定的流量与压头    此流量与压头是离心泵特性曲线与管路特性曲线交点处的流量与压头。此点称为泵的工作点等效率方程$$H=Kq^2_V$$    与离心泵特性方程式联立求解泵特性曲线上的流量与量程离心泵的并联及串联离心泵的最大允许安装高度$$H_{g允许}=\frac{p_0-p_v}{\rho g}-\Delta h-\sum H_f$$离心泵的类型与选用类型（清水泵）    清水泵一般用于工业生产(输送物理、化学性质与清水类似的液体)、城市给排水和农业排灌                        IS型单级单吸式离心泵输送介质的温度不超过$80^{\circ}C$,口径$40\sim200mm$,流量范围$6.3\sim400m^3/h$,扬程范围$5\sim125m$                以IS50-32-250为例:                        IS — 国际标准单级单吸清水离心泵        50 — 泵吸入口直径,$mm$                32 — 泵排出口直径,$mm$                250 — 泵叶轮的名义尺,$mm$                如果输送液体流量要求较大而扬程不高时,可选用S型单级双吸离心泵         如果扬程要求较高,可选用D、DG型多级离心泵         如果输送温度低于150$^{\circ}C$的流体,可选用IS型单级单吸式离心泵,高效节能            选择            确定输送系统的流量与压头         根据输送系统管道的安排，用伯努利方程式计算管路所需的压头                        选择泵的类型与型号                $q_{V泵}&gt;q_{V需}，H_泵&gt;H_需$            # 其他类型液体输送机械## 往复泵### 往复泵的理论平均流量$$单动泵：q_{V理}=AS_n\\ 双动泵：q_{V理}=（2A-a）S_n\\ q_{V理}：往复泵的理论流量,m^3/min\\ A:活塞/柱塞的截面积,A=\frac{\pi}{4}D^2\\ D:活塞直径，m\\ S:活塞/柱塞的行程，m\\ n:活塞/柱塞的往复频率，1/min\\ a:活塞/柱塞杆截面积$$### 容积效率在泵的操作中,由于吸入阀和排出 阀启、闭滞后的漏液以及填料函处漏液,实际平均流量$q_V$小于$q_{V理}$，二者的关系为$$q_V=\eta_vq_{V理}$$            $\eta_v$为容积效率,一般约为$0.9\sim0.97$        随着泵转速增大,将受汽蚀的影响而降低有时可降到0.8以下气体输送和压缩装置离心式通风机流量$$q_{V0}=q_V\frac{\rho}{\rho_0}$$风压    全风压        $$p_t=\rho gh=(p_{s2}-p_{s1})+\bigg(\frac{\rho u_2^2}{2}-\frac{\rho u_1^2}{2}\bigg)\\ 各项单位：J/m^3=N\cdot m/m^3=N/m^2=Pa\\ p_s:静压\\ \frac{\rho u^2}{2}=p_d:动压\\ p_s+p_d:全压$$         各项为单位体积气体所具有的机械能         将全风压改写为        $$p_t=(p_{s2}-p_{s1})+(p_{d2}-p_{d1})\\ p_t=\underset{出口全压}{(p_{s2}+p_{d2})}-(\underset{进口全压}{p_{s1}+p_{d1}})$$        因此，通风机的全风压$p_t$为出口截面的全压$(p_{s2}+p_{d2})$与进口截面的全压$(p_{s1}+p_{d1})$之差值                静风压        $$p_{st}=(p_{s2}-p_{s1})-p_{d1}\\ p_{st}=全风压p_t-动风压p_d$$        全风压效率        $$\eta=\frac{P_e}{P}\\ P:轴功率\\ p_e=p_t\cdot q_V:有效功率$$    ]]></content>
+          <content type="html"><![CDATA[颗粒特性单一球形颗粒特性$$\begin{aligned}& V=\frac{\pi}{6} d^3 \\& S=\pi d^2 \\& a=6 / d\end{aligned}$$式中：$d$ - 颗粒直径, $\mathrm{m}$;$V$ - 球形颗粒的体积, $\mathrm{m}^3$;$S$ - 球形颗粒的表面积, $\mathrm{m}^2$;$a$-比表面积(单位体积颗粒具有的表面积), $\mathrm{m}^2 / \mathrm{m}^3$ 。单一非球形颗粒特性$$d_e=\sqrt[3]{\frac{6 V_P}{\pi}}$$式中：$d_{\mathrm{e}}$ - 体积当量直径, $\mathrm{m}$;$V_{\mathrm{p}}$ - 非球形颗粒的实际体积, $\mathrm{m}^3$ 。$$\phi_{\mathrm{s}}=\frac{S}{S_{\mathrm{p}}}$$式中：$\phi_{\mathrm{s}}$ - 颗粒的形状系数或球形度;$S_{\mathrm{p}}$ - 颗粒的表面积, $\mathrm{m}^2$;$S$ - 与该颗粒体积相等的圆球的表面积, $\mathrm{m}^2$ 。颗粒群的平均粒径$$\frac{1}{d_a}=\Sigma \frac{1 G_i}{d_i G}=\Sigma \frac{x_i}{d_i}$$或$$d_a=1 / \Sigma \frac{x_i}{d_i}$$式中：$d_a-$ 平均比表面积直径, $\mathrm{m}$;$d_i$ - 管分直径, $\mathrm{m}$;$x_i-d_i$ 粒径段内颗粒的质量分数。颗粒与流体相对运动时所受的阻力当流体以一定速度绕过静止的固体颗粒流动时,由于流体的黏性,会对颗粒有作用力。反之,当固体颗粒在静止流体中移动时,流体同样会对颗粒有作用力。这两种情况的作用力性质相同,通常称为曳力或阻力，量纲为1$$F_d=\zeta A\frac{\rho u^2}{2}$$$\zeta$是流体相对于颗粒运动时的雷诺数$Re=d_p u\rho/\mu $的函数层流区 $\zeta=24/Re$过渡区 $\zeta=10/\sqrt{Re}$湍流区 $\zeta=0.44$这3个区域又分别称为 Stokes区、Allen区、Newton区,其中斯托克斯区的计算式是准确的,其他两个区域的计算式是近似的沉降重力沉降球形颗粒的自由沉降自由沉降：单个颗粒在流体中沉降,或者颗粒群在流体中分散得较好,而颗粒在互不接触、互不碰撞的条件下沉降沉降速度计算式$$u_t=\sqrt{\frac{4gd_p(\rho_p-\rho)}{3\zeta \rho}}\\ u_t:沉降速度,m/s\\ d_p:颗粒直径,m\\ \rho_p:颗粒的密度,kg/m^3\\ \rho:流体的密度,kg/m^3\\ g:自由落体加速度,m/s^2\\ \zeta:为阻力系数$$对于球形颗粒,将不同Re范围的阻力系数计算式代入上式,可得各区域的沉降速度计算式$$层流区:u_t=gd_p^2(\rho_p-\rho)/18\mu(Stokes)\\ 过渡区:u_t=\bigg[\frac{4g^2(\rho_p-\rho)^2}{225\mu\rho}\bigg]^{1/3}d_p\\ 湍流区:u_t=\sqrt{3.03g(\rho_p-\rho)d_p/\rho}$$沉降速度的计算已知球形颗粒直径,要计算沉降速度时,需要根据$Re$值选择一个计算式。但由于为待求量,所以$Re$值是未知量。这就需要用试差法进行计算例如,当颗粒直径较小时,可先假设沉降属于层流区,则用斯托克斯式求出。然后用所求出的计算$Re$值,检验$Re$值是否小于2。如果计算的$Re$值不在所假设的流型区域,则应另选用其他区域的计算式求,直到用所求,计算的$Re$值符合于所用计算式的流型范围为止降尘室停留时间与沉降时间颗粒在降尘室中分离出来的条件$$\underset{停留时间}{L/u}\ge \underset{沉降时间}{H/u_t}\\ L：降尘室的长度,m\\ u：颗粒运动的水平分速度,m/s\\ H：降尘室的高度,m\\ u_t：颗粒的沉降速度,$$ 因此，气体的最大流速为：$\frac{L}{u_{max}}=\frac{H}{u_t}$- 临界粒径  - 临界粒径颗粒的沉降速度    $$u_{tc}=\frac{q_{V_{S}}}{WL}$$假如尘粒的沉降速度处于层流区（Stokes定律区），则颗粒的临界粒径计算式$$\begin{align} d_{pc} &amp; = \sqrt{\frac{18\mu}{(\rho_p-\rho)g}u_{tc}}\\ &amp; = \sqrt{\frac{18\mu}{(\rho_p-\rho)g}\times \frac{q_{V_{S}}}{WL}}\\ \end{align} \\ d_{pc}:颗粒的临界粒径（能100\%除去的最小粒径），m\\ u_{tc}:与沉降速度d_{pc}对应的沉降速度，m/s\\ \mu:流体的黏度，Pa\cdot s\\ \rho:流体的密度,kg/m^3\\ \rho_p:颗粒的密度,kg/m^3\\ g:自由落体加速度，m/s^2\\ q_{V_s}:含尘气体的体积流量\\ L:降尘室长度，m \\W:降尘室宽度，m\\ WL:底面积,m^2$$气体的最大处理量$$\begin{align} q_{V_S}&amp;=WHNu_{max}\\ &amp;=\frac{d_{pc}^2(\rho_p-\rho)gWLN}{18\mu} \end{align}$$离心沉降离心分离因数$$K_c=\frac{r\omega^2}{g}\approx\frac{rN^2}{900}$$$K_c$:离心分离因数，同一颗粒所受的离心力与重力之比，是表示离心力大小的之比旋风分离器气体流量$$q_V=bhu_i$$临界粒径$$d_{pc}=3\sqrt{\frac{\mu b}{\pi n(\rho_p-\rho)u_i}}\\ n:计算时通常取n=5$$压力损失$$\Delta p=\frac{\zeta\rho u_i^2}{2}\\ \zeta=\frac{30bh\sqrt{D}}{d^2\sqrt{L+H}}$$过滤悬浮液量、固体量、滤液量及滤渣量之间的关系$$悬浮液 \begin{cases} 滤液，密度\rho,体积V\\ 湿滤渣，密度\rho_c\rightarrow \begin{cases} 液体\\ 干渣，密度\rho_p \end{cases} \end{cases}$$湿滤渣密度$\rho_c$的计算$$\frac{C}{\rho_c}=\frac{1}{\rho_p}+\frac{C-1}{\rho}\\ C:湿滤渣与其中所含干渣的质量比,Ckg湿渣与1kg干渣对应\\ \rho_c:湿滤渣密度，kg/m^3\\ \rho_p:干渣密度，kg/m^3\\ \rho:滤液密度，kg/m^3$$干渣质量与滤液体积的比值$$\omega=\frac{X}{(1-CX)/\rho}~~~kg~干渣/m^3~滤液\\ X:悬浮液中固体颗粒的质量分数,kg~固体/kg~悬浮液\\ CX:单位质量悬浮液可得湿滤渣的质量,kg~湿渣/kg~悬浮液\\ 1-CX:单位质量悬浮液可得滤液的质量,kg~滤液/kg~悬浮液\\ X/(1-CX):干渣与滤液的质量比$$$\omega$也称为单位体积滤液所对应的干渣质量湿滤渣质量与滤液体积的比值为$\omega C$,$kg~$湿滤渣/$m^3~$滤液​湿滤渣体积与滤液体积的比值$$v=\frac{\omega C}{\rho_c}\\ v:单位体积滤液所对于的湿滤渣的体积$$过滤速率基本方程式滤饼的比阻$$r=\frac{2\Delta p}{K\mu v}\\ r:比例系数,表示单位过滤面积上的滤饼为1m^3(V/A=1)时的阻力,1/m^2$$过滤速率方程$$\frac{dV}{d\tau}=\frac{A\Delta p}{r\mu v(V+V_e)/A}$$恒压过滤滤液体积与过滤时间的关系恒压过滤方程式$$V^2+2VV_e=KA^2\tau\\ K=\frac{2\Delta p}{\mu rv}\\ V:滤液体积\\ V_e:虚拟滤液体积\\ \tau:过滤时间，s$$令$q=\frac{V}{A},q_e=\frac{V_c}{A}$$$q^2+2qq_e=K\tau$$过滤常数的测定$$\frac{\tau}{q}=\frac{1}{K}q+\frac{2}{K}q_e$$在恒压过滤时，$\tau/q$与$q$之间具有线性关系直线的斜率为$1/K$，截距为$2q_e/K$实验时，测定不同过滤时间$\tau$所获得的单位过滤面积的滤液体积$q$的数据。并将数据$\tau/q$与$q$标绘于图中，连成一条直线,可得到直线的斜率$1/K$与截距$2q_e/K$，从而可以得到过滤常数$K$与$q_e$值必须注意,因$K=2\Delta p/\mu rv$，其值与悬浮液性质、温度及压力差有关。因此，只有在工业生产条件与实验条件完全相同时才可直接使用实验测定的过滤常数$K$与$q_e$转筒真空过滤机的生产能力过滤机单位时间获得的滤液量称为生产能力,以$Q$表示浸液率$$\psi=\frac{转筒浸液面积}{转筒总表面积}=\frac{浸液角度}{360^{\circ}}$$有效过滤时间$$\tau=\frac{\psi}{N}\\ N:转筒的转速为N,单位为1/s\\ \frac{1}{N}:转筒旋转一周的时间\\ \psi:\frac{1}{N}时间内转筒任何一部分表面经过过滤区的有效过滤时间$$生产能力转筒旋转一周获得的滤液量为$Q/N$,换算为单位面积的滤液量$$q=\frac{Q}{AN}$$将上式代入恒压过滤方程式$$Q=AN\bigg(\sqrt{q_e^2+\frac{K_\psi}{N}}-q_e\bigg)$$ 若过滤介质阻力$q_e$可忽略不计$$Q=A\sqrt{K\psi N}$$]]></content>
         
       
       
@@ -21,7 +21,40 @@
           
           <category> 本科课程 </category>
           
-          <category> 流体流动 </category>
+          <category> 化工原理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 干货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>PC2 液体输送机械</title>
+      <link href="/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/"/>
+      <url>/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/</url>
+      
+      <author></author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[离心泵离心泵的基本方程式$$H_{\rm{T_\infty}}=\dfrac{u_{2}c_{2}\cos\alpha_{2}-u_{1}c_{1}\cos\alpha_{1}}{g}$$在离心泵的设计中,为提高理论压头,一般使$α_1=90°$,则$\cosα_1=0$，故可简化为：$$H_{\rm{T_\infty}}=\dfrac{u_2c_2\cos\alpha_2}{g}$$另外，表示离心泵的理论压头与理论流量、叶轮的转速和直径、叶片的几何形状之间的关系式：$$H_{\rm{T \infty}}=\frac{u_2^2}{g}-\frac{u_2 \cot \beta_2}{g \pi D_2 b_2} Q_T$$$$u_2=\frac{\pi D_2 n}{60}$$式中 $n$ —叶轮转速, $\rm r/min$ 。主要性能参数与特性曲线离心泵的主要性能参数流量泵的流量：指单位时间内泵所输送的液体面积，单位有$\rm m^3/s$、$\rm m^3/min$或$\rm m^3/h$。扬程 $H$离心泵的压头又称扬程，它是指离心泵对单位重量（$\rm 1N$）的液体所能提供的有效能量,一般用$H$表示，其单位为$\rm m$。效率$$\eta=\eta_v\eta_m\eta_h$$$$\begin{align} \eta_v&:容积损失  \\\eta_m&:机械损失\\\eta_h&:水力损失 \\\eta&:总效率   \end{align}$$轴功率$N$与有效功率$N_e$泵的功率有输入的轴功率$P$与输出的有效功率$$\eta=\frac{N_e}{N}$$$$N_e=Q\rho g H$$轴功率是指泵轴所需的功率,离心泵一般用电动机驱动,其轴功率就是电动机传给泵轴的功率有效功率是指单位时间内液体从泵中叶轮获得的有效能量$$\begin{align}N_e&:有效功率，&\rm{W}\\ Q&:泵的流量，&\rm{m^3/s}\\ \rho&:液体密度，&\rm{kg/m^3}\\ H&:泵的扬程，&\rm{m}\\ g&:重力加速度，&\rm{m/s^3}\end{align}$$离心泵的特性曲线离心泵的$H、P、n$与$q$之间的关系曲线称为特性曲线其数值通常是指额定转速和标定状况下的数值,可用实验测得离心泵性能的影响因素与换算液体物性影响离心泵转速影响比例定律表达式：$$\frac{Q_{2}}{Q_{1}}=\frac{n_2}{n_1},~~\frac{H_2}{H_1}=\left(\frac{n_2}{n_1}\right)^2,~~\frac{P_2}{P_1}=\left(\frac{n_2}{n_1}\right)^2$$离心泵叶轮直径的影响切割定律：该式只有在叶轮直径的变化不大于$5\% D_2$ 时才适用。  $$\frac{Q'}{Q}=\frac{D_2'}{D_2},\frac{H'}{H}=\left(\frac{D_2'}{D_2}\right)^2,\frac{N'}{N}=\left(\frac{D_2'}{D_2}\right)^3$$离心泵的最大允许安装高度 P103若贮槽上方与大气相通, 则 $p_0$ 即为大气压力 $p_{\mathrm{a}}$, 可表示为：$$H_{\mathrm{g}}=\frac{p_{\mathrm{a}}-p_1}{\rho g}-\frac{u_1^2}{2 g}-H_{\mathrm{f}, 0-1}$$若已知离心愿的必需气蚀余量, 则：$$H_{\mathrm{g}}=\frac{p_0-p_{\mathrm{v}}}{\rho g}-(N P S H)_{\mathrm{r}}-H_{\mathrm{f}, 0-1}$$若已知离心愿的允许吸上真空度, 则：$$H_{\mathrm{g}}=H_{\mathrm{s}}{ }^{\prime}-\frac{u_1^2}{2 g}-H_{\mathrm{f}, 0-1}$$离心泵的工作点与流量调节管路特性方程$$H_e=K+H_f=K+f(Q_e)$$工作点一台离心安装在一定的管路系统中工作, 包括阀门开度也一定时,就有一定的流量与压头此流量与压头是离心泵特性曲线与管路特性曲线交点处的流量与压头。此点称为泵的工作点联立：泵特性方程 $H=f(Q)$管路特性方程 $H_e=K+B Q_{\mathrm{e}}{ }^2$离心泵的类型与选用类型（清水泵）    清水泵一般用于工业生产(输送物理、化学性质与清水类似的液体)、城市给排水和农业排灌                        IS型单级单吸式离心泵输送介质的温度不超过$80^{\circ}C$,口径$40\sim200mm$,流量范围$6.3\sim400m^3/h$,扬程范围$5\sim125m$                以IS50-32-250为例:                        IS — 国际标准单级单吸清水离心泵        50 — 泵吸入口直径,$mm$                32 — 泵排出口直径,$mm$                250 — 泵叶轮的名义尺,$mm$                如果输送液体流量要求较大而扬程不高时,可选用S型单级双吸离心泵         如果扬程要求较高,可选用D、DG型多级离心泵         如果输送温度低于150$^{\circ}C$的流体,可选用IS型单级单吸式离心泵,高效节能            选择            确定输送系统的流量与压头         根据输送系统管道的安排，用伯努利方程式计算管路所需的压头                        选择泵的类型与型号                $q_{V泵}&gt;q_{V需}，H_泵&gt;H_需$            其他类型液体输送机械往复泵往复泵的理论平均流量$$单动泵：q_{V理}=AS_n\\ 双动泵：q_{V理}=（2A-a）S_n\\ q_{V理}：往复泵的理论流量,m^3/min\\ A:活塞/柱塞的截面积,A=\frac{\pi}{4}D^2\\ D:活塞直径，m\\ S:活塞/柱塞的行程，m\\ n:活塞/柱塞的往复频率，1/min\\ a:活塞/柱塞杆截面积$$容积效率在泵的操作中,由于吸入阀和排出 阀启、闭滞后的漏液以及填料函处漏液,实际平均流量$q_V$小于$q_{V理}$，二者的关系为$$q_V=\eta_vq_{V理}$$            $\eta_v$为容积效率,一般约为$0.9\sim0.97$        随着泵转速增大,将受汽蚀的影响而降低有时可降到0.8以下气体输送和压缩装置离心式通风机流量$$q_{V0}=q_V\frac{\rho}{\rho_0}$$风压全风压$$p_t=\rho gh=(p_{s2}-p_{s1})+\bigg(\frac{\rho u_2^2}{2}-\frac{\rho u_1^2}{2}\bigg)\\ 各项单位：J/m^3=N\cdot m/m^3=N/m^2=Pa\\ p_s:静压\\ \frac{\rho u^2}{2}=p_d:动压\\ p_s+p_d:全压$$各项为单位体积气体所具有的机械能将全风压改写为$$p_t=(p_{s2}-p_{s1})+(p_{d2}-p_{d1})\\ p_t=\underset{出口全压}{(p_{s2}+p_{d2})}-(\underset{进口全压}{p_{s1}+p_{d1}})$$因此，通风机的全风压$p_t$为出口截面的全压$(p_{s2}+p_{d2})$与进口截面的全压$(p_{s1}+p_{d1})$之差值静风压$$p_{st}=(p_{s2}-p_{s1})-p_{d1}\\ p_{st}=全风压p_t-动风压p_d$$全风压效率$$\eta=\frac{P_e}{P}\\ P:轴功率\\ p_e=p_t\cdot q_V:有效功率$$]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> 本科课程 </category>
+          
+          <category> 化工原理 </category>
           
       </categories>
       
@@ -38,15 +71,15 @@
     
     <entry>
       <title>PC1 流体流动</title>
-      <link href="/2023/0619/folder-curriculum/physical-chemistry/pc1-liu-ti-liu-dong/"/>
-      <url>/2023/0619/folder-curriculum/physical-chemistry/pc1-liu-ti-liu-dong/</url>
+      <link href="/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/"/>
+      <url>/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/</url>
       
       <author></author>
       
       
       
         
-          <content type="html"><![CDATA[流体静力学流体的压力$$p_{绝}=p_{大气}+p_{表} \\ p_{绝}=p_{大气}-p_{真}$$流体的密度$$\rho=\dfrac{m}{V}\\ \rho :kg/m^{3}$$气体密度（压力不太高，温度不太低）：$$pV=nRT=\dfrac{m}{M}RT\\ \rho=\dfrac m V =\dfrac{pM_m}{RT}\\ p:绝对压力，kPa\\ M_m:摩尔质量，kg/kmol\\ n:气体的物质的量，kmol\\ R:8.314$$理想气体标况下即$T^\ominus=273.15K,p^\ominus=101.325$时,摩尔体积为$\rho^\ominus=\dfrac{M}{22.4}$流体的比体积单位质量流体的体积$$v=\dfrac{V}{m}=\dfrac{1}{\rho}\\ v:m^3/kg$$静力学基本方程式$$p=p_0+\rho gh\\ h=\dfrac{p-p_0}{\rho g}$$适用于气体和液体液体密度可视为常数，而气体密度随容器高低变化甚微，也可视为常数流体流动的基本方程式流量与流速流量体积流量$q_V:$单位时间内流体流经管路任一截面的体积称为体积流量，单位：$m^3/s$质量流量$q_m:$单位时间内流体流经管路任一截面的质量称为质量流量，单位：$kg/s$$$q_m=\rho q_V$$流速平均流速$u:$单位时间内流体质点在流动方向上所流经的距离，简称流速，m/s。$$u=\dfrac{q_V}{A},q_V=Au,A=\dfrac{\pi d^2}{4},d=\sqrt{\dfrac{q_V}{0.785u}}\\ q_m=\rho q_{V}=\rho Au$$质量流速$w:$单位时间内流体经管路截面的质量，单位为$kg/(m^2\cdot s)$$$\omega=\dfrac{q_m}{A}=\dfrac{\rho Au}{A}=\rho u$$连续性方程与伯努利方程式连续性方程在连续稳定的不可压缩流体的流动中$$\rho Au=q_m=C\\ \dfrac{u_1}{u_2}=(\dfrac{d_2}{d_1})^2$$若流体不可压缩，$\rho=C$$$Au=C$$伯努利方程式$$gz+\dfrac{p}{\rho}+\dfrac{u^2} 2=C$$伯努利方程式的物理意义      $gz$为单位质量($1kg$)流体所具有的位能。因为质量为$m$的流体,其与水平基准面的距离为$z$时,则其位能为$mgz$,所以单位质量流体的位能为$gz$,其单位为        $\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$        $\dfrac{p}{\rho}$为单位质量流体所具有的静压能。流动流体中的流体压力通常称为静压。因用测压管可测出它能使流体提升一定高度($h=p/\rho g$), 这一高度的液柱相对流动的液体来说是静止状态,其单位为        $\dfrac{N/m^2}{kg/m^3}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$        $\dfrac{u^2}{2}$为单位质量流体所具有的动能。因质量为$m$、速度为$u$的流体所具有的动能为$mu^2/2$,故$u^2/2$为单位质量流体的动能,其单位为        $\dfrac{kg\cdot \dfrac{m^2}{s^2}}{kg}=\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$    位能、静压能及动能均属于机械能,三者之和称为总机械能或总能量     伯努利方程式表明, 这3种形式的能量可以相互转换,但总能量不会有所增减,即三项之和为一常数     所以,伯努利方程式是单位质量流体能量守恒方程式      将伯努利方程式各项除以重力加速度$g$,则得$$z+\dfrac{p}{\rho g}+\dfrac{u^2} {2g}=C$$式中各项单位为$\dfrac{J/kg}{m/s^2}=\dfrac{\dfrac{N\cdot m}{kg}}{\dfrac{m}{s^2}}=\dfrac{\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}}{\dfrac{m}{s^2}}=m$,可以写成$\dfrac{N\cdot m}{N}=\dfrac{J}{N}$,即单位重量（$1N$）流体所具有的能量,该式是单位重量流体能量守恒方程式由于各项的量纲都是长度，所以各种单位重量流体的能量都可以用流体液柱高度表示在流体力学中常把单位重量流体的能量称为压头，$z$称为位压头，$\dfrac{p}{\rho g}$为静压头，$\dfrac{u^2}{2g}$为动压头或速度压头，$z+\dfrac{p}{\rho g}+\dfrac{u^2} {2g}$为总压头实际流体机械能衡算式压头损失实际流体在管路内流动时,由于流体的内摩擦作用,不可避免要消耗一部分机械能。因此必须在机械能量衡算时加入压头损失项$$z_1+\dfrac{p_1}{\rho g}+\dfrac{u_1^2}{2g} =z_2+\dfrac{p_2}{\rho g}+\dfrac{u_2^2}{2g}+\sum H_f\\ \sum H_f:压头损失，m$$外加压头化工生产中,常常需要将流体从总压头较小的地方输送到较大的地方,这一过程是不能自动进行的,需要从外界向流体输入机械压头$H$,以补偿管路两截面处的总压头之差以及流体流动时的压头损失$\sum H_f$$$z_1+\dfrac{p_1}{\rho g}+\dfrac{u_1^2}{2g}+H =z_2+\dfrac{p_2}{\rho g}+\dfrac{u_2^2}{2g}+\sum H_f\\ H为外加压头，m$$$$z_1g+\dfrac{p_1}{\rho}+\dfrac{u_1^2}{2}+W =z_2g+\dfrac{p_2}{\rho}+\dfrac{u_2^2}{2}+\sum h_f\\ \sum h_f=g\sum H_f:单位质量流体的机械能损失，J/kg\\ W=gH:单位质量流体的外加机械能，J/kg$$流体流动现象流体的黏度牛顿黏度定律：$$\tau=\mu\dfrac{du}{dy}\\ v=\dfrac{\mu}{\rho}\\ \mu:\text{黏度系数\\动力黏度\\黏度},Pa\cdot s\\ v:运动黏度，m^2/s$$剪应力$\tau$: 通过公式$F=\tau A$可求出粘滞力雷诺数与流体类型$$Re=\dfrac{du\rho}{\mu}=\dfrac{du}{v}$$$$\begin{align}d&:管径\\ u&:流体的流速\\ \rho&:流体密度\\ \mu&:流体的黏度\end{align}$$流体流动类型的判断：$$Re= \begin{cases} \begin{align}0-2000&:层流\\ 2000-4000&:过渡区\\ 4000&:湍流 \end{align}\end{cases}$$流体在管内的流动阻力流体在直管的流动阻力圆直管阻力通式范宁公式（适用直流湍流）：$$h_f=\lambda \dfrac{l}{d}\dfrac{u^2}{2}$$$$\Delta p_f=\rho h_f=\lambda\dfrac{l}{d}\dfrac{\rho u^2}{2}$$管壁糙度绝对粗糙度：$\epsilon（mm）$相对粗糙度：$\epsilon/d$在一定的$Re$条件下，管壁粗糙度越大，则流体的摩擦阻力损失就越大层流的摩擦系数$$\lambda=\dfrac{64}{\frac{dup}{\mu}}=\dfrac{64}{Re}$$湍流的摩擦系数及量纲Blasius关联式:$$\lambda=\dfrac{0.3164}{Re^{0.25}}\quad(Re=3\times 10^3 \sim 1\times 10^5)$$其余查图1-27，根据$Re$及$\dfrac{\epsilon}{d}$的关联式获得$\lambda$值。非圆形管的当量直径水力半径：$$r_H=\dfrac{流通截面积A}{润湿周边长度\prod}$$圆形管的水力半径：$$r_H=\dfrac{\pi d^2/4}{\pi d}=\dfrac{d}{4}\longrightarrow d=4r_H$$推广到非圆形管$$d_e=4r_H=\dfrac{4A}{\prod}$$对于矩形管$$d_e=\dfrac{4ab}{2(a+b)}=\dfrac{2ab}{a+b}$$管路上的局部阻力阻力系数法$$h_f=\zeta \dfrac{u^2}{2}\\ \zeta:局部阻力系数，由实验测定$$当量长度法$$h_f=\lambda\dfrac{l_e}{d}\dfrac{u^2}{2}$$总摩擦力损失计算式$$\sum h_f=h_{f直管}+h_{f局部} =\bigg[\lambda\bigg(\dfrac{l+\sum l_e}{d}\bigg)+\sum\zeta\bigg]\dfrac{u^2}{2}$$管路计算管路计算是连续性方程式、伯努利方程式、摩擦阻力损失计算式、摩擦系数计算式及$Re$表达式的具体应用流量的测定  皮托测速管$$u_{max}=\sqrt{\dfrac{2gR(\rho_0-\rho)}{\rho}} \\$$ 对于气体，$\rho_0&gt;&gt;\rho$        $$u_{max}=\sqrt{\dfrac{2gR\rho_0}{\rho}} \\$$ 计算$Re_{max}=\dfrac{du_{max}\rho}{\mu}$，利用关系图（P54）求出平均流速        孔板流量计    $$q_m=\alpha A_0\sqrt{2\rho \Delta p} \\$$  ]]></content>
+          <content type="html"><![CDATA[流体静力学流体的压力$$p_{绝}=p_{大气}+p_{表} \\ p_{绝}=p_{大气}-p_{真}$$流体的密度$$\rho=\dfrac{m}{V}\\ \rho :kg/m^{3}$$气体密度（压力不太高，温度不太低）：$$pV=nRT=\dfrac{m}{M}RT\\ \rho=\dfrac m V =\dfrac{pM_m}{RT}\\ p:绝对压力，kPa\\ M_m:摩尔质量，kg/kmol\\ n:气体的物质的量，kmol\\ R:8.314$$理想气体标况下即$T^\ominus=273.15K,p^\ominus=101.325$时,摩尔体积为$\rho^\ominus=\dfrac{M}{22.4}$流体的比体积单位质量流体的体积$$v=\dfrac{V}{m}=\dfrac{1}{\rho}\\ v:m^3/kg$$静力学基本方程式$$p=p_0+\rho gh\\ h=\dfrac{p-p_0}{\rho g}$$适用于气体和液体液体密度可视为常数，而气体密度随容器高低变化甚微，也可视为常数流体流动的基本方程式流量与流速流量体积流量$q_V:$单位时间内流体流经管路任一截面的体积称为体积流量，单位：$m^3/s$质量流量$q_m:$单位时间内流体流经管路任一截面的质量称为质量流量，单位：$kg/s$$$q_m=\rho q_V$$流速平均流速$u:$单位时间内流体质点在流动方向上所流经的距离，简称流速，m/s。$$u=\dfrac{q_V}{A},q_V=Au,A=\dfrac{\pi d^2}{4},d=\sqrt{\dfrac{q_V}{0.785u}}\\ q_m=\rho q_{V}=\rho Au$$质量流速$w:$单位时间内流体经管路截面的质量，单位为$kg/(m^2\cdot s)$$$\omega=\dfrac{q_m}{A}=\dfrac{\rho Au}{A}=\rho u$$连续性方程与伯努利方程式连续性方程在连续稳定的不可压缩流体的流动中$$\rho Au=q_m=C\\ \dfrac{u_1}{u_2}=(\dfrac{d_2}{d_1})^2$$若流体不可压缩，$\rho=C$$$Au=C$$伯努利方程式$$gz+\dfrac{p}{\rho}+\dfrac{u^2} 2=C$$伯努利方程式的物理意义      $gz$为单位质量($1kg$)流体所具有的位能。因为质量为$m$的流体,其与水平基准面的距离为$z$时,则其位能为$mgz$,所以单位质量流体的位能为$gz$,其单位为        $\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$        $\dfrac{p}{\rho}$为单位质量流体所具有的静压能。流动流体中的流体压力通常称为静压。因用测压管可测出它能使流体提升一定高度($h=p/\rho g$), 这一高度的液柱相对流动的液体来说是静止状态,其单位为        $\dfrac{N/m^2}{kg/m^3}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$        $\dfrac{u^2}{2}$为单位质量流体所具有的动能。因质量为$m$、速度为$u$的流体所具有的动能为$mu^2/2$,故$u^2/2$为单位质量流体的动能,其单位为        $\dfrac{kg\cdot \dfrac{m^2}{s^2}}{kg}=\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}=\dfrac{N\cdot m}{kg}=\dfrac{J}{kg} \\$    位能、静压能及动能均属于机械能,三者之和称为总机械能或总能量     伯努利方程式表明, 这3种形式的能量可以相互转换,但总能量不会有所增减,即三项之和为一常数     所以,伯努利方程式是单位质量流体能量守恒方程式      将伯努利方程式各项除以重力加速度$g$,则得$$z+\dfrac{p}{\rho g}+\dfrac{u^2} {2g}=C$$式中各项单位为$\dfrac{J/kg}{m/s^2}=\dfrac{\dfrac{N\cdot m}{kg}}{\dfrac{m}{s^2}}=\dfrac{\dfrac{kg\cdot \dfrac{m}{s^2}\cdot m}{kg}}{\dfrac{m}{s^2}}=m$,可以写成$\dfrac{N\cdot m}{N}=\dfrac{J}{N}$,即单位重量（$1N$）流体所具有的能量,该式是单位重量流体能量守恒方程式由于各项的量纲都是长度，所以各种单位重量流体的能量都可以用流体液柱高度表示在流体力学中常把单位重量流体的能量称为压头，$z$称为位压头，$\dfrac{p}{\rho g}$为静压头，$\dfrac{u^2}{2g}$为动压头或速度压头，$z+\dfrac{p}{\rho g}+\dfrac{u^2} {2g}$为总压头实际流体机械能衡算式压头损失实际流体在管路内流动时,由于流体的内摩擦作用,不可避免要消耗一部分机械能。因此必须在机械能量衡算时加入压头损失项$$z_1+\dfrac{p_1}{\rho g}+\dfrac{u_1^2}{2g} =z_2+\dfrac{p_2}{\rho g}+\dfrac{u_2^2}{2g}+\Sigma H_f\\ \Sigma H_f:压头损失，m$$外加压头化工生产中,常常需要将流体从总压头较小的地方输送到较大的地方,这一过程是不能自动进行的,需要从外界向流体输入机械压头$H$,以补偿管路两截面处的总压头之差以及流体流动时的压头损失$\Sigma H_f$$$z_1+\dfrac{p_1}{\rho g}+\dfrac{u_1^2}{2g}+H =z_2+\dfrac{p_2}{\rho g}+\dfrac{u_2^2}{2g}+\Sigma H_f\\ H为外加压头，m$$$$z_1g+\dfrac{p_1}{\rho}+\dfrac{u_1^2}{2}+W =z_2g+\dfrac{p_2}{\rho}+\dfrac{u_2^2}{2}+\Sigma h_f\\ \Sigma h_f=g\Sigma H_f:单位质量流体的机械能损失，J/kg\\ W=gH:单位质量流体的外加机械能，J/kg$$流体流动现象流体的黏度牛顿黏度定律：$$\tau=\mu\dfrac{du}{dy}\\ v=\dfrac{\mu}{\rho}\\ \mu:\text{黏度系数\\动力黏度\\黏度},Pa\cdot s\\ v:运动黏度，m^2/s$$剪应力$\tau$: 通过公式$F=\tau A$可求出粘滞力雷诺数与流体类型$$Re=\dfrac{du\rho}{\mu}=\dfrac{du}{v}$$$$\begin{align}d&:管径\\ u&:流体的流速\\ \rho&:流体密度\\ \mu&:流体的黏度\end{align}$$流体流动类型的判断：$$Re= \begin{cases} \begin{align}0-2000&:层流\\ 2000-4000&:过渡区\\ 4000&:湍流 \end{align}\end{cases}$$流体在管内的流动阻力流体在直管的流动阻力圆直管阻力通式范宁公式（适用直流湍流）：$$h_f=\lambda \dfrac{l}{d}\dfrac{u^2}{2}$$$$\Delta p_f=\rho h_f=\lambda\dfrac{l}{d}\dfrac{\rho u^2}{2}$$管壁糙度绝对粗糙度：$\epsilon（mm）$相对粗糙度：$\epsilon/d$在一定的$Re$条件下，管壁粗糙度越大，则流体的摩擦阻力损失就越大层流的摩擦系数$$\lambda=\dfrac{64}{\frac{dup}{\mu}}=\dfrac{64}{Re}$$湍流的摩擦系数及量纲Blasius关联式:$$\lambda=\dfrac{0.3164}{Re^{0.25}}\quad(Re=3\times 10^3 \sim 1\times 10^5)$$其余查图1-27，根据$Re$及$\dfrac{\epsilon}{d}$的关联式获得$\lambda$值。非圆形管的当量直径水力半径：$$r_H=\dfrac{流通截面积A}{润湿周边长度\prod}$$圆形管的水力半径：$$r_H=\dfrac{\pi d^2/4}{\pi d}=\dfrac{d}{4}\longrightarrow d=4r_H$$推广到非圆形管$$d_e=4r_H=\dfrac{4A}{\prod}$$对于矩形管$$d_e=\dfrac{4ab}{2(a+b)}=\dfrac{2ab}{a+b}$$管路上的局部阻力阻力系数法$$h_f=\zeta \dfrac{u^2}{2}\\ \zeta:局部阻力系数，由实验测定$$当量长度法$$h_f=\lambda\dfrac{l_e}{d}\dfrac{u^2}{2}$$总摩擦力损失计算式$$\Sigma h_f=h_{f直管}+h_{f局部} =\bigg[\lambda\bigg(\dfrac{l+\Sigma l_e}{d}\bigg)+\Sigma\zeta\bigg]\dfrac{u^2}{2}$$管路计算管路计算是连续性方程式、伯努利方程式、摩擦阻力损失计算式、摩擦系数计算式及$Re$表达式的具体应用流量的测定  皮托测速管$$u_{max}=\sqrt{\dfrac{2gR(\rho_0-\rho)}{\rho}} \\$$ 对于气体，$\rho_0&gt;&gt;\rho$        $$u_{max}=\sqrt{\dfrac{2gR\rho_0}{\rho}} \\$$ 计算$Re_{max}=\dfrac{du_{max}\rho}{\mu}$，利用关系图（P54）求出平均流速        孔板流量计    $$q_m=\alpha A_0\sqrt{2\rho \Delta p} \\$$  ]]></content>
         
       
       
@@ -54,7 +87,7 @@
           
           <category> 本科课程 </category>
           
-          <category> 流体流动 </category>
+          <category> 化工原理 </category>
           
       </categories>
       
@@ -123,9 +156,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -160,9 +193,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -197,9 +230,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -234,9 +267,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -271,9 +304,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -341,9 +374,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -410,33 +443,6 @@
     
     
     <entry>
-      <title>the power of touch</title>
-      <link href="/2022/1210/folder-magazines/touch/pdf-touch/"/>
-      <url>/2022/1210/folder-magazines/touch/pdf-touch/</url>
-      
-      <author>Nat Geo</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Magazines </category>
-          
-          <category> Touch </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>the power of gentle touch</title>
       <link href="/2022/1210/folder-magazines/touch/mkv-the-power-of-gentle-touch/"/>
       <url>/2022/1210/folder-magazines/touch/mkv-the-power-of-gentle-touch/</url>
@@ -464,6 +470,33 @@
             <tag> Videos </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>the power of touch</title>
+      <link href="/2022/1210/folder-magazines/touch/pdf-touch/"/>
+      <url>/2022/1210/folder-magazines/touch/pdf-touch/</url>
+      
+      <author>Nat Geo</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Magazines </category>
+          
+          <category> Touch </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -521,9 +554,9 @@
       
         <tags>
             
-            <tag> Videos </tag>
-            
             <tag> 演讲 </tag>
+            
+            <tag> Videos </tag>
             
         </tags>
       
@@ -556,9 +589,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -591,9 +624,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -628,46 +661,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Environmental Protection 环保</title>
-      <link href="/2022/1205/folder-accumulation/eco/environmental-protection/"/>
-      <url>/2022/1205/folder-accumulation/eco/environmental-protection/</url>
-      
-      <author>lzctuhao</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[Environmentally Friendly LifestyleExpressions翻译global warming全球变暖greenhouse effect温室效应carbon emission二氧化碳排放resource exhaustion资源枯竭potential ecological disaster潜在的生态灾害never-ending scenarios of doom and disaster没完没了的厄运和灾难paralysis and inaction麻痹和不作为ozone depletion臭氧枯竭carbon footprint碳足迹ecological restoration生态修复urban gardening城市园艺low-carbon economy低碳经济new energy vehicles新能源汽车achieve sustainable development实现可持续发展international diplomacy国际交往reconcile environmental sustainability and economic growthWith the rapid development of our society, increasingly growing enterprises andfactories around our city as well as the ways that people travel haveled to serious environmental pollution, which, as a wake-up call, hasarisen people’ s awareness of protecting the environment.The low-carbon lifestyle has been in vogue recently,especially among young people.It is our responsibility to live an environmentally friendly life, driving a more harmonious relationship between nature and ourselves.Such an excellent lifestyle will endow us as well as the earth with numerous benefits.a fear of using up resources faster than they could be replenishedForests serve as habitats for countless animal and plant species that all rely on each other. They take over protective functions against soil erosion and landslides（塌方）; they make a significant contribution to the water balance as they prevent surface runoff; they filter dirt particles, greenhouse gases and radioactive substances from the air; they produce oxygen; they provide spaces for recreation and they preserve historic and prehistoric remains. As a result, forests around the world have been set aside as parks or wilderness areas.森林是无数动物和植物物种的栖息地，这些物种相互依存。森林承担着防止土壤侵蚀和山体滑坡的保护功能；它们可以防止地表径流，因而对维持水平衡做出了重大贡献；它们过滤空气中的污物颗粒、温室气体和放射性物质；它们生产氧气；它们提供娱乐空间，并保存着历史和史前遗迹。因此，世界各地的森林都被辟为公园或荒野保护区。It is time that we showed successes and accelerations in ecological awareness, action and restoration.If we doubt our ability to reverse ecological deterioration, we are throwing away the chance to take action.Environmental protection doesn’t happen in a vacuum. You can’t separate the impact on the environment from the impact on our families and communities.]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Writing </category>
-          
-          <category> Topics </category>
-          
-          <category> ECO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> 干货 </tag>
-            
-            <tag> STEAM </tag>
             
         </tags>
       
@@ -702,9 +698,46 @@
       
         <tags>
             
+            <tag> STEAM </tag>
+            
             <tag> 干货 </tag>
             
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Environmental Protection 环保</title>
+      <link href="/2022/1205/folder-accumulation/eco/environmental-protection/"/>
+      <url>/2022/1205/folder-accumulation/eco/environmental-protection/</url>
+      
+      <author>lzctuhao</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[Environmentally Friendly LifestyleExpressions翻译global warming全球变暖greenhouse effect温室效应carbon emission二氧化碳排放resource exhaustion资源枯竭potential ecological disaster潜在的生态灾害never-ending scenarios of doom and disaster没完没了的厄运和灾难paralysis and inaction麻痹和不作为ozone depletion臭氧枯竭carbon footprint碳足迹ecological restoration生态修复urban gardening城市园艺low-carbon economy低碳经济new energy vehicles新能源汽车achieve sustainable development实现可持续发展international diplomacy国际交往reconcile environmental sustainability and economic growthWith the rapid development of our society, increasingly growing enterprises andfactories around our city as well as the ways that people travel haveled to serious environmental pollution, which, as a wake-up call, hasarisen people’ s awareness of protecting the environment.The low-carbon lifestyle has been in vogue recently,especially among young people.It is our responsibility to live an environmentally friendly life, driving a more harmonious relationship between nature and ourselves.Such an excellent lifestyle will endow us as well as the earth with numerous benefits.a fear of using up resources faster than they could be replenishedForests serve as habitats for countless animal and plant species that all rely on each other. They take over protective functions against soil erosion and landslides（塌方）; they make a significant contribution to the water balance as they prevent surface runoff; they filter dirt particles, greenhouse gases and radioactive substances from the air; they produce oxygen; they provide spaces for recreation and they preserve historic and prehistoric remains. As a result, forests around the world have been set aside as parks or wilderness areas.森林是无数动物和植物物种的栖息地，这些物种相互依存。森林承担着防止土壤侵蚀和山体滑坡的保护功能；它们可以防止地表径流，因而对维持水平衡做出了重大贡献；它们过滤空气中的污物颗粒、温室气体和放射性物质；它们生产氧气；它们提供娱乐空间，并保存着历史和史前遗迹。因此，世界各地的森林都被辟为公园或荒野保护区。It is time that we showed successes and accelerations in ecological awareness, action and restoration.If we doubt our ability to reverse ecological deterioration, we are throwing away the chance to take action.Environmental protection doesn’t happen in a vacuum. You can’t separate the impact on the environment from the impact on our families and communities.]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Writing </category>
+          
+          <category> Topics </category>
+          
+          <category> ECO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -737,9 +770,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -1307,9 +1340,9 @@
       
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 梦开始的地方 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
       
@@ -1530,9 +1563,9 @@
       
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 梦开始的地方 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
       
@@ -1640,9 +1673,9 @@
       
         <tags>
             
-            <tag> 书摘 </tag>
-            
             <tag> 梦开始的地方 </tag>
+            
+            <tag> 书摘 </tag>
             
         </tags>
       
@@ -1667,9 +1700,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -1694,9 +1727,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -1727,9 +1760,9 @@
       
         <tags>
             
-            <tag> Videos </tag>
-            
             <tag> 演讲 </tag>
+            
+            <tag> Videos </tag>
             
         </tags>
       
@@ -1939,9 +1972,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -1976,9 +2009,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -2110,9 +2143,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -2535,9 +2568,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -2857,9 +2890,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -2884,9 +2917,9 @@
       
         <tags>
             
-            <tag> 干货 </tag>
-            
             <tag> STEAM </tag>
+            
+            <tag> 干货 </tag>
             
         </tags>
       
@@ -3645,41 +3678,6 @@
     
     
     <entry>
-      <title>之一：野生动物旅游</title>
-      <link href="/2019/0610/folder-magazines/wildlife/wildlife1/"/>
-      <url>/2019/0610/folder-magazines/wildlife/wildlife1/</url>
-      
-      <author>国家地理杂志</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[由于本文所有图片和视频均来自国家地理的服务器，因此加载较慢。【编者按】“守望野生动物”是美国国家地理2019年6月的特别专题，通过3个小专题来呼吁人们保护野生动物。出于版权和网页篇幅原因，更多高清图片请到转载源观看。部分照片可能会引起不适。I’ve come back to check on a baby. Just after dusk I’m in a car lumbering down a muddy road in the rain, past rows of shackled elephants, their trunks swaying. I was here five hours before, when the sun was high and hot and tourists were on elephants’ backs.我回来探视一头幼象。黄昏后没多久，我坐在车上沿着一条泥泞的道路在雨中缓缓前进，途中经过一队队上了锁炼的大象。五小时前我也来过这里，那时火热的太阳高挂天空，游客骑在大象背上。Walking now, I can barely see the path in the glow of my phone’s flashlight. When the wooden fence post of the stall stops me short, I point my light down and follow a current of rainwater across the concrete floor until it washes up against three large, gray feet. A fourth foot hovers above the surface, tethered tightly by a short chain and choked by a ring of metal spikes. When the elephant tires and puts her foot down, the spikes press deeper into her ankle.现在我在路上走着，几乎看不到前方的路，直到动物隔栏的木头柱子挡住了去路。我拿起手电往前照，顺着一道水泥地上的雨流看去，直到发现三只灰色的大脚，第四只脚被短链牢牢拴住悬在半空中，因为戴有金属钉刺的脚环而动弹不得。当大象累了把脚放下时，钉子就会深深刺入脚踝。Meena is four years and two months old, still a toddler as elephants go. Khammon Kongkhaw, her mahout, or caretaker, told me earlier that Meena wears the spiked chain because she tends to kick. Kongkhaw has been responsible for Meena here at Maetaman Elephant Adventure, near Chiang Mai, in northern Thailand, since she was 11 months old. He said he keeps her on the spiked shackle only during the day and takes it off at night. But it’s night now.米娜现在四岁又两个月大，照大象的标准来看仍是幼象。坎农.康考是它的象夫（负责照顾大象的人），他稍早跟我说，因为米娜老爱踢来踢去，所以才为它戴上有钉刺的炼子。自米娜11个月大起，康考就在泰北这个靠近清迈的湄塔曼大象探险营照顾它。他说只有在白天才让它戴上有钉刺的脚环，晚上就拿掉。但现在已经晚上了。I ask Jin Laoshen, the Maetaman staffer accompanying me on this nighttime visit, why her chain is still on. He says he doesn’t know.我向这次陪我夜间参访的湄塔曼员工金.劳森询问，为何米娜还戴着脚炼？他说他也不知道。Maetaman is one of many animal attractions in and around tourist-swarmed Chiang Mai. People spill out of tour buses and clamber onto the trunks of elephants that, at the prodding of their mahouts’ bullhooks (long poles with a sharp metal hook), hoist them in the air while cameras snap. Visitors thrust bananas toward elephants’ trunks. They watch as mahouts goad their elephants—some of the most intelligent animals on the planet—to throw darts or kick oversize soccer balls while music blares.湄塔曼是游客如织的清迈和周围地区众多的动物旅游景点之一。从游览车涌出的人潮陆续爬到大象的鼻子上，象夫用手中的牛钩（末端有尖锐金属钩子的长杆）一戳，它们就把游客高举在空中，好让相机拍下。游客看着象夫逼迫大象这个地球上数一数二聪明的动物，做出射飞镖或踢超大足球等动作。Meena is one of Maetaman’s 10 show elephants. To be precise, she’s a painter. Twice a day, in front of throngs of chattering tourists, Kongkhaw puts a paintbrush in the tip of her trunk and presses a steel nail to her face to direct her brushstrokes as she drags primary colors across paper. Often he guides her to paint a wild elephant in the savanna. Her paintings are then sold to tourists.米娜是十头在湄塔曼表演的大象之一，确切来说，它是画家。每天两次，康考会在叽叽喳喳的众多游客前，把一支画笔放到米娜的鼻尖，再用一根钢钉按压它的脸，引导它在画纸上用红、黄、蓝颜料画出图案。康考经常引导它画出稀树草原上的野象，再将画卖给游客。Meena’s life is set to follow the same trajectory as many of the roughly 3,800 captive elephants in Thailand and thousands more throughout Southeast Asia. She’ll perform in shows until she’s about 10. After that, she’ll become a riding elephant. Tourists will sit on a bench strapped to her back, and she’ll give several rides a day. When Meena is too old or sick to give rides—maybe at 55, maybe at 75—she’ll die. If she’s lucky, she’ll get a few years of retirement. She’ll spend most of her life on a chain in a stall.米娜的一生，将走上与泰国约3800头圈养大象，以及东南亚其他数千头大象一样的路。它会一直表演到十岁左右，之后就变成一头载客大象。游客将坐上绑在它背上的椅子，每天要载客好几趟。一旦米娜因年老或生病而无法载客时就会死去，那时它可能是55岁，也可能是75岁。运气好的话，它可以过上几年退休生活，但一生中大部分的时间是在围栏里被炼子拴住。Wildlife attractions such as Maetaman lure people from around the world to be with animals like Meena, and they make up a lucrative segment of the booming global travel industry. Twice as many trips are being taken abroad as 15 years ago, a jump driven partly by Chinese tourists, who spend far more on international travel than any other nationality.像湄塔曼这样的野生动物旅游景点，吸引了世界各地的人来这里接触米娜这样的动物，这些景点在全球蓬勃发展的旅游业中是获利丰厚的一环。现在海外旅游量是15年前的两倍，这样的大幅成长有部分来自中国游客的贡献。Wildlife tourism isn’t new, but social media is setting the industry ablaze, turning encounters with exotic animals into photo-driven bucket-list toppers. Activities once publicized mostly in guidebooks now are shared instantly with multitudes of people by selfie-taking backpackers, tour-bus travelers, and social media “influencers” through a tap on their phone screens. Nearly all millennials (23- to 38-year-olds) use social media while traveling. Their selfies—of swims with dolphins, encounters with tigers, rides on elephants, and more—are viral advertising for attractions that tout up-close experiences with animals.野生动物旅游不是什么新鲜事，但社群媒体正将这个产业炒得火热。这些旅游活动透过爱自拍的背包客、游览车上的游客，以及社群媒体的“网红”，只要在手机屏幕上一点，就能马上分享给许多人。几乎所有的千禧世代（23至38岁）旅行时都会用社群媒体。他们的自拍照对一些标榜与动物近距离接触的景点来说，都是病毒式行销的广告。For all the visibility social media provides, it doesn’t show what happens beyond the view of the camera lens. People who feel joy and exhilaration from getting close to wild animals usually are unaware that many of the animals at such attractions live a lot like Meena, or worse.不管社群媒体带来多大的能见度，都不会展示摄影镜头以外的事物。游客通常不知道这类旅游景点内的许多动物，过着和米娜极为类似或更糟的生活。Photographer Kirsten Luce and I set out to look behind the curtain of the thriving wildlife tourism industry, to see how animals at various attractions—including some that emphasize their humane care of animals—are treated once the selfie-taking crowds have gone.摄影师科尔斯登.鲁斯和我着手检视欣欣向荣的野生动物旅游业幕后实情，以了解在各种不同的景点（其中有些还强调会人道对待动物），一旦拍完自拍照的大批旅客离开，区内动物会受到怎样的对待。After leaving Maetaman, we take a five-minute car ride up a winding hill to a property announced by a wooden plaque as “Elephant EcoValley: where elephants are in good hands.” There are no elephant rides here. No paint shows or other performances. Visitors can stroll through an open-air museum and learn about Thailand’s national animal. They can make herbal treats for the elephants and paper from elephant dung. They can watch elephants in a grassy, tree-ringed field.离开湄塔曼后，我们搭车沿着蜿蜒的丘陵路往上行驶，五分钟后来到一片土地，那里立有一块木牌，上面写着“大象生态谷：大象受妥善照顾的好所在”。这里没有骑大象活动，也没有要大象画画或做其他表演。访客可以在这里看着象群在长满青草，周围有树环绕的原野内活动。EcoValley’s guest book is filled with praise from Australians, Danes, Americans—tourists who often shun elephant camps such as Maetaman because the rides and shows make them uneasy. Here, they can see unchained elephants and leave feeling good about supporting what they believe is an ethical establishment. What many don’t know is that EcoValley’s seemingly carefree elephants are brought here for the day from nearby Maetaman—and that the two attractions are actually a single business.生态谷的来宾签名簿上留有满满游客的赞美。他们在这里看到没有被炼子拴住的大象，因此离开时会感觉很好，以为自己是在支持有良心的业者。许多人不知道的是，生态谷里看似无忧无虑的大象，其实是从附近的湄塔曼带来这里待上一天，两处景点其实是同一家业者在经营。Meena was brought here once, but she tried to run into the forest. Another young elephant, Mei, comes sometimes, but today she’s at Maetaman, playing the harmonica in the shows. When she’s not doing that, or spending the day at EcoValley, she’s chained near Meena in one of Maetaman’s elephant stalls.Meena Kalamapijit owns Maetaman as well as EcoValley, which she opened in November 2017 to cater to Westerners. She says her 56 elephants are well cared for and that giving rides and performing allow them to have necessary exercise. And, she says, Meena the elephant’s behavior has gotten better since her mahout started using the spiked chain.米娜来过这里一次，但它试图跑入森林。弥娜.卡拉马皮吉特是湄塔曼和生态谷的经营者，她于2017年11月开设迎合西方人口味的生态谷。她说她的56头大象都受到很好的照顾，载客和表演活动让它们有了必要的运动。她还说大象米娜的行为，在象夫开始对它用有钉刺的炼子后有了改善。We sit with Kalamapijit on a balcony outside her office, and she explains that when Westerners, especially Americans, stopped coming to Maetaman, she eliminated one of the daily shows to allot time for visitors to watch elephants bathe in the river that runs through the camp.“Westerners enjoy bathing because it looks happy and natural,” she says. “But a Chinese tour agency called me and said, ‘Why are you cutting the show? Our customers love to see it, and they don’t care about bathing at all.’ ” Providing separate options is good for business, Kalamapijit says.Around the world Kirsten and I watched tourists watching captive animals. In Thailand we also saw American men bear-hug tigers in Chiang Mai and Chinese brides in wedding gowns ride young elephants in the aqua surf on the island of Phuket. We watched polar bears in wire muzzles ballroom dancing across the ice under a big top in Russia and teenage boys on the Amazon River snapping selfies with baby sloths.我和科尔斯登在世界各地看了游客如何观赏圈养动物。我们在泰国清迈看过美国男性熊抱老虎，在亚马逊河畔看到和幼小树懒拍自拍照的青少年。Most tourists who enjoy these encounters don’t know that the adult tigers may be declawed, drugged, or both. Or that there are always cubs for tourists to snuggle with because the cats are speed bred and the cubs are taken from their mothers just days after birth. Or that the elephants give rides and perform tricks without harming people only because they’ve been “broken” as babies and taught to fear the bullhook. Or that the Amazonian sloths taken illegally from the jungle often die within weeks of being put in captivity.大多数游客在享受这些与动物的近距离接触时，并不知道成年老虎可能已经被拔去爪子、下药，或两者皆有。也不知道游客之所以总是有幼虎可以抱，是因为业者用快速繁殖的方式为这些大猫育种，幼虎出生没几天就被人从母虎身边抱走。更不知道大象之所以在给人骑乘和表演把戏时不会伤人，只是因为它们在幼年时期就已被驯服，懂得害怕牛钩。当然也不知道非法从丛林中捕来的亚马逊树懒，往往在圈养几周之内就会死去。As we traveled to performance pits and holding pens on three continents and in the Hawaiian Islands, asking questions about how animals are treated and getting answers that didn’t always add up, it became clear how methodically and systematically animal suffering is concealed.我们在旅程中打听里头的动物所受到的待遇，但得到的答案却不总是兜得起来。在这个过程中有一件事愈来愈清楚：动物受苦的情况以有条理而系统性的方式被隐瞒起来。The wildlife tourism industry caters to people’s love of animals but often seeks to maximize profits by exploiting animals from birth to death. The industry’s economy depends largely on people believing that the animals they’re paying to watch or ride or feed are having fun too.野生动物旅游业迎合大众对动物的爱好，但经常为了获取最大的利润，将动物从出生一路剥削到死。这个产业的经济，很大程度上依赖消费者相信自己花钱观赏、骑乘或喂食的动物也乐在其中。It succeeds partly because tourists—in unfamiliar settings and eager to have a positive experience—typically don’t consider the possibility that they’re helping to hurt animals. Social media adds to the confusion: Oblivious endorsements from friends and trendsetters legitimize attractions before a traveler ever gets near an animal.这个产业成功的原因，部分可归因于游客通常不会想到自己可能正在参与伤害动物。社群媒体让事情更混淆不清：来自朋友和潮流人士不经意地背书，就已为这些景点赋予正当性了。There has been some recognition of social media’s role in the problem. In December 2017, after a National Geographic investigative report on harmful wildlife tourism in Amazonian Brazil and Peru, Instagram introduced a feature: Users who click or search one of dozens of hashtags, such as #slothselfie and #tigercubselfie, now get a pop-up warning that the content they’re viewing may be harmful to animals.已经有部分人察觉到社群媒体在这个问题中扮演的角色。2017年12月，国家地理发表了一篇调查报导，探讨野生动物旅游如何伤害巴西亚马逊地区和秘鲁的野生动物之后，Instagram推出新功能：只要使用者点击或搜寻数十个主题标签中的任何一个，譬如#slothselfie（树懒自拍）和#tigercubselfie（虎宝宝自拍），屏幕就会跳出警告视窗，说目前所看的内容可能对动物有害。Everyone finds Olga Barantseva on Instagram. “Photographer from Russia. Photographing dreams,” her bio reads. She meets clients for woodland photo shoots with captive wild animals just outside Moscow.每个人都是透过Instagram找到欧嘉.巴朗赛娃的。“来自俄罗斯的摄影师，擅长捕梦入镜。”是她的自我介绍。她和客户约在莫斯科近郊的树林里，拍摄和圈养的野生动物一起入镜的画面。For her 18th birthday, Sasha Belova treated herself to a session with Barantseva—and a pack of wolves. “It was my dream,” she says as she fidgets with her hair, which had been styled that morning. “Wolves are wild and dangerous.” The wolves are kept in small cages at a petting zoo when not participating in photo shoots.为了庆祝自己的18岁生日，萨莎.贝洛娃送自己的礼物是约了巴朗赛娃为她拍照，而入镜的还有一群狼。The Kravtsov family hired Barantseva to take their first professional family photos—all five family members, shivering and smiling in the birch forest, joined by a bear named Stepan.克拉夫佐夫一家聘请巴朗赛娃为他们拍摄第一张专业级的全家福照，冻得瑟缩发抖的五人面带微笑，在桦树林中与一头叫做史戴庞的熊合影。Barantseva has been photographing people and wild animals together for six years. She “woke up as a star,” she says, in 2015, when a couple of international media outlets found her online. Her audience has exploded to more than 80,000 followers worldwide. “I want to show harmony between people and animals,” she says.巴朗赛娃拍摄人与野生动物的合影已经六年了。2015年有几家国际媒体在网路上发现她，然后她“一觉醒来就成了明星”，巴朗赛娃这么说。她的全球追踪者数量暴增到八万多人。她说：“我想表现人与动物之间的和谐。”On a raw fall day, under a crown of golden birch leaves on a hill that overlooks a frigid lake, two-and-a-half-year-old Alexander Levin, dressed in a hooded bumblebee sweater, timidly holds Stepan’s paw.在一个湿冷的秋日，两岁半的亚历山大.列文怯生生地握住史戴庞的爪子。The bear’s owners, Yury and Svetlana Panteleenko, ply their star with food—tuna fish mixed with oatmeal—to get him to approach the boy. Snap: It looks like a tender friendship. The owners toss grapes to Stepan to get him to open his mouth wide. Snap: The bear looks as if he’s smiling.尤里.庞德连卡和妻子斯威特兰娜是熊的主人，他们用金枪鱼配上燕麦粥，作为吸引他们动物明星的食物，好让它接近男孩。啪擦：画面看起来就像是亲密好友。The Panteleenkos constantly move Stepan, adjusting his paws, feeding him, and positioning Alexander as Barantseva, pink-haired, bundled in jeans and a parka, captures each moment. Snap: A photo goes to her Instagram feed. A boy and a bear in golden Russian woods—a picture straight out of a fairy tale. It’s a contemporary twist on a long-standing Russian tradition of exploiting bears for entertainment.庞德连卡夫妇不断让史戴庞移动、调整它的爪子、喂食它，为亚历山大摆好位置，好让一头粉红头发、穿着牛仔裤并用大衣牢牢裹住自己的巴朗赛娃拍下每一瞬间。啪擦：又一张照片传进Instagram页面。男孩与熊共处在金黄色的俄罗斯树林里，仿佛童话故事里的画面。Another day in the same forest, Kirsten and I join 12 young women who have nearly identical Instagram accounts replete with dreamy photos of models caressing owls and wolves and foxes. Armed with fancy cameras but as yet modest numbers of followers, they all want the audience Barantseva has. Each has paid the Panteleenkos $760 to take identical shots of models with the ultimate prize: a bear in the woods.另一天在同一座森林里，柯尔斯登和我加入12位年轻女性，她们的Instagram帐号内容几乎一模一样，都贴满了模特儿轻抚猫头鹰、狼及狐狸的梦幻照片。她们都想要拥有和巴朗赛娃一样的追踪人数，因此每个人都付给庞德连卡夫妇760美元，拍出千篇一律的照片，画面里有模特儿与众人垂涎的对象：林中之熊。Stepan is 26 years old, elderly for a brown bear, and can hardly walk. The Panteleenkos say they bought him from a small zoo when he was three months old. They say the bear’s work—a constant stream of photo shoots and movies—provides money to keep him fed.26岁的史戴庞在棕熊中已属年迈，几乎无法行走。庞德连卡夫妇说，他们在史戴庞三个月大时从一个小型动物园把它买走，还表示这头熊的工作――不停地拍照片和拍电野生动物旅游业迎合大众对动物的爱好，但经常为了获取最大的利润，将动物从出生一路剥削到死。zinio野生动物旅游65影――为它赚进了伙食费。斯威特兰娜.庞德连卡的Instagram帐号中有段视频，里面这么宣示着：“爱和一些很棒的食物能让任何人变成泰迪熊：-）。”A video on Svetlana Panteleenko’s Instagram account proclaims: “Love along with some great food can make anyone a teddy :-)”And just like that, social media takes a single instance of local animal tourism and broadcasts it to the world.就这样，社群媒体把一个地区性的动物旅游案例，传播到了全世界。When the documentary film Blackfish was released in 2013, it drew a swift and decisive reaction from the American public. Through the story of Tilikum, a distressed killer whale at SeaWorld in Orlando, Florida, the film detailed the miserable life orcas can face in captivity. Hundreds of thousands of outraged viewers signed petitions. Companies with partnership deals, such as Southwest Airlines, severed ties with SeaWorld. Attendance at SeaWorld’s water parks slipped; its stock nose-dived.纪录片《黑鲸》2013年上映后，引起了美国大众迅速又果断的反应。视频透过佛罗里达州奥兰多市“海洋世界”一头名叫提勒康的忧伤虎鲸，详细地描绘虎鲸被圈养后可能面临的悲惨生活。后来，海洋世界水上乐园的入园人数下滑，公司股票价格大跌。James Regan says what he saw in Blackfish upset him. Regan, honeymooning in Hawaii with his wife, Katie, is from England, where the country’s last marine mammal park closed permanently in 1993. I meet him at Dolphin Quest Oahu, an upscale swim-with-dolphins business on the grounds of the beachfront Kahala Hotel &amp; Resort, just east of Honolulu. The Regans paid $225 each to swim for 30 minutes in a small group with a bottlenose dolphin. One of two Dolphin Quest locations in Hawaii, the facility houses six dolphins.詹姆士.里根说他看了《黑鲸》后很难过。我在欧胡岛海豚探索园碰到他。雷根夫妇每人付了225美元后，和一小群游客与一头瓶鼻海豚共游了30分钟。这是海豚探索园在夏威夷的两个据点之一，里面总共养了六头海豚。Bottlenose dolphins are the backbone of an industry that spans the globe. Swim-with-dolphins operations rely on captive-bred and wild-caught dolphins that live—and interact with tourists—in pools. The popularity of these photo-friendly attractions reflects the disconnect around dolphin experiences: People in the West increasingly shun shows that feature animals performing tricks, but many see swimming with captive dolphins as a vacation rite of passage.这样的产业正扩及全球，而瓶鼻海豚正是产业支柱。与海豚共游这个产业的运作，仰赖圈养繁殖的海豚和从野外捕获的海豚，它们在池子里生活并与游客互动。虽然西方人逐渐避开以动物杂耍表演为号召的节目，不过许多西方人却将与圈养海豚共游视为重大的度假里程碑。Katie Regan has wanted to swim with dolphins since she was a child. Her husband laughs and says of Dolphin Quest, “They paint a lovely picture. When you’re in America, everyone is smiling.” But he appreciates that the facility is at their hotel, so they can watch the dolphins being fed and cared for. He brings up Blackfish again.凯蒂.里根自小就想和海豚共游。她的先生大笑，并如此评论海豚探索园：“他们把情景描绘得很美丽。”但他欣赏的是，与海豚共游的场地就在他们下榻的旅馆，这样就能看到海豚接受喂食与照顾。他再次提起《黑鲸》。Katie protests: “Stop making my dream a horrible thing!”凯蒂抗议说：“别再把我的美梦变成恶梦！”Rae Stone, president of Dolphin Quest and a marine mammal veterinarian, says the company donates money to conservation projects and educates visitors about perils that marine mammals face in the wild. By paying for this entertainment, she says, visitors are helping captive dolphins’ wild cousins.海豚探索园的总裁芮.史东是海洋哺乳动物兽医，她说公司会捐款给保育计划，并教育游客。Stone notes that Dolphin Quest is certified “humane” by American Humane, an animal welfare nonprofit. (The Walt Disney Company, National Geographic’s majority owner, offers dolphin encounters on some vacation excursions and at an attraction in Epcot, one of its Orlando parks. Disney says it follows the animal welfare standards of the Association of Zoos &amp; Aquariums, a nonprofit that accredits more than 230 facilities worldwide.)史东强调，非营利动物福利组织“美国人道”将海豚探索园认证为符合“人道”标准。（拥有国家地理多数股分的华特迪斯尼公司，在一些假期旅游行程中提供与海豚接触的机会，奥兰多园区内的未来世界也有。迪斯尼说，他们遵照美国动物园和水族馆协会的动物福利标准，这个非营利组织已为世界两百三十多家场所提供认证。）It’s a vigorous debate: whether even places with high standards, veterinarians on staff, and features such as pools filled with filtered ocean water can be truly humane for marine mammals.即便采取高标准、聘用兽医，以及用过滤海水灌注的水池等特色，这样的场所对海洋哺乳动物来说真的人道吗？这是个会引发激烈辩论的议题。Dolphin Quest’s Stone says yes.海豚探索园的史东说，当然人道。Critics, including the Humane Society of the United States, which does not endorse keeping dolphins in captivity, say no. They argue that these animals have evolved to swim great distances and live in complex social groups—conditions that can’t be replicated in the confines of a pool. This helps explain why the National Aquarium, in Baltimore, announced in 2016 that its dolphins will be retired to a seaside sanctuary by 2020.不过，包含美国人道主义协会在内的批评者不这么认为，该协会并不支持圈养海豚。批评者主张这些动物演化出的生活是要长距离游泳，并生活在复杂的社会群体中，而这些条件都无法在封闭的池子复制出来。Some U.S. attractions breed their own dolphins because the nation has restricted dolphin catching in the wild since 1972. But elsewhere, dolphins are still being taken from the wild and turned into performers.美国有些旅游景点自行繁殖海豚，因为美国自1972年起就限制捕捉野生海豚。但在其他地方，野生海豚仍遭捕捉并被训练进行表演。In China, which has no national laws on captive-animal welfare, dolphinariums with wild-caught animals are a booming business: There are now 78 marine mammal parks, and 26 more are under construction.中国没有针对圈养动物的福利订定全国性法律，捕捉野生海豚的海豚馆成为蓬勃发展的事业：现在已有78家海洋哺乳动物园，另有26家在兴建中。To have the once-in-a-lifetime chance to see rare Black Sea dolphins, people in the landlocked town of Kaluga, a hundred miles from Moscow, don’t have to leave their city. In the parking lot of the Torgoviy Kvartal shopping mall, next to a hardware store, is a white inflatable pop-up aquarium: the Moscow Traveling Dolphinarium. It looks like a children’s bouncy castle that’s been drained of its color.在距离莫斯科150公里的内陆城市卡路加，若想观赏此生难得一见的希有黑海宽吻海豚，不用出城就可以看到。在塔尔葛维.柯瓦塔尔卖场的停车场里，一家五金店旁边有一座白色的充气式临时水族馆：莫斯科巡回海豚馆。看起来就像是褪了色的儿童玩耍用充气城堡。Inside the puffy dome, parents buy their kids dolphin-shaped trinkets: fuzzy dolls and Mylar balloons, paper dolphin hats, and drinks in plastic dolphin tumblers. Families take their seats around a small pool. The venue is so intimate that even the cheapest seats, at nine dollars apiece, are within splashing distance.在膨胀的圆顶下，家长和孩童围着一个小池子坐着。由于场地实在很小，即使是要价九美元的最便宜位子，也能被水花溅到。“My kids are jumping for joy,” says a woman named Anya, motioning toward her two giddy boys, bouncing in their seats.一位名叫安雅的妇人，指着两个在位子上跳过来跳过去、乐昏了头的儿子对我说：“你看！我的两个小孩都开心到跳起来了。”In the middle of the jubilant atmosphere, in water that seems much too shallow and much too murky, two dolphins swim listlessly in circles.在这样欢乐的气氛中，两头海豚没精打彩地在水池里绕圈子，池水似乎太浅而且太混浊了。Russia is one of only a few countries (Indonesia is another) where traveling oceanariums exist. Dolphins and beluga whales, which need to be immersed in water to stay alive, are put in tubs on trucks and carted from city to city in a loop that usually ends when they die. These traveling shows are aboveboard: Russia has no laws that regulate how marine mammals should be treated in captivity.俄罗斯是少数几个有巡回海洋水族馆的国家（印度尼西亚是另一个）。海豚和白鲸必须待在水里才能存活，所以要把它们放在水缸里用卡车在一个个城市间巡回，直到它们死亡才划下旅程终点。这些巡回表演都光明正大地进行，因为俄罗斯没有法律规范如何对待圈养的海洋哺乳动物。The shows are the domestic arm of a brisk Russian global trade in dolphins and small whales. Black Sea bottlenose dolphins can’t be caught legally without a permit, but Russian fishermen can catch belugas and orcas under legal quotas in the name of science and education. Some belugas are sold legally to aquariums around the country. Russia now allows only a dozen or so orcas to be caught each year for scientific and educational purposes, and since April 2018, the government has cracked down on exporting them. But government investigators believe that Russian orcas—which can sell for millions—are being caught illegally for export to China.俄罗斯的海豚及小型鲸豚全球贸易正蓬勃发展，而这些表演就是此类贸易在国内的展现。要有许可证才能合法捕捉黑海宽吻海豚，但俄罗斯渔民能以科学和教育名义，在合法限额内捕捉白鲸和虎鲸。有些白鲸合法卖给俄罗斯境内的水族馆。俄罗斯现在一年只准捕捉12头左右的虎鲸供科学和教育之用，而且政府从2018年4月开始严加取缔虎鲸出口。不过，政府调查人员相信，俄罗斯的虎鲸现在仍被非法捕捉进口到中国，每只售价可达数百万美元。Captive orcas, which can grow to 20 feet long and more than 10,000 pounds, are too big for the traveling shows that typically feature dolphins and belugas. When I contacted the owners of the Moscow Traveling Dolphinarium and another operation, the White Whale Show, in separate telephone calls to ask where their dolphins and belugas come from, both men, Sergey Kuznetsov and Oleg Belesikov, hung up on me.圈养的虎鲸能长到6.5公尺长、超过5000公斤重，因此对于通常由海豚和白鲸进行的巡回表演来说太过庞大。我分别致电给莫斯科巡回海豚馆和另一家名为白鲸秀的业者，想了解他们的海豚和白鲸是从哪里来。这两家的老板分别是赛盖.库兹涅佐夫和阿雷格.贝列席科夫，他们都直接把我的电话挂掉。Russia’s dozen or so traveling oceanariums are touted as a way to bring native wild animals to people who might never see the ocean.俄罗斯的大约12个巡回海洋水族馆都吹捧自己让这辈子可能看不到海的人，得以看到俄罗斯原生的野生动物。“Who else if not us?” says Mikhail Olyoshin, a staffer at one traveling oceanarium. And on this day in Kaluga, as the dolphins perform tricks to American pop songs and lie on platforms for several minutes for photo ops, parents and children express the same sentiment: Imagine, dolphins, up close, in my hometown. The ocean on delivery.今天在卡路加的演出中，海豚随着美国流行歌曲的旋律表演杂耍，还躺在舞台上几分钟供观众拍照，此时家长和小孩都表达出相同的心情：想想看，是海豚，近距离，就在自己家乡。海洋宅配到府。Owners and operators of wildlife tourism attractions, from high-end facilities such as Dolphin Quest in Hawaii to low-end monkey shows in Thailand, say their animals live longer in captivity than wild counterparts because they’re safe from predators and environmental hazards. Show operators proudly emphasize that the animals under their care are with them for life. They’re family.无论是高价路线的夏威夷海豚探索园，或是低价路线的泰国猴子秀，野生动物旅游景点的所有者和经营者都说，圈养的动物比野生同类活得更久，因为可以免受掠食者的威胁和环境危害。动物表演的经营者自豪地强调，他们照顾的动物一辈子都和他们在一起，就和家人没两样。Alla Azovtseva, a longtime dolphin trainer in Russia, shakes her head.在俄国长期担任海豚训练师的埃拉.阿佐夫兹娃摇了摇头。“I don’t see any sense in this work. My conscience bites me. I look at my animals and want to cry,” says Azovtseva, who drives a red van with dolphins airbrushed on the side. At the moment, she’s training pilot whales to perform tricks at Moscow’s Moskvarium, one of Europe’s largest aquariums (not connected to the traveling dolphin shows). On her day off, we meet at a café near Red Square.“我看不出这个工作有任何意义。我良心不安，看着我的动物却很想哭。”阿佐夫兹娃说。此刻她正在训练领航鲸，它们将在莫斯科海洋馆表演杂耍，那是欧洲最大的水族馆之一（该馆和巡回海豚秀没有关系）。She says she fell in love with dolphins in the late 1980s when she read a book by John Lilly, the American neuroscientist who broke open our understanding of the animals’ intelligence. She has spent 30 years training marine mammals to do tricks. But along the way she’s grown heartsick from forcing highly intelligent, social creatures to live isolated, barren lives in small tanks.阿佐夫兹娃过去30年都在训练海洋哺乳动物做杂耍表演，但她在这个过程中却愈来愈心痛，因为必须强迫这些高智力的社会性动物待在小小的水箱中，过着隔绝、百无聊赖的生活。“I would compare the dolphin situation with making a physicist sweep the street,” she says. “When they’re not engaged in performance or training, they just hang in the water facing down. It’s the deepest depression.”“我把海豚的处境比喻为一位物理学家在扫大街，”她说：“它们没做表演或训练时就头朝下浮在水中，那是最深沉的抑郁。”What people don’t know about many aquarium shows in Russia, Azovtseva says, is that the animals often die soon after being put in captivity, especially those in traveling shows. And Azovtseva—making clear she’s referring to the industry at large in Russia and not the Moskvarium—says she knows many aquariums quietly and illegally replace their animals with new ones.阿佐夫兹娃说，对于俄罗斯的众多水族馆表演，有一点很多人都不知道，那就是动物一旦受到圈养经常会很快死去，尤其是参与巡回演出的动物。阿佐夫兹娃说，她知道有许多水族馆偷偷违法用新的动物替代死去的动物。但她也明确地说，她指的是俄罗斯大部分的业者，并不包含莫斯科海洋馆。It’s been illegal to catch Black Sea dolphins in the wild for entertainment purposes since 2003, but according to Azovtseva, aquarium owners who want to increase their dolphin numbers quickly and cheaply buy dolphins poached there. Because these dolphins are acquired illegally, they’re missing the microchips that captive cetaceans in Russia are usually tagged with as a form of required identification.自2003年以来，为娱乐目的而捕捉野生黑海宽吻海豚已经是非法行为。但根据阿佐夫兹娃的说法，水族馆老板为了快速且便宜地增加海豚数量，会购入从海上盗捕的海豚。Some aquariums get around that, she says, by cutting out dead dolphins’ microchips and implanting them into replacement dolphins.“People are people,” Azovtseva says. “Once they see an opportunity, they exploit.” She says she can’t go on doing her work in the industry and that she’s decided to speak out because she wants people to know the truth about the origins and treatment of many of the marine mammals they love watching. We exchange a look—we both know what her words likely mean for her livelihood.“人就是人，”阿佐夫兹娃说：“一看到机会就会加以利用。”她说自己决定说出真相，想让大家知道许多他们爱看的海洋哺乳动物，是怎么来的、又受到怎样的待遇。“I don’t care if I’m fired,” she says defiantly. “When a person has nothing to lose, she becomes really brave.”“就算遭到解雇我也不在乎，”她倔强地说：“当一个人没有什么可失去时，就会变得真正勇敢。”I’m sitting on the edge of an infinity pool on the hilly Thai side of Thailand’s border with Myanmar, at a resort where rooms average more than a thousand dollars a night.我坐在一座无边际泳池的池边，那是一处近泰国与缅甸边界、在泰国境内山丘上的度假胜地，住宿一晚平均要价超过1000美元。Out past the pool, elephants roam in a lush valley. Sitting next to me is 20-year-old Stephanie, who asked not to use her last name. She’s Dutch and French, Tokyo born and raised, and a student at the University of Michigan. Her cosmopolitan background and pretty face make for a perfect cocktail of aspiration—she’s exactly the kind of Instagrammer who makes it as an influencer. That is, someone who has a large enough following to attract sponsors to underwrite posts and, in turn, travel, wardrobes, and bank accounts. In 2018, brands—fashion, travel, tech, and more—spent an estimated $1.6 billion on social media advertising by influencers.泳池再过去较远处，有一群在郁郁葱葱山谷里漫步的大象。我旁边坐着20岁的斯蒂芬妮.凡豪顿，她是荷兰和法国混血，在东京出生长大。多国背景和漂亮脸蛋，让她成为集众多人渴望特质于一身的完美组合，她正是那种成功当上网红的Instagram活跃用户。网红拥有庞大的追踪人数，能吸引赞助商。2018年，包含时尚、旅游、科技及其他领域在内的品牌厂商，花在网红身上的社群媒体广告费估计达16亿美元。Stephanie has been here, at the Anantara Golden Triangle Elephant Camp &amp; Resort, before. This time, in a fairly standard influencer-brand arrangement, she’ll have a picnic with elephants and post about it to her growing legion of more than 25,000 Instagram followers. In exchange, she gets hundreds of dollars off the nightly rate.这里是金三角安纳塔拉大象营与度假村，凡豪顿之前就住过这里了。这次来则是为了标准的网红与品牌结合的行程安排，期间她将和大象一起野餐，然后在Instagram上分享给超过2万5000名粉丝，而且这数量还在增加中。她得到的回报是每晚的住宿费减免数百美元。At Anantara the fields are green, and during the day at least, many of the resort’s 22 elephants are tethered on ropes more than a hundred feet long so they can move around and socialize. Nevertheless, they’re expected to let guests touch them and do yoga beside them.安纳塔拉有着绿意盎然的原野，度假区的22头大象中有许多至少在白天时间可以到处走动并与同类互动，因为拴住它们的绳子长达三十多公尺。尽管如此，它们仍需让游客触摸，并在游客做瑜伽时待在旁边。After Stephanie’s elephant picnic, I watch her edit the day’s hundreds of photos. She selects an image with her favorite elephant, Bo. She likes it, she says, because she felt a connection with Bo and thinks that will come across. She posts it at 9:30 p.m.—the time she estimates the largest number of her followers will be online. She includes a long caption, summing it up as “my love story with this incredible creature,” and the hashtag #stopelephantriding. Immediately, likes from followers stream in—more than a thousand, as well as comments with heart-eyed emoji.在凡豪顿完成与大象的野餐后，我看着她开始编修这天拍摄的数百张照片。她选了一张和自己最喜欢的大象的合影，它叫小波。她说会喜欢这张照片，是因为感觉和小波有了连接，而这张照片能清楚表达出来。她在晚上9点30分发布这张照片，因为她预估这个时候在线上的粉丝人数最多。她配上很长的图说，并以这句话作结：“我与这个神奇动物之间的爱的故事”，主题标签是#stopelephantriding（别再骑大象）。很快地，超过1000个粉丝的按赞纷纷涌入，还有加了两眼爱心表情符号的评论。Anantara is out of reach for anyone but the wealthy—or prominent influencers. Anyone else seeking a similar experience might do a Google search for, say, “Thailand elephant sanctuary.”安纳塔拉不是一般人消费得起的地方，除非是有钱人或著名的网红。如果想寻求类似的体验，可能要在谷歌上搜寻“泰国大象保护区”之类的场所。随着游客对与动物接触是否合乎道德规范有了愈来愈高的要求，一些经常自称“保护区”的平价营业场所纷纷兴起，声称能在合乎人道标准的情况下，提供近距离接触大象的机会。As tourist demand for ethical experiences with animals has grown, affordable establishments, often calling themselves “sanctuaries,” have cropped up purporting to offer humane, up-close elephant encounters. Bathing with elephants—tourists give them a mud bath, splash them in a river, or both—has become very popular. Many facilities portray baths as a benign alternative to elephant riding and performances. But elephants getting baths, like those that give rides and do tricks, will have been broken to some extent to make them obedient. And as long as bathing remains popular, places that offer it will need obedient elephants to keep their businesses going. 与大象共浴变得很受欢迎，内容是让游客帮它们洗泥巴澡，或站在河里往它们身上泼水，又或者两样都做。许多业者把与大象共浴，描绘成替代骑乘大象和大象表演的无害选项。但要让大象接受人类桑拿，就像让大象给人骑乘和表演杂耍一样，都要先让它们被驯服到一定程度才会乖乖服从。而且只要与大象共浴持续受欢迎，提供服务的业者就会需要听话的大象，这样才能让生意做下去。 In Ban Ta Klang, a tiny town in eastern Thailand, modest homes dot the crimson earth. In front of each is a wide, bamboo platform for sitting, sleeping, and watching television.泰国东部的小镇班塔卡侬，深红色的土地上散布着简朴的房子。每间房子前都有一个宽大的竹子平台，可以在上面或坐、或睡、或看电视。But the first thing I notice is the elephants. Some homes have one, others as many as five. Elephants stand under tarps or sheet metal roofs or trees. Some are together, mothers and babies, but most are alone. Nearly all the elephants wear ankle chains or hobbles—cuffs binding their front legs together. Dogs and chickens weave among the elephants’ legs, sending up puffs of red dust.但我首先注意到的是象群。有些房子有一头大象，有些则多达五头大象。这些大象站在帆布、铁皮屋顶或树下，有些群聚在一起，由母象带着小象，但多数形单影只。几乎所有大象都戴着脚炼或前脚被铐在一起。Ban Ta Klang—known as Elephant Village—is ground zero in Thailand for training and trading captive elephants.塔卡侬村又被称为大象村，是泰国训练和交易圈养大象的起始点。“House elephants,” Sri Somboon says, gesturing as he turns down his TV. Next to his outdoor platform, a two-month-old baby elephant runs around his mother. Somboon points across the road to the third elephant in his charge, a three-year-old male tethered to a tree. He’s wrenching his head back and forth and thrashing his trunk around. It looks as if he’s going out of his mind.“家象。”席.宋本说，他用手指了指并把电视音量关小一点。在他家外头平台旁有一头绕着母亲跑来跑去的两个月大幼象。宋本指向道路的另一边，由他负责管理的第三头象就在哪里，这头三岁大的公象被拴在一棵树上，它摇头晃脑，不断甩鼻子，看起来像疯了。He’s in the middle of his training, Somboon says, and is getting good at painting. He’s already been sold, and when his training is finished, he’ll start working at a tourist camp down south.宋本说它正在接受训练，对绘画愈来愈在行。已经有人买下它，训练结束后，它就要开始在南方一个旅游营地工作。Ban Ta Klang and the surrounding area, part of Surin Province, claim to be the source of more than half of Thailand’s 3,800 captive elephants. Long before the flood of tourists, it was the center of the elephant trade; the animals were caught in the wild and tamed for use transporting logs. Now, every November, hundreds of elephants from here are displayed, bought, and sold in the province’s main town, Surin.泰国有3800头圈养大象，其中有一半以上据称来自班塔卡侬村以及村落周围的素辇府地区。早在大批游客涌入前那里就是大象交易中心。从野外捕捉而来的大象经驯服后，用来从事运送原木的工作。现在素辇府的主要城镇素辇，每年11月都有数百头该地区的大象在此公开展示及买卖。One evening I sit with Jakkrawan Homhual and Wanchai Sala-ngam. Both 33, they’ve been best friends since childhood. About half the people in Ban Ta Klang who care for elephants, including Homhual, don’t own them. They’re paid a modest salary by a rich owner to breed and train baby elephants for entertainment. As night falls, thousands of termites swarm us, attracted to the single bulb hanging above the bamboo platform. Our conversation turns to elephant training.一天傍晚我和贾卡万.洪文及万才.萨拉杨同坐。两人都33岁，从小就是好朋友。班塔卡侬村照顾大象的人中，有大约一半不是大象的主人，这也包括洪文。富有的大象主人付给他们微薄的薪水，由他们饲养幼象并训练它们进行娱乐表演。夜幕降临后，我们的谈话内容转向了大象训练。Phajaan is the traditional—and brutal—days- or weeks-long process of breaking a young elephant’s spirit. It has long been used in Thailand and throughout Southeast Asia to tame wild elephants, which still account for many of the country’s captives. Under phajaan, elephants are bound with ropes, confined in tight wooden structures, starved, and beaten repeatedly with bullhooks, nails, and hammers until their will is crushed. The extent to which phajaan persists in its harshest form is unclear. Since 2012, the government has been cracking down on the illegal import of elephants taken from the forests of neighboring Myanmar, Thailand’s main source of wild-caught animals.Phajaan是一种击垮幼象心灵的传统方式，手段残忍，过程从数日到数星期不等。泰国和东南亚地区长期以来一直用这种方式驯服野象，野象仍是泰国许多圈养大象的来源。在Phajaan的施行过程中，大象被绳子绑住，囚禁于狭小的木造建筑里，除了挨饿，还不断被人用牛钩、钉子及铁锤殴打，直到意志崩溃为止。最残酷形式的Phajaan现在有多普遍并不清楚。泰国政府自2012年起严格取缔自邻国缅甸森林中非法引入野象的做法。缅甸是泰国野外捕获大象的主要来源。I ask the men how baby elephants born in captivity are broken and trained.我问他们如何驯服与训练在圈养环境下出生的幼象。When a baby is about two years old, they say, mahouts tie its mother to a tree and slowly drag the baby away. Once separated, the baby is confined. Using a bullhook on its ear, they teach the baby to move: left, right, turn, stop. To teach an elephant to sit, Sala-ngam says, “we tie up the front legs. One mahout will use a bullhook at the back. The other will pull a rope on the front legs.” He adds: “To train the elephant, you need to use the bullhook so the elephant will know.”他们说在幼象两岁左右，象夫把它的母亲绑到一棵树上，再慢慢牵走幼象。一旦和母象分开后，幼象就遭到监禁。他们用牛钩敲打它的耳朵来教它如何做动作：向左、向右、转身、停止。为了教大象坐下，萨拉杨说：“我们绑住它的前脚，一名象夫拿着牛钩站在后面，另一名则用绳子拉它的前脚。”他补充说：“训练大象必须要用牛钩，这样才能让它明白。”Humans identify suffering in other humans by universal signs: People sob, wince, cry out, put voice to their hurt. Animals have no universal language for pain. Many animals don’t have tear ducts. More creatures still—prey animals, for example—instinctively mask symptoms of pain, lest they appear weak to predators. Recognizing that a nonhuman animal is in pain is difficult, often impossible.人类可以透过一些普遍的征兆来辨别他人的痛苦：啜泣、皱眉头、喊叫、用言语表达痛苦。动物没有表达痛苦的共同语言，很多动物没有泪腺，而有更多动物（如猎物）会本能地掩盖痛苦迹象，以免在掠食动物面前暴露弱点。要察觉出非人动物的痛苦是很难的事，往往不可能。But we know that animals feel pain. All mammals have a similar neuroanatomy. Birds, reptiles, and amphibians all have pain receptors. As recently as a decade ago, scientists had collected more evidence that fish feel pain than they had for neonatal infants. A four-year-old human child with spikes pressing into his flesh would express pain by screaming. A four-year-old elephant just stands there in the rain, her leg jerking in the air.但我们知道动物感受得到痛苦。所有哺乳动物都具有类似的神经构造。鸟类、爬行类及两生类都有痛觉受器。不过十年前，科学家收集到有关鱼类会感受痛苦的证据，还比新生幼儿会感受痛苦的证据多。四岁孩童如果被尖锐物体刺到，会用尖叫的方式表达痛苦；四岁大象只会站立在雨中，任由那只悬空的脚不停抽动。Of all the silently suffering animals I saw in pools and pens around the world, two in particular haunt me: an elephant and a tiger.我在世界各地的水池和围栏里看过各种默默受苦的动物，其中两个尤其让我无法忘记：一头大象和一只老虎。They lived in the same facility, Samut Prakan Crocodile Farm and Zoo, about 15 miles south of Bangkok. The elephant, Gluay Hom, four years old, was kept under a stadium. The aging tiger, Khai Khem, 22, spent his days on a short chain in a photo studio. Both had irrefutable signs of suffering: The emaciated elephant had a bent, swollen leg hanging in the air and a large, bleeding sore at his temple. His eyes were rolled back in his head. The tiger had a dental abscess so severe that the infection was eating through the bottom of his jaw.它们生活在同一个地方，即曼谷以南约25公里的泰国北榄鳄鱼湖动物园。四岁的大象归宏关在一座体育场的下方，22岁的年迈老虎凯肯则被短链拴在一间摄影棚里。两者身上都有无可否认的受苦迹象：消瘦的大象悬着一只弯曲肿胀的脚，太阳穴有一个流着血的大疮，眼球往后翻；老虎有严重的牙脓肿，感染情况严重到逐渐侵蚀到下颚。When I contacted the owner of the facility, Uthen Youngprapakorn, to ask about these animals, he said the fact that they hadn’t died proved that the facility was caring for them properly. He then threatened a lawsuit.我联系动物园主人乌天.杨帕拉帕功，向他询问这些动物的状况，他说动物还没死就证明动物园把它们照顾得很好。他接着威胁说要告我。Six months after Kirsten and I returned from Thailand, we asked Ryn Jirenuwat, our Bangkok-based Thai interpreter, to check on Gluay Hom and Khai Khem. She went to Samut Prakan and watched them for hours, sending photos and video. Gluay Hom was still alive, still standing in the same stall, leg still bent at an unnatural angle. The elephants next to him were skin and bones. Khai Khem was still chained by his neck to a hook in the floor. He just stays in his dark corner, Jirenuwat texted, and when he hears people coming, he twists on his chain and turns his back to them.从泰国回来的六个月后，我和科尔斯登请住在曼谷的泰语口译琳.吉雷努瓦特查看一下归宏和凯肯的状况。她去了北榄鳄鱼湖一趟。归宏还活着，仍在原来的隔栏里站着，那只脚依旧呈不自然地弯曲；凯肯的脖子还是拴着炼子，连到地上一个钩子上。吉雷努瓦特在传给我们的短信中写到，凯肯一直待在属于它的阴暗角落，听到有人靠近时，就会转动炼子背对人类。“Like he just wants to be swallowed by the wall.”“看起来就像它只想消失到墙里。”Some guidelines for seeing wild animals观赏野生动物的一些指导原则Figuring out how to observe exotic animals humanely can be complicated and confusing. Watching them from a safe distance in the wild is ideal, animal welfare advocates say. To assess how facilities treat captive animals, you can refer to internationally recognized standards inspired by a 1965 U.K. government report. Known as the “five freedoms,” they’re used by animal welfare groups worldwide and by the U.S., Canadian, and European veterinary medical associations. 要弄清楚该如何以人道方式观赏珍奇动物，是复杂又令人困惑的事。动物福利倡议者说，在野外隔着安全距离观赏是最好的方式。如果想评价一个场所如何对待圈养动物，可以参考由1965年英国政府报告所启发的国际认可标准。这些标准称为“五种自由”，世界各地的动物福利团体及美国、加拿大和欧洲的兽医协会都予以采用。Freedom from hunger and thirst. Look for facilities where animals appear to be well-fed and have access to clean water at all times. 免于饥渴的自由：查看这些场所的动物，是否看起来吃得好及随时都有干净的水可饮用。Freedom from discomfort. Observe whether animals have an appropriate environment, including shelter, ample space, a comfortable resting area, and a secluded place away from crowds. 免于不适的自由：观察动物是否有合适的环境，包括隐蔽处、足够的空间、舒适的休息区，以及能够远离人群的幽静区域。Freedom from pain, injury, or disease. Avoid facilities where animals are visibly injured or are forced to participate in activities that could injure them or cause them pain— or where enclosures aren’t clean. 免于疼痛、受伤或疾病的自由：若场所内的动物明显有受伤，或被迫参加可能造成伤害或痛苦的活动，或是围栏脏乱，就应避免前往该类场所。Freedom to express normal behavior. Being chained, performing, and interacting with tourists—giving rides, posing with them, being washed by them—are not normal for a wild animal, even one born in captivity. 表现正常行为的自由：被炼子拴住、表演及与游客互动，像是供人骑乘、合影，或被游客冲洗，这些对野生动物来说都不是正常的行为，即便是圈养繁殖的动物也是如此。Freedom from fear and distress. Be aware that fear-based training, separation of babies from mothers at birth, unnatural noises, and large crowds cause distress. 免于恐惧和痛苦的自由：要知道以恐惧为基础的训练、把刚出生的小动物和母亲分开来、不自然的噪音，以及大量的人潮都会导致痛苦。]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Magazines </category>
-          
-          <category> Wild Lifes </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 双语 </tag>
-            
-            <tag> 新冠肺炎 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>之三：保卫的勇者</title>
       <link href="/2019/0610/folder-magazines/wildlife/wildlife3/"/>
       <url>/2019/0610/folder-magazines/wildlife/wildlife3/</url>
@@ -3750,6 +3748,41 @@
     
     
     <entry>
+      <title>之一：野生动物旅游</title>
+      <link href="/2019/0610/folder-magazines/wildlife/wildlife1/"/>
+      <url>/2019/0610/folder-magazines/wildlife/wildlife1/</url>
+      
+      <author>国家地理杂志</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[由于本文所有图片和视频均来自国家地理的服务器，因此加载较慢。【编者按】“守望野生动物”是美国国家地理2019年6月的特别专题，通过3个小专题来呼吁人们保护野生动物。出于版权和网页篇幅原因，更多高清图片请到转载源观看。部分照片可能会引起不适。I’ve come back to check on a baby. Just after dusk I’m in a car lumbering down a muddy road in the rain, past rows of shackled elephants, their trunks swaying. I was here five hours before, when the sun was high and hot and tourists were on elephants’ backs.我回来探视一头幼象。黄昏后没多久，我坐在车上沿着一条泥泞的道路在雨中缓缓前进，途中经过一队队上了锁炼的大象。五小时前我也来过这里，那时火热的太阳高挂天空，游客骑在大象背上。Walking now, I can barely see the path in the glow of my phone’s flashlight. When the wooden fence post of the stall stops me short, I point my light down and follow a current of rainwater across the concrete floor until it washes up against three large, gray feet. A fourth foot hovers above the surface, tethered tightly by a short chain and choked by a ring of metal spikes. When the elephant tires and puts her foot down, the spikes press deeper into her ankle.现在我在路上走着，几乎看不到前方的路，直到动物隔栏的木头柱子挡住了去路。我拿起手电往前照，顺着一道水泥地上的雨流看去，直到发现三只灰色的大脚，第四只脚被短链牢牢拴住悬在半空中，因为戴有金属钉刺的脚环而动弹不得。当大象累了把脚放下时，钉子就会深深刺入脚踝。Meena is four years and two months old, still a toddler as elephants go. Khammon Kongkhaw, her mahout, or caretaker, told me earlier that Meena wears the spiked chain because she tends to kick. Kongkhaw has been responsible for Meena here at Maetaman Elephant Adventure, near Chiang Mai, in northern Thailand, since she was 11 months old. He said he keeps her on the spiked shackle only during the day and takes it off at night. But it’s night now.米娜现在四岁又两个月大，照大象的标准来看仍是幼象。坎农.康考是它的象夫（负责照顾大象的人），他稍早跟我说，因为米娜老爱踢来踢去，所以才为它戴上有钉刺的炼子。自米娜11个月大起，康考就在泰北这个靠近清迈的湄塔曼大象探险营照顾它。他说只有在白天才让它戴上有钉刺的脚环，晚上就拿掉。但现在已经晚上了。I ask Jin Laoshen, the Maetaman staffer accompanying me on this nighttime visit, why her chain is still on. He says he doesn’t know.我向这次陪我夜间参访的湄塔曼员工金.劳森询问，为何米娜还戴着脚炼？他说他也不知道。Maetaman is one of many animal attractions in and around tourist-swarmed Chiang Mai. People spill out of tour buses and clamber onto the trunks of elephants that, at the prodding of their mahouts’ bullhooks (long poles with a sharp metal hook), hoist them in the air while cameras snap. Visitors thrust bananas toward elephants’ trunks. They watch as mahouts goad their elephants—some of the most intelligent animals on the planet—to throw darts or kick oversize soccer balls while music blares.湄塔曼是游客如织的清迈和周围地区众多的动物旅游景点之一。从游览车涌出的人潮陆续爬到大象的鼻子上，象夫用手中的牛钩（末端有尖锐金属钩子的长杆）一戳，它们就把游客高举在空中，好让相机拍下。游客看着象夫逼迫大象这个地球上数一数二聪明的动物，做出射飞镖或踢超大足球等动作。Meena is one of Maetaman’s 10 show elephants. To be precise, she’s a painter. Twice a day, in front of throngs of chattering tourists, Kongkhaw puts a paintbrush in the tip of her trunk and presses a steel nail to her face to direct her brushstrokes as she drags primary colors across paper. Often he guides her to paint a wild elephant in the savanna. Her paintings are then sold to tourists.米娜是十头在湄塔曼表演的大象之一，确切来说，它是画家。每天两次，康考会在叽叽喳喳的众多游客前，把一支画笔放到米娜的鼻尖，再用一根钢钉按压它的脸，引导它在画纸上用红、黄、蓝颜料画出图案。康考经常引导它画出稀树草原上的野象，再将画卖给游客。Meena’s life is set to follow the same trajectory as many of the roughly 3,800 captive elephants in Thailand and thousands more throughout Southeast Asia. She’ll perform in shows until she’s about 10. After that, she’ll become a riding elephant. Tourists will sit on a bench strapped to her back, and she’ll give several rides a day. When Meena is too old or sick to give rides—maybe at 55, maybe at 75—she’ll die. If she’s lucky, she’ll get a few years of retirement. She’ll spend most of her life on a chain in a stall.米娜的一生，将走上与泰国约3800头圈养大象，以及东南亚其他数千头大象一样的路。它会一直表演到十岁左右，之后就变成一头载客大象。游客将坐上绑在它背上的椅子，每天要载客好几趟。一旦米娜因年老或生病而无法载客时就会死去，那时它可能是55岁，也可能是75岁。运气好的话，它可以过上几年退休生活，但一生中大部分的时间是在围栏里被炼子拴住。Wildlife attractions such as Maetaman lure people from around the world to be with animals like Meena, and they make up a lucrative segment of the booming global travel industry. Twice as many trips are being taken abroad as 15 years ago, a jump driven partly by Chinese tourists, who spend far more on international travel than any other nationality.像湄塔曼这样的野生动物旅游景点，吸引了世界各地的人来这里接触米娜这样的动物，这些景点在全球蓬勃发展的旅游业中是获利丰厚的一环。现在海外旅游量是15年前的两倍，这样的大幅成长有部分来自中国游客的贡献。Wildlife tourism isn’t new, but social media is setting the industry ablaze, turning encounters with exotic animals into photo-driven bucket-list toppers. Activities once publicized mostly in guidebooks now are shared instantly with multitudes of people by selfie-taking backpackers, tour-bus travelers, and social media “influencers” through a tap on their phone screens. Nearly all millennials (23- to 38-year-olds) use social media while traveling. Their selfies—of swims with dolphins, encounters with tigers, rides on elephants, and more—are viral advertising for attractions that tout up-close experiences with animals.野生动物旅游不是什么新鲜事，但社群媒体正将这个产业炒得火热。这些旅游活动透过爱自拍的背包客、游览车上的游客，以及社群媒体的“网红”，只要在手机屏幕上一点，就能马上分享给许多人。几乎所有的千禧世代（23至38岁）旅行时都会用社群媒体。他们的自拍照对一些标榜与动物近距离接触的景点来说，都是病毒式行销的广告。For all the visibility social media provides, it doesn’t show what happens beyond the view of the camera lens. People who feel joy and exhilaration from getting close to wild animals usually are unaware that many of the animals at such attractions live a lot like Meena, or worse.不管社群媒体带来多大的能见度，都不会展示摄影镜头以外的事物。游客通常不知道这类旅游景点内的许多动物，过着和米娜极为类似或更糟的生活。Photographer Kirsten Luce and I set out to look behind the curtain of the thriving wildlife tourism industry, to see how animals at various attractions—including some that emphasize their humane care of animals—are treated once the selfie-taking crowds have gone.摄影师科尔斯登.鲁斯和我着手检视欣欣向荣的野生动物旅游业幕后实情，以了解在各种不同的景点（其中有些还强调会人道对待动物），一旦拍完自拍照的大批旅客离开，区内动物会受到怎样的对待。After leaving Maetaman, we take a five-minute car ride up a winding hill to a property announced by a wooden plaque as “Elephant EcoValley: where elephants are in good hands.” There are no elephant rides here. No paint shows or other performances. Visitors can stroll through an open-air museum and learn about Thailand’s national animal. They can make herbal treats for the elephants and paper from elephant dung. They can watch elephants in a grassy, tree-ringed field.离开湄塔曼后，我们搭车沿着蜿蜒的丘陵路往上行驶，五分钟后来到一片土地，那里立有一块木牌，上面写着“大象生态谷：大象受妥善照顾的好所在”。这里没有骑大象活动，也没有要大象画画或做其他表演。访客可以在这里看着象群在长满青草，周围有树环绕的原野内活动。EcoValley’s guest book is filled with praise from Australians, Danes, Americans—tourists who often shun elephant camps such as Maetaman because the rides and shows make them uneasy. Here, they can see unchained elephants and leave feeling good about supporting what they believe is an ethical establishment. What many don’t know is that EcoValley’s seemingly carefree elephants are brought here for the day from nearby Maetaman—and that the two attractions are actually a single business.生态谷的来宾签名簿上留有满满游客的赞美。他们在这里看到没有被炼子拴住的大象，因此离开时会感觉很好，以为自己是在支持有良心的业者。许多人不知道的是，生态谷里看似无忧无虑的大象，其实是从附近的湄塔曼带来这里待上一天，两处景点其实是同一家业者在经营。Meena was brought here once, but she tried to run into the forest. Another young elephant, Mei, comes sometimes, but today she’s at Maetaman, playing the harmonica in the shows. When she’s not doing that, or spending the day at EcoValley, she’s chained near Meena in one of Maetaman’s elephant stalls.Meena Kalamapijit owns Maetaman as well as EcoValley, which she opened in November 2017 to cater to Westerners. She says her 56 elephants are well cared for and that giving rides and performing allow them to have necessary exercise. And, she says, Meena the elephant’s behavior has gotten better since her mahout started using the spiked chain.米娜来过这里一次，但它试图跑入森林。弥娜.卡拉马皮吉特是湄塔曼和生态谷的经营者，她于2017年11月开设迎合西方人口味的生态谷。她说她的56头大象都受到很好的照顾，载客和表演活动让它们有了必要的运动。她还说大象米娜的行为，在象夫开始对它用有钉刺的炼子后有了改善。We sit with Kalamapijit on a balcony outside her office, and she explains that when Westerners, especially Americans, stopped coming to Maetaman, she eliminated one of the daily shows to allot time for visitors to watch elephants bathe in the river that runs through the camp.“Westerners enjoy bathing because it looks happy and natural,” she says. “But a Chinese tour agency called me and said, ‘Why are you cutting the show? Our customers love to see it, and they don’t care about bathing at all.’ ” Providing separate options is good for business, Kalamapijit says.Around the world Kirsten and I watched tourists watching captive animals. In Thailand we also saw American men bear-hug tigers in Chiang Mai and Chinese brides in wedding gowns ride young elephants in the aqua surf on the island of Phuket. We watched polar bears in wire muzzles ballroom dancing across the ice under a big top in Russia and teenage boys on the Amazon River snapping selfies with baby sloths.我和科尔斯登在世界各地看了游客如何观赏圈养动物。我们在泰国清迈看过美国男性熊抱老虎，在亚马逊河畔看到和幼小树懒拍自拍照的青少年。Most tourists who enjoy these encounters don’t know that the adult tigers may be declawed, drugged, or both. Or that there are always cubs for tourists to snuggle with because the cats are speed bred and the cubs are taken from their mothers just days after birth. Or that the elephants give rides and perform tricks without harming people only because they’ve been “broken” as babies and taught to fear the bullhook. Or that the Amazonian sloths taken illegally from the jungle often die within weeks of being put in captivity.大多数游客在享受这些与动物的近距离接触时，并不知道成年老虎可能已经被拔去爪子、下药，或两者皆有。也不知道游客之所以总是有幼虎可以抱，是因为业者用快速繁殖的方式为这些大猫育种，幼虎出生没几天就被人从母虎身边抱走。更不知道大象之所以在给人骑乘和表演把戏时不会伤人，只是因为它们在幼年时期就已被驯服，懂得害怕牛钩。当然也不知道非法从丛林中捕来的亚马逊树懒，往往在圈养几周之内就会死去。As we traveled to performance pits and holding pens on three continents and in the Hawaiian Islands, asking questions about how animals are treated and getting answers that didn’t always add up, it became clear how methodically and systematically animal suffering is concealed.我们在旅程中打听里头的动物所受到的待遇，但得到的答案却不总是兜得起来。在这个过程中有一件事愈来愈清楚：动物受苦的情况以有条理而系统性的方式被隐瞒起来。The wildlife tourism industry caters to people’s love of animals but often seeks to maximize profits by exploiting animals from birth to death. The industry’s economy depends largely on people believing that the animals they’re paying to watch or ride or feed are having fun too.野生动物旅游业迎合大众对动物的爱好，但经常为了获取最大的利润，将动物从出生一路剥削到死。这个产业的经济，很大程度上依赖消费者相信自己花钱观赏、骑乘或喂食的动物也乐在其中。It succeeds partly because tourists—in unfamiliar settings and eager to have a positive experience—typically don’t consider the possibility that they’re helping to hurt animals. Social media adds to the confusion: Oblivious endorsements from friends and trendsetters legitimize attractions before a traveler ever gets near an animal.这个产业成功的原因，部分可归因于游客通常不会想到自己可能正在参与伤害动物。社群媒体让事情更混淆不清：来自朋友和潮流人士不经意地背书，就已为这些景点赋予正当性了。There has been some recognition of social media’s role in the problem. In December 2017, after a National Geographic investigative report on harmful wildlife tourism in Amazonian Brazil and Peru, Instagram introduced a feature: Users who click or search one of dozens of hashtags, such as #slothselfie and #tigercubselfie, now get a pop-up warning that the content they’re viewing may be harmful to animals.已经有部分人察觉到社群媒体在这个问题中扮演的角色。2017年12月，国家地理发表了一篇调查报导，探讨野生动物旅游如何伤害巴西亚马逊地区和秘鲁的野生动物之后，Instagram推出新功能：只要使用者点击或搜寻数十个主题标签中的任何一个，譬如#slothselfie（树懒自拍）和#tigercubselfie（虎宝宝自拍），屏幕就会跳出警告视窗，说目前所看的内容可能对动物有害。Everyone finds Olga Barantseva on Instagram. “Photographer from Russia. Photographing dreams,” her bio reads. She meets clients for woodland photo shoots with captive wild animals just outside Moscow.每个人都是透过Instagram找到欧嘉.巴朗赛娃的。“来自俄罗斯的摄影师，擅长捕梦入镜。”是她的自我介绍。她和客户约在莫斯科近郊的树林里，拍摄和圈养的野生动物一起入镜的画面。For her 18th birthday, Sasha Belova treated herself to a session with Barantseva—and a pack of wolves. “It was my dream,” she says as she fidgets with her hair, which had been styled that morning. “Wolves are wild and dangerous.” The wolves are kept in small cages at a petting zoo when not participating in photo shoots.为了庆祝自己的18岁生日，萨莎.贝洛娃送自己的礼物是约了巴朗赛娃为她拍照，而入镜的还有一群狼。The Kravtsov family hired Barantseva to take their first professional family photos—all five family members, shivering and smiling in the birch forest, joined by a bear named Stepan.克拉夫佐夫一家聘请巴朗赛娃为他们拍摄第一张专业级的全家福照，冻得瑟缩发抖的五人面带微笑，在桦树林中与一头叫做史戴庞的熊合影。Barantseva has been photographing people and wild animals together for six years. She “woke up as a star,” she says, in 2015, when a couple of international media outlets found her online. Her audience has exploded to more than 80,000 followers worldwide. “I want to show harmony between people and animals,” she says.巴朗赛娃拍摄人与野生动物的合影已经六年了。2015年有几家国际媒体在网路上发现她，然后她“一觉醒来就成了明星”，巴朗赛娃这么说。她的全球追踪者数量暴增到八万多人。她说：“我想表现人与动物之间的和谐。”On a raw fall day, under a crown of golden birch leaves on a hill that overlooks a frigid lake, two-and-a-half-year-old Alexander Levin, dressed in a hooded bumblebee sweater, timidly holds Stepan’s paw.在一个湿冷的秋日，两岁半的亚历山大.列文怯生生地握住史戴庞的爪子。The bear’s owners, Yury and Svetlana Panteleenko, ply their star with food—tuna fish mixed with oatmeal—to get him to approach the boy. Snap: It looks like a tender friendship. The owners toss grapes to Stepan to get him to open his mouth wide. Snap: The bear looks as if he’s smiling.尤里.庞德连卡和妻子斯威特兰娜是熊的主人，他们用金枪鱼配上燕麦粥，作为吸引他们动物明星的食物，好让它接近男孩。啪擦：画面看起来就像是亲密好友。The Panteleenkos constantly move Stepan, adjusting his paws, feeding him, and positioning Alexander as Barantseva, pink-haired, bundled in jeans and a parka, captures each moment. Snap: A photo goes to her Instagram feed. A boy and a bear in golden Russian woods—a picture straight out of a fairy tale. It’s a contemporary twist on a long-standing Russian tradition of exploiting bears for entertainment.庞德连卡夫妇不断让史戴庞移动、调整它的爪子、喂食它，为亚历山大摆好位置，好让一头粉红头发、穿着牛仔裤并用大衣牢牢裹住自己的巴朗赛娃拍下每一瞬间。啪擦：又一张照片传进Instagram页面。男孩与熊共处在金黄色的俄罗斯树林里，仿佛童话故事里的画面。Another day in the same forest, Kirsten and I join 12 young women who have nearly identical Instagram accounts replete with dreamy photos of models caressing owls and wolves and foxes. Armed with fancy cameras but as yet modest numbers of followers, they all want the audience Barantseva has. Each has paid the Panteleenkos $760 to take identical shots of models with the ultimate prize: a bear in the woods.另一天在同一座森林里，柯尔斯登和我加入12位年轻女性，她们的Instagram帐号内容几乎一模一样，都贴满了模特儿轻抚猫头鹰、狼及狐狸的梦幻照片。她们都想要拥有和巴朗赛娃一样的追踪人数，因此每个人都付给庞德连卡夫妇760美元，拍出千篇一律的照片，画面里有模特儿与众人垂涎的对象：林中之熊。Stepan is 26 years old, elderly for a brown bear, and can hardly walk. The Panteleenkos say they bought him from a small zoo when he was three months old. They say the bear’s work—a constant stream of photo shoots and movies—provides money to keep him fed.26岁的史戴庞在棕熊中已属年迈，几乎无法行走。庞德连卡夫妇说，他们在史戴庞三个月大时从一个小型动物园把它买走，还表示这头熊的工作――不停地拍照片和拍电野生动物旅游业迎合大众对动物的爱好，但经常为了获取最大的利润，将动物从出生一路剥削到死。zinio野生动物旅游65影――为它赚进了伙食费。斯威特兰娜.庞德连卡的Instagram帐号中有段视频，里面这么宣示着：“爱和一些很棒的食物能让任何人变成泰迪熊：-）。”A video on Svetlana Panteleenko’s Instagram account proclaims: “Love along with some great food can make anyone a teddy :-)”And just like that, social media takes a single instance of local animal tourism and broadcasts it to the world.就这样，社群媒体把一个地区性的动物旅游案例，传播到了全世界。When the documentary film Blackfish was released in 2013, it drew a swift and decisive reaction from the American public. Through the story of Tilikum, a distressed killer whale at SeaWorld in Orlando, Florida, the film detailed the miserable life orcas can face in captivity. Hundreds of thousands of outraged viewers signed petitions. Companies with partnership deals, such as Southwest Airlines, severed ties with SeaWorld. Attendance at SeaWorld’s water parks slipped; its stock nose-dived.纪录片《黑鲸》2013年上映后，引起了美国大众迅速又果断的反应。视频透过佛罗里达州奥兰多市“海洋世界”一头名叫提勒康的忧伤虎鲸，详细地描绘虎鲸被圈养后可能面临的悲惨生活。后来，海洋世界水上乐园的入园人数下滑，公司股票价格大跌。James Regan says what he saw in Blackfish upset him. Regan, honeymooning in Hawaii with his wife, Katie, is from England, where the country’s last marine mammal park closed permanently in 1993. I meet him at Dolphin Quest Oahu, an upscale swim-with-dolphins business on the grounds of the beachfront Kahala Hotel &amp; Resort, just east of Honolulu. The Regans paid $225 each to swim for 30 minutes in a small group with a bottlenose dolphin. One of two Dolphin Quest locations in Hawaii, the facility houses six dolphins.詹姆士.里根说他看了《黑鲸》后很难过。我在欧胡岛海豚探索园碰到他。雷根夫妇每人付了225美元后，和一小群游客与一头瓶鼻海豚共游了30分钟。这是海豚探索园在夏威夷的两个据点之一，里面总共养了六头海豚。Bottlenose dolphins are the backbone of an industry that spans the globe. Swim-with-dolphins operations rely on captive-bred and wild-caught dolphins that live—and interact with tourists—in pools. The popularity of these photo-friendly attractions reflects the disconnect around dolphin experiences: People in the West increasingly shun shows that feature animals performing tricks, but many see swimming with captive dolphins as a vacation rite of passage.这样的产业正扩及全球，而瓶鼻海豚正是产业支柱。与海豚共游这个产业的运作，仰赖圈养繁殖的海豚和从野外捕获的海豚，它们在池子里生活并与游客互动。虽然西方人逐渐避开以动物杂耍表演为号召的节目，不过许多西方人却将与圈养海豚共游视为重大的度假里程碑。Katie Regan has wanted to swim with dolphins since she was a child. Her husband laughs and says of Dolphin Quest, “They paint a lovely picture. When you’re in America, everyone is smiling.” But he appreciates that the facility is at their hotel, so they can watch the dolphins being fed and cared for. He brings up Blackfish again.凯蒂.里根自小就想和海豚共游。她的先生大笑，并如此评论海豚探索园：“他们把情景描绘得很美丽。”但他欣赏的是，与海豚共游的场地就在他们下榻的旅馆，这样就能看到海豚接受喂食与照顾。他再次提起《黑鲸》。Katie protests: “Stop making my dream a horrible thing!”凯蒂抗议说：“别再把我的美梦变成恶梦！”Rae Stone, president of Dolphin Quest and a marine mammal veterinarian, says the company donates money to conservation projects and educates visitors about perils that marine mammals face in the wild. By paying for this entertainment, she says, visitors are helping captive dolphins’ wild cousins.海豚探索园的总裁芮.史东是海洋哺乳动物兽医，她说公司会捐款给保育计划，并教育游客。Stone notes that Dolphin Quest is certified “humane” by American Humane, an animal welfare nonprofit. (The Walt Disney Company, National Geographic’s majority owner, offers dolphin encounters on some vacation excursions and at an attraction in Epcot, one of its Orlando parks. Disney says it follows the animal welfare standards of the Association of Zoos &amp; Aquariums, a nonprofit that accredits more than 230 facilities worldwide.)史东强调，非营利动物福利组织“美国人道”将海豚探索园认证为符合“人道”标准。（拥有国家地理多数股分的华特迪斯尼公司，在一些假期旅游行程中提供与海豚接触的机会，奥兰多园区内的未来世界也有。迪斯尼说，他们遵照美国动物园和水族馆协会的动物福利标准，这个非营利组织已为世界两百三十多家场所提供认证。）It’s a vigorous debate: whether even places with high standards, veterinarians on staff, and features such as pools filled with filtered ocean water can be truly humane for marine mammals.即便采取高标准、聘用兽医，以及用过滤海水灌注的水池等特色，这样的场所对海洋哺乳动物来说真的人道吗？这是个会引发激烈辩论的议题。Dolphin Quest’s Stone says yes.海豚探索园的史东说，当然人道。Critics, including the Humane Society of the United States, which does not endorse keeping dolphins in captivity, say no. They argue that these animals have evolved to swim great distances and live in complex social groups—conditions that can’t be replicated in the confines of a pool. This helps explain why the National Aquarium, in Baltimore, announced in 2016 that its dolphins will be retired to a seaside sanctuary by 2020.不过，包含美国人道主义协会在内的批评者不这么认为，该协会并不支持圈养海豚。批评者主张这些动物演化出的生活是要长距离游泳，并生活在复杂的社会群体中，而这些条件都无法在封闭的池子复制出来。Some U.S. attractions breed their own dolphins because the nation has restricted dolphin catching in the wild since 1972. But elsewhere, dolphins are still being taken from the wild and turned into performers.美国有些旅游景点自行繁殖海豚，因为美国自1972年起就限制捕捉野生海豚。但在其他地方，野生海豚仍遭捕捉并被训练进行表演。In China, which has no national laws on captive-animal welfare, dolphinariums with wild-caught animals are a booming business: There are now 78 marine mammal parks, and 26 more are under construction.中国没有针对圈养动物的福利订定全国性法律，捕捉野生海豚的海豚馆成为蓬勃发展的事业：现在已有78家海洋哺乳动物园，另有26家在兴建中。To have the once-in-a-lifetime chance to see rare Black Sea dolphins, people in the landlocked town of Kaluga, a hundred miles from Moscow, don’t have to leave their city. In the parking lot of the Torgoviy Kvartal shopping mall, next to a hardware store, is a white inflatable pop-up aquarium: the Moscow Traveling Dolphinarium. It looks like a children’s bouncy castle that’s been drained of its color.在距离莫斯科150公里的内陆城市卡路加，若想观赏此生难得一见的希有黑海宽吻海豚，不用出城就可以看到。在塔尔葛维.柯瓦塔尔卖场的停车场里，一家五金店旁边有一座白色的充气式临时水族馆：莫斯科巡回海豚馆。看起来就像是褪了色的儿童玩耍用充气城堡。Inside the puffy dome, parents buy their kids dolphin-shaped trinkets: fuzzy dolls and Mylar balloons, paper dolphin hats, and drinks in plastic dolphin tumblers. Families take their seats around a small pool. The venue is so intimate that even the cheapest seats, at nine dollars apiece, are within splashing distance.在膨胀的圆顶下，家长和孩童围着一个小池子坐着。由于场地实在很小，即使是要价九美元的最便宜位子，也能被水花溅到。“My kids are jumping for joy,” says a woman named Anya, motioning toward her two giddy boys, bouncing in their seats.一位名叫安雅的妇人，指着两个在位子上跳过来跳过去、乐昏了头的儿子对我说：“你看！我的两个小孩都开心到跳起来了。”In the middle of the jubilant atmosphere, in water that seems much too shallow and much too murky, two dolphins swim listlessly in circles.在这样欢乐的气氛中，两头海豚没精打彩地在水池里绕圈子，池水似乎太浅而且太混浊了。Russia is one of only a few countries (Indonesia is another) where traveling oceanariums exist. Dolphins and beluga whales, which need to be immersed in water to stay alive, are put in tubs on trucks and carted from city to city in a loop that usually ends when they die. These traveling shows are aboveboard: Russia has no laws that regulate how marine mammals should be treated in captivity.俄罗斯是少数几个有巡回海洋水族馆的国家（印度尼西亚是另一个）。海豚和白鲸必须待在水里才能存活，所以要把它们放在水缸里用卡车在一个个城市间巡回，直到它们死亡才划下旅程终点。这些巡回表演都光明正大地进行，因为俄罗斯没有法律规范如何对待圈养的海洋哺乳动物。The shows are the domestic arm of a brisk Russian global trade in dolphins and small whales. Black Sea bottlenose dolphins can’t be caught legally without a permit, but Russian fishermen can catch belugas and orcas under legal quotas in the name of science and education. Some belugas are sold legally to aquariums around the country. Russia now allows only a dozen or so orcas to be caught each year for scientific and educational purposes, and since April 2018, the government has cracked down on exporting them. But government investigators believe that Russian orcas—which can sell for millions—are being caught illegally for export to China.俄罗斯的海豚及小型鲸豚全球贸易正蓬勃发展，而这些表演就是此类贸易在国内的展现。要有许可证才能合法捕捉黑海宽吻海豚，但俄罗斯渔民能以科学和教育名义，在合法限额内捕捉白鲸和虎鲸。有些白鲸合法卖给俄罗斯境内的水族馆。俄罗斯现在一年只准捕捉12头左右的虎鲸供科学和教育之用，而且政府从2018年4月开始严加取缔虎鲸出口。不过，政府调查人员相信，俄罗斯的虎鲸现在仍被非法捕捉进口到中国，每只售价可达数百万美元。Captive orcas, which can grow to 20 feet long and more than 10,000 pounds, are too big for the traveling shows that typically feature dolphins and belugas. When I contacted the owners of the Moscow Traveling Dolphinarium and another operation, the White Whale Show, in separate telephone calls to ask where their dolphins and belugas come from, both men, Sergey Kuznetsov and Oleg Belesikov, hung up on me.圈养的虎鲸能长到6.5公尺长、超过5000公斤重，因此对于通常由海豚和白鲸进行的巡回表演来说太过庞大。我分别致电给莫斯科巡回海豚馆和另一家名为白鲸秀的业者，想了解他们的海豚和白鲸是从哪里来。这两家的老板分别是赛盖.库兹涅佐夫和阿雷格.贝列席科夫，他们都直接把我的电话挂掉。Russia’s dozen or so traveling oceanariums are touted as a way to bring native wild animals to people who might never see the ocean.俄罗斯的大约12个巡回海洋水族馆都吹捧自己让这辈子可能看不到海的人，得以看到俄罗斯原生的野生动物。“Who else if not us?” says Mikhail Olyoshin, a staffer at one traveling oceanarium. And on this day in Kaluga, as the dolphins perform tricks to American pop songs and lie on platforms for several minutes for photo ops, parents and children express the same sentiment: Imagine, dolphins, up close, in my hometown. The ocean on delivery.今天在卡路加的演出中，海豚随着美国流行歌曲的旋律表演杂耍，还躺在舞台上几分钟供观众拍照，此时家长和小孩都表达出相同的心情：想想看，是海豚，近距离，就在自己家乡。海洋宅配到府。Owners and operators of wildlife tourism attractions, from high-end facilities such as Dolphin Quest in Hawaii to low-end monkey shows in Thailand, say their animals live longer in captivity than wild counterparts because they’re safe from predators and environmental hazards. Show operators proudly emphasize that the animals under their care are with them for life. They’re family.无论是高价路线的夏威夷海豚探索园，或是低价路线的泰国猴子秀，野生动物旅游景点的所有者和经营者都说，圈养的动物比野生同类活得更久，因为可以免受掠食者的威胁和环境危害。动物表演的经营者自豪地强调，他们照顾的动物一辈子都和他们在一起，就和家人没两样。Alla Azovtseva, a longtime dolphin trainer in Russia, shakes her head.在俄国长期担任海豚训练师的埃拉.阿佐夫兹娃摇了摇头。“I don’t see any sense in this work. My conscience bites me. I look at my animals and want to cry,” says Azovtseva, who drives a red van with dolphins airbrushed on the side. At the moment, she’s training pilot whales to perform tricks at Moscow’s Moskvarium, one of Europe’s largest aquariums (not connected to the traveling dolphin shows). On her day off, we meet at a café near Red Square.“我看不出这个工作有任何意义。我良心不安，看着我的动物却很想哭。”阿佐夫兹娃说。此刻她正在训练领航鲸，它们将在莫斯科海洋馆表演杂耍，那是欧洲最大的水族馆之一（该馆和巡回海豚秀没有关系）。She says she fell in love with dolphins in the late 1980s when she read a book by John Lilly, the American neuroscientist who broke open our understanding of the animals’ intelligence. She has spent 30 years training marine mammals to do tricks. But along the way she’s grown heartsick from forcing highly intelligent, social creatures to live isolated, barren lives in small tanks.阿佐夫兹娃过去30年都在训练海洋哺乳动物做杂耍表演，但她在这个过程中却愈来愈心痛，因为必须强迫这些高智力的社会性动物待在小小的水箱中，过着隔绝、百无聊赖的生活。“I would compare the dolphin situation with making a physicist sweep the street,” she says. “When they’re not engaged in performance or training, they just hang in the water facing down. It’s the deepest depression.”“我把海豚的处境比喻为一位物理学家在扫大街，”她说：“它们没做表演或训练时就头朝下浮在水中，那是最深沉的抑郁。”What people don’t know about many aquarium shows in Russia, Azovtseva says, is that the animals often die soon after being put in captivity, especially those in traveling shows. And Azovtseva—making clear she’s referring to the industry at large in Russia and not the Moskvarium—says she knows many aquariums quietly and illegally replace their animals with new ones.阿佐夫兹娃说，对于俄罗斯的众多水族馆表演，有一点很多人都不知道，那就是动物一旦受到圈养经常会很快死去，尤其是参与巡回演出的动物。阿佐夫兹娃说，她知道有许多水族馆偷偷违法用新的动物替代死去的动物。但她也明确地说，她指的是俄罗斯大部分的业者，并不包含莫斯科海洋馆。It’s been illegal to catch Black Sea dolphins in the wild for entertainment purposes since 2003, but according to Azovtseva, aquarium owners who want to increase their dolphin numbers quickly and cheaply buy dolphins poached there. Because these dolphins are acquired illegally, they’re missing the microchips that captive cetaceans in Russia are usually tagged with as a form of required identification.自2003年以来，为娱乐目的而捕捉野生黑海宽吻海豚已经是非法行为。但根据阿佐夫兹娃的说法，水族馆老板为了快速且便宜地增加海豚数量，会购入从海上盗捕的海豚。Some aquariums get around that, she says, by cutting out dead dolphins’ microchips and implanting them into replacement dolphins.“People are people,” Azovtseva says. “Once they see an opportunity, they exploit.” She says she can’t go on doing her work in the industry and that she’s decided to speak out because she wants people to know the truth about the origins and treatment of many of the marine mammals they love watching. We exchange a look—we both know what her words likely mean for her livelihood.“人就是人，”阿佐夫兹娃说：“一看到机会就会加以利用。”她说自己决定说出真相，想让大家知道许多他们爱看的海洋哺乳动物，是怎么来的、又受到怎样的待遇。“I don’t care if I’m fired,” she says defiantly. “When a person has nothing to lose, she becomes really brave.”“就算遭到解雇我也不在乎，”她倔强地说：“当一个人没有什么可失去时，就会变得真正勇敢。”I’m sitting on the edge of an infinity pool on the hilly Thai side of Thailand’s border with Myanmar, at a resort where rooms average more than a thousand dollars a night.我坐在一座无边际泳池的池边，那是一处近泰国与缅甸边界、在泰国境内山丘上的度假胜地，住宿一晚平均要价超过1000美元。Out past the pool, elephants roam in a lush valley. Sitting next to me is 20-year-old Stephanie, who asked not to use her last name. She’s Dutch and French, Tokyo born and raised, and a student at the University of Michigan. Her cosmopolitan background and pretty face make for a perfect cocktail of aspiration—she’s exactly the kind of Instagrammer who makes it as an influencer. That is, someone who has a large enough following to attract sponsors to underwrite posts and, in turn, travel, wardrobes, and bank accounts. In 2018, brands—fashion, travel, tech, and more—spent an estimated $1.6 billion on social media advertising by influencers.泳池再过去较远处，有一群在郁郁葱葱山谷里漫步的大象。我旁边坐着20岁的斯蒂芬妮.凡豪顿，她是荷兰和法国混血，在东京出生长大。多国背景和漂亮脸蛋，让她成为集众多人渴望特质于一身的完美组合，她正是那种成功当上网红的Instagram活跃用户。网红拥有庞大的追踪人数，能吸引赞助商。2018年，包含时尚、旅游、科技及其他领域在内的品牌厂商，花在网红身上的社群媒体广告费估计达16亿美元。Stephanie has been here, at the Anantara Golden Triangle Elephant Camp &amp; Resort, before. This time, in a fairly standard influencer-brand arrangement, she’ll have a picnic with elephants and post about it to her growing legion of more than 25,000 Instagram followers. In exchange, she gets hundreds of dollars off the nightly rate.这里是金三角安纳塔拉大象营与度假村，凡豪顿之前就住过这里了。这次来则是为了标准的网红与品牌结合的行程安排，期间她将和大象一起野餐，然后在Instagram上分享给超过2万5000名粉丝，而且这数量还在增加中。她得到的回报是每晚的住宿费减免数百美元。At Anantara the fields are green, and during the day at least, many of the resort’s 22 elephants are tethered on ropes more than a hundred feet long so they can move around and socialize. Nevertheless, they’re expected to let guests touch them and do yoga beside them.安纳塔拉有着绿意盎然的原野，度假区的22头大象中有许多至少在白天时间可以到处走动并与同类互动，因为拴住它们的绳子长达三十多公尺。尽管如此，它们仍需让游客触摸，并在游客做瑜伽时待在旁边。After Stephanie’s elephant picnic, I watch her edit the day’s hundreds of photos. She selects an image with her favorite elephant, Bo. She likes it, she says, because she felt a connection with Bo and thinks that will come across. She posts it at 9:30 p.m.—the time she estimates the largest number of her followers will be online. She includes a long caption, summing it up as “my love story with this incredible creature,” and the hashtag #stopelephantriding. Immediately, likes from followers stream in—more than a thousand, as well as comments with heart-eyed emoji.在凡豪顿完成与大象的野餐后，我看着她开始编修这天拍摄的数百张照片。她选了一张和自己最喜欢的大象的合影，它叫小波。她说会喜欢这张照片，是因为感觉和小波有了连接，而这张照片能清楚表达出来。她在晚上9点30分发布这张照片，因为她预估这个时候在线上的粉丝人数最多。她配上很长的图说，并以这句话作结：“我与这个神奇动物之间的爱的故事”，主题标签是#stopelephantriding（别再骑大象）。很快地，超过1000个粉丝的按赞纷纷涌入，还有加了两眼爱心表情符号的评论。Anantara is out of reach for anyone but the wealthy—or prominent influencers. Anyone else seeking a similar experience might do a Google search for, say, “Thailand elephant sanctuary.”安纳塔拉不是一般人消费得起的地方，除非是有钱人或著名的网红。如果想寻求类似的体验，可能要在谷歌上搜寻“泰国大象保护区”之类的场所。随着游客对与动物接触是否合乎道德规范有了愈来愈高的要求，一些经常自称“保护区”的平价营业场所纷纷兴起，声称能在合乎人道标准的情况下，提供近距离接触大象的机会。As tourist demand for ethical experiences with animals has grown, affordable establishments, often calling themselves “sanctuaries,” have cropped up purporting to offer humane, up-close elephant encounters. Bathing with elephants—tourists give them a mud bath, splash them in a river, or both—has become very popular. Many facilities portray baths as a benign alternative to elephant riding and performances. But elephants getting baths, like those that give rides and do tricks, will have been broken to some extent to make them obedient. And as long as bathing remains popular, places that offer it will need obedient elephants to keep their businesses going. 与大象共浴变得很受欢迎，内容是让游客帮它们洗泥巴澡，或站在河里往它们身上泼水，又或者两样都做。许多业者把与大象共浴，描绘成替代骑乘大象和大象表演的无害选项。但要让大象接受人类桑拿，就像让大象给人骑乘和表演杂耍一样，都要先让它们被驯服到一定程度才会乖乖服从。而且只要与大象共浴持续受欢迎，提供服务的业者就会需要听话的大象，这样才能让生意做下去。 In Ban Ta Klang, a tiny town in eastern Thailand, modest homes dot the crimson earth. In front of each is a wide, bamboo platform for sitting, sleeping, and watching television.泰国东部的小镇班塔卡侬，深红色的土地上散布着简朴的房子。每间房子前都有一个宽大的竹子平台，可以在上面或坐、或睡、或看电视。But the first thing I notice is the elephants. Some homes have one, others as many as five. Elephants stand under tarps or sheet metal roofs or trees. Some are together, mothers and babies, but most are alone. Nearly all the elephants wear ankle chains or hobbles—cuffs binding their front legs together. Dogs and chickens weave among the elephants’ legs, sending up puffs of red dust.但我首先注意到的是象群。有些房子有一头大象，有些则多达五头大象。这些大象站在帆布、铁皮屋顶或树下，有些群聚在一起，由母象带着小象，但多数形单影只。几乎所有大象都戴着脚炼或前脚被铐在一起。Ban Ta Klang—known as Elephant Village—is ground zero in Thailand for training and trading captive elephants.塔卡侬村又被称为大象村，是泰国训练和交易圈养大象的起始点。“House elephants,” Sri Somboon says, gesturing as he turns down his TV. Next to his outdoor platform, a two-month-old baby elephant runs around his mother. Somboon points across the road to the third elephant in his charge, a three-year-old male tethered to a tree. He’s wrenching his head back and forth and thrashing his trunk around. It looks as if he’s going out of his mind.“家象。”席.宋本说，他用手指了指并把电视音量关小一点。在他家外头平台旁有一头绕着母亲跑来跑去的两个月大幼象。宋本指向道路的另一边，由他负责管理的第三头象就在哪里，这头三岁大的公象被拴在一棵树上，它摇头晃脑，不断甩鼻子，看起来像疯了。He’s in the middle of his training, Somboon says, and is getting good at painting. He’s already been sold, and when his training is finished, he’ll start working at a tourist camp down south.宋本说它正在接受训练，对绘画愈来愈在行。已经有人买下它，训练结束后，它就要开始在南方一个旅游营地工作。Ban Ta Klang and the surrounding area, part of Surin Province, claim to be the source of more than half of Thailand’s 3,800 captive elephants. Long before the flood of tourists, it was the center of the elephant trade; the animals were caught in the wild and tamed for use transporting logs. Now, every November, hundreds of elephants from here are displayed, bought, and sold in the province’s main town, Surin.泰国有3800头圈养大象，其中有一半以上据称来自班塔卡侬村以及村落周围的素辇府地区。早在大批游客涌入前那里就是大象交易中心。从野外捕捉而来的大象经驯服后，用来从事运送原木的工作。现在素辇府的主要城镇素辇，每年11月都有数百头该地区的大象在此公开展示及买卖。One evening I sit with Jakkrawan Homhual and Wanchai Sala-ngam. Both 33, they’ve been best friends since childhood. About half the people in Ban Ta Klang who care for elephants, including Homhual, don’t own them. They’re paid a modest salary by a rich owner to breed and train baby elephants for entertainment. As night falls, thousands of termites swarm us, attracted to the single bulb hanging above the bamboo platform. Our conversation turns to elephant training.一天傍晚我和贾卡万.洪文及万才.萨拉杨同坐。两人都33岁，从小就是好朋友。班塔卡侬村照顾大象的人中，有大约一半不是大象的主人，这也包括洪文。富有的大象主人付给他们微薄的薪水，由他们饲养幼象并训练它们进行娱乐表演。夜幕降临后，我们的谈话内容转向了大象训练。Phajaan is the traditional—and brutal—days- or weeks-long process of breaking a young elephant’s spirit. It has long been used in Thailand and throughout Southeast Asia to tame wild elephants, which still account for many of the country’s captives. Under phajaan, elephants are bound with ropes, confined in tight wooden structures, starved, and beaten repeatedly with bullhooks, nails, and hammers until their will is crushed. The extent to which phajaan persists in its harshest form is unclear. Since 2012, the government has been cracking down on the illegal import of elephants taken from the forests of neighboring Myanmar, Thailand’s main source of wild-caught animals.Phajaan是一种击垮幼象心灵的传统方式，手段残忍，过程从数日到数星期不等。泰国和东南亚地区长期以来一直用这种方式驯服野象，野象仍是泰国许多圈养大象的来源。在Phajaan的施行过程中，大象被绳子绑住，囚禁于狭小的木造建筑里，除了挨饿，还不断被人用牛钩、钉子及铁锤殴打，直到意志崩溃为止。最残酷形式的Phajaan现在有多普遍并不清楚。泰国政府自2012年起严格取缔自邻国缅甸森林中非法引入野象的做法。缅甸是泰国野外捕获大象的主要来源。I ask the men how baby elephants born in captivity are broken and trained.我问他们如何驯服与训练在圈养环境下出生的幼象。When a baby is about two years old, they say, mahouts tie its mother to a tree and slowly drag the baby away. Once separated, the baby is confined. Using a bullhook on its ear, they teach the baby to move: left, right, turn, stop. To teach an elephant to sit, Sala-ngam says, “we tie up the front legs. One mahout will use a bullhook at the back. The other will pull a rope on the front legs.” He adds: “To train the elephant, you need to use the bullhook so the elephant will know.”他们说在幼象两岁左右，象夫把它的母亲绑到一棵树上，再慢慢牵走幼象。一旦和母象分开后，幼象就遭到监禁。他们用牛钩敲打它的耳朵来教它如何做动作：向左、向右、转身、停止。为了教大象坐下，萨拉杨说：“我们绑住它的前脚，一名象夫拿着牛钩站在后面，另一名则用绳子拉它的前脚。”他补充说：“训练大象必须要用牛钩，这样才能让它明白。”Humans identify suffering in other humans by universal signs: People sob, wince, cry out, put voice to their hurt. Animals have no universal language for pain. Many animals don’t have tear ducts. More creatures still—prey animals, for example—instinctively mask symptoms of pain, lest they appear weak to predators. Recognizing that a nonhuman animal is in pain is difficult, often impossible.人类可以透过一些普遍的征兆来辨别他人的痛苦：啜泣、皱眉头、喊叫、用言语表达痛苦。动物没有表达痛苦的共同语言，很多动物没有泪腺，而有更多动物（如猎物）会本能地掩盖痛苦迹象，以免在掠食动物面前暴露弱点。要察觉出非人动物的痛苦是很难的事，往往不可能。But we know that animals feel pain. All mammals have a similar neuroanatomy. Birds, reptiles, and amphibians all have pain receptors. As recently as a decade ago, scientists had collected more evidence that fish feel pain than they had for neonatal infants. A four-year-old human child with spikes pressing into his flesh would express pain by screaming. A four-year-old elephant just stands there in the rain, her leg jerking in the air.但我们知道动物感受得到痛苦。所有哺乳动物都具有类似的神经构造。鸟类、爬行类及两生类都有痛觉受器。不过十年前，科学家收集到有关鱼类会感受痛苦的证据，还比新生幼儿会感受痛苦的证据多。四岁孩童如果被尖锐物体刺到，会用尖叫的方式表达痛苦；四岁大象只会站立在雨中，任由那只悬空的脚不停抽动。Of all the silently suffering animals I saw in pools and pens around the world, two in particular haunt me: an elephant and a tiger.我在世界各地的水池和围栏里看过各种默默受苦的动物，其中两个尤其让我无法忘记：一头大象和一只老虎。They lived in the same facility, Samut Prakan Crocodile Farm and Zoo, about 15 miles south of Bangkok. The elephant, Gluay Hom, four years old, was kept under a stadium. The aging tiger, Khai Khem, 22, spent his days on a short chain in a photo studio. Both had irrefutable signs of suffering: The emaciated elephant had a bent, swollen leg hanging in the air and a large, bleeding sore at his temple. His eyes were rolled back in his head. The tiger had a dental abscess so severe that the infection was eating through the bottom of his jaw.它们生活在同一个地方，即曼谷以南约25公里的泰国北榄鳄鱼湖动物园。四岁的大象归宏关在一座体育场的下方，22岁的年迈老虎凯肯则被短链拴在一间摄影棚里。两者身上都有无可否认的受苦迹象：消瘦的大象悬着一只弯曲肿胀的脚，太阳穴有一个流着血的大疮，眼球往后翻；老虎有严重的牙脓肿，感染情况严重到逐渐侵蚀到下颚。When I contacted the owner of the facility, Uthen Youngprapakorn, to ask about these animals, he said the fact that they hadn’t died proved that the facility was caring for them properly. He then threatened a lawsuit.我联系动物园主人乌天.杨帕拉帕功，向他询问这些动物的状况，他说动物还没死就证明动物园把它们照顾得很好。他接着威胁说要告我。Six months after Kirsten and I returned from Thailand, we asked Ryn Jirenuwat, our Bangkok-based Thai interpreter, to check on Gluay Hom and Khai Khem. She went to Samut Prakan and watched them for hours, sending photos and video. Gluay Hom was still alive, still standing in the same stall, leg still bent at an unnatural angle. The elephants next to him were skin and bones. Khai Khem was still chained by his neck to a hook in the floor. He just stays in his dark corner, Jirenuwat texted, and when he hears people coming, he twists on his chain and turns his back to them.从泰国回来的六个月后，我和科尔斯登请住在曼谷的泰语口译琳.吉雷努瓦特查看一下归宏和凯肯的状况。她去了北榄鳄鱼湖一趟。归宏还活着，仍在原来的隔栏里站着，那只脚依旧呈不自然地弯曲；凯肯的脖子还是拴着炼子，连到地上一个钩子上。吉雷努瓦特在传给我们的短信中写到，凯肯一直待在属于它的阴暗角落，听到有人靠近时，就会转动炼子背对人类。“Like he just wants to be swallowed by the wall.”“看起来就像它只想消失到墙里。”Some guidelines for seeing wild animals观赏野生动物的一些指导原则Figuring out how to observe exotic animals humanely can be complicated and confusing. Watching them from a safe distance in the wild is ideal, animal welfare advocates say. To assess how facilities treat captive animals, you can refer to internationally recognized standards inspired by a 1965 U.K. government report. Known as the “five freedoms,” they’re used by animal welfare groups worldwide and by the U.S., Canadian, and European veterinary medical associations. 要弄清楚该如何以人道方式观赏珍奇动物，是复杂又令人困惑的事。动物福利倡议者说，在野外隔着安全距离观赏是最好的方式。如果想评价一个场所如何对待圈养动物，可以参考由1965年英国政府报告所启发的国际认可标准。这些标准称为“五种自由”，世界各地的动物福利团体及美国、加拿大和欧洲的兽医协会都予以采用。Freedom from hunger and thirst. Look for facilities where animals appear to be well-fed and have access to clean water at all times. 免于饥渴的自由：查看这些场所的动物，是否看起来吃得好及随时都有干净的水可饮用。Freedom from discomfort. Observe whether animals have an appropriate environment, including shelter, ample space, a comfortable resting area, and a secluded place away from crowds. 免于不适的自由：观察动物是否有合适的环境，包括隐蔽处、足够的空间、舒适的休息区，以及能够远离人群的幽静区域。Freedom from pain, injury, or disease. Avoid facilities where animals are visibly injured or are forced to participate in activities that could injure them or cause them pain— or where enclosures aren’t clean. 免于疼痛、受伤或疾病的自由：若场所内的动物明显有受伤，或被迫参加可能造成伤害或痛苦的活动，或是围栏脏乱，就应避免前往该类场所。Freedom to express normal behavior. Being chained, performing, and interacting with tourists—giving rides, posing with them, being washed by them—are not normal for a wild animal, even one born in captivity. 表现正常行为的自由：被炼子拴住、表演及与游客互动，像是供人骑乘、合影，或被游客冲洗，这些对野生动物来说都不是正常的行为，即便是圈养繁殖的动物也是如此。Freedom from fear and distress. Be aware that fear-based training, separation of babies from mothers at birth, unnatural noises, and large crowds cause distress. 免于恐惧和痛苦的自由：要知道以恐惧为基础的训练、把刚出生的小动物和母亲分开来、不自然的噪音，以及大量的人潮都会导致痛苦。]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Magazines </category>
+          
+          <category> Wild Lifes </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 双语 </tag>
+            
+            <tag> 新冠肺炎 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>史上最严自主招生，如何助力“不拘一格降人才”</title>
       <link href="/2019/0418/folder-current-events/shi-shang-zui-yan-zi-zhu-zhao-sheng/"/>
       <url>/2019/0418/folder-current-events/shi-shang-zui-yan-zi-zhu-zhao-sheng/</url>
@@ -3766,9 +3799,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 时评 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -4257,9 +4290,9 @@
       
         <tags>
             
-            <tag> 演讲 </tag>
-            
             <tag> 时评 </tag>
+            
+            <tag> 演讲 </tag>
             
         </tags>
       
