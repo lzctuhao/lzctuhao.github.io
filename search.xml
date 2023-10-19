@@ -4,6 +4,72 @@
   
     
     <entry>
+      <title>化工设备机械基础</title>
+      <link href="/2023/1019/folder-curriculum/chemical-equipment/chemical-equipment/"/>
+      <url>/2023/1019/folder-curriculum/chemical-equipment/chemical-equipment/</url>
+      
+      <author></author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[化工设备材料及其选择强度定义：在外力作用下抵抗变形和断裂的能力。屈服点 $R_{eL}$在外力不再增加，仍发生明显塑性变形，这个现象称为材料达到了屈服点。屈服点:开始出现屈服现象时相对应的应力，MPa。金属或合金一般很少有明显的屈服现象，而高分子材料一般具有明显的屈服现象。条件屈服点:发生0.2%残余伸长时的应力。$$R_{p0.2}= \frac{F_{0.2}}{S_{0}}$$在教材附录中可以查到常用金属材料的屈服点数据。影响屈服点大小的因素：内在因素：结合键组织结构原子本性外在因素温度：温度升高，屈服点下降应变速率：应变速率升高，屈服点升高应力状态抗拉强度 $R_{m}$材料发生断裂时所能达到的最大应力值(抗压、抗弯、抗剪)。屈强比 $R_{eL}/R_{m}$反映了材料塑性贮备的一个指标由于一般$R_{eL}&lt;R_{m}$，屈强比一般小于1。屈强比越大，屈服点与抗拉强度愈接近，塑性储备越小，这时有可能发生脆性断裂；这类材料如木棒。屈强比越小，屈服点愈小于抗拉强度，这时塑性储备愈大，但材料的强度往往得不到充分的发挥;这类材料如竹条。因此，在工程上希望所选用的材料具有合适的屈强比。]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> 本科课程 </category>
+          
+          <category> 化工设备机械基础 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 干货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>CE6 蒸馏</title>
+      <link href="/2023/1017/folder-curriculum/chemical-engineering/ce6-zheng-liu/"/>
+      <url>/2023/1017/folder-curriculum/chemical-engineering/ce6-zheng-liu/</url>
+      
+      <author></author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[精馏过程的描述及基本概念定律相律$$F=C- \phi +2$$式中:$F$ - 自由度数;$C$ - 独立组分数;$\phi$ - 相数。对双组分平衡物系，C为2、$\phi$为2，故F为2。拉乌尔定律气液平衡时，$$p_{A}=p_{A}^{0}x_{A} \quad p_{B}=p_{B}^{\circ}x_{B}$$式中：$p_{A} $、$p_{B}$ - 溶液上方A、B组分的蒸气压.]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> 本科课程 </category>
+          
+          <category> 化工原理 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 干货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>IELTS 13-1</title>
       <link href="/2023/0827/folder-ganhuo/ielts13-1/"/>
       <url>/2023/0827/folder-ganhuo/ielts13-1/</url>
@@ -54,9 +120,9 @@
     
     
     <entry>
-      <title>PC5 蒸发</title>
-      <link href="/2023/0624/folder-curriculum/chemical-engineering/pc5-zheng-fa/"/>
-      <url>/2023/0624/folder-curriculum/chemical-engineering/pc5-zheng-fa/</url>
+      <title>CE5 蒸发</title>
+      <link href="/2023/0624/folder-curriculum/chemical-engineering/ce5-zheng-fa/"/>
+      <url>/2023/0624/folder-curriculum/chemical-engineering/ce5-zheng-fa/</url>
       
       <author></author>
       
@@ -87,9 +153,9 @@
     
     
     <entry>
-      <title>PC4 传热</title>
-      <link href="/2023/0623/folder-curriculum/chemical-engineering/pc4-chuan-re/"/>
-      <url>/2023/0623/folder-curriculum/chemical-engineering/pc4-chuan-re/</url>
+      <title>CE4 传热</title>
+      <link href="/2023/0623/folder-curriculum/chemical-engineering/ce4-chuan-re/"/>
+      <url>/2023/0623/folder-curriculum/chemical-engineering/ce4-chuan-re/</url>
       
       <author></author>
       
@@ -120,9 +186,9 @@
     
     
     <entry>
-      <title>PC3 非均相物系的分离和固体流态化</title>
-      <link href="/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/"/>
-      <url>/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</url>
+      <title>CE3 非均相物系的分离和固体流态化</title>
+      <link href="/2023/0621/folder-curriculum/chemical-engineering/ce3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/"/>
+      <url>/2023/0621/folder-curriculum/chemical-engineering/ce3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</url>
       
       <author></author>
       
@@ -153,9 +219,9 @@
     
     
     <entry>
-      <title>PC2 液体输送机械</title>
-      <link href="/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/"/>
-      <url>/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/</url>
+      <title>CE2 液体输送机械</title>
+      <link href="/2023/0620/folder-curriculum/chemical-engineering/ce2-liu-ti-shu-song-ji-jie/"/>
+      <url>/2023/0620/folder-curriculum/chemical-engineering/ce2-liu-ti-shu-song-ji-jie/</url>
       
       <author></author>
       
@@ -186,9 +252,9 @@
     
     
     <entry>
-      <title>PC1 流体流动</title>
-      <link href="/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/"/>
-      <url>/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/</url>
+      <title>CE1 流体流动</title>
+      <link href="/2023/0619/folder-curriculum/chemical-engineering/ce1-liu-ti-liu-dong/"/>
+      <url>/2023/0619/folder-curriculum/chemical-engineering/ce1-liu-ti-liu-dong/</url>
       
       <author></author>
       

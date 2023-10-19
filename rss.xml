@@ -15,8 +15,70 @@
     <atom:link href="https://lzc2002.tk/rss.xml" rel="self" type="application/rss+xml"/>
     
     <description>愿一切顺利，也常有诗意</description>
-    <pubDate>Sun, 27 Aug 2023 06:03:54 GMT</pubDate>
+    <pubDate>Thu, 19 Oct 2023 05:40:08 GMT</pubDate>
     <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>化工设备机械基础</title>
+      <link>https://lzc2002.tk/2023/1019/folder-curriculum/chemical-equipment/chemical-equipment/</link>
+      <guid>https://lzc2002.tk/2023/1019/folder-curriculum/chemical-equipment/chemical-equipment/</guid>
+      <pubDate>Wed, 18 Oct 2023 16:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="化工设备材料及其选择"><a href="#化工设备材料及其选择" class="headerlink" title="化工设备材料及其选择"></a>化工设备材料及其选择</h1><h2 id="强度"><a href="#强度" class="headerlink" title="强度"></a>强度</h2><p>定义：在外力作用下抵抗变形和断裂的能力。</p><p><img src="image-20231019130636327.png" alt="材料的应力应变曲线"></p><h3 id="屈服点-R-eL"><a href="#屈服点-R-eL" class="headerlink" title="屈服点 $R_{eL}$"></a>屈服点 $R_{eL}$</h3><ul><li>在外力不再增加，仍发生明显塑性变形，这个现象称为材料达到了屈服点。</li><li>屈服点:开始出现屈服现象时相对应的应力，MPa。</li><li>金属或合金一般很少有明显的屈服现象，而高分子材料一般具有明显的屈<br>服现象。</li><li>条件屈服点:发生0.2%残余伸长时的应力。$$R_{p0.2}= \frac{F_{0.2}}{S_{0}}$$</li><li>在教材附录中可以查到常用金属材料的屈服点数据。</li></ul><p>影响屈服点大小的因素：</p><ul><li><p>内在因素：</p><ul><li>结合键</li><li>组织结构</li><li>原子本性</li></ul></li><li><p>外在因素</p><ul><li>温度：温度升高，屈服点下降</li><li>应变速率：应变速率升高，屈服点升高</li><li>应力状态</li></ul></li></ul><h3 id="抗拉强度-R-m"><a href="#抗拉强度-R-m" class="headerlink" title="抗拉强度 $R_{m}$"></a>抗拉强度 $R_{m}$</h3><ul><li>材料发生断裂时所能达到的最大应力值(抗压、抗弯、抗剪)。</li></ul><h3 id="屈强比-R-eL-R-m"><a href="#屈强比-R-eL-R-m" class="headerlink" title="屈强比 $R_{eL}/R_{m}$"></a>屈强比 $R_{eL}/R_{m}$</h3><ul><li>反映了材料塑性贮备的一个指标</li><li>由于一般$R_{eL}&lt;R_{m}$，屈强比一般小于1。</li></ul><div class="admonition info"><p>屈强比越大，屈服点与抗拉强度愈接近，塑性储备越小，这时有可能发生脆性断裂；这类材料如木棒。</p><p>屈强比越小，屈服点愈小于抗拉强度，这时塑性储备愈大，但材料的强度往往得不到充分的发挥;这类材料如竹条。</p><p>因此，在工程上希望所选用的材料具有合适的屈强比。</p></div><link rel="stylesheet" type="text/css" href="/css/hint.min.css">]]></content:encoded>
+      
+      
+      <category domain="https://lzc2002.tk/categories/%E6%9C%AC%E7%A7%91%E8%AF%BE%E7%A8%8B/">本科课程</category>
+      
+      <category domain="https://lzc2002.tk/categories/%E6%9C%AC%E7%A7%91%E8%AF%BE%E7%A8%8B/%E5%8C%96%E5%B7%A5%E8%AE%BE%E5%A4%87%E6%9C%BA%E6%A2%B0%E5%9F%BA%E7%A1%80/">化工设备机械基础</category>
+      
+      
+      <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
+      
+      
+      <comments>https://lzc2002.tk/2023/1019/folder-curriculum/chemical-equipment/chemical-equipment/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
+      <title>CE6 蒸馏</title>
+      <link>https://lzc2002.tk/2023/1017/folder-curriculum/chemical-engineering/ce6-zheng-liu/</link>
+      <guid>https://lzc2002.tk/2023/1017/folder-curriculum/chemical-engineering/ce6-zheng-liu/</guid>
+      <pubDate>Mon, 16 Oct 2023 16:00:00 GMT</pubDate>
+      
+        
+        
+          
+          
+      <description>&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;\assets\css\APlayer.min.css&quot;&gt;&lt;script src=&quot;\assets\js\APlayer.min.js&quot;</description>
+          
+        
+      
+      
+      
+      <content:encoded><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><h1 id="精馏过程的描述及基本概念定律"><a href="#精馏过程的描述及基本概念定律" class="headerlink" title="精馏过程的描述及基本概念定律"></a>精馏过程的描述及基本概念定律</h1><h2 id="相律"><a href="#相律" class="headerlink" title="相律"></a>相律</h2>$$F=C- \phi +2$$<p>式中:<br>$F$ - 自由度数;<br>$C$ - 独立组分数;<br>$\phi$ - 相数。<br>对双组分平衡物系，C为2、$\phi$为2，故F为2。</p><h2 id="拉乌尔定律"><a href="#拉乌尔定律" class="headerlink" title="拉乌尔定律"></a>拉乌尔定律</h2><p>气液平衡时，</p>$$p_{A}=p_{A}^{0}x_{A} \quad p_{B}=p_{B}^{\circ}x_{B}$$<p>式中：</p><p>$p_{A} $、$p_{B}$ - 溶液上方A、B组分的蒸气压.</p><link rel="stylesheet" type="text/css" href="/css/hint.min.css">]]></content:encoded>
+      
+      
+      <category domain="https://lzc2002.tk/categories/%E6%9C%AC%E7%A7%91%E8%AF%BE%E7%A8%8B/">本科课程</category>
+      
+      <category domain="https://lzc2002.tk/categories/%E6%9C%AC%E7%A7%91%E8%AF%BE%E7%A8%8B/%E5%8C%96%E5%B7%A5%E5%8E%9F%E7%90%86/">化工原理</category>
+      
+      
+      <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
+      
+      
+      <comments>https://lzc2002.tk/2023/1017/folder-curriculum/chemical-engineering/ce6-zheng-liu/#disqus_thread</comments>
+      
+    </item>
     
     <item>
       <title>IELTS 13-1</title>
@@ -73,9 +135,9 @@
     </item>
     
     <item>
-      <title>PC5 蒸发</title>
-      <link>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/pc5-zheng-fa/</link>
-      <guid>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/pc5-zheng-fa/</guid>
+      <title>CE5 蒸发</title>
+      <link>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/ce5-zheng-fa/</link>
+      <guid>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/ce5-zheng-fa/</guid>
       <pubDate>Fri, 23 Jun 2023 16:00:00 GMT</pubDate>
       
         
@@ -99,14 +161,14 @@
       <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
       
       
-      <comments>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/pc5-zheng-fa/#disqus_thread</comments>
+      <comments>https://lzc2002.tk/2023/0624/folder-curriculum/chemical-engineering/ce5-zheng-fa/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>PC4 传热</title>
-      <link>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/pc4-chuan-re/</link>
-      <guid>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/pc4-chuan-re/</guid>
+      <title>CE4 传热</title>
+      <link>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/ce4-chuan-re/</link>
+      <guid>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/ce4-chuan-re/</guid>
       <pubDate>Thu, 22 Jun 2023 16:00:00 GMT</pubDate>
       
         
@@ -130,14 +192,14 @@
       <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
       
       
-      <comments>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/pc4-chuan-re/#disqus_thread</comments>
+      <comments>https://lzc2002.tk/2023/0623/folder-curriculum/chemical-engineering/ce4-chuan-re/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>PC3 非均相物系的分离和固体流态化</title>
-      <link>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</link>
-      <guid>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</guid>
+      <title>CE3 非均相物系的分离和固体流态化</title>
+      <link>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/ce3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</link>
+      <guid>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/ce3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/</guid>
       <pubDate>Tue, 20 Jun 2023 16:00:00 GMT</pubDate>
       
         
@@ -161,14 +223,14 @@
       <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
       
       
-      <comments>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/pc3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/#disqus_thread</comments>
+      <comments>https://lzc2002.tk/2023/0621/folder-curriculum/chemical-engineering/ce3-fei-jun-xiang-wu-xi-de-fen-chi-he-gu-ti-liu-tai-hua/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>PC2 液体输送机械</title>
-      <link>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/</link>
-      <guid>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/</guid>
+      <title>CE2 液体输送机械</title>
+      <link>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/ce2-liu-ti-shu-song-ji-jie/</link>
+      <guid>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/ce2-liu-ti-shu-song-ji-jie/</guid>
       <pubDate>Mon, 19 Jun 2023 16:00:00 GMT</pubDate>
       
         
@@ -192,14 +254,14 @@
       <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
       
       
-      <comments>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/pc2-liu-ti-shu-song-ji-jie/#disqus_thread</comments>
+      <comments>https://lzc2002.tk/2023/0620/folder-curriculum/chemical-engineering/ce2-liu-ti-shu-song-ji-jie/#disqus_thread</comments>
       
     </item>
     
     <item>
-      <title>PC1 流体流动</title>
-      <link>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/</link>
-      <guid>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/</guid>
+      <title>CE1 流体流动</title>
+      <link>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/ce1-liu-ti-liu-dong/</link>
+      <guid>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/ce1-liu-ti-liu-dong/</guid>
       <pubDate>Sun, 18 Jun 2023 16:00:00 GMT</pubDate>
       
         
@@ -223,7 +285,7 @@
       <category domain="https://lzc2002.tk/tags/%E5%B9%B2%E8%B4%A7/">干货</category>
       
       
-      <comments>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/pc1-liu-ti-liu-dong/#disqus_thread</comments>
+      <comments>https://lzc2002.tk/2023/0619/folder-curriculum/chemical-engineering/ce1-liu-ti-liu-dong/#disqus_thread</comments>
       
     </item>
     
