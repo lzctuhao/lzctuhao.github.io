@@ -8,9 +8,9 @@
   const keySalt = textToArray('hexo-blog-encrypt的作者们都是大帅比!');
   const ivSalt = textToArray('hexo-blog-encrypt是地表最强Hexo加密插件!');
 
-// As we can't detect the wrong password with AES-CBC,
-// so adding an empty div and check it when decrption.
-const knownPrefix = "<hbe-prefix></hbe-prefix>";
+  // As we can't detect the wrong password with AES-CBC,
+  // so adding an empty div and check it when decrption.
+  const knownPrefix = "<hbe-prefix></hbe-prefix>";
 
   const mainElement = document.getElementById('hexo-blog-encrypt');
   const wrongPassMessage = mainElement.dataset['wpm'];
@@ -186,7 +186,7 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
       hideButton.classList.add("hbe-button");
       hideButton.addEventListener('click', () => {
         window.localStorage.removeItem(storageName);
-        window.location.search="";
+        window.location.search = "";
       });
 
       document.getElementById('hexo-blog-encrypt').style.display = 'inline';
@@ -220,7 +220,6 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
       return await verifyContent(hmacKey, decoded);
     }).catch((e) => {
       //alert(wrongPassMessage);
-      Swal.fire(wrongPassMessage,'','error');
       console.log(e);
       return false;
     });
@@ -235,7 +234,7 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
 
     if (oldStorageData) {
       console.log(`Password got from localStorage(${storageName}): `, oldStorageData);
-      
+
 
       const sIv = hexToArray(oldStorageData.iv).buffer;
       const sDk = oldStorageData.dk;
@@ -264,39 +263,50 @@ const knownPrefix = "<hbe-prefix></hbe-prefix>";
       AppendOrigLkBylzc();
     }
 
+    async function decrypt_by_password(password,slience=false){
+      const keyMaterial = await getKeyMaterial(password);
+      const hmacKey = await getHmacKey(keyMaterial);
+      const decryptKey = await getDecryptKey(keyMaterial);
+      const iv = await getIv(keyMaterial);
+
+      decrypt(decryptKey, iv, hmacKey).then((result) => {
+        console.log(`Decrypt result: ${result}`);
+        if (result) {
+          AppendOrigLkBylzc();
+          cryptoObj.subtle.exportKey('jwk', decryptKey).then((dk) => {
+            cryptoObj.subtle.exportKey('jwk', hmacKey).then((hmk) => {
+              const newStorageData = {
+                'dk': dk,
+                'iv': arrayBufferToHex(iv),
+                'hmk': hmk,
+              };
+              storage.setItem(storageName, JSON.stringify(newStorageData));
+            });
+          });
+        } else {
+          !slience&&Swal.fire(wrongPassMessage, '', 'error');
+        }
+      });
+    }
+
     document.getElementById('hbePass').addEventListener('keydown', async (event) => {
       if (event.isComposing || event.key === "Enter") {
         const password = document.getElementById('hbePass').value;
-        const keyMaterial = await getKeyMaterial(password);
-        const hmacKey = await getHmacKey(keyMaterial);
-        const decryptKey = await getDecryptKey(keyMaterial);
-        const iv = await getIv(keyMaterial);
-
-        decrypt(decryptKey, iv, hmacKey).then((result) => {
-          console.log(`Decrypt result: ${result}`);
-          if (result) {
-            AppendOrigLkBylzc();
-            cryptoObj.subtle.exportKey('jwk', decryptKey).then((dk) => {
-              cryptoObj.subtle.exportKey('jwk', hmacKey).then((hmk) => {
-                const newStorageData = {
-                  'dk': dk,
-                  'iv': arrayBufferToHex(iv),
-                  'hmk': hmk,
-                };
-                storage.setItem(storageName, JSON.stringify(newStorageData));
-              });
-            });
-          }
-        });
+        decrypt_by_password(password);
       }
     });
+
+    window.addEventListener("load",function(){
+      const password=getUrlParam('password');
+      if(password){decrypt_by_password(password,true);}
+    })
   }
 
   hbeLoader();
 
 })();
-function AppendOrigLkBylzc(){
-  Append1();
+function AppendOrigLkBylzc() {
+  if (!document.querySelector(".post-info .reprint-from")) Append1();
   console.log("app1 success");
   /*Append2();*/
 }
