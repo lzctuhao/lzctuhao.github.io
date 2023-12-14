@@ -53,7 +53,7 @@ input.hbe-input-field {
 	float: right;
 	padding: 0 1em;
 	width: 40%;
-	color: #696969;
+	color: var(--LightGrey);
 	font-weight: bold;
 	font-size: 70.25%;
 	-webkit-font-smoothing: antialiased;
@@ -333,7 +333,7 @@ input.hbe-input-field-wave:focus:not([readonly]) {/**为了提高优先级*/
 }
 
 .hbe-graphic-wave {
-	stroke: #92989e;
+	stroke: var(--LightGrey);
 	pointer-events: none;
 	-webkit-transition: -webkit-transform 0.7s, stroke 0.7s;
 	transition: transform 0.7s, stroke 0.7s;
