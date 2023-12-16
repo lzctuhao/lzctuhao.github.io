@@ -658,33 +658,6 @@
     
     
     <entry>
-      <title>the power of touch</title>
-      <link href="/2022/1210/folder-magazines/touch/pdf-touch/"/>
-      <url>/2022/1210/folder-magazines/touch/pdf-touch/</url>
-      
-      <author>Nat Geo</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Magazines </category>
-          
-          <category> Touch </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Restoring a Lost Sense of Touch</title>
       <link href="/2022/1210/folder-magazines/touch/mp3-restoring-a-lost-sense-of-touch/"/>
       <url>/2022/1210/folder-magazines/touch/mp3-restoring-a-lost-sense-of-touch/</url>
@@ -741,6 +714,33 @@
             <tag> Videos </tag>
             
         </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>the power of touch</title>
+      <link href="/2022/1210/folder-magazines/touch/pdf-touch/"/>
+      <url>/2022/1210/folder-magazines/touch/pdf-touch/</url>
+      
+      <author>Nat Geo</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Magazines </category>
+          
+          <category> Touch </category>
+          
+      </categories>
+      
       
     </entry>
     
@@ -1772,9 +1772,9 @@
       
         <tags>
             
-            <tag> 时评 </tag>
-            
             <tag> 梦开始的地方 </tag>
+            
+            <tag> 时评 </tag>
             
         </tags>
       
@@ -3676,7 +3676,7 @@
       
         <tags>
             
-            <tag> 时评 </tag>
+            <tag> 锐评 </tag>
             
         </tags>
       

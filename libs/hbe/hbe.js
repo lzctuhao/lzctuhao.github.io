@@ -186,7 +186,8 @@
       hideButton.classList.add("hbe-button");
       hideButton.addEventListener('click', () => {
         window.localStorage.removeItem(storageName);
-        window.location.search = "";
+        getUrlParam('password','');
+        location.reload();
       });
 
       document.getElementById('hexo-blog-encrypt').style.display = 'inline';
@@ -254,13 +255,14 @@
           'verify',
         ]).then((hmkCK) => {
           decrypt(dkCK, sIv, hmkCK).then((result) => {
-            if (!result) {
+            if (result) {
+              AppendOrigLkBylzc();
+            } else {
               storage.removeItem(storageName);
             }
           });
         });
       });
-      AppendOrigLkBylzc();
     }
 
     async function decrypt_by_password(password,slience=false){
@@ -272,7 +274,6 @@
       decrypt(decryptKey, iv, hmacKey).then((result) => {
         console.log(`Decrypt result: ${result}`);
         if (result) {
-          AppendOrigLkBylzc();
           cryptoObj.subtle.exportKey('jwk', decryptKey).then((dk) => {
             cryptoObj.subtle.exportKey('jwk', hmacKey).then((hmk) => {
               const newStorageData = {
@@ -283,6 +284,7 @@
               storage.setItem(storageName, JSON.stringify(newStorageData));
             });
           });
+          AppendOrigLkBylzc();
         } else {
           !slience&&Swal.fire(wrongPassMessage, '', 'error');
         }
