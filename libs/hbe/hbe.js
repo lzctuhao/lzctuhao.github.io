@@ -256,7 +256,7 @@
         ]).then((hmkCK) => {
           decrypt(dkCK, sIv, hmkCK).then((result) => {
             if (result) {
-              AppendOrigLkBylzc();
+              //AppendOrigLkBylzc();
             } else {
               storage.removeItem(storageName);
             }
@@ -284,7 +284,7 @@
               storage.setItem(storageName, JSON.stringify(newStorageData));
             });
           });
-          AppendOrigLkBylzc();
+          //AppendOrigLkBylzc();
         } else {
           !slience&&Swal.fire(wrongPassMessage, '', 'error');
         }
@@ -308,7 +308,7 @@
 
 })();
 function AppendOrigLkBylzc() {
-  if (!document.querySelector(".post-info .reprint-from")) Append1();
+  //if (!document.querySelector(".post-info .reprint-from")) Append1();
   console.log("app1 success");
   /*Append2();*/
 }
