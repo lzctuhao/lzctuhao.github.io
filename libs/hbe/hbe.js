@@ -289,7 +289,7 @@
     }
 
     document.getElementById('hbePass').addEventListener('keydown', async (event) => {
-      if (event.isComposing || event.key === "Enter") {
+      if (event.isComposing || event.key == "Enter") {
         const password = document.getElementById('hbePass').value;
         decrypt_by_password(password);
       }
