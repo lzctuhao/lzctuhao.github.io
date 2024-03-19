@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>R语言分析α、β多样性</title>
+      <link href="/2024/0314/folder-education/r-alpha-beta/"/>
+      <url>/2024/0314/folder-education/r-alpha-beta/</url>
+      
+      <author></author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[α多样性Alpha多样性（α多样性）是指在特定生境或生态系统内部的物种多样性。它通常包括两个方面：物种丰富度（种类的数量）和物种均匀度（物种分布的均匀性）。α多样性的测量可以帮助我们了解一个生态系统的复杂性和生物群落的健康状况。以下是一些常用的α多样性指数及其作用和异同：Shannon指数:综合考虑了物种的丰富度和均匀度。值越高，表明群落的多样性越高。计算公式为 \(H = -\sum (p_i \lnp_i)\)，其中\(( p_i )\)是第\(i\)个物种的相对丰度。Richness:简单地衡量生态群落中物种的数量。不考虑物种的丰度或其分布。Pielou均匀度指数:衡量物种分布均匀度的指标。计算公式为 \(E = H /\ln(S)\)，其中\(H\)是Shannon指数，\(S\)是物种数。Simpson指数:衡量物种丰富度，但考虑物种的丰度权重。值越大，多样性越低（因为它实际上计算的是均匀度的倒数）。计算公式为 \(D=∑(n_i/N)^2\)，其中( n_i )是第i个物种的个体数，N是群落中个体的总数。Chao1指数:估计群落中未被观察到的物种丰富度。特别适用于样本中有很多稀有物种的情况。这些指数的主要区别在于它们考虑的多样性方面不同。例如，Shannon和Simpson指数都考虑了物种的丰富度和均匀度，但Shannon更强调均匀度，而Simpson更强调丰富度。Pielou均匀度指数专注于物种分布的均匀性，而Chao1则用于估计可能未被检测到的物种的数量。这些指数通常结合使用，以提供关于生态群落多样性的更全面的视图。通过下列代码可以绘制α多样性相关指数图：rm(list &#x3D; ls())sheetname&lt;- &quot;Galaxy 32&quot;library(readxl)data &lt;- read_excel(&quot;alpha_all.xlsx&quot;, sheet &#x3D; sheetname)# 载入ggplot2包library(ggplot2)# 绘制Shannon指数箱线图data_Shannon &lt;- reshape2::melt(data, id.vars &#x3D; c(&quot;Group&quot;, &quot;Shannon&quot;))p1&lt;-ggplot(data_Shannon, aes(  x &#x3D; Group, y &#x3D; Shannon, fill &#x3D; Group)) + # x-axis is Group, y-axis is Shannon index  geom_boxplot() + # Boxplot color is pink  labs(x &#x3D; &quot;Shannon Index&quot;, y &#x3D; &quot;&quot;) + # Set x-axis and y-axis labels+  theme_bw()+ # Set theme to black and white  theme(axis.text.x&#x3D;element_blank())p1data_Richness &lt;- reshape2::melt(data, id.vars &#x3D; c(&quot;Group&quot;, &quot;Richness&quot;))p2&lt;-ggplot(data_Richness, aes(  x &#x3D; Group, y &#x3D; Richness, fill &#x3D; Group)) + # x-axis is Group, y-axis is Shannon index  geom_boxplot() + # Boxplot color is pink  labs(x &#x3D; &quot;Richness Index&quot;, y &#x3D; &quot;&quot;) + # Set x-axis and y-axis labels  theme_bw() + # Set theme to black and white  theme(axis.text.x&#x3D;element_blank())p2data_Pielou &lt;- reshape2::melt(data, id.vars &#x3D; c(&quot;Group&quot;, &quot;Pielou&quot;))p3&lt;-ggplot(data_Pielou, aes(  x &#x3D; Group, y &#x3D; Pielou, fill &#x3D; Group)) + # x-axis is Group, y-axis is Shannon index  geom_boxplot() + # Boxplot color is pink  labs(x &#x3D; &quot;Pielou Index&quot;, y &#x3D; &quot;&quot;) + # Set x-axis and y-axis labels  theme_bw() + # Set theme to black and white  theme(axis.text.x&#x3D;element_blank())p3data_Simpson &lt;- reshape2::melt(data, id.vars &#x3D; c(&quot;Group&quot;, &quot;Simpson&quot;))p4&lt;-ggplot(data_Simpson, aes(  x &#x3D; Group, y &#x3D; Simpson, fill &#x3D; Group)) +  geom_boxplot() + # Boxplot color is pink  labs(x &#x3D; &quot;Simpson Index&quot;, y &#x3D; &quot;&quot;) + # Set x-axis and y-axis labels  theme_bw() + # Set theme to black and white  theme(axis.text.x&#x3D;element_blank())p4data_Chao1 &lt;- reshape2::melt(data, id.vars &#x3D; c(&quot;Group&quot;, &quot;Chao1&quot;))p5&lt;-ggplot(data_Chao1, aes(  x &#x3D; Group, y &#x3D; Chao1, fill &#x3D; Group)) +  geom_boxplot() + # Boxplot color is pink  labs(x &#x3D; &quot;Chao1 Index&quot;, y &#x3D; &quot;&quot;) + # Set x-axis and y-axis labels  theme_bw() + # Set theme to black and white  theme(axis.text.x&#x3D;element_blank())+labs(fill &#x3D; sheetname)p5library(patchwork)p12345 &lt;- p1+guides(fill &#x3D; FALSE) + p2+guides(fill &#x3D; FALSE)+ p3+guides(fill &#x3D; FALSE)+ p4+guides(fill &#x3D; FALSE)+ p5+  plot_layout(ncol &#x3D; 5,nrow &#x3D; 1)p12345ggsave(paste0(&#39;alpha_all_&#39;,sheetname,&#39;.png&#39;), p12345, width &#x3D; 6*0.6*5, height &#x3D;6)其中，alpha_all.xlsx的格式如：SiteGroupRichnessShannonSimpsonPielouChao1ACEgoods_coverageD151_2Raw4565.9859282250.9666261490.677686263908.7631579921.61640370.994927596结果图：]]></content>
+        
+      
+      
+      
+        <tags>
+            
+            <tag> Code </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Prioritizing Economy</title>
       <link href="/2024/0312/folder-accumulation/gov/prioritizing-economy/"/>
       <url>/2024/0312/folder-accumulation/gov/prioritizing-economy/</url>
