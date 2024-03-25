@@ -110,7 +110,7 @@
       
       
         
-          <content type="html"><![CDATA[对]]></content>
+          <content type="html"><![CDATA[对视频播放的修改对浏览器原生&lt;video&gt;元素增加以下功能：长按倍速左右滑动控制进度条在C:\Users\lzc\AppData\Roaming\npm\node_modules\hfs\frontend\assets\index-2fJMV_na.js中，查找className:"showing",onLoad:()=&gt;&#123;u.current=n,A(!1)&#125;,替换为className:"showing",onLoad:()=&gt;&#123;videocontrol();u.current=n,A(!1)&#125;,然后在文件末尾添加videocontrol函数：function videocontrol() &#123;let temp_rate;    let start_x, start_y,start_time;    let isSwiping = false;    if (!HTMLMediaElement.prototype.hasOwnProperty("playing")) &#123;        Object.defineProperty(HTMLMediaElement.prototype, 'playing', &#123;            get: function () &#123;                return !!(this.currentTime > 0 &amp;&amp; !this.paused &amp;&amp; !this.ended &amp;&amp; this.readyState > 2);            &#125;        &#125;);    &#125;    const video = document.querySelector('.showing-container video');    console.log("video control func begins");    let longPress = false;    let clickCount = 0;    const longPressTime = 500;    let pressTimer = null;    const onTouchStart = (event) => &#123;        start_x = event.touches[0].pageX;        start_y = event.touches[0].pageY;        start_time = video.currentTime;        pressTimer = setTimeout(() => &#123;            longPress = true;            event.preventDefault();            console.log("longPress");            if (video.playing) &#123;                temp_rate = video.playbackRate;                video.playbackRate = temp_rate >= 1.25 ? 3 : 2;            &#125;        &#125;, longPressTime);    &#125;;    const onTouchMove = (event) => &#123;                const delta_x = event.touches[0].pageX - start_x;        console.log(delta_x);        // 检测是否为左右滑动        if (Math.abs(delta_x) > 10) &#123;            isSwiping = true;            video.pause();            clearTimeout(pressTimer);            // 根据滑动距离计算视频时间调整值            const seekTime = delta_x * 5;            video.currentTime =start_time+ seekTime;        &#125;    &#125;;    const onTouchEnd = (event) => &#123;        clearTimeout(pressTimer);        if (!longPress &amp;&amp; !isSwiping) &#123;            clickCount++;            setTimeout(() => &#123;                if (clickCount === 1) &#123;                    console.log("singleclick");                    video.removeEventListener('touchstart', onTouchStart);                &#125; else if (clickCount === 2) &#123;                    console.log("double click");                &#125;                clickCount = 0;            &#125;, 300);        &#125; else if (longPress) &#123;            video.playbackRate = temp_rate;            longPress = false;        &#125; else video.play();        isSwiping = false;    &#125;;    document.querySelector(".showing-container").addEventListener('touchstart', onTouchStart);    document.querySelector(".showing-container").addEventListener('touchmove', onTouchMove);    document.querySelector(".showing-container").addEventListener('touchend', onTouchEnd);    video.addEventListener('contextmenu', function(e) &#123;        console.log("contextmenu");        e.preventDefault();    &#125;);&#125;]]></content>
         
       
       
@@ -500,7 +500,7 @@
     
     
     <entry>
-      <title>KWGT获取下一闹钟准确时间</title>
+      <title>KWGT“下一闹钟”准确时间小部件</title>
       <link href="/2023/0704/folder-others/kwgt-alarm/"/>
       <url>/2023/0704/folder-others/kwgt-alarm/</url>
       
@@ -509,7 +509,7 @@
       
       
         
-          <content type="html"><![CDATA[文件下载最终成品文件可在Tasker和KWGT中导入。Tasker项目文件Tasker首页，长按底部，“导入项目”。直接下载项目文件或直接在TaskerNet中下载：TaskerShare (taskernet.com)KWGT组件将组件文件复制到根目录/Kustom/komponents，然后在KWGT中导入。下载项目文件环境本文测试手机环境：MIUI 14.0.16.0 (Android 13)Tasker 6.1.32Kustom Widget 3.73b问题背景在KWGT(Kustom)上使用官方给的$si(alarmd)$在原生安卓上可行，但在国产安卓上会获取错误的下一闹钟时间信息。我还想过用Tasker自带的“测试下一闹钟”%na_time获取时间，然后通过广播发送给KWGT。但Tasker同样无法在国产安卓上获取正确的时间。那怎么办呢？问题原因原因其实很简单，就是KWGT调用安卓系统的api获取alarm信息，而这个alarm未必是由闹钟应用创建的，也有可能是其他应用为了在某一时间唤醒自身功能创建的。例如，系统桌面会创建闹钟，以在设定时间开启/关闭深色模式；滴答清单会创建闹钟，以在设定时间推送待办消息。此外，笔者所用的MIUI以魔改安卓系统而闻名，这进一步加大了获取准确闹钟时间的难度。解决方案ADBShell命令adb shell dumpsys alarm可以获取所有应用创建的闹钟列表，而我们想要的闹铃信息在列表中有唯一的标识符com.android.deskclock.ALARM_ALERT。adb shell所以思路就很简单了。解决流程值得一提的是，MIUI中需要logcatentry的PowerOffAlarm和DCAlarmHelper触发更新，因此需要授予“访问所有设备日志”权限。效果图与预期一致。附：Tasker JSlet代码let pattern = /com.android.deskclock.ALARM_ALERT\n +type=RTC_WAKEUP origWhen=([0-9]&#123;4&#125;)-([0-9]&#123;2&#125;)-([0-9]&#123;2&#125;) ([0-9]&#123;2&#125;):([0-9]&#123;2&#125;)/;var alarmon = pattern.test(shell_text);if (alarmon)&#123;    let date_time_array=shell_text.match(pattern);    var alarmd=`$&#123;date_time_array[1]&#125;y$&#123;date_time_array[2]&#125;M$&#123;date_time_array[3]&#125;d$&#123;date_time_array[4]&#125;h$&#123;date_time_array[5]&#125;m`&#125;]]></content>
+          <content type="html"><![CDATA[阅读提示如果您不想阅读原理部分，只需要在自己的手机上使用，您可以跳转到文末“完整操作步骤”。环境本文测试手机环境：HyperOS 1.0.6.0 (Android 14)Tasker 6.1.32Kustom Widget 3.73b问题背景在KWGT(Kustom)上使用官方给的$si(alarmd)$在原生安卓上可行，但在国产安卓上会获取错误的下一闹钟时间信息。我还想过用Tasker自带的“测试下一闹钟”%na_time获取时间，然后通过广播发送给KWGT。但Tasker同样无法在国产安卓上获取正确的时间。那怎么办呢？问题原因原因其实很简单，就是KWGT调用安卓系统的api获取alarm信息，而这个alarm未必是由闹钟应用创建的，也有可能是其他应用为了在某一时间唤醒自身功能创建的。例如，系统桌面会创建闹钟，以在设定时间开启/关闭深色模式；滴答清单会创建闹钟，以在设定时间推送待办消息。此外，笔者所用的MIUI以魔改安卓系统而闻名，这进一步加大了获取准确闹钟时间的难度。解决方案ADBShell命令adb shell dumpsys alarm可以获取所有应用创建的闹钟列表，而我们想要的闹铃信息在列表中有唯一的标识符com.android.deskclock.ALARM_ALERT。adb shell所以思路就很简单了。解决流程值得一提的是，Hyper OS中需要logcatentry的PowerOffAlarm和DCAlarmHelper触发更新，因此需要授予“访问所有设备日志”权限。但是每次都需要通过对话框授予权限，有点麻烦，因此也考虑，在解锁屏幕和返回桌面时触发小部件更新。效果图与预期一致。附：Tasker JSlet代码let pattern = /com.android.deskclock.ALARM_ALERT\n +type=RTC_WAKEUP origWhen=([0-9]&#123;4&#125;)-([0-9]&#123;2&#125;)-([0-9]&#123;2&#125;) ([0-9]&#123;2&#125;):([0-9]&#123;2&#125;)/;var alarmon = pattern.test(shell_text);if (alarmon)&#123;    let date_time_array=shell_text.match(pattern);    var alarmd=`$&#123;date_time_array[1]&#125;y$&#123;date_time_array[2]&#125;M$&#123;date_time_array[3]&#125;d$&#123;date_time_array[4]&#125;h$&#123;date_time_array[5]&#125;m`&#125;完整操作步骤手机开启ADB调试，执行以下命令（授予权限）：adb shell pm grant net.dinglisch.android.taskerm android.permission.WRITE_SECURE_SETTINGSadb shell pm grant net.dinglisch.android.taskerm android.permission.READ_LOGSadb shell pm grant net.dinglisch.android.taskerm android.permission.DUMPadb shell pm grant net.dinglisch.android.taskerm android.permission.PACKAGE_USAGE_STATS若控制台报错，请先自行解决。若控制台无输出，则说明执行成功，请继续完成下列步骤。adb成功导入Tasker项目文件下载直接下载Tasker项目文件或直接在TaskerNet中下载：TaskerShare (taskernet.com)Tasker首页，长按底部，“导入项目”。导入KWGT组件文件下载下载KWGT组件文件首先将KWGT组件文件移动到根目录/Kustom/komponents。然后，按照常规方法进入KWGT组件编辑界面，右上角“+”，组件，底下菜单栏“库”，选择“闹钟withadb shell”。桌面查看小组件，成功！]]></content>
         
       
       
@@ -743,9 +743,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -780,9 +780,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -817,9 +817,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -854,9 +854,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -984,9 +984,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -1164,9 +1164,9 @@
       
         <tags>
             
-            <tag> 演讲 </tag>
-            
             <tag> Videos </tag>
+            
+            <tag> 演讲 </tag>
             
         </tags>
       
@@ -1199,9 +1199,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -1234,83 +1234,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Helping Others 帮助他人</title>
-      <link href="/2022/1205/folder-accumulation/society-community/helping-others/"/>
-      <url>/2022/1205/folder-accumulation/society-community/helping-others/</url>
-      
-      <author>lzctuhao</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[Expressions翻译traditional virtues传统美德sense of righteousness正义感with clean hands廉洁compassion同情心harmomous society和谐社会green development绿色发展fairness and justice公平正义common prosperity共同富裕Roses given, fragrance in hand.Nowadays more and more people take delight in offeringhelp to the needy.This sort of exemplary behavior plays a vital role incultivating children's awareness of caring for others, which makes a lotof sense in creating a more civilized and harmonious society.]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Writing </category>
-          
-          <category> Topics </category>
-          
-          <category> Society &amp; Community </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
             <tag> STEAM </tag>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Environmental Protection 环保</title>
-      <link href="/2022/1205/folder-accumulation/eco/environmental-protection/"/>
-      <url>/2022/1205/folder-accumulation/eco/environmental-protection/</url>
-      
-      <author>lzctuhao</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[Environmentally FriendlyLifestyleExpressions翻译global warming全球变暖greenhouse effect温室效应carbon emission二氧化碳排放resource exhaustion资源枯竭potential ecological disaster潜在的生态灾害never-ending scenarios of doom and disaster没完没了的厄运和灾难paralysis and inaction麻痹和不作为ozone depletion臭氧枯竭carbon footprint碳足迹ecological restoration生态修复urban gardening城市园艺low-carbon economy低碳经济new energy vehicles新能源汽车achieve sustainable development实现可持续发展international diplomacy国际交往reconcile environmental sustainability and economic growthWith the rapid development of our society, increasingly growingenterprises and factories around our city as well as the ways thatpeople travel have led to serious environmental pollution, which,as a wake-up call, has arisen people' s awareness ofprotecting the environment.The low-carbon lifestyle has been in voguerecently,especially among young people.It is our responsibility to live an environmentally friendlylife, driving a more harmonious relationship between natureand ourselves.Such an excellent lifestyle will endow us as well asthe earth with numerous benefits.a fear of using up resources faster than they could bereplenishedForests serve as habitats for countless animal and plant speciesthat all rely on each other. They take over protective functions againstsoil erosion and landslides（塌方）; they make asignificant contribution to the water balance as they preventsurface runoff; they filter dirt particles,greenhouse gases and radioactive substances from the air; they produceoxygen; they provide spaces for recreation and they preserve historicand prehistoric remains. As a result, forests around the world have beenset aside as parks or wilderness areas.森林是无数动物和植物物种的栖息地，这些物种相互依存。森林承担着防止土壤侵蚀和山体滑坡的保护功能；它们可以防止地表径流，因而对维持水平衡做出了重大贡献；它们过滤空气中的污物颗粒、温室气体和放射性物质；它们生产氧气；它们提供娱乐空间，并保存着历史和史前遗迹。因此，世界各地的森林都被辟为公园或荒野保护区。It is time that we showed successes and accelerations inecological awareness, action and restoration.If we doubt our ability to reverse ecological deterioration, weare throwing away the chance to take action.Environmental protection doesn't happen in a vacuum.You can't separate the impact on the environment from the impact on ourfamilies and communities.]]></content>
-        
-      
-      
-      <categories>
-          
-          <category> Writing </category>
-          
-          <category> Topics </category>
-          
-          <category> ECO </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> STEAM </tag>
-            
-            <tag> 干货 </tag>
             
         </tags>
       
@@ -1354,6 +1280,80 @@
     
     
     <entry>
+      <title>Helping Others 帮助他人</title>
+      <link href="/2022/1205/folder-accumulation/society-community/helping-others/"/>
+      <url>/2022/1205/folder-accumulation/society-community/helping-others/</url>
+      
+      <author>lzctuhao</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[Expressions翻译traditional virtues传统美德sense of righteousness正义感with clean hands廉洁compassion同情心harmomous society和谐社会green development绿色发展fairness and justice公平正义common prosperity共同富裕Roses given, fragrance in hand.Nowadays more and more people take delight in offeringhelp to the needy.This sort of exemplary behavior plays a vital role incultivating children's awareness of caring for others, which makes a lotof sense in creating a more civilized and harmonious society.]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Writing </category>
+          
+          <category> Topics </category>
+          
+          <category> Society &amp; Community </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Environmental Protection 环保</title>
+      <link href="/2022/1205/folder-accumulation/eco/environmental-protection/"/>
+      <url>/2022/1205/folder-accumulation/eco/environmental-protection/</url>
+      
+      <author>lzctuhao</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[Environmentally FriendlyLifestyleExpressions翻译global warming全球变暖greenhouse effect温室效应carbon emission二氧化碳排放resource exhaustion资源枯竭potential ecological disaster潜在的生态灾害never-ending scenarios of doom and disaster没完没了的厄运和灾难paralysis and inaction麻痹和不作为ozone depletion臭氧枯竭carbon footprint碳足迹ecological restoration生态修复urban gardening城市园艺low-carbon economy低碳经济new energy vehicles新能源汽车achieve sustainable development实现可持续发展international diplomacy国际交往reconcile environmental sustainability and economic growthWith the rapid development of our society, increasingly growingenterprises and factories around our city as well as the ways thatpeople travel have led to serious environmental pollution, which,as a wake-up call, has arisen people' s awareness ofprotecting the environment.The low-carbon lifestyle has been in voguerecently,especially among young people.It is our responsibility to live an environmentally friendlylife, driving a more harmonious relationship between natureand ourselves.Such an excellent lifestyle will endow us as well asthe earth with numerous benefits.a fear of using up resources faster than they could bereplenishedForests serve as habitats for countless animal and plant speciesthat all rely on each other. They take over protective functions againstsoil erosion and landslides（塌方）; they make asignificant contribution to the water balance as they preventsurface runoff; they filter dirt particles,greenhouse gases and radioactive substances from the air; they produceoxygen; they provide spaces for recreation and they preserve historicand prehistoric remains. As a result, forests around the world have beenset aside as parks or wilderness areas.森林是无数动物和植物物种的栖息地，这些物种相互依存。森林承担着防止土壤侵蚀和山体滑坡的保护功能；它们可以防止地表径流，因而对维持水平衡做出了重大贡献；它们过滤空气中的污物颗粒、温室气体和放射性物质；它们生产氧气；它们提供娱乐空间，并保存着历史和史前遗迹。因此，世界各地的森林都被辟为公园或荒野保护区。It is time that we showed successes and accelerations inecological awareness, action and restoration.If we doubt our ability to reverse ecological deterioration, weare throwing away the chance to take action.Environmental protection doesn't happen in a vacuum.You can't separate the impact on the environment from the impact on ourfamilies and communities.]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> Writing </category>
+          
+          <category> Topics </category>
+          
+          <category> ECO </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>作文词句Ⅲ.常用句型</title>
       <link href="/2022/1205/folder-ganhuo/folder-essay/essay-updating-3/"/>
       <url>/2022/1205/folder-ganhuo/folder-essay/essay-updating-3/</url>
@@ -1378,9 +1378,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -2333,9 +2333,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -2360,9 +2360,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -2393,9 +2393,9 @@
       
         <tags>
             
-            <tag> 演讲 </tag>
-            
             <tag> Videos </tag>
+            
+            <tag> 演讲 </tag>
             
         </tags>
       
@@ -2640,9 +2640,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -2774,9 +2774,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -3199,9 +3199,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -3424,6 +3424,31 @@
     
     
     <entry>
+      <title>什么是爱国</title>
+      <link href="/2019/1219/folder-sensetive/shi-me-shi-ai-guo/"/>
+      <url>/2019/1219/folder-sensetive/shi-me-shi-ai-guo/</url>
+      
+      <author>陈丹青</author>
+      
+      
+      
+        
+          <content type="html"><span style="search_encrypt">需要口令查看.</span></content>
+        
+      
+      
+      <categories>
+          
+          <category> 爱国 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>谈谈爱国</title>
       <link href="/2019/1219/folder-sensetive/tan-tan-ai-guo/"/>
       <url>/2019/1219/folder-sensetive/tan-tan-ai-guo/</url>
@@ -3449,31 +3474,6 @@
             <tag> 演讲 </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>什么是爱国</title>
-      <link href="/2019/1219/folder-sensetive/shi-me-shi-ai-guo/"/>
-      <url>/2019/1219/folder-sensetive/shi-me-shi-ai-guo/</url>
-      
-      <author>陈丹青</author>
-      
-      
-      
-        
-          <content type="html"><span style="search_encrypt">需要口令查看.</span></content>
-        
-      
-      
-      <categories>
-          
-          <category> 爱国 </category>
-          
-      </categories>
-      
       
     </entry>
     
@@ -3521,9 +3521,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -3548,9 +3548,9 @@
       
         <tags>
             
-            <tag> STEAM </tag>
-            
             <tag> 干货 </tag>
+            
+            <tag> STEAM </tag>
             
         </tags>
       
@@ -4718,6 +4718,31 @@
     
     
     <entry>
+      <title>人民网三评“百度已死？”</title>
+      <link href="/2019/0131/folder-current-events/san-ping-bai-du/"/>
+      <url>/2019/0131/folder-current-events/san-ping-bai-du/</url>
+      
+      <author>人民日报</author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[【编者按】近日，网民热议百度的内容搜索结果存在问题。为理性探讨互联网生态的健康发展，呼吁行业不忘开放共享的初心，提供更多优质服务，满足网民的期待，人民网今日起推出《三评“百度已死？”》。之一：开放共享，岂能言行不一对不少网民来说，“百度一下”意味着“你就知道”。但实际上，百度一下，你就一定能知道吗？近日，网民和媒体纷纷指责百度“不再是寻找中文互联网内容的地方，而是百度自家的站内搜索”。百度也迅速做出回应，指出“百家号内容全站占比小于10%，可以优化浏览体验”。尽管否认了指控，却从侧面印证了产品逻辑，默认了搜索设置。用户对产品最有发言权。百度能被广大网友设成首页，足见“爱之深”；今天又被用户宣称“百度已死”，可见“责之切”。一个独占鳌头的搜索引擎何以不断遭到质疑？“百度已死”固然耸人听闻，而争议的焦点恰恰在于，百度通过提供有选择的信息结果，达到向自家产品引流的商业目的，而且内容良莠不齐，甚至存在涉嫌侵权和虚假的信息，这无疑从根本上违背了其作为公共搜索引擎的初衷。要知道，流量可以流动，但决不能任由摆布、随意操纵。无论如何，一个已达到垄断级别的搜索引擎，已经不是哪个企业的“私家花园”，而首先是互联网的公共平台。倘若以流量变现为目的、以亲近远疏为规则，那么搜索引擎只会沦为牟利的私器、营销的沃土。曾经的教训历历在目：当贴吧的公共空间标上“可售卖”的价码，当寻医问诊的页面布上广告陷阱，病友的家园变成骗子的“狩猎场”。这些悲剧一再警醒我们，谁掌握了信息入口，谁就要相应地担起责任，这是互联网时代的共识。不可否认，对每一个搜索引擎而言，排名总有先后，结果总有页码。但问题在于，究竟以怎样的逻辑进行布局、用怎样的标准加以考量。“按照优质内容排序”的承诺践行了吗？平台内容的把关义务尽到了吗？事实证明，那种只在乎企业利益不注重公共效益的做法，无异于竭泽而渔、饮鸩止渴，不仅失去用户，而且触犯众怒。有人问，为什么总揪着百度不放？因为搜索引擎是普通用户进入互联网世界非常重要的入口，是信息流动的中转站。构建互联互通、开放共享的产业生态，提供精准、客观、全面的信息服务，才能满足国家、社会和用户的基本要求。其实，何止是百度，几乎所有成规模的互联网企业都期望做成“平台级”。但是，这些企业真的理解并弘扬了平台的价值了吗？对于直接服务亿级用户的互联网平台，公共性和公益性是第一属性。平台越大，责任越大。平台的公共性与资本的逐利性，似乎存在天然的冲突，如何处理好两者关系，正是对企业最大的考验之一。从衣食住行到生老病死，互联网的触角如今无处不在，造就了“简单可依赖”的搜索引擎，催生了“让天下没有难做的生意”的电商网站，培育了“联通你我”的憨态企鹅……超级平台便利了人们的生活，也承载了亿万用户对互联网时代的美好希冀，理应做出更多的努力。然而如今，一些互联网企业以“开放”之名、谋“封闭”之实。一个又一个看似完整的产业生态，实则构成了圈养用户、压榨利润的封闭围栏。这违背了开放共享的时代潮流，也触犯了互联互通的网络法则，注定无法持续。之二：互联互通，基石怎可动摇产品一旦被巨头视作威胁，要么被打压要么被收购，夹缝中生存的互联网创业公司举步维艰；巨头动辄打造“产业链”、言必称“生态圈”，但自身的核心产品却不断出现问题……近年来，互联网领域集中度日渐提高，赢者通吃的资本逻辑、无界扩张的发展路径，似乎成为某种“定律”。客观来说，不论是以“让人们最平等便捷地获取信息，找到所求”为使命的百度，还是从杭州湖畔“铁下心来做电子商务”的阿里巴巴，抑或是做即时通讯软件起家的腾讯，企业的成绩来之不易，为中国迈入世界互联网大国之列作出了历史贡献。也因如此，他们获得荣誉、赢得认可，党中央、国务院还授予了改革先锋称号，颁授改革先锋奖章。但大要有大的样子，大更要有大的责任。坚定而清晰的发展战略、须臾不忘的社会责任、站位更高的行业引领，是互联网企业由大到强的重要支撑。从企业自身发展来看，漫无边际的扩张绝非最佳选择，必须“有所为有所不为”。打开巨头们的投资版图，电子商务、医疗健康、汽车交通、外卖快递等可谓多点开花，但是内部腐败、机构臃肿、重复投资、低效率、官僚化等也如影随形。资本并非万能，与其无边界扩张，不如刀刃向内，做好核心产品的优化提升。从行业发展来看，利用市场优势地位进行扩张，甚至由此形成资本霸权、巨头垄断的现象，需要高度警惕。巩固自身优势地位、对待竞争不手软尚可理解，但利用优势地位压制创新，则有损市场公平。共享单车、外卖、网络购物、金融等，无一例外最终成为巨头们角逐的战场。资本如果用起霸权逻辑，伤害的是良性的竞争环境，不利于创新力量的充分涌流和长远发展。当然有人会说，资本逐利无可厚非，市场竞争本身就是残酷的，成王败寇是常态。但竞争也要讲究方式方法，什么值得鼓励，什么必须禁止，含糊不得。良性的竞争绝不是靠资本的威慑、无边界的扩张、人为设立的壁垒，而是要落在优质产品服务供给上。从魏则西事件，到血友病吧被卖事件，再到此次曝光的百家号存在虚假信息，商业模式的迭代、产品种类的增加，反而带来了产品质量的下降。倘若因此丧失了用户的信任、受到监管部门的惩处，如此扩张得不偿失。有专家分析，搜索引擎在PC时代是互联网信息导航，现在到了移动APP时代，单一搜索引擎作为流量入口的作用大大降低。为了在信息流场景上触达足够多的用户，曾经拥有巨大入口流量的搜索引擎不得不考虑自己做“号”，强行编织内容生态，勉力维持流量。这其中，有百度的无奈，但也说明了百度没有抓住转机，发挥技术优势，开发出针对移动互联网时代的新一代搜索引擎，或者打造开放的客户端联盟，却自我“降维”，陷于做“号”，结果自废“武功”。可以说，此次的百度事件暴露了当前互联网巨头发展面临的集体问题：在疯狂追求“平台效应”和用户数量的盲目扩张中，为维护自身市场优势地位，正纷纷“画地为牢”，平台内自我导流，对竞争对手选择性屏蔽。这种行为正在动摇互联互通这一互联网的根本基石。之三：关乎未来，不负时代期待谁掌握了互联网，谁就拥有了时代主动权。互联网企业健康成长，关系美好生活，关乎民族复兴。纵观今时今日，从时间到空间，从生产到生活，以数字化、网络化、智能化为特征的信息革命，孕育了我们身边一批耳熟能详的互联网企业，不仅为人们创造了获取知识、表达诉求、交流情感的精神家园，也为发展打造了转型升级、创新驱动、跨界融合的强劲引擎。互联网像空气一样无处不在、无时不有，也像水流一样互联互交、互通有无。然而一段时间以来，互联网业界“盲目圈地”“围墙篱笆”等乱象频出，给用户体验带来不便，也为发展前景蒙上阴影。人们不禁要问，互联网的未来到底是多级对立、壁垒丛生，还是沟通协作、开放共享？公众的答案显而易见，互联网巨头交出的答卷却并不令人满意。有人说，今天的互联网巨头不缺市值、不缺收入、不缺用户，唯独缺稳定输出的价值观。正所谓“德不配位，必有灾殃。”从公共管理角度来说，互联网巨头的市场支配地位实际上形成了另一种意义的“社会公权力”，用好了可以受益匪浅，用歪了就将贻害无穷。倘若用门户之见取代发展远见，只顾着“抢占地盘”、只醉心“厮杀内耗”、只攫取“人头流量”，甚至为维护垄断地位而不择手段打压竞争者，不仅会抑制互联网行业的创新活力，还会削弱整个社会开放共享、互联互通的前进动力。大就要有大的样子。这里的“大”，指的不仅是体量之大、规模之大，更要包括格局之广、境界之高。手握巨大的数据洪流，坐拥数以亿计的用户流量，如何管理使用考验着互联网巨头的智慧和能力。要知道，产业再多、市值再高，都必须涵养顺应时代呼声、回应用户需求的企业文化，与互联网经济发展壮大同气同求，与中华民族伟大复兴同心同向。改革开放以来，中国稳定的政策支持和社会氛围，为互联网企业的发展壮大提供了肥沃的土壤。反之，成长为巨头的互联网企业应为中国经济的高质量发展提供源源不断的动力，履行该履行的责任，为实现两个一百年的奋斗目标贡献自己的力量。对此，不妨参照那些风雨不衰的百年老字号。它们屹立不倒的密码，就在“同修仁德，济世养生”的情怀里，就在“天贵人和，厚德致远”的追求中。如果只是简单沉醉“一亩三分地”的短视之举，动辄萌生“画地为牢”的浅显思维，这样的企业注定将沦为拍在沙滩上的浪花，成不了推动“中国号”巨轮前行的波浪。互联网是事业发展的最大增量，也是我们面临的最大变量。正因如此，“办网站的不能一味追求点击率，开网店的要防范假冒伪劣，做社交平台的不能成为谣言扩散器，做搜索的不能仅以给钱的多少作为排位的标准。希望广大互联网企业坚持经济效益和社会效益统一，在自身发展的同时，饮水思源，回报社会，造福人民。”这是对互联网企业最深刻的警醒，也是广大用户最真挚的期盼。]]></content>
+        
+      
+      
+      
+        <tags>
+            
+            <tag> 时评 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>星条旗保护那些蔑视它的人</title>
       <link href="/2019/0131/folder-current-events/usa-flag/"/>
       <url>/2019/0131/folder-current-events/usa-flag/</url>
@@ -4736,31 +4761,6 @@
           <category> 自由 </category>
           
       </categories>
-      
-      
-        <tags>
-            
-            <tag> 时评 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人民网三评“百度已死？”</title>
-      <link href="/2019/0131/folder-current-events/san-ping-bai-du/"/>
-      <url>/2019/0131/folder-current-events/san-ping-bai-du/</url>
-      
-      <author>人民日报</author>
-      
-      
-      
-        
-          <content type="html"><![CDATA[【编者按】近日，网民热议百度的内容搜索结果存在问题。为理性探讨互联网生态的健康发展，呼吁行业不忘开放共享的初心，提供更多优质服务，满足网民的期待，人民网今日起推出《三评“百度已死？”》。之一：开放共享，岂能言行不一对不少网民来说，“百度一下”意味着“你就知道”。但实际上，百度一下，你就一定能知道吗？近日，网民和媒体纷纷指责百度“不再是寻找中文互联网内容的地方，而是百度自家的站内搜索”。百度也迅速做出回应，指出“百家号内容全站占比小于10%，可以优化浏览体验”。尽管否认了指控，却从侧面印证了产品逻辑，默认了搜索设置。用户对产品最有发言权。百度能被广大网友设成首页，足见“爱之深”；今天又被用户宣称“百度已死”，可见“责之切”。一个独占鳌头的搜索引擎何以不断遭到质疑？“百度已死”固然耸人听闻，而争议的焦点恰恰在于，百度通过提供有选择的信息结果，达到向自家产品引流的商业目的，而且内容良莠不齐，甚至存在涉嫌侵权和虚假的信息，这无疑从根本上违背了其作为公共搜索引擎的初衷。要知道，流量可以流动，但决不能任由摆布、随意操纵。无论如何，一个已达到垄断级别的搜索引擎，已经不是哪个企业的“私家花园”，而首先是互联网的公共平台。倘若以流量变现为目的、以亲近远疏为规则，那么搜索引擎只会沦为牟利的私器、营销的沃土。曾经的教训历历在目：当贴吧的公共空间标上“可售卖”的价码，当寻医问诊的页面布上广告陷阱，病友的家园变成骗子的“狩猎场”。这些悲剧一再警醒我们，谁掌握了信息入口，谁就要相应地担起责任，这是互联网时代的共识。不可否认，对每一个搜索引擎而言，排名总有先后，结果总有页码。但问题在于，究竟以怎样的逻辑进行布局、用怎样的标准加以考量。“按照优质内容排序”的承诺践行了吗？平台内容的把关义务尽到了吗？事实证明，那种只在乎企业利益不注重公共效益的做法，无异于竭泽而渔、饮鸩止渴，不仅失去用户，而且触犯众怒。有人问，为什么总揪着百度不放？因为搜索引擎是普通用户进入互联网世界非常重要的入口，是信息流动的中转站。构建互联互通、开放共享的产业生态，提供精准、客观、全面的信息服务，才能满足国家、社会和用户的基本要求。其实，何止是百度，几乎所有成规模的互联网企业都期望做成“平台级”。但是，这些企业真的理解并弘扬了平台的价值了吗？对于直接服务亿级用户的互联网平台，公共性和公益性是第一属性。平台越大，责任越大。平台的公共性与资本的逐利性，似乎存在天然的冲突，如何处理好两者关系，正是对企业最大的考验之一。从衣食住行到生老病死，互联网的触角如今无处不在，造就了“简单可依赖”的搜索引擎，催生了“让天下没有难做的生意”的电商网站，培育了“联通你我”的憨态企鹅……超级平台便利了人们的生活，也承载了亿万用户对互联网时代的美好希冀，理应做出更多的努力。然而如今，一些互联网企业以“开放”之名、谋“封闭”之实。一个又一个看似完整的产业生态，实则构成了圈养用户、压榨利润的封闭围栏。这违背了开放共享的时代潮流，也触犯了互联互通的网络法则，注定无法持续。之二：互联互通，基石怎可动摇产品一旦被巨头视作威胁，要么被打压要么被收购，夹缝中生存的互联网创业公司举步维艰；巨头动辄打造“产业链”、言必称“生态圈”，但自身的核心产品却不断出现问题……近年来，互联网领域集中度日渐提高，赢者通吃的资本逻辑、无界扩张的发展路径，似乎成为某种“定律”。客观来说，不论是以“让人们最平等便捷地获取信息，找到所求”为使命的百度，还是从杭州湖畔“铁下心来做电子商务”的阿里巴巴，抑或是做即时通讯软件起家的腾讯，企业的成绩来之不易，为中国迈入世界互联网大国之列作出了历史贡献。也因如此，他们获得荣誉、赢得认可，党中央、国务院还授予了改革先锋称号，颁授改革先锋奖章。但大要有大的样子，大更要有大的责任。坚定而清晰的发展战略、须臾不忘的社会责任、站位更高的行业引领，是互联网企业由大到强的重要支撑。从企业自身发展来看，漫无边际的扩张绝非最佳选择，必须“有所为有所不为”。打开巨头们的投资版图，电子商务、医疗健康、汽车交通、外卖快递等可谓多点开花，但是内部腐败、机构臃肿、重复投资、低效率、官僚化等也如影随形。资本并非万能，与其无边界扩张，不如刀刃向内，做好核心产品的优化提升。从行业发展来看，利用市场优势地位进行扩张，甚至由此形成资本霸权、巨头垄断的现象，需要高度警惕。巩固自身优势地位、对待竞争不手软尚可理解，但利用优势地位压制创新，则有损市场公平。共享单车、外卖、网络购物、金融等，无一例外最终成为巨头们角逐的战场。资本如果用起霸权逻辑，伤害的是良性的竞争环境，不利于创新力量的充分涌流和长远发展。当然有人会说，资本逐利无可厚非，市场竞争本身就是残酷的，成王败寇是常态。但竞争也要讲究方式方法，什么值得鼓励，什么必须禁止，含糊不得。良性的竞争绝不是靠资本的威慑、无边界的扩张、人为设立的壁垒，而是要落在优质产品服务供给上。从魏则西事件，到血友病吧被卖事件，再到此次曝光的百家号存在虚假信息，商业模式的迭代、产品种类的增加，反而带来了产品质量的下降。倘若因此丧失了用户的信任、受到监管部门的惩处，如此扩张得不偿失。有专家分析，搜索引擎在PC时代是互联网信息导航，现在到了移动APP时代，单一搜索引擎作为流量入口的作用大大降低。为了在信息流场景上触达足够多的用户，曾经拥有巨大入口流量的搜索引擎不得不考虑自己做“号”，强行编织内容生态，勉力维持流量。这其中，有百度的无奈，但也说明了百度没有抓住转机，发挥技术优势，开发出针对移动互联网时代的新一代搜索引擎，或者打造开放的客户端联盟，却自我“降维”，陷于做“号”，结果自废“武功”。可以说，此次的百度事件暴露了当前互联网巨头发展面临的集体问题：在疯狂追求“平台效应”和用户数量的盲目扩张中，为维护自身市场优势地位，正纷纷“画地为牢”，平台内自我导流，对竞争对手选择性屏蔽。这种行为正在动摇互联互通这一互联网的根本基石。之三：关乎未来，不负时代期待谁掌握了互联网，谁就拥有了时代主动权。互联网企业健康成长，关系美好生活，关乎民族复兴。纵观今时今日，从时间到空间，从生产到生活，以数字化、网络化、智能化为特征的信息革命，孕育了我们身边一批耳熟能详的互联网企业，不仅为人们创造了获取知识、表达诉求、交流情感的精神家园，也为发展打造了转型升级、创新驱动、跨界融合的强劲引擎。互联网像空气一样无处不在、无时不有，也像水流一样互联互交、互通有无。然而一段时间以来，互联网业界“盲目圈地”“围墙篱笆”等乱象频出，给用户体验带来不便，也为发展前景蒙上阴影。人们不禁要问，互联网的未来到底是多级对立、壁垒丛生，还是沟通协作、开放共享？公众的答案显而易见，互联网巨头交出的答卷却并不令人满意。有人说，今天的互联网巨头不缺市值、不缺收入、不缺用户，唯独缺稳定输出的价值观。正所谓“德不配位，必有灾殃。”从公共管理角度来说，互联网巨头的市场支配地位实际上形成了另一种意义的“社会公权力”，用好了可以受益匪浅，用歪了就将贻害无穷。倘若用门户之见取代发展远见，只顾着“抢占地盘”、只醉心“厮杀内耗”、只攫取“人头流量”，甚至为维护垄断地位而不择手段打压竞争者，不仅会抑制互联网行业的创新活力，还会削弱整个社会开放共享、互联互通的前进动力。大就要有大的样子。这里的“大”，指的不仅是体量之大、规模之大，更要包括格局之广、境界之高。手握巨大的数据洪流，坐拥数以亿计的用户流量，如何管理使用考验着互联网巨头的智慧和能力。要知道，产业再多、市值再高，都必须涵养顺应时代呼声、回应用户需求的企业文化，与互联网经济发展壮大同气同求，与中华民族伟大复兴同心同向。改革开放以来，中国稳定的政策支持和社会氛围，为互联网企业的发展壮大提供了肥沃的土壤。反之，成长为巨头的互联网企业应为中国经济的高质量发展提供源源不断的动力，履行该履行的责任，为实现两个一百年的奋斗目标贡献自己的力量。对此，不妨参照那些风雨不衰的百年老字号。它们屹立不倒的密码，就在“同修仁德，济世养生”的情怀里，就在“天贵人和，厚德致远”的追求中。如果只是简单沉醉“一亩三分地”的短视之举，动辄萌生“画地为牢”的浅显思维，这样的企业注定将沦为拍在沙滩上的浪花，成不了推动“中国号”巨轮前行的波浪。互联网是事业发展的最大增量，也是我们面临的最大变量。正因如此，“办网站的不能一味追求点击率，开网店的要防范假冒伪劣，做社交平台的不能成为谣言扩散器，做搜索的不能仅以给钱的多少作为排位的标准。希望广大互联网企业坚持经济效益和社会效益统一，在自身发展的同时，饮水思源，回报社会，造福人民。”这是对互联网企业最深刻的警醒，也是广大用户最真挚的期盼。]]></content>
-        
-      
       
       
         <tags>
