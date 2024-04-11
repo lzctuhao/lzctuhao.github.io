@@ -28,6 +28,7 @@
             e.preventDefault()
             var distX = e.clientX - startX;
             targetDiv.style.width = targetDivWidth + distX + 'px'
+            if (targetDiv.offsetWidth<=20) {targetDiv.style.width="0px"}
            
         }
         document.onmouseup = function () {
