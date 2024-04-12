@@ -1,1 +1,1 @@
-(function(){document.querySelectorAll("#series,.hide-on-app-all,.chip .tag-length").forEach((e=>e.remove()))})();
+(function(){if(getUrlParam("mode")&&getUrlParam("mode").indexOf("app")>=0){document.querySelectorAll("#series,.hide-on-app-all,.chip .tag-length").forEach((e=>e.remove()))}})();
