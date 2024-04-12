@@ -1,0 +1,1 @@
+(function(){document.querySelectorAll("#series,.hide-on-app-all,.chip .tag-length").forEach((e=>e.remove()))})();
