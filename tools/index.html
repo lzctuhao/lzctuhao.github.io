@@ -27,7 +27,7 @@
             if($.cookie('app_agree')!=1){
                 app_agree.open();
             }
-            //document.getElementById("tools_style").append("#series,.app1{display:none}");
+            document.querySelectorAll("#series,.hide-on-app-all,.chip .tag-length").forEach(dom=>dom.remove());
         }
         
         if (getUrlParam('privacy')) app_agree.open();
