@@ -23,14 +23,16 @@
     //初次打开
     var app_agree = M.Modal.init(document.getElementById("app_agree"),{dismissible:false,inDuration:0});
     (function(){
-        if (getUrlParam('mode') && getUrlParam('mode').indexOf("app")>=0){
+        if (getUrlParam('mode') && getUrlParam('mode')=="quickapp"){
             if($.cookie('app_agree')!=1){
                 app_agree.open();
             }
             document.querySelectorAll("#series,.hide-on-app-all,.chip .tag-length").forEach(dom=>dom.remove());
         }
         
-        if (getUrlParam('privacy')) app_agree.open();
+        if (getUrlParam('privacy') || getUrlParam('mode')&&(getUrlParam('mode')=="privacy")){
+            app_agree.open();
+        }
         if (getUrlParam('type')) type_toggle(getUrlParam('type'));
     })()
     
