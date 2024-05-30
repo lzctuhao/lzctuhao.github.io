@@ -23,7 +23,7 @@
     //初次打开
     var app_agree = M.Modal.init(document.getElementById("app_agree"),{dismissible:false,inDuration:0});
     (function(){
-        if (getUrlParam('mode') && getUrlParam('mode')=="quickapp"){
+        if (getUrlParam('mode') && getUrlParam('mode').indexof("quickapp")>-1){
             if($.cookie('app_agree')!=1){
                 app_agree.open();
             }
