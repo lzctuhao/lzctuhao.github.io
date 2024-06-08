@@ -1,1 +1,1 @@
-(function(){if(getUrlParam("mode")&&getUrlParam("mode").indexOf("app")>=0){document.querySelectorAll(".hide-on-app-all").forEach((e=>e.remove()))}})();
+(function(){if(MUtils.URLParam("mode")&&MUtils.URLParam("mode").indexOf("app")>=0){document.querySelectorAll(".hide-on-app-all").forEach((e=>e.remove()))}})();
