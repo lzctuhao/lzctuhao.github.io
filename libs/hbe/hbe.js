@@ -210,6 +210,7 @@
       if (tocDiv) {
         tocDiv.style.display = 'inline';
       }
+      if(typeof toc_init==='function') toc_init();
 
       var tocDivs = document.getElementsByClassName('toc-div-class');
       if (tocDivs && tocDivs.length > 0) {
