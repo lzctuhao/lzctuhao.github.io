@@ -297,7 +297,7 @@
     });
 
     window.addEventListener("load",function(){
-      const password=getUrlParam('password');
+      const password=MUtils.URLParam('password');
       if(password){decrypt_by_password(password,true);}
     })
   }
