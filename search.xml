@@ -2593,8 +2593,8 @@
     
     <entry>
       <title>几个等价无穷小及证明</title>
-      <link href="/2021/1019/folder-ganhuo/deng-jie-wu-qiong-xiao/"/>
-      <url>/2021/1019/folder-ganhuo/deng-jie-wu-qiong-xiao/</url>
+      <link href="/2021/1019/folder-ganhuo/folder-maths/deng-jie-wu-qiong-xiao/"/>
+      <url>/2021/1019/folder-ganhuo/folder-maths/deng-jie-wu-qiong-xiao/</url>
       
       <author></author>
       
@@ -3302,12 +3302,6 @@
       </categories>
       
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
-      
     </entry>
     
     
@@ -3326,12 +3320,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -3435,8 +3431,8 @@
     
     <entry>
       <title>不动点法在高考数列中的应用</title>
-      <link href="/2020/0721/folder-ganhuo/fixed-point/"/>
-      <url>/2020/0721/folder-ganhuo/fixed-point/</url>
+      <link href="/2020/0721/folder-ganhuo/folder-maths/fixed-point/"/>
+      <url>/2020/0721/folder-ganhuo/folder-maths/fixed-point/</url>
       
       <author></author>
       
@@ -3472,12 +3468,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -3522,12 +3520,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -3547,12 +3547,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
@@ -3612,8 +3614,8 @@
     
     <entry>
       <title>二项式定理和杨辉三角</title>
-      <link href="/2020/0320/folder-ganhuo/binomial-theorem/"/>
-      <url>/2020/0320/folder-ganhuo/binomial-theorem/</url>
+      <link href="/2020/0320/folder-ganhuo/folder-maths/binomial-theorem/"/>
+      <url>/2020/0320/folder-ganhuo/folder-maths/binomial-theorem/</url>
       
       <author></author>
       
@@ -3840,12 +3842,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
