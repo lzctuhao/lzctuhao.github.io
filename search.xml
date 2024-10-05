@@ -2592,6 +2592,33 @@
     
     
     <entry>
+      <title>几何法的妙用</title>
+      <link href="/2021/1023/folder-ganhuo/folder-maths/ji-he-fa/"/>
+      <url>/2021/1023/folder-ganhuo/folder-maths/ji-he-fa/</url>
+      
+      <author></author>
+      
+      
+      
+        
+          <content type="html"><![CDATA[善用几何法在高考数学的几何题中，几何法较难找出解决方法，但一旦找出，方法往往是最简洁的。圆锥曲线的光学性质运用圆锥曲线的光学性质解题，也属于几何法。但这部分内容已单独成章，本文不再赘述。已知\(A(-1,0)\)，\(B(3,0)\)，\(P\)是圆\(O:x^{2}+y^{2}=45\)上的一个动点，则\(\sin\angle APB\)的最大值为（）。(A)\(\dfrac{\sqrt{3}}{3}\)。(B)\(\dfrac{\sqrt{5}}{3}\)。(C)\(\dfrac{\sqrt{3}}{4}\)。(D)\(\dfrac{\sqrt{5}}{4}\)。解析在\(\triangle APB\)中，\(r\)为\(\triangleAPB\)的外接圆半径。若要使\(\sin\angleAPB\)最大，则\(r\)要最小，又\(A\)，\(B\)两点在圆\(O\)内，\(P\)在圆\(O\)上，所以当\(\triangle APB\)的外接圆和圆\(O\)内切时，\(r\)最小。此时可设外接圆的圆心为\((1,m)\)，则\(\sqrt{1+m^{2}}=3\sqrt{5}-r\)，且\(r=\sqrt{4+m^{2}}\)，代入解得\(m^{2}=\dfrac{44}{5}\)，所以\(r=\dfrac{8}{\sqrt{5}}\)。所以\(\sin\angleAPB\)的最大值为\(\dfrac{2}{r}=\dfrac{\sqrt{5}}{4}\)。已知\(P\)是以\(F_1\)，\(F_2\)为左、右焦点的椭圆\(\dfrac{x^{2}}{a^{2}}+\dfrac{y^{2}}{b^{2}} =1\)\((a\gtb\gt0)\)上一点，若\(\angle F_1PF_2 =120^{\circ}\)，则该椭圆的离心率的取值范围是___。解析根据椭圆图形的几何性质，可知当点\(P\)为椭圆的短轴顶点（不妨设上顶点为\(A\)）时\(\angleF_1PF_2\)最大。由于存在点\(P\)为椭圆上的一点，使得\(\angle F_1PF_2 = 120^{\circ}\)，所以在\(\triangle AF_1F_2\)中，\(\angleF_1AF_2\geq120^{\circ}\)，那么在\(\text{Rt}\triangle AOF_2\)中，\(\angle OAF_2\geq60^{\circ}\)。结合三角函数的定义有：\(e=\dfrac{c}{a}=\sin\angleOAF_2\geq\sin60^{\circ}=\dfrac{\sqrt{3}}{2}\)，又\(0\lt e\lt1\)，则有\(\dfrac{\sqrt{3}}{2}\leqe\lt1\)，即该椭圆的离心率的取值范围是\(\left[\dfrac{\sqrt{3}}{2},1\right)\)。参考文献肖旭平.思想方法够丰富,解题思路才出众——以一道高三数学模拟题为例[J].数理天地(高中版),2023,(21):24-25.高双云.离心率取值范围的破解策略[J].数理天地(高中版),2024,(17):2-3.]]></content>
+        
+      
+      
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>同构思维在解析几何中的妙用</title>
       <link href="/2021/1021/folder-ganhuo/folder-maths/tong-gou-jie-xi-ji-he/"/>
       <url>/2021/1021/folder-ganhuo/folder-maths/tong-gou-jie-xi-ji-he/</url>
@@ -2605,12 +2632,14 @@
         
       
       
+      <categories>
+          
+          <category> 高考笔记 </category>
+          
+          <category> 高中数学 </category>
+          
+      </categories>
       
-        <tags>
-            
-            <tag> 干货 </tag>
-            
-        </tags>
       
     </entry>
     
