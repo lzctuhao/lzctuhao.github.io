@@ -1,0 +1,1 @@
+import MUtils from"/js/modules/MUtils/MUtils.js";export default function show_beian(e=MUtils.URLParam("mode")){if(!e){show_beian("mps web");return true}e=e.split(" ");document.querySelectorAll(".beian").forEach((e=>e.classList.add("hide")));e.forEach((e=>{document.querySelectorAll(".beian."+e).forEach((e=>e.classList.remove("hide")))}))}
