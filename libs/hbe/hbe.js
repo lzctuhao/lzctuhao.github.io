@@ -186,7 +186,7 @@
       hideButton.classList.add("hbe-button");
       hideButton.addEventListener('click', () => {
         window.localStorage.removeItem(storageName);
-        getUrlParam('password','');
+        MUtils.getUrlParam('password','');
         location.reload();
       });
 
@@ -283,6 +283,7 @@
               storage.setItem(storageName, JSON.stringify(newStorageData));
             });
           });
+          MPost.init();
         } else {
           !slience&&Swal.fire(wrongPassMessage, '', 'error');
         }
