@@ -186,7 +186,7 @@
       hideButton.classList.add("hbe-button");
       hideButton.addEventListener('click', () => {
         window.localStorage.removeItem(storageName);
-        MUtils.getUrlParam('password','');
+        MUtils.URLParam('password','');
         location.reload();
       });
 
