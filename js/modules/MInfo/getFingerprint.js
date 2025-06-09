@@ -1,1 +1,1 @@
-import MUtils from"/js/modules/MUtils/MUtils.js";export default async function getFingerprint(){try{await MUtils.loadFile("/libs/valine/iife.min.js");const t=await FingerprintJS.load();const i=await t.get();return i.visitorId}catch(t){throw new Error(`获取指纹失败: ${t.message}`)}}
+(function(i){i.getFingerprint=async function(){try{await MUtils.loadFile("/libs/valine/iife.min.js");const i=await FingerprintJS.load();const n=await i.get();return n.visitorId}catch(i){throw new Error(`获取指纹失败: ${i.message}`)}}})(window.MInfo=window.MInfo||{});
