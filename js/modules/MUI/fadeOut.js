@@ -1,0 +1,1 @@
+(function(n){function t(n,t=500){if(!n){console.error("Element not found for fadeOut");return}n.style.display="block";n.style.opacity=1;let e=null;const o=1;function i(l){if(!e)e=l;const s=l-e;const a=Math.max(o-s/t,0);n.style.opacity=a;if(s<t){requestAnimationFrame(i)}else{n.style.display="none"}}requestAnimationFrame(i)}n.fadeOut=t})(window.MUI=window.MUI||{});
