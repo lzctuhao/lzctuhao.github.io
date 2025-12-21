@@ -13,7 +13,7 @@
   const knownPrefix = "<hbe-prefix></hbe-prefix>";
 
   const mainElement = document.getElementById('hexo-blog-encrypt');
-  const wrongPassMessage = mainElement.dataset['wpm'];
+  const wrongPassMessage = '<span style="color:var(--bgcolor)">提示：</span>' + mainElement.dataset['wpm'];
   const wrongHashMessage = mainElement.dataset['whm'];
   const dataElement = mainElement.getElementsByTagName('script')['hbeData'];
   const encryptedData = dataElement.innerText;
@@ -285,7 +285,7 @@
           });
           MPost.init();
         } else {
-          !slience&&Swal.fire(wrongPassMessage, '', 'error');
+          !slience&&Swal.fire('密码错误', wrongPassMessage, 'error');
         }
       });
     }
@@ -299,7 +299,14 @@
 
     window.addEventListener("load",function(){
       const password=MUtils.URLParam('password');
-      if(password){decrypt_by_password(password,true);}
+      const clear_pass_in_url=MUtils.URLParam('clearpass');
+      if(password){
+        decrypt_by_password(password,true);
+        if(clear_pass_in_url){
+          MUtils.URLParam('password','');
+          MUtils.URLParam('clearpass','');
+        }
+      }
     })
   }
 
